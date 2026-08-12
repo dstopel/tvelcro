@@ -1,0 +1,15 @@
+# T-VELCRO dependencies. Unpinned on purpose: the pod images move fast and
+# nothing here depends on a specific minor version.
+torch           # model execution, hooks, structured surgery
+torchvision     # ImageFolder datasets and transforms for ViT domain eval
+timm            # vit_base_patch16_224 backbone (vit/ and baselines/)
+transformers    # dinov2_giant classifier backbone (vit/vit_velcro.py)
+scipy           # statistics for variance-profile analysis
+numpy           # array math, .npy variance profiles
+opencv-python   # image and mask IO for SAM evaluation
+matplotlib      # plots and paper figures
+pycocotools     # COCO mask evaluation for SAM
+kaggle          # CLI download of domain datasets (kvasir/isic/busi/pcb/deepglobe)
+pynvml          # NVML power sampling for common.timing.EnergyMeter
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git  # SAM ViT-H backbone
+tome @ git+https://github.com/facebookresearch/ToMe.git  # ToMe token merging (baselines/tome_comparison.py)

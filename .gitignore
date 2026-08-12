@@ -1,0 +1,17 @@
+# data and run outputs
+data/
+results*/
+baselines/results/
+
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+
+# large artifacts
+*.pth
+*.npy
+
+# rendered outputs, but never anything under docs/
+*.pdf
+!docs/**
