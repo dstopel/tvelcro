@@ -20,7 +20,7 @@ export PYTHONPATH=.
 # ---------------------------------------------------------------------------
 # MODELS: space-separated; each entry is model_name:manifest_path:batch_sizes
 # Defaults point at the sweep outputs of experiments/vit/exp_sweep.sh.
-MODELS="${MODELS:-vit_base_patch16_224:results/vit/sweep/vit_base/freeze_manifest.json:1,8 dinov2_giant:results/vit/sweep/dinov2_giant/freeze_manifest.json:1,4}"
+MODELS="${MODELS:-vit_base_patch16_224:results/vit/sweep/vit_base/freeze_manifest.json:1,8 dinov3_7b:results/vit/sweep/dinov3_7b/freeze_manifest.json:1,2}"
 SEED="${SEED:-0}"
 DEVICE="${DEVICE:-cuda}"
 OUT="${OUT:-results/vit_latency}"

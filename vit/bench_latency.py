@@ -84,8 +84,17 @@ def main():
                           or torch.cuda.is_available() else "cpu")
     batch_sizes = [int(b) for b in args.batch_sizes.split(",")]
 
-    is_dinov2 = args.model.startswith("dinov2")
-    if is_dinov2:
+    if args.model == "dinov3_7b":
+        from surgery_dinov3 import (DINOV3_7B_LC_ID, Dinov3FreezeHookManager,
+                                    DINOv3ViTForImageClassification,
+                                    build_sliced_dinov3)
+        dtype = torch.float16 if device.type == "cuda" else torch.float32
+        print(f"Loading {DINOV3_7B_LC_ID} ({dtype}) on {device} ...")
+        model = DINOv3ViTForImageClassification.from_pretrained(
+            DINOV3_7B_LC_ID, dtype=dtype)
+        input_size = model.config.image_size
+        hook_cls, slicer = Dinov3FreezeHookManager, build_sliced_dinov3
+    elif args.model.startswith("dinov2"):
         from transformers import AutoModelForImageClassification
         from surgery_dinov2 import Dinov2FreezeHookManager, build_sliced_dinov2
         hf_id = ("facebook/dinov2-giant-imagenet1k-1-layer"

@@ -2,14 +2,18 @@
 """
 vit_velcro.py — unified T-VELCRO value-locality pipeline for ViT classifiers.
 
-One CLI, two models behind a small adapter layer:
+One CLI, three models behind a small adapter layer:
   --model vit_base      timm vit_base_patch16_224 (no PTQ4ViT dependency)
   --model dinov2_giant  facebook/dinov2-giant-imagenet1k-1-layer (transformers)
+  --model dinov3_7b     dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc
+                        (DINOv3 ViT-7B + ImageNet-1k linear classifier; fp16 on
+                        CUDA, fp32 on CPU)
 
 Three modes:
   profile  Welford float64 per-image stats of per-head outputs, captured at the
            input of the attention output projection (attn.proj for timm,
-           attention.output.dense for DINOv2), where heads are still separable.
+           attention.output.dense for DINOv2, attention.o_proj for DINOv3),
+           where heads are still separable.
            Saves per-head variance/mean .npy + per-head entropy JSON.
   freeze   Per block, rank heads (--rank variance|random|entropy) and freeze the
            bottom-T_k. T_k from --heads_per_block or round(--freeze_fraction * H).
@@ -33,7 +37,7 @@ from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 
-MODEL_CHOICES = ["vit_base", "dinov2_giant"]
+MODEL_CHOICES = ["vit_base", "dinov2_giant", "dinov3_7b"]
 RANK_CHOICES = ["variance", "random", "entropy"]
 MODES = ["profile", "freeze", "eval"]
 
@@ -125,7 +129,35 @@ def _build_dinov2_giant() -> Adapter:
                    proj_fn=lambda b: model.dinov2.encoder.layer[b].attention.output.dense)
 
 
-ADAPTER_BUILDERS = {"vit_base": _build_vit_base, "dinov2_giant": _build_dinov2_giant}
+def _build_dinov3_7b() -> Adapter:
+    import torch
+    from transformers import DINOv3ViTImageProcessor
+    from surgery_dinov3 import DINOV3_7B_LC_ID, DINOv3ViTForImageClassification
+
+    # fp16 on GPU (6.7B params must fit in 24GB), fp32 on CPU.
+    # ponytail: weights stage through host RAM (~13.4GB) before build_adapter's
+    # .cuda(); add accelerate + device_map="cuda" here if the host is RAM-tight.
+    dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+    model = DINOv3ViTForImageClassification.from_pretrained(DINOV3_7B_LC_ID, dtype=dtype)
+    model.eval()
+
+    cfg = model.config
+    num_blocks = cfg.num_hidden_layers
+    num_heads = cfg.num_attention_heads
+    head_dim = cfg.hidden_size // num_heads
+    img_size = cfg.image_size
+    seq_len = (img_size // cfg.patch_size) ** 2 + 1 + cfg.num_register_tokens
+    # the LC repo ships no preprocessor_config.json; use the DINOv3 defaults
+    # (bilinear resize, ImageNet mean/std) at the config's image size
+    processor = DINOv3ViTImageProcessor(size={"height": img_size, "width": img_size})
+
+    return Adapter("dinov3_7b", DINOV3_7B_LC_ID, model, _ProcessorTransform(processor),
+                   num_blocks, num_heads, head_dim, seq_len,
+                   proj_fn=lambda b: model.dinov3.model.layer[b].attention.o_proj)
+
+
+ADAPTER_BUILDERS = {"vit_base": _build_vit_base, "dinov2_giant": _build_dinov2_giant,
+                    "dinov3_7b": _build_dinov3_7b}
 
 
 def build_adapter(key: str) -> Adapter:

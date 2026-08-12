@@ -9,7 +9,7 @@ set -euo pipefail
 # ==============================================================================
 
 # --- config (override via env) ------------------------------------------------
-MODELS="${MODELS:-vit_base dinov2_giant}"
+MODELS="${MODELS:-vit_base dinov3_7b}"
 DOMAINS="${DOMAINS:-snakes fish boats birds dogs cats cars}"
 IMG_BASE="${IMG_BASE:-image_for_exp}"
 SYNSET_WORDS="${SYNSET_WORDS:-${IMG_BASE}/synset_words.txt}"
@@ -18,9 +18,9 @@ SEED="${SEED:-0}"
 MAX_IMAGES="${MAX_IMAGES:-300}"
 RANK="${RANK:-variance}"
 TKS_BASE="${TKS_BASE:-0 2 3 4 6 8}"        # vit_base: H=12
-TKS_GIANT="${TKS_GIANT:-0 4 6 8 12 16}"    # dinov2_giant: H=24
+TKS_7B="${TKS_7B:-0 4 8 12 16}"           # dinov3_7b: H=32
 BATCH_BASE="${BATCH_BASE:-32}"
-BATCH_GIANT="${BATCH_GIANT:-4}"
+BATCH_7B="${BATCH_7B:-2}"
 # ------------------------------------------------------------------------------
 
 export PYTHONPATH=.
@@ -29,8 +29,8 @@ LOG="${RESULTS}/run_$(date +%Y%m%d_%H%M%S).log"
 exec > >(tee -a "${LOG}") 2>&1
 echo "Log: ${LOG}"
 
-bs()  { if [ "$1" = "dinov2_giant" ]; then echo "${BATCH_GIANT}"; else echo "${BATCH_BASE}"; fi; }
-tks() { if [ "$1" = "dinov2_giant" ]; then echo "${TKS_GIANT}"; else echo "${TKS_BASE}"; fi; }
+bs()  { if [ "$1" = "dinov3_7b" ]; then echo "${BATCH_7B}"; else echo "${BATCH_BASE}"; fi; }
+tks() { if [ "$1" = "dinov3_7b" ]; then echo "${TKS_7B}"; else echo "${TKS_BASE}"; fi; }
 
 for MODEL in ${MODELS}; do
   ROOT="${RESULTS}/${MODEL}/seed${SEED}"

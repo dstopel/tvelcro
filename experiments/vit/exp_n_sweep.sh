@@ -14,7 +14,7 @@ set -euo pipefail
 # ==============================================================================
 
 # --- config (override via env) ------------------------------------------------
-MODELS="${MODELS:-dinov2_giant vit_base}"
+MODELS="${MODELS:-dinov3_7b vit_base}"
 DOMAIN="${DOMAIN:-birds}"
 NS="${NS:-25 50 100 200 300}"
 SEEDS="${SEEDS:-0 1 2}"
@@ -23,10 +23,10 @@ SYNSET_WORDS="${SYNSET_WORDS:-${IMG_BASE}/synset_words.txt}"
 RESULTS="${RESULTS:-results/vit_n_sweep}"
 RANK="${RANK:-variance}"
 TK_BASE="${TK_BASE:-3}"       # vit_base fixed operating point (H=12)
-TK_GIANT="${TK_GIANT:-6}"     # dinov2_giant fixed operating point (H=24)
+TK_7B="${TK_7B:-8}"           # dinov3_7b fixed operating point (H=32)
 EVAL_MAX_IMAGES="${EVAL_MAX_IMAGES:-300}"
 BATCH_BASE="${BATCH_BASE:-32}"
-BATCH_GIANT="${BATCH_GIANT:-4}"
+BATCH_7B="${BATCH_7B:-2}"
 # ------------------------------------------------------------------------------
 
 export PYTHONPATH=.
@@ -35,8 +35,8 @@ LOG="${RESULTS}/run_$(date +%Y%m%d_%H%M%S).log"
 exec > >(tee -a "${LOG}") 2>&1
 echo "Log: ${LOG}"
 
-bs() { if [ "$1" = "dinov2_giant" ]; then echo "${BATCH_GIANT}"; else echo "${BATCH_BASE}"; fi; }
-tk() { if [ "$1" = "dinov2_giant" ]; then echo "${TK_GIANT}"; else echo "${TK_BASE}"; fi; }
+bs() { if [ "$1" = "dinov3_7b" ]; then echo "${BATCH_7B}"; else echo "${BATCH_BASE}"; fi; }
+tk() { if [ "$1" = "dinov3_7b" ]; then echo "${TK_7B}"; else echo "${TK_BASE}"; fi; }
 
 for MODEL in ${MODELS}; do
   TK="$(tk "${MODEL}")"
