@@ -27,10 +27,10 @@ def load_frozen_heads(manifest):
             for e in manifest["frozen_heads"]}
 
 
-def bench_variant(name, model, batch_sizes, args, device):
+def bench_variant(name, model, batch_sizes, args, device, input_size=224):
     result = {}
     for bs in batch_sizes:
-        x = torch.randn(bs, 3, 224, 224, device=device)
+        x = torch.randn(bs, 3, input_size, input_size, device=device)
 
         def fwd():
             model(x)
@@ -79,15 +79,27 @@ def main():
     p.add_argument("--out", required=True, help="Output JSON path")
     args = p.parse_args()
 
-    import timm
-
     torch.manual_seed(args.seed)
     device = torch.device(args.device if args.device != "cuda"
                           or torch.cuda.is_available() else "cpu")
     batch_sizes = [int(b) for b in args.batch_sizes.split(",")]
 
-    print(f"Loading {args.model} (pretrained={args.pretrained}) on {device} ...")
-    model = timm.create_model(args.model, pretrained=args.pretrained)
+    is_dinov2 = args.model.startswith("dinov2")
+    if is_dinov2:
+        from transformers import AutoModelForImageClassification
+        from surgery_dinov2 import Dinov2FreezeHookManager, build_sliced_dinov2
+        hf_id = ("facebook/dinov2-giant-imagenet1k-1-layer"
+                 if args.model == "dinov2_giant" else args.model)
+        print(f"Loading {hf_id} on {device} ...")
+        model = AutoModelForImageClassification.from_pretrained(hf_id)
+        input_size = 518
+        hook_cls, slicer = Dinov2FreezeHookManager, build_sliced_dinov2
+    else:
+        import timm
+        print(f"Loading {args.model} (pretrained={args.pretrained}) on {device} ...")
+        model = timm.create_model(args.model, pretrained=args.pretrained)
+        input_size = 224
+        hook_cls, slicer = ViTFreezeHookManager, build_sliced_vit
     model.to(device)
     model.eval()
 
@@ -98,16 +110,19 @@ def main():
 
     variants = {}
 
-    variants["baseline"] = bench_variant("baseline", model, batch_sizes, args, device)
+    variants["baseline"] = bench_variant("baseline", model, batch_sizes, args,
+                                         device, input_size)
 
-    mgr = ViTFreezeHookManager(model, frozen_heads)
+    mgr = hook_cls(model, frozen_heads)
     mgr.register()
-    variants["hooked"] = bench_variant("hooked", model, batch_sizes, args, device)
+    variants["hooked"] = bench_variant("hooked", model, batch_sizes, args,
+                                       device, input_size)
     mgr.remove()
 
     # In-place surgery: model is no longer the baseline after this point.
-    build_sliced_vit(model, manifest)
-    variants["sliced"] = bench_variant("sliced", model, batch_sizes, args, device)
+    slicer(model, manifest)
+    variants["sliced"] = bench_variant("sliced", model, batch_sizes, args,
+                                       device, input_size)
 
     out = {
         "config": {

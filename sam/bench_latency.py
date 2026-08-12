@@ -118,6 +118,12 @@ def main():
     p.add_argument("--iters", type=int, default=20)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--out", required=True, help="Output JSON path")
+    p.add_argument("--mlp_profile_dir", default=None,
+                   help="Enable the combined config: MLP profile root dir")
+    p.add_argument("--mlp_group", default=None,
+                   help="Domain group name inside the MLP profile dir")
+    p.add_argument("--mlp_fraction", type=float, default=0.0,
+                   help="Fraction of MLP neurons to freeze (combined config)")
     args = p.parse_args()
 
     torch.manual_seed(args.seed)
@@ -145,17 +151,35 @@ def main():
         print(f"WARNING: image_dir missing ({args.image_dir}); "
               "skipping mask-generator benchmark, encoder-only results only.")
 
+    frozen_neurons = {}
+    if args.mlp_profile_dir and args.mlp_group and args.mlp_fraction > 0:
+        from sam_velcro_pkg.mlp_hooks import select_mlp_neurons_to_freeze
+        frozen_neurons = select_mlp_neurons_to_freeze(
+            Path(args.mlp_profile_dir), args.mlp_group, args.mlp_fraction)
+        print(f"Combined config: {len(frozen_neurons)} frozen MLP neurons "
+              f"({args.mlp_fraction:.1%})")
+
     variants = {}
 
     variants["baseline"] = bench_variant("baseline", sam, images, args, use_cuda)
 
     mgr = FreezeHookManager(sam, frozen_heads, device)
     mgr.register()
+    mlp_mgr = None
+    if frozen_neurons:
+        from sam_velcro_pkg.mlp_hooks import MLPFreezeHookManager
+        mlp_mgr = MLPFreezeHookManager(sam, frozen_neurons, device)
+        mlp_mgr.register()
     variants["hooked"] = bench_variant("hooked", sam, images, args, use_cuda)
     mgr.remove()
+    if mlp_mgr is not None:
+        mlp_mgr.remove()
 
     # In-place surgery: model is no longer the baseline after this point.
     build_sliced_sam(sam, manifest)
+    if frozen_neurons:
+        from surgery_mlp import build_sliced_sam_mlp
+        build_sliced_sam_mlp(sam, frozen_neurons)
     variants["sliced"] = bench_variant("sliced", sam, images, args, use_cuda)
 
     out = {
@@ -170,6 +194,8 @@ def main():
             "iters": args.iters,
             "seed": args.seed,
             "frozen_heads": len(frozen_heads),
+            "frozen_mlp_neurons": len(frozen_neurons),
+            "mlp_fraction": args.mlp_fraction,
         },
         "variants": variants,
     }

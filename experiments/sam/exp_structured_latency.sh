@@ -10,8 +10,11 @@
 #   bash experiments/sam/exp_structured_latency.sh
 #   DOMAIN=isic FRAC=0.5 EVAL_N=50 bash experiments/sam/exp_structured_latency.sh
 #
-# TODO: extend to MLP freezing (sam_velcro_pkg/mlp_hooks.py) once MLP surgery
-# (structured neuron removal) exists; this script covers attention heads only.
+# Runs two configurations:
+#   1) attention-only (FRAC of heads)            -> $OUT/latency.json
+#   2) combined attention + MLP (MLP_FRACTION)   -> $OUT/latency_combined.json
+#      (uses sam/surgery_mlp.py bias-folded structured neuron removal; needs
+#       the MLP profile written by exp_main_sweep.sh --profile_mlp)
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -27,13 +30,23 @@ FRAC="${FRAC:-0.25}"
 EVAL_N="${EVAL_N:-20}"
 SEED="${SEED:-0}"
 DEVICE="${DEVICE:-cuda}"
-CKPT="${CKPT:-sam/data/sam_vit_h_4b8939.pth}"
-MANIFEST="${MANIFEST:-sam/results_${DOMAIN}_frac${FRAC}/freeze_manifest.json}"
-IMG_DIR="${IMG_DIR:-sam/image_dirs_cross_domain/${DOMAIN}_eval}"
+DATA_ROOT="${DATA_ROOT:-./data}"
+CKPT="${CKPT:-${DATA_ROOT}/sam_vit_h_4b8939.pth}"
+SWEEP_OUT="${SWEEP_OUT:-results/sam_main_sweep}"
+MANIFEST="${MANIFEST:-${SWEEP_OUT}/freeze_${DOMAIN}_f${FRAC}/freeze_manifest.json}"
+IMG_DIR="${IMG_DIR:-${DATA_ROOT}/image_dirs/${DOMAIN}_eval}"
 OUT="${OUT:-results/sam_structured_latency/${DOMAIN}_frac${FRAC}}"
 WARMUP="${WARMUP:-5}"
 ITERS="${ITERS:-20}"
 POINTS_PER_SIDE="${POINTS_PER_SIDE:-16}"
+MLP_PROFILE_DIR="${MLP_PROFILE_DIR:-${SWEEP_OUT}/profile}"
+MLP_FRACTION="${MLP_FRACTION:-0.375}"
+
+# fall back to any manifest for this domain if the default location is empty
+if [ ! -f "$MANIFEST" ]; then
+    FOUND="$(find results -path "*${DOMAIN}*" -name freeze_manifest.json 2>/dev/null | head -1)"
+    [ -n "$FOUND" ] && MANIFEST="$FOUND"
+fi
 
 # ---------------------------------------------------------------------------
 # Validate
@@ -67,3 +80,28 @@ python3 sam/bench_latency.py \
     --out "$OUT/latency.json"
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Done: $OUT/latency.json"
+
+# ---------------------------------------------------------------------------
+# Combined configuration: attention FRAC + MLP_FRACTION of neurons
+# ---------------------------------------------------------------------------
+if ls "$MLP_PROFILE_DIR/$DOMAIN"/block*_mlp_variance.npy >/dev/null 2>&1; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Combined config: attention $FRAC + MLP $MLP_FRACTION"
+    python3 sam/bench_latency.py \
+        --checkpoint "$CKPT" \
+        --freeze_manifest "$MANIFEST" \
+        --image_dir "$IMG_DIR" \
+        --eval_n "$EVAL_N" \
+        --device "$DEVICE" \
+        --points_per_side "$POINTS_PER_SIDE" \
+        --warmup "$WARMUP" \
+        --iters "$ITERS" \
+        --seed "$SEED" \
+        --mlp_profile_dir "$MLP_PROFILE_DIR" \
+        --mlp_group "$DOMAIN" \
+        --mlp_fraction "$MLP_FRACTION" \
+        --out "$OUT/latency_combined.json"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Done: $OUT/latency_combined.json"
+else
+    echo "SKIP combined config: no MLP profile at $MLP_PROFILE_DIR/$DOMAIN"
+    echo "  (exp_main_sweep.sh profiles with --profile_mlp; run it first)"
+fi
