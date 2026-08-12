@@ -38,6 +38,14 @@ if [ ! -f "$SAM_CKPT" ]; then
 fi
 [ -f "$SAM_CKPT" ] && OK_SAM=yes && echo "checkpoint: $SAM_CKPT"
 
+echo "=== MobileSAM checkpoint (competitor baseline) ==="
+MOBILE_CKPT="$DATA_ROOT/mobile_sam.pt"
+if [ ! -f "$MOBILE_CKPT" ]; then
+    dl https://github.com/ChaoningZhang/MobileSAM/raw/master/weights/mobile_sam.pt "$MOBILE_CKPT" || \
+        echo "MobileSAM download failed; baselines/sam_competitors.py will skip that variant."
+fi
+# SlimSAM weights auto-download from the HuggingFace hub on first run.
+
 echo "=== COCO val2017 ==="
 if [ ! -d "$DATA_ROOT/val2017" ]; then
     dl http://images.cocodataset.org/zips/val2017.zip "$DATA_ROOT/val2017.zip" \

@@ -113,7 +113,8 @@ def eval_top1(model, dataset, mapping, batch_size, device) -> float:
 def main():
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     p.add_argument("--data_dir", required=True, help="dir holding <domain>_eval/val trees from vit/create_groups.py")
-    p.add_argument("--domains", nargs="+", default=["snakes", "fish", "boats", "birds"])
+    p.add_argument("--domains", nargs="+",
+                   default=["dogs", "cats", "cars", "snakes", "fish", "boats", "birds"])
     p.add_argument("--r_values", nargs="+", type=int, default=None,
                    help="ToMe r per block; default: 0 plus r matched to 25%% and 41.7%% FLOP reduction")
     p.add_argument("--batch_size", type=int, default=32)

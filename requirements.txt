@@ -13,3 +13,6 @@ kaggle          # CLI download of domain datasets (kvasir/isic/busi/pcb/deepglob
 pynvml          # NVML power sampling for common.timing.EnergyMeter
 segment-anything @ git+https://github.com/facebookresearch/segment-anything.git  # SAM ViT-H backbone
 tome @ git+https://github.com/facebookresearch/ToMe.git  # ToMe token merging (baselines/tome_comparison.py)
+
+# MobileSAM: drop-in SAM variant used as a measured competitor baseline
+git+https://github.com/ChaoningZhang/MobileSAM.git

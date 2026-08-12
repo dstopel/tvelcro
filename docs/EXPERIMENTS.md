@@ -122,3 +122,20 @@ PYTHONPATH=. python baselines/tome_comparison.py \
 Outputs: baselines/results/tome_comparison.json.
 ETA: tens of minutes.
 Feeds: baseline-comparison table (alongside the quoted SAM baselines).
+
+## exp_competitors (baselines)
+
+Purpose: measured comparison of competitor algorithms on the same thesis
+datasets T-VELCRO uses. ToMe runs on the 7 ImageNet domains (dogs, cats,
+cars, snakes, fish, boats, birds) at FLOP budgets matched to T-VELCRO
+operating points. MobileSAM and SlimSAM run on the 5 segmentation domains
+(kvasir, isic, busi, pcb, deepglobe) under the identical protocol:
+Hungarian-matched fidelity vs SAM ViT-H reference masks, ground-truth pixel
+coverage, and measured mask-generation latency. EfficientSAM remains a
+quoted-numbers row (no native automatic mask generation).
+
+Command: `bash experiments/baselines/exp_competitors.sh`
+Outputs: `results/baselines/tome_comparison.json`, `results/baselines/sam_competitors/sam_competitors.json`
+ETA (A10): ToMe about 1 h; SAM competitors 2 to 4 h at 50 images per domain.
+Feeds: the paper's baseline comparison table (DATE reviewer finding 13) with
+measured, same-dataset numbers instead of quoted ones.
