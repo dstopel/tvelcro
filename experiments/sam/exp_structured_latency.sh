@@ -12,7 +12,7 @@
 #
 # Runs two configurations:
 #   1) attention-only (FRAC of heads)            -> $OUT/latency.json
-#   2) combined attention + MLP (MLP_FRACTION)   -> $OUT/latency_combined.json
+#   2) OPTIONAL combined attention + MLP, off by default (MLP_FRACTION=0)
 #      (uses sam/surgery_mlp.py bias-folded structured neuron removal; needs
 #       the MLP profile written by exp_main_sweep.sh --profile_mlp)
 set -euo pipefail
@@ -40,7 +40,7 @@ WARMUP="${WARMUP:-5}"
 ITERS="${ITERS:-20}"
 POINTS_PER_SIDE="${POINTS_PER_SIDE:-16}"
 MLP_PROFILE_DIR="${MLP_PROFILE_DIR:-${SWEEP_OUT}/profile}"
-MLP_FRACTION="${MLP_FRACTION:-0.375}"
+MLP_FRACTION="${MLP_FRACTION:-0}"  # combined config is opt-in; attention-only by default
 
 # fall back to any manifest for this domain if the default location is empty
 if [ ! -f "$MANIFEST" ]; then
@@ -84,7 +84,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Done: $OUT/latency.json"
 # ---------------------------------------------------------------------------
 # Combined configuration: attention FRAC + MLP_FRACTION of neurons
 # ---------------------------------------------------------------------------
-if ls "$MLP_PROFILE_DIR/$DOMAIN"/block*_mlp_variance.npy >/dev/null 2>&1; then
+if [ "$(python3 -c "print(float('$MLP_FRACTION') > 0)")" = "True" ] && ls "$MLP_PROFILE_DIR/$DOMAIN"/block*_mlp_variance.npy >/dev/null 2>&1; then
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] Combined config: attention $FRAC + MLP $MLP_FRACTION"
     python3 sam/bench_latency.py \
         --checkpoint "$CKPT" \
@@ -102,6 +102,5 @@ if ls "$MLP_PROFILE_DIR/$DOMAIN"/block*_mlp_variance.npy >/dev/null 2>&1; then
         --out "$OUT/latency_combined.json"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] Done: $OUT/latency_combined.json"
 else
-    echo "SKIP combined config: no MLP profile at $MLP_PROFILE_DIR/$DOMAIN"
-    echo "  (exp_main_sweep.sh profiles with --profile_mlp; run it first)"
+    echo "Combined config disabled (attention-only run; set MLP_FRACTION=0.375 to enable)"
 fi
