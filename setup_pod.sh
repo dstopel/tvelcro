@@ -27,7 +27,7 @@ echo "=== Python env ==="
 # shellcheck disable=SC1091
 source .venv/bin/activate
 if [ ! -f .venv/.deps_stamp ] || [ requirements.txt -nt .venv/.deps_stamp ]; then
-    pip install -q -U pip && pip install -q -r requirements.txt && touch .venv/.deps_stamp
+    pip install -q -U pip && CUDA_DRV=$(nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>/dev/null | cut -d. -f1) && TORCH_IDX=$([ "${CUDA_DRV:-0}" -ge 580 ] && echo cu130 || echo cu126) && pip install -q --index-url https://download.pytorch.org/whl/$TORCH_IDX torch torchvision && pip install -q -r requirements.txt && touch .venv/.deps_stamp
 fi
 [ -f .venv/.deps_stamp ] && OK_VENV=yes && echo "venv ready (.venv)"
 
