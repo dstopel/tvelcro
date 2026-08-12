@@ -1,0 +1,4 @@
+syntax on
+set number ruler showcmd incsearch hlsearch ignorecase smartcase
+set tabstop=4 shiftwidth=4 expandtab autoindent
+set mouse=a scrolloff=5 wildmenu

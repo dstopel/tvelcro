@@ -1,0 +1,5 @@
+export ZSH=/workspace/env/ohmyzsh
+ZSH_THEME="robbyrussell"
+plugins=(git z sudo)
+source $ZSH/oh-my-zsh.sh
+source /workspace/env/activate.sh
