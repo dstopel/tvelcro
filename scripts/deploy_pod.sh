@@ -7,7 +7,7 @@
 #
 # Usage:
 #   export RUNPOD_API_KEY=rpa_...
-#   bash scripts/deploy_pod.sh                          # defaults: A5000, CUDA 13, no volume
+#   bash scripts/deploy_pod.sh                          # A5000, CUDA 13 host + CUDA 13 image, no volume
 #   GPU="NVIDIA L4" CUDA=12.8 bash scripts/deploy_pod.sh
 #   VOLUME=zlrarfve3h DC=EU-RO-1 bash scripts/deploy_pod.sh   # attach the tvelcro-data volume
 #   LIST=1 bash scripts/deploy_pod.sh                   # just list running pods
@@ -23,7 +23,7 @@ DISK="${DISK:-60}"            # container disk GB; model weights land here when 
 IMAGE="${IMAGE:-runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04}"
 VOLUME="${VOLUME:-}"          # network volume id, empty for none
 DC="${DC:-}"                  # datacenter id, required when attaching a volume
-TEMPLATE="${TEMPLATE:-}"      # template id, e.g. 8f543v0hbb (tvelcro-ml); auto-runs
+TEMPLATE="${TEMPLATE:-jrqhr9ll86}"  # default: tvelcro-ml-cu13 (CUDA 13 image, nvcc 13). Auto-runs
                               # /workspace/env/bootstrap.sh when the volume is attached
 
 api() { curl -s -H "Authorization: Bearer $KEY" -H 'Content-Type: application/json' "$@"; }
