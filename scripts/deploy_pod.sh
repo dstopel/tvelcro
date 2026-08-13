@@ -23,6 +23,8 @@ DISK="${DISK:-60}"            # container disk GB; model weights land here when 
 IMAGE="${IMAGE:-runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04}"
 VOLUME="${VOLUME:-}"          # network volume id, empty for none
 DC="${DC:-}"                  # datacenter id, required when attaching a volume
+TEMPLATE="${TEMPLATE:-}"      # template id, e.g. 8f543v0hbb (tvelcro-ml); auto-runs
+                              # /workspace/env/bootstrap.sh when the volume is attached
 
 api() { curl -s -H "Authorization: Bearer $KEY" -H 'Content-Type: application/json' "$@"; }
 
@@ -61,6 +63,8 @@ if os.environ.get("VOLUME"):
     p["volumeMountPath"] = "/workspace"
 if os.environ.get("DC"):
     p["dataCenterIds"] = [os.environ["DC"]]
+if os.environ.get("TEMPLATE"):
+    p["templateId"] = os.environ["TEMPLATE"]
 print(json.dumps(p))
 PY
 )
