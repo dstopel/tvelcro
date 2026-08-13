@@ -15,6 +15,12 @@ dl() { # dl <url> <dest>: atomic download (tmp file, then mv)
     else curl -fL -o "$tmp" "$url"; fi && mv "$tmp" "$dest"
 }
 
+# unzip is absent from some RunPod images, which silently leaves archives
+# unextracted. Use python zipfile, which is always available here.
+unz() { # unz <zipfile> <destdir>
+    python3 -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "$1" "$2"
+}
+
 echo "=== GPU ==="
 if command -v nvidia-smi >/dev/null; then
     nvidia-smi --query-gpu=name,memory.total --format=csv,noheader && OK_GPU=yes
@@ -49,11 +55,11 @@ fi
 echo "=== COCO val2017 ==="
 if [ ! -d "$DATA_ROOT/val2017" ]; then
     dl http://images.cocodataset.org/zips/val2017.zip "$DATA_ROOT/val2017.zip" \
-        && unzip -q "$DATA_ROOT/val2017.zip" -d "$DATA_ROOT" && rm "$DATA_ROOT/val2017.zip"
+        && unz "$DATA_ROOT/val2017.zip" "$DATA_ROOT" && rm "$DATA_ROOT/val2017.zip"
 fi
 if [ ! -f "$DATA_ROOT/annotations/instances_val2017.json" ]; then
     dl http://images.cocodataset.org/annotations/annotations_trainval2017.zip "$DATA_ROOT/annots.zip" \
-        && unzip -q "$DATA_ROOT/annots.zip" -d "$DATA_ROOT" && rm "$DATA_ROOT/annots.zip"
+        && unz "$DATA_ROOT/annots.zip" "$DATA_ROOT" && rm "$DATA_ROOT/annots.zip"
 fi
 [ -d "$DATA_ROOT/val2017" ] && [ -f "$DATA_ROOT/annotations/instances_val2017.json" ] \
     && OK_COCO=yes && echo "COCO ready under $DATA_ROOT"
