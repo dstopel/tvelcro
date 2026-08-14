@@ -1,0 +1,7 @@
+17:59:49 | INFO | Loading profile from: ./results/sam_general_vs_domain/profile/general
+17:59:59 | INFO |   Found 512 head profiles
+17:59:59 | INFO |   Ranking method: variance (seed=0)
+17:59:59 | INFO |   Freezing 192 / 512 heads
+17:59:59 | INFO |   Manifest saved to results/sam_general_vs_domain/freeze_general_f0.375/freeze_manifest.json
+18:00:05 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+18:00:05 | INFO | Freeze phase complete.

@@ -1,0 +1,861 @@
+{
+  "version": "5.0-sam-vit-h-svelcro",
+  "model": "SAM ViT-H (vit_h)",
+  "profile_group": "pcb",
+  "profile_root": "results/sam_main_sweep/profile",
+  "freeze_fraction": 0.125,
+  "num_freeze_per_block": null,
+  "freeze_method": "output-only pre-hook (replace frozen head slots with mean)",
+  "ranking_method": "entropy",
+  "seed": 0,
+  "frozen_heads": [
+    {
+      "block": 0,
+      "head": 10,
+      "block_type": "windowed",
+      "rank_score": 369.589599609375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block0_head10_mean.npy",
+      "variance_path": "pcb/block0_head10_variance.npy",
+      "entropy": 5.171087748908996
+    },
+    {
+      "block": 0,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 26.141613006591797,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block0_head7_mean.npy",
+      "variance_path": "pcb/block0_head7_variance.npy",
+      "entropy": 5.194536498133341
+    },
+    {
+      "block": 1,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 743.02392578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block1_head12_mean.npy",
+      "variance_path": "pcb/block1_head12_variance.npy",
+      "entropy": 5.120078185017904
+    },
+    {
+      "block": 1,
+      "head": 8,
+      "block_type": "windowed",
+      "rank_score": 1926.504150390625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block1_head8_mean.npy",
+      "variance_path": "pcb/block1_head8_variance.npy",
+      "entropy": 5.144264399592082
+    },
+    {
+      "block": 2,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 1359.928466796875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block2_head11_mean.npy",
+      "variance_path": "pcb/block2_head11_variance.npy",
+      "entropy": 5.145999264717102
+    },
+    {
+      "block": 2,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 1108.004150390625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block2_head12_mean.npy",
+      "variance_path": "pcb/block2_head12_variance.npy",
+      "entropy": 5.154070153745016
+    },
+    {
+      "block": 3,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 374.593505859375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block3_head15_mean.npy",
+      "variance_path": "pcb/block3_head15_variance.npy",
+      "entropy": 5.163374547894795
+    },
+    {
+      "block": 3,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 487.9218444824219,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block3_head7_mean.npy",
+      "variance_path": "pcb/block3_head7_variance.npy",
+      "entropy": 5.179875117492676
+    },
+    {
+      "block": 4,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 541.17431640625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block4_head4_mean.npy",
+      "variance_path": "pcb/block4_head4_variance.npy",
+      "entropy": 5.170172322654724
+    },
+    {
+      "block": 4,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 585.7976684570312,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block4_head6_mean.npy",
+      "variance_path": "pcb/block4_head6_variance.npy",
+      "entropy": 5.188823056793213
+    },
+    {
+      "block": 5,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 508.08642578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block5_head11_mean.npy",
+      "variance_path": "pcb/block5_head11_variance.npy",
+      "entropy": 5.193819261487325
+    },
+    {
+      "block": 5,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 346.42333984375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block5_head15_mean.npy",
+      "variance_path": "pcb/block5_head15_variance.npy",
+      "entropy": 5.19701312046051
+    },
+    {
+      "block": 6,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 1557.55029296875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block6_head2_mean.npy",
+      "variance_path": "pcb/block6_head2_variance.npy",
+      "entropy": 5.161875513331095
+    },
+    {
+      "block": 6,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 1317.6142578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block6_head6_mean.npy",
+      "variance_path": "pcb/block6_head6_variance.npy",
+      "entropy": 5.1624649742126465
+    },
+    {
+      "block": 7,
+      "head": 5,
+      "block_type": "global",
+      "rank_score": 24642.525390625,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block7_head5_mean.npy",
+      "variance_path": "pcb/block7_head5_variance.npy",
+      "entropy": 8.30422779083252
+    },
+    {
+      "block": 7,
+      "head": 0,
+      "block_type": "global",
+      "rank_score": 9896.953125,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block7_head0_mean.npy",
+      "variance_path": "pcb/block7_head0_variance.npy",
+      "entropy": 8.307449188232422
+    },
+    {
+      "block": 8,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 1106.39794921875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block8_head14_mean.npy",
+      "variance_path": "pcb/block8_head14_variance.npy",
+      "entropy": 5.139200996716817
+    },
+    {
+      "block": 8,
+      "head": 3,
+      "block_type": "windowed",
+      "rank_score": 1348.688720703125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block8_head3_mean.npy",
+      "variance_path": "pcb/block8_head3_variance.npy",
+      "entropy": 5.166482755597433
+    },
+    {
+      "block": 9,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 878.7442626953125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block9_head11_mean.npy",
+      "variance_path": "pcb/block9_head11_variance.npy",
+      "entropy": 5.174280204963684
+    },
+    {
+      "block": 9,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 483.08642578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block9_head14_mean.npy",
+      "variance_path": "pcb/block9_head14_variance.npy",
+      "entropy": 5.176446081606547
+    },
+    {
+      "block": 10,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 1380.5013427734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block10_head6_mean.npy",
+      "variance_path": "pcb/block10_head6_variance.npy",
+      "entropy": 5.14273268623352
+    },
+    {
+      "block": 10,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 643.6319580078125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block10_head14_mean.npy",
+      "variance_path": "pcb/block10_head14_variance.npy",
+      "entropy": 5.143937995465596
+    },
+    {
+      "block": 11,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 886.3981323242188,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block11_head13_mean.npy",
+      "variance_path": "pcb/block11_head13_variance.npy",
+      "entropy": 5.136066004308065
+    },
+    {
+      "block": 11,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 836.3257446289062,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block11_head9_mean.npy",
+      "variance_path": "pcb/block11_head9_variance.npy",
+      "entropy": 5.157485720125834
+    },
+    {
+      "block": 12,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 720.363037109375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block12_head12_mean.npy",
+      "variance_path": "pcb/block12_head12_variance.npy",
+      "entropy": 5.158112736765544
+    },
+    {
+      "block": 12,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 845.4742431640625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block12_head7_mean.npy",
+      "variance_path": "pcb/block12_head7_variance.npy",
+      "entropy": 5.160084395599365
+    },
+    {
+      "block": 13,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 711.2515869140625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block13_head6_mean.npy",
+      "variance_path": "pcb/block13_head6_variance.npy",
+      "entropy": 5.154822936439514
+    },
+    {
+      "block": 13,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 1213.158203125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block13_head2_mean.npy",
+      "variance_path": "pcb/block13_head2_variance.npy",
+      "entropy": 5.1615797041575116
+    },
+    {
+      "block": 14,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 731.6851806640625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block14_head6_mean.npy",
+      "variance_path": "pcb/block14_head6_variance.npy",
+      "entropy": 5.174129964955648
+    },
+    {
+      "block": 14,
+      "head": 3,
+      "block_type": "windowed",
+      "rank_score": 1188.867919921875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block14_head3_mean.npy",
+      "variance_path": "pcb/block14_head3_variance.npy",
+      "entropy": 5.1762308373133346
+    },
+    {
+      "block": 15,
+      "head": 0,
+      "block_type": "global",
+      "rank_score": 29373.0,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block15_head0_mean.npy",
+      "variance_path": "pcb/block15_head0_variance.npy",
+      "entropy": 8.291565494537354
+    },
+    {
+      "block": 15,
+      "head": 14,
+      "block_type": "global",
+      "rank_score": 37586.9453125,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block15_head14_mean.npy",
+      "variance_path": "pcb/block15_head14_variance.npy",
+      "entropy": 8.292018248240153
+    },
+    {
+      "block": 16,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 1481.439208984375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block16_head11_mean.npy",
+      "variance_path": "pcb/block16_head11_variance.npy",
+      "entropy": 5.181761940256755
+    },
+    {
+      "block": 16,
+      "head": 10,
+      "block_type": "windowed",
+      "rank_score": 1290.04443359375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block16_head10_mean.npy",
+      "variance_path": "pcb/block16_head10_variance.npy",
+      "entropy": 5.197055971082052
+    },
+    {
+      "block": 17,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 1275.0025634765625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block17_head15_mean.npy",
+      "variance_path": "pcb/block17_head15_variance.npy",
+      "entropy": 5.169520649719238
+    },
+    {
+      "block": 17,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 1067.3338623046875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block17_head4_mean.npy",
+      "variance_path": "pcb/block17_head4_variance.npy",
+      "entropy": 5.176531145413716
+    },
+    {
+      "block": 18,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 1352.172119140625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block18_head14_mean.npy",
+      "variance_path": "pcb/block18_head14_variance.npy",
+      "entropy": 5.169236057281494
+    },
+    {
+      "block": 18,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 915.4816284179688,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block18_head15_mean.npy",
+      "variance_path": "pcb/block18_head15_variance.npy",
+      "entropy": 5.182088478851318
+    },
+    {
+      "block": 19,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 1704.6162109375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block19_head12_mean.npy",
+      "variance_path": "pcb/block19_head12_variance.npy",
+      "entropy": 5.163238702837626
+    },
+    {
+      "block": 19,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 1218.685791015625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block19_head11_mean.npy",
+      "variance_path": "pcb/block19_head11_variance.npy",
+      "entropy": 5.1648299044291175
+    },
+    {
+      "block": 20,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 1490.0986328125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block20_head13_mean.npy",
+      "variance_path": "pcb/block20_head13_variance.npy",
+      "entropy": 5.136561012903849
+    },
+    {
+      "block": 20,
+      "head": 3,
+      "block_type": "windowed",
+      "rank_score": 1408.6920166015625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block20_head3_mean.npy",
+      "variance_path": "pcb/block20_head3_variance.npy",
+      "entropy": 5.155976559956868
+    },
+    {
+      "block": 21,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 1528.0770263671875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block21_head9_mean.npy",
+      "variance_path": "pcb/block21_head9_variance.npy",
+      "entropy": 5.159271974945068
+    },
+    {
+      "block": 21,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 1319.4267578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block21_head4_mean.npy",
+      "variance_path": "pcb/block21_head4_variance.npy",
+      "entropy": 5.166996613820394
+    },
+    {
+      "block": 22,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 930.81884765625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block22_head13_mean.npy",
+      "variance_path": "pcb/block22_head13_variance.npy",
+      "entropy": 5.157998073005676
+    },
+    {
+      "block": 22,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 957.6109619140625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block22_head9_mean.npy",
+      "variance_path": "pcb/block22_head9_variance.npy",
+      "entropy": 5.171341863187154
+    },
+    {
+      "block": 23,
+      "head": 2,
+      "block_type": "global",
+      "rank_score": 40849.953125,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block23_head2_mean.npy",
+      "variance_path": "pcb/block23_head2_variance.npy",
+      "entropy": 8.294344237645467
+    },
+    {
+      "block": 23,
+      "head": 1,
+      "block_type": "global",
+      "rank_score": 60801.8046875,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block23_head1_mean.npy",
+      "variance_path": "pcb/block23_head1_variance.npy",
+      "entropy": 8.296044702529906
+    },
+    {
+      "block": 24,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 1758.8660888671875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block24_head12_mean.npy",
+      "variance_path": "pcb/block24_head12_variance.npy",
+      "entropy": 5.169896713956197
+    },
+    {
+      "block": 24,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 2955.55712890625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block24_head15_mean.npy",
+      "variance_path": "pcb/block24_head15_variance.npy",
+      "entropy": 5.177557577768962
+    },
+    {
+      "block": 25,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 1529.2999267578125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block25_head6_mean.npy",
+      "variance_path": "pcb/block25_head6_variance.npy",
+      "entropy": 5.160561869557698
+    },
+    {
+      "block": 25,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 1410.29443359375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block25_head11_mean.npy",
+      "variance_path": "pcb/block25_head11_variance.npy",
+      "entropy": 5.1652632271448775
+    },
+    {
+      "block": 26,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 1324.83740234375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block26_head5_mean.npy",
+      "variance_path": "pcb/block26_head5_variance.npy",
+      "entropy": 5.162808748944601
+    },
+    {
+      "block": 26,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 999.3831787109375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block26_head13_mean.npy",
+      "variance_path": "pcb/block26_head13_variance.npy",
+      "entropy": 5.1761278717676795
+    },
+    {
+      "block": 27,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 1126.9459228515625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block27_head13_mean.npy",
+      "variance_path": "pcb/block27_head13_variance.npy",
+      "entropy": 5.152371776262919
+    },
+    {
+      "block": 27,
+      "head": 10,
+      "block_type": "windowed",
+      "rank_score": 792.9251708984375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block27_head10_mean.npy",
+      "variance_path": "pcb/block27_head10_variance.npy",
+      "entropy": 5.175200381215413
+    },
+    {
+      "block": 28,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 845.1577758789062,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block28_head9_mean.npy",
+      "variance_path": "pcb/block28_head9_variance.npy",
+      "entropy": 5.161903032048543
+    },
+    {
+      "block": 28,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 749.1497802734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block28_head15_mean.npy",
+      "variance_path": "pcb/block28_head15_variance.npy",
+      "entropy": 5.162994779523213
+    },
+    {
+      "block": 29,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 690.2059326171875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block29_head1_mean.npy",
+      "variance_path": "pcb/block29_head1_variance.npy",
+      "entropy": 5.15615199877421
+    },
+    {
+      "block": 29,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 652.9942626953125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block29_head13_mean.npy",
+      "variance_path": "pcb/block29_head13_variance.npy",
+      "entropy": 5.157282369041443
+    },
+    {
+      "block": 30,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 328.61517333984375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block30_head9_mean.npy",
+      "variance_path": "pcb/block30_head9_variance.npy",
+      "entropy": 5.173779676183065
+    },
+    {
+      "block": 30,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 351.203857421875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "pcb/block30_head5_mean.npy",
+      "variance_path": "pcb/block30_head5_variance.npy",
+      "entropy": 5.17948094851176
+    },
+    {
+      "block": 31,
+      "head": 14,
+      "block_type": "global",
+      "rank_score": 27052.0625,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block31_head14_mean.npy",
+      "variance_path": "pcb/block31_head14_variance.npy",
+      "entropy": 8.275369774500529
+    },
+    {
+      "block": 31,
+      "head": 9,
+      "block_type": "global",
+      "rank_score": 12296.0546875,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "pcb/block31_head9_mean.npy",
+      "variance_path": "pcb/block31_head9_variance.npy",
+      "entropy": 8.275888163248698
+    }
+  ],
+  "summary": {
+    "total_heads": 512,
+    "frozen": 64,
+    "frozen_windowed": 56,
+    "frozen_global": 8,
+    "freeze_rate": 0.125
+  },
+  "flops": {
+    "attention_flop_reduction_pct": 12.5,
+    "encoder_flop_reduction_pct": 5.26,
+    "saved_gflops": 311.8,
+    "total_attn_gflops": 2494.3,
+    "total_encoder_gflops": 5930.3,
+    "per_head_windowed_gflops": 4.32,
+    "per_head_global_gflops": 8.72
+  }
+}

@@ -1,0 +1,7 @@
+06:43:40 | INFO | Loading profile from: ./results/sam_main_sweep/profile/deepglobe
+06:43:49 | INFO |   Found 512 head profiles
+06:43:49 | INFO |   Ranking method: variance (seed=0)
+06:43:49 | INFO |   Freezing 128 / 512 heads
+06:43:49 | INFO |   Manifest saved to results/sam_main_sweep/freeze_deepglobe_f0.25/freeze_manifest.json
+06:43:54 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+06:43:54 | INFO | Freeze phase complete.

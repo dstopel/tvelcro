@@ -1,0 +1,35 @@
+Log: results/vit_general_vs_domain/run_20260814_144201.log
+=== [vit_base] PROFILE 'general' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO PROFILE — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+
+  Group: general (image_for_exp/general_profile)
+Traceback (most recent call last):
+  File "/workspace/tvelcro/vit/vit_velcro.py", line 781, in <module>
+    main()
+  File "/workspace/tvelcro/vit/vit_velcro.py", line 777, in main
+    profile_eval_mode(args)
+  File "/workspace/tvelcro/vit/vit_velcro.py", line 664, in profile_eval_mode
+    dataset = load_dataset(img_dir, adapter.transform, args.max_images, args.seed)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tvelcro/vit/vit_velcro.py", line 324, in load_dataset
+    dataset = ImageFolder(root, transform=transform)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tvelcro/.venv/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/workspace/tvelcro/.venv/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tvelcro/.venv/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tvelcro/.venv/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+                                             ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'image_for_exp/general_profile'

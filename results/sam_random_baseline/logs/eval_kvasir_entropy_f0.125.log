@@ -1,0 +1,35 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+17:04:23 | INFO | Loading SAM ViT-H...
+17:04:37 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_kvasir_entropy_f0.125/freeze_manifest.json
+17:04:38 | INFO |   Frozen heads: 64 / 512
+17:04:38 | INFO | 
+============================================================
+17:04:38 | INFO | Evaluating group: kvasir
+17:04:39 | INFO |   Images: 300
+17:08:10 | INFO |     20/300 | running mean IoU: 0.9600
+17:11:40 | INFO |     40/300 | running mean IoU: 0.9592
+17:15:09 | INFO |     60/300 | running mean IoU: 0.9590
+17:18:41 | INFO |     80/300 | running mean IoU: 0.9594
+17:22:08 | INFO |     100/300 | running mean IoU: 0.9605
+17:25:40 | INFO |     120/300 | running mean IoU: 0.9609
+17:29:06 | INFO |     140/300 | running mean IoU: 0.9600
+17:32:36 | INFO |     160/300 | running mean IoU: 0.9602
+17:36:03 | INFO |     180/300 | running mean IoU: 0.9608
+17:39:31 | INFO |     200/300 | running mean IoU: 0.9610
+17:42:56 | INFO |     220/300 | running mean IoU: 0.9611
+17:46:22 | INFO |     240/300 | running mean IoU: 0.9610
+17:49:51 | INFO |     260/300 | running mean IoU: 0.9611
+17:53:20 | INFO |     280/300 | running mean IoU: 0.9614
+17:56:49 | INFO |     300/300 | running mean IoU: 0.9613
+17:56:49 | INFO | 
+  Results for 'kvasir':
+17:56:49 | INFO |     Mean IoU:       0.9614
+17:56:49 | INFO |     Miss rate:      0.1726
+17:56:49 | INFO |     False pos rate: 0.1281
+17:56:49 | INFO |     Feature sim:    0.9553
+17:56:49 | INFO |     Misses: 2578 (domain=21, redundant=335, background=2222)
+17:56:49 | INFO |     Added:  1848 (domain=15, redundant=229, background=1604)
+17:56:50 | INFO | 
+Eval phase complete.

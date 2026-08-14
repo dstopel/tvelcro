@@ -1,0 +1,1154 @@
+{
+  "block0_head2": {
+    "mean_cosine_sim": 0.696675420999527,
+    "std_cosine_sim": 0.054849617163103395,
+    "min_cosine_sim": 0.5312492251396179,
+    "num_samples": 600
+  },
+  "block0_head7": {
+    "mean_cosine_sim": 0.7215825885534286,
+    "std_cosine_sim": 0.03352719136220659,
+    "min_cosine_sim": 0.6325490474700928,
+    "num_samples": 600
+  },
+  "block0_head11": {
+    "mean_cosine_sim": 0.6964526746670405,
+    "std_cosine_sim": 0.05091286107095158,
+    "min_cosine_sim": 0.5256839394569397,
+    "num_samples": 600
+  },
+  "block0_head12": {
+    "mean_cosine_sim": 0.9621646481752396,
+    "std_cosine_sim": 0.007426888023507455,
+    "min_cosine_sim": 0.9384685158729553,
+    "num_samples": 600
+  },
+  "block0_head13": {
+    "mean_cosine_sim": 0.5859585725267729,
+    "std_cosine_sim": 0.04081186951535555,
+    "min_cosine_sim": 0.4720853567123413,
+    "num_samples": 600
+  },
+  "block0_head14": {
+    "mean_cosine_sim": 0.4753484531243642,
+    "std_cosine_sim": 0.030719203847837412,
+    "min_cosine_sim": 0.3915589153766632,
+    "num_samples": 600
+  },
+  "block1_head0": {
+    "mean_cosine_sim": 0.5219873014092445,
+    "std_cosine_sim": 0.04101874133724619,
+    "min_cosine_sim": 0.38184425234794617,
+    "num_samples": 600
+  },
+  "block1_head1": {
+    "mean_cosine_sim": 0.5058922995130221,
+    "std_cosine_sim": 0.05721596586195332,
+    "min_cosine_sim": 0.2990157902240753,
+    "num_samples": 600
+  },
+  "block1_head2": {
+    "mean_cosine_sim": 0.7824600406487783,
+    "std_cosine_sim": 0.023184016952903723,
+    "min_cosine_sim": 0.6332817077636719,
+    "num_samples": 600
+  },
+  "block1_head5": {
+    "mean_cosine_sim": 0.6097380121548971,
+    "std_cosine_sim": 0.046351918194544005,
+    "min_cosine_sim": 0.4533129036426544,
+    "num_samples": 600
+  },
+  "block1_head6": {
+    "mean_cosine_sim": 0.46512539774179457,
+    "std_cosine_sim": 0.05266232392686945,
+    "min_cosine_sim": 0.29411911964416504,
+    "num_samples": 600
+  },
+  "block1_head11": {
+    "mean_cosine_sim": 0.6613170476754506,
+    "std_cosine_sim": 0.03381830241875503,
+    "min_cosine_sim": 0.5701538920402527,
+    "num_samples": 600
+  },
+  "block2_head0": {
+    "mean_cosine_sim": 0.5467286410927773,
+    "std_cosine_sim": 0.039679106391545704,
+    "min_cosine_sim": 0.3794197738170624,
+    "num_samples": 600
+  },
+  "block2_head9": {
+    "mean_cosine_sim": 0.5183352515101433,
+    "std_cosine_sim": 0.056203170840537026,
+    "min_cosine_sim": 0.34970617294311523,
+    "num_samples": 600
+  },
+  "block2_head11": {
+    "mean_cosine_sim": 0.4783962177236875,
+    "std_cosine_sim": 0.04750128493359806,
+    "min_cosine_sim": 0.3250102996826172,
+    "num_samples": 600
+  },
+  "block2_head12": {
+    "mean_cosine_sim": 0.49951994717121123,
+    "std_cosine_sim": 0.0494493578507118,
+    "min_cosine_sim": 0.3053015172481537,
+    "num_samples": 600
+  },
+  "block2_head13": {
+    "mean_cosine_sim": 0.6371906358003616,
+    "std_cosine_sim": 0.05188178180644513,
+    "min_cosine_sim": 0.43751901388168335,
+    "num_samples": 600
+  },
+  "block2_head15": {
+    "mean_cosine_sim": 0.5459850671887397,
+    "std_cosine_sim": 0.0239008025753937,
+    "min_cosine_sim": 0.4003150165081024,
+    "num_samples": 600
+  },
+  "block3_head0": {
+    "mean_cosine_sim": 0.4055849055449168,
+    "std_cosine_sim": 0.029067182868053293,
+    "min_cosine_sim": 0.3102712035179138,
+    "num_samples": 600
+  },
+  "block3_head3": {
+    "mean_cosine_sim": 0.4152260021368663,
+    "std_cosine_sim": 0.023804788613956872,
+    "min_cosine_sim": 0.30702894926071167,
+    "num_samples": 600
+  },
+  "block3_head5": {
+    "mean_cosine_sim": 0.6491336552302043,
+    "std_cosine_sim": 0.021757594789501882,
+    "min_cosine_sim": 0.5712559223175049,
+    "num_samples": 600
+  },
+  "block3_head8": {
+    "mean_cosine_sim": 0.5695981772740683,
+    "std_cosine_sim": 0.024897473899417967,
+    "min_cosine_sim": 0.5012720227241516,
+    "num_samples": 600
+  },
+  "block3_head14": {
+    "mean_cosine_sim": 0.635773603518804,
+    "std_cosine_sim": 0.02358061183335277,
+    "min_cosine_sim": 0.5675197839736938,
+    "num_samples": 600
+  },
+  "block3_head15": {
+    "mean_cosine_sim": 0.47116269965966545,
+    "std_cosine_sim": 0.040798667701715016,
+    "min_cosine_sim": 0.35231199860572815,
+    "num_samples": 600
+  },
+  "block4_head0": {
+    "mean_cosine_sim": 0.45155404150485995,
+    "std_cosine_sim": 0.035773919220360044,
+    "min_cosine_sim": 0.2498147189617157,
+    "num_samples": 600
+  },
+  "block4_head2": {
+    "mean_cosine_sim": 0.3826269460717837,
+    "std_cosine_sim": 0.03183829949732409,
+    "min_cosine_sim": 0.2762875556945801,
+    "num_samples": 600
+  },
+  "block4_head4": {
+    "mean_cosine_sim": 0.24047875405599672,
+    "std_cosine_sim": 0.056945197257575575,
+    "min_cosine_sim": 0.04235754534602165,
+    "num_samples": 600
+  },
+  "block4_head5": {
+    "mean_cosine_sim": 0.32708102678259215,
+    "std_cosine_sim": 0.040964584025368615,
+    "min_cosine_sim": 0.178158238530159,
+    "num_samples": 600
+  },
+  "block4_head7": {
+    "mean_cosine_sim": 0.284157494554917,
+    "std_cosine_sim": 0.0436533318426413,
+    "min_cosine_sim": 0.15453341603279114,
+    "num_samples": 600
+  },
+  "block4_head13": {
+    "mean_cosine_sim": 0.3423506953318914,
+    "std_cosine_sim": 0.014483571445852411,
+    "min_cosine_sim": 0.2997697591781616,
+    "num_samples": 600
+  },
+  "block5_head0": {
+    "mean_cosine_sim": 0.24690478692452114,
+    "std_cosine_sim": 0.04211661317689632,
+    "min_cosine_sim": 0.1050250232219696,
+    "num_samples": 600
+  },
+  "block5_head4": {
+    "mean_cosine_sim": 0.332542252043883,
+    "std_cosine_sim": 0.039331176982706134,
+    "min_cosine_sim": 0.20562323927879333,
+    "num_samples": 600
+  },
+  "block5_head7": {
+    "mean_cosine_sim": 0.5911404178539912,
+    "std_cosine_sim": 0.023963529773014743,
+    "min_cosine_sim": 0.5128824710845947,
+    "num_samples": 600
+  },
+  "block5_head8": {
+    "mean_cosine_sim": 0.4846551131208738,
+    "std_cosine_sim": 0.03208033108220803,
+    "min_cosine_sim": 0.3828147351741791,
+    "num_samples": 600
+  },
+  "block5_head11": {
+    "mean_cosine_sim": 0.4130312626560529,
+    "std_cosine_sim": 0.03747129176735979,
+    "min_cosine_sim": 0.27629703283309937,
+    "num_samples": 600
+  },
+  "block5_head13": {
+    "mean_cosine_sim": 0.660101128021876,
+    "std_cosine_sim": 0.019759497826918975,
+    "min_cosine_sim": 0.5880579352378845,
+    "num_samples": 600
+  },
+  "block6_head0": {
+    "mean_cosine_sim": 0.4192034450173378,
+    "std_cosine_sim": 0.028656501026870264,
+    "min_cosine_sim": 0.30377906560897827,
+    "num_samples": 600
+  },
+  "block6_head8": {
+    "mean_cosine_sim": 0.6276832475264867,
+    "std_cosine_sim": 0.015494710233141699,
+    "min_cosine_sim": 0.578654944896698,
+    "num_samples": 600
+  },
+  "block6_head9": {
+    "mean_cosine_sim": 0.45093137423197427,
+    "std_cosine_sim": 0.029953719899427685,
+    "min_cosine_sim": 0.35724204778671265,
+    "num_samples": 600
+  },
+  "block6_head13": {
+    "mean_cosine_sim": 0.6225820910930634,
+    "std_cosine_sim": 0.019476831823874562,
+    "min_cosine_sim": 0.5346409678459167,
+    "num_samples": 600
+  },
+  "block6_head14": {
+    "mean_cosine_sim": 0.6811722006400426,
+    "std_cosine_sim": 0.018477420560378963,
+    "min_cosine_sim": 0.6245983242988586,
+    "num_samples": 600
+  },
+  "block6_head15": {
+    "mean_cosine_sim": 0.5948454087972641,
+    "std_cosine_sim": 0.02665860705550974,
+    "min_cosine_sim": 0.5090759992599487,
+    "num_samples": 600
+  },
+  "block7_head1": {
+    "mean_cosine_sim": 0.5330125285188357,
+    "std_cosine_sim": 0.03977075888071388,
+    "min_cosine_sim": 0.37111085653305054,
+    "num_samples": 600
+  },
+  "block7_head5": {
+    "mean_cosine_sim": 0.5235096363226572,
+    "std_cosine_sim": 0.043213773584837155,
+    "min_cosine_sim": 0.3338549733161926,
+    "num_samples": 600
+  },
+  "block7_head6": {
+    "mean_cosine_sim": 0.4622046266992887,
+    "std_cosine_sim": 0.07593637690008648,
+    "min_cosine_sim": 0.2104567289352417,
+    "num_samples": 600
+  },
+  "block7_head7": {
+    "mean_cosine_sim": 0.7075523503621419,
+    "std_cosine_sim": 0.023542125749981338,
+    "min_cosine_sim": 0.6340110301971436,
+    "num_samples": 600
+  },
+  "block7_head13": {
+    "mean_cosine_sim": 0.47851629187663397,
+    "std_cosine_sim": 0.04545483148380063,
+    "min_cosine_sim": 0.28812533617019653,
+    "num_samples": 600
+  },
+  "block7_head14": {
+    "mean_cosine_sim": 0.5697591030597686,
+    "std_cosine_sim": 0.047267121598902666,
+    "min_cosine_sim": 0.35691899061203003,
+    "num_samples": 600
+  },
+  "block8_head0": {
+    "mean_cosine_sim": 0.6236813745896022,
+    "std_cosine_sim": 0.01688289903665418,
+    "min_cosine_sim": 0.5564458966255188,
+    "num_samples": 600
+  },
+  "block8_head1": {
+    "mean_cosine_sim": 0.3533660786350568,
+    "std_cosine_sim": 0.03679872657902865,
+    "min_cosine_sim": 0.2226681411266327,
+    "num_samples": 600
+  },
+  "block8_head3": {
+    "mean_cosine_sim": 0.5118091647823652,
+    "std_cosine_sim": 0.018145906517261876,
+    "min_cosine_sim": 0.45796889066696167,
+    "num_samples": 600
+  },
+  "block8_head6": {
+    "mean_cosine_sim": 0.1112968369325002,
+    "std_cosine_sim": 0.0433851855278406,
+    "min_cosine_sim": -0.0050198668614029884,
+    "num_samples": 600
+  },
+  "block8_head7": {
+    "mean_cosine_sim": 0.25048088043928146,
+    "std_cosine_sim": 0.027186412101875376,
+    "min_cosine_sim": 0.16299328207969666,
+    "num_samples": 600
+  },
+  "block8_head14": {
+    "mean_cosine_sim": 0.5822014180819194,
+    "std_cosine_sim": 0.016665890791217764,
+    "min_cosine_sim": 0.5410935878753662,
+    "num_samples": 600
+  },
+  "block9_head0": {
+    "mean_cosine_sim": 0.2613768914341927,
+    "std_cosine_sim": 0.04370237784898172,
+    "min_cosine_sim": 0.14048486948013306,
+    "num_samples": 600
+  },
+  "block9_head5": {
+    "mean_cosine_sim": 0.3509500410159429,
+    "std_cosine_sim": 0.03404115145313522,
+    "min_cosine_sim": 0.22597983479499817,
+    "num_samples": 600
+  },
+  "block9_head6": {
+    "mean_cosine_sim": 0.20561603332559267,
+    "std_cosine_sim": 0.03845955926521196,
+    "min_cosine_sim": 0.06410650908946991,
+    "num_samples": 600
+  },
+  "block9_head10": {
+    "mean_cosine_sim": 0.6748094560702642,
+    "std_cosine_sim": 0.013525613029724423,
+    "min_cosine_sim": 0.6322216391563416,
+    "num_samples": 600
+  },
+  "block9_head11": {
+    "mean_cosine_sim": 0.4340028331677119,
+    "std_cosine_sim": 0.019282620890876397,
+    "min_cosine_sim": 0.3676515817642212,
+    "num_samples": 600
+  },
+  "block9_head13": {
+    "mean_cosine_sim": 0.45199830482403436,
+    "std_cosine_sim": 0.029292889675978963,
+    "min_cosine_sim": 0.34500613808631897,
+    "num_samples": 600
+  },
+  "block10_head0": {
+    "mean_cosine_sim": 0.28306192338466646,
+    "std_cosine_sim": 0.04210891616291817,
+    "min_cosine_sim": 0.1460290104150772,
+    "num_samples": 600
+  },
+  "block10_head6": {
+    "mean_cosine_sim": 0.5591237914562225,
+    "std_cosine_sim": 0.023872465092295687,
+    "min_cosine_sim": 0.5041013956069946,
+    "num_samples": 600
+  },
+  "block10_head7": {
+    "mean_cosine_sim": 0.4826591102282206,
+    "std_cosine_sim": 0.019651370926062037,
+    "min_cosine_sim": 0.434655100107193,
+    "num_samples": 600
+  },
+  "block10_head8": {
+    "mean_cosine_sim": 0.34959551841020586,
+    "std_cosine_sim": 0.02573737496882041,
+    "min_cosine_sim": 0.27517539262771606,
+    "num_samples": 600
+  },
+  "block10_head10": {
+    "mean_cosine_sim": 0.47556174675623575,
+    "std_cosine_sim": 0.017742025064440184,
+    "min_cosine_sim": 0.42691710591316223,
+    "num_samples": 600
+  },
+  "block10_head11": {
+    "mean_cosine_sim": 0.485941283206145,
+    "std_cosine_sim": 0.027964808906589297,
+    "min_cosine_sim": 0.3997187614440918,
+    "num_samples": 600
+  },
+  "block11_head2": {
+    "mean_cosine_sim": 0.39936352918545404,
+    "std_cosine_sim": 0.04052156612215123,
+    "min_cosine_sim": 0.3046921193599701,
+    "num_samples": 600
+  },
+  "block11_head3": {
+    "mean_cosine_sim": 0.23271387202044327,
+    "std_cosine_sim": 0.04948491182131884,
+    "min_cosine_sim": 0.08961725234985352,
+    "num_samples": 600
+  },
+  "block11_head4": {
+    "mean_cosine_sim": 0.32530909319718676,
+    "std_cosine_sim": 0.01839207007673683,
+    "min_cosine_sim": 0.2794623374938965,
+    "num_samples": 600
+  },
+  "block11_head11": {
+    "mean_cosine_sim": 0.34587276523311933,
+    "std_cosine_sim": 0.038630140710736255,
+    "min_cosine_sim": 0.23147577047348022,
+    "num_samples": 600
+  },
+  "block11_head13": {
+    "mean_cosine_sim": 0.39780940850575763,
+    "std_cosine_sim": 0.0289481679916609,
+    "min_cosine_sim": 0.3249163329601288,
+    "num_samples": 600
+  },
+  "block11_head15": {
+    "mean_cosine_sim": 0.3567072640856107,
+    "std_cosine_sim": 0.040003896410622033,
+    "min_cosine_sim": 0.24427035450935364,
+    "num_samples": 600
+  },
+  "block12_head1": {
+    "mean_cosine_sim": 0.3704246296485265,
+    "std_cosine_sim": 0.02677359674974332,
+    "min_cosine_sim": 0.29821932315826416,
+    "num_samples": 600
+  },
+  "block12_head5": {
+    "mean_cosine_sim": 0.4921965037782987,
+    "std_cosine_sim": 0.023567701970365566,
+    "min_cosine_sim": 0.4308519661426544,
+    "num_samples": 600
+  },
+  "block12_head8": {
+    "mean_cosine_sim": 0.26814295594890913,
+    "std_cosine_sim": 0.03384982637257163,
+    "min_cosine_sim": 0.17503555119037628,
+    "num_samples": 600
+  },
+  "block12_head9": {
+    "mean_cosine_sim": 0.3295769350230694,
+    "std_cosine_sim": 0.039748395908292516,
+    "min_cosine_sim": 0.22548846900463104,
+    "num_samples": 600
+  },
+  "block12_head10": {
+    "mean_cosine_sim": 0.39461754480997724,
+    "std_cosine_sim": 0.04141384749622914,
+    "min_cosine_sim": 0.2503316402435303,
+    "num_samples": 600
+  },
+  "block12_head14": {
+    "mean_cosine_sim": 0.31258651370803514,
+    "std_cosine_sim": 0.04244033489287322,
+    "min_cosine_sim": 0.19092689454555511,
+    "num_samples": 600
+  },
+  "block13_head0": {
+    "mean_cosine_sim": 0.4031567398707072,
+    "std_cosine_sim": 0.027109787806841815,
+    "min_cosine_sim": 0.32138580083847046,
+    "num_samples": 600
+  },
+  "block13_head2": {
+    "mean_cosine_sim": 0.2973921291530132,
+    "std_cosine_sim": 0.04306664638544827,
+    "min_cosine_sim": 0.17831431329250336,
+    "num_samples": 600
+  },
+  "block13_head6": {
+    "mean_cosine_sim": 0.27086410065491995,
+    "std_cosine_sim": 0.034381542692035826,
+    "min_cosine_sim": 0.16258123517036438,
+    "num_samples": 600
+  },
+  "block13_head9": {
+    "mean_cosine_sim": 0.38074342628320057,
+    "std_cosine_sim": 0.0319055076408984,
+    "min_cosine_sim": 0.2942093312740326,
+    "num_samples": 600
+  },
+  "block13_head14": {
+    "mean_cosine_sim": 0.307695922156175,
+    "std_cosine_sim": 0.03614787289377622,
+    "min_cosine_sim": 0.19176524877548218,
+    "num_samples": 600
+  },
+  "block13_head15": {
+    "mean_cosine_sim": 0.40871928522984186,
+    "std_cosine_sim": 0.03225437431128254,
+    "min_cosine_sim": 0.30958643555641174,
+    "num_samples": 600
+  },
+  "block14_head3": {
+    "mean_cosine_sim": 0.3033862607181072,
+    "std_cosine_sim": 0.04017971523354588,
+    "min_cosine_sim": 0.16750995814800262,
+    "num_samples": 600
+  },
+  "block14_head7": {
+    "mean_cosine_sim": 0.348941101928552,
+    "std_cosine_sim": 0.0248963007141195,
+    "min_cosine_sim": 0.2891058027744293,
+    "num_samples": 600
+  },
+  "block14_head8": {
+    "mean_cosine_sim": 0.33623349299033484,
+    "std_cosine_sim": 0.030327423362192157,
+    "min_cosine_sim": 0.2554889917373657,
+    "num_samples": 600
+  },
+  "block14_head9": {
+    "mean_cosine_sim": 0.37517546822627384,
+    "std_cosine_sim": 0.022618798443583648,
+    "min_cosine_sim": 0.31946131587028503,
+    "num_samples": 600
+  },
+  "block14_head12": {
+    "mean_cosine_sim": 0.40648869613806404,
+    "std_cosine_sim": 0.03137043732640839,
+    "min_cosine_sim": 0.31120654940605164,
+    "num_samples": 600
+  },
+  "block14_head14": {
+    "mean_cosine_sim": 0.4667122522989909,
+    "std_cosine_sim": 0.01851596869190266,
+    "min_cosine_sim": 0.42048585414886475,
+    "num_samples": 600
+  },
+  "block15_head1": {
+    "mean_cosine_sim": 0.4647180347641309,
+    "std_cosine_sim": 0.051013618781189006,
+    "min_cosine_sim": 0.3075553774833679,
+    "num_samples": 600
+  },
+  "block15_head6": {
+    "mean_cosine_sim": 0.44048457384109496,
+    "std_cosine_sim": 0.04016555949470861,
+    "min_cosine_sim": 0.32280707359313965,
+    "num_samples": 600
+  },
+  "block15_head8": {
+    "mean_cosine_sim": 0.46053334494431813,
+    "std_cosine_sim": 0.028351956791924163,
+    "min_cosine_sim": 0.3860032558441162,
+    "num_samples": 600
+  },
+  "block15_head12": {
+    "mean_cosine_sim": -0.1712534850812517,
+    "std_cosine_sim": 0.10078313957467241,
+    "min_cosine_sim": -0.319542795419693,
+    "num_samples": 600
+  },
+  "block15_head13": {
+    "mean_cosine_sim": 0.4089738508562247,
+    "std_cosine_sim": 0.0722154257152907,
+    "min_cosine_sim": 0.2099737524986267,
+    "num_samples": 600
+  },
+  "block15_head15": {
+    "mean_cosine_sim": 0.23731157186130683,
+    "std_cosine_sim": 0.0636477080949496,
+    "min_cosine_sim": 0.06633561104536057,
+    "num_samples": 600
+  },
+  "block16_head0": {
+    "mean_cosine_sim": 0.1921878805756569,
+    "std_cosine_sim": 0.031593931448448506,
+    "min_cosine_sim": 0.10525622963905334,
+    "num_samples": 600
+  },
+  "block16_head1": {
+    "mean_cosine_sim": 0.3034984167913596,
+    "std_cosine_sim": 0.04507380533841189,
+    "min_cosine_sim": 0.16622959077358246,
+    "num_samples": 600
+  },
+  "block16_head3": {
+    "mean_cosine_sim": 0.32265903542439145,
+    "std_cosine_sim": 0.03439534718579333,
+    "min_cosine_sim": 0.21006989479064941,
+    "num_samples": 600
+  },
+  "block16_head4": {
+    "mean_cosine_sim": 0.3348539275924365,
+    "std_cosine_sim": 0.02066844724669896,
+    "min_cosine_sim": 0.2790401875972748,
+    "num_samples": 600
+  },
+  "block16_head7": {
+    "mean_cosine_sim": 0.22779301539063454,
+    "std_cosine_sim": 0.03311961363506487,
+    "min_cosine_sim": 0.13658995926380157,
+    "num_samples": 600
+  },
+  "block16_head9": {
+    "mean_cosine_sim": 0.13336164579571536,
+    "std_cosine_sim": 0.05106687529981158,
+    "min_cosine_sim": -0.02873948961496353,
+    "num_samples": 600
+  },
+  "block17_head1": {
+    "mean_cosine_sim": 0.20713443929950395,
+    "std_cosine_sim": 0.02913978929788619,
+    "min_cosine_sim": 0.13808192312717438,
+    "num_samples": 600
+  },
+  "block17_head4": {
+    "mean_cosine_sim": 0.2032486796627442,
+    "std_cosine_sim": 0.034564444515220526,
+    "min_cosine_sim": 0.11293691396713257,
+    "num_samples": 600
+  },
+  "block17_head9": {
+    "mean_cosine_sim": 0.2266058172782262,
+    "std_cosine_sim": 0.02539584017434789,
+    "min_cosine_sim": 0.16079068183898926,
+    "num_samples": 600
+  },
+  "block17_head10": {
+    "mean_cosine_sim": 0.2397083398203055,
+    "std_cosine_sim": 0.043713816592934905,
+    "min_cosine_sim": 0.10442434251308441,
+    "num_samples": 600
+  },
+  "block17_head11": {
+    "mean_cosine_sim": 0.20896899638076624,
+    "std_cosine_sim": 0.035292487053717736,
+    "min_cosine_sim": 0.10085945576429367,
+    "num_samples": 600
+  },
+  "block17_head15": {
+    "mean_cosine_sim": 0.2289178758362929,
+    "std_cosine_sim": 0.03394815190258899,
+    "min_cosine_sim": 0.14408758282661438,
+    "num_samples": 600
+  },
+  "block18_head0": {
+    "mean_cosine_sim": 0.2508628533283869,
+    "std_cosine_sim": 0.03208443059446066,
+    "min_cosine_sim": 0.16487832367420197,
+    "num_samples": 600
+  },
+  "block18_head1": {
+    "mean_cosine_sim": 0.389911045730114,
+    "std_cosine_sim": 0.02344655153495727,
+    "min_cosine_sim": 0.33784404397010803,
+    "num_samples": 600
+  },
+  "block18_head3": {
+    "mean_cosine_sim": 0.39223847309748333,
+    "std_cosine_sim": 0.029123140784054376,
+    "min_cosine_sim": 0.3166155219078064,
+    "num_samples": 600
+  },
+  "block18_head5": {
+    "mean_cosine_sim": 0.1369693874567747,
+    "std_cosine_sim": 0.03215127457881943,
+    "min_cosine_sim": 0.056400366127491,
+    "num_samples": 600
+  },
+  "block18_head13": {
+    "mean_cosine_sim": 0.29817553286751114,
+    "std_cosine_sim": 0.02971255223736746,
+    "min_cosine_sim": 0.23133797943592072,
+    "num_samples": 600
+  },
+  "block18_head14": {
+    "mean_cosine_sim": 0.20801886141300202,
+    "std_cosine_sim": 0.03653136326172777,
+    "min_cosine_sim": 0.12689147889614105,
+    "num_samples": 600
+  },
+  "block19_head3": {
+    "mean_cosine_sim": 0.27507142509023347,
+    "std_cosine_sim": 0.029235276354982118,
+    "min_cosine_sim": 0.20199105143547058,
+    "num_samples": 600
+  },
+  "block19_head4": {
+    "mean_cosine_sim": 0.31781101564566294,
+    "std_cosine_sim": 0.018159466838692243,
+    "min_cosine_sim": 0.267484188079834,
+    "num_samples": 600
+  },
+  "block19_head9": {
+    "mean_cosine_sim": 0.28729879304766653,
+    "std_cosine_sim": 0.020614091329075344,
+    "min_cosine_sim": 0.23926332592964172,
+    "num_samples": 600
+  },
+  "block19_head10": {
+    "mean_cosine_sim": 0.2793258144458135,
+    "std_cosine_sim": 0.024454115539632296,
+    "min_cosine_sim": 0.23201514780521393,
+    "num_samples": 600
+  },
+  "block19_head11": {
+    "mean_cosine_sim": 0.265037618825833,
+    "std_cosine_sim": 0.03216810802359612,
+    "min_cosine_sim": 0.17041417956352234,
+    "num_samples": 600
+  },
+  "block19_head12": {
+    "mean_cosine_sim": 0.30984857459863024,
+    "std_cosine_sim": 0.0343958094706834,
+    "min_cosine_sim": 0.21182195842266083,
+    "num_samples": 600
+  },
+  "block20_head1": {
+    "mean_cosine_sim": 0.1936782707522313,
+    "std_cosine_sim": 0.03077340046502805,
+    "min_cosine_sim": 0.11823202669620514,
+    "num_samples": 600
+  },
+  "block20_head2": {
+    "mean_cosine_sim": 0.2586443491280079,
+    "std_cosine_sim": 0.025534375200181262,
+    "min_cosine_sim": 0.19509246945381165,
+    "num_samples": 600
+  },
+  "block20_head4": {
+    "mean_cosine_sim": 0.24706853027145068,
+    "std_cosine_sim": 0.028164378937432705,
+    "min_cosine_sim": 0.17454297840595245,
+    "num_samples": 600
+  },
+  "block20_head6": {
+    "mean_cosine_sim": 0.2474266445140044,
+    "std_cosine_sim": 0.0308231634184073,
+    "min_cosine_sim": 0.15112708508968353,
+    "num_samples": 600
+  },
+  "block20_head10": {
+    "mean_cosine_sim": 0.37778527369101844,
+    "std_cosine_sim": 0.02597411927825864,
+    "min_cosine_sim": 0.3026023805141449,
+    "num_samples": 600
+  },
+  "block20_head15": {
+    "mean_cosine_sim": 0.25286214803655943,
+    "std_cosine_sim": 0.02948664591796294,
+    "min_cosine_sim": 0.16436965763568878,
+    "num_samples": 600
+  },
+  "block21_head0": {
+    "mean_cosine_sim": 0.2698671015103658,
+    "std_cosine_sim": 0.023694681017641443,
+    "min_cosine_sim": 0.20680731534957886,
+    "num_samples": 600
+  },
+  "block21_head2": {
+    "mean_cosine_sim": 0.3107516258955002,
+    "std_cosine_sim": 0.019026435335186886,
+    "min_cosine_sim": 0.2622762620449066,
+    "num_samples": 600
+  },
+  "block21_head8": {
+    "mean_cosine_sim": 0.27535076106588047,
+    "std_cosine_sim": 0.0316936485948319,
+    "min_cosine_sim": 0.1965613067150116,
+    "num_samples": 600
+  },
+  "block21_head12": {
+    "mean_cosine_sim": 0.22964406497776507,
+    "std_cosine_sim": 0.028344573357729788,
+    "min_cosine_sim": 0.11312056332826614,
+    "num_samples": 600
+  },
+  "block21_head13": {
+    "mean_cosine_sim": 0.3752427543203036,
+    "std_cosine_sim": 0.01858583365344645,
+    "min_cosine_sim": 0.31926459074020386,
+    "num_samples": 600
+  },
+  "block21_head15": {
+    "mean_cosine_sim": 0.2541512048741182,
+    "std_cosine_sim": 0.02945303524173858,
+    "min_cosine_sim": 0.17431701719760895,
+    "num_samples": 600
+  },
+  "block22_head2": {
+    "mean_cosine_sim": 0.20228515135745206,
+    "std_cosine_sim": 0.02384019680655382,
+    "min_cosine_sim": 0.11702247709035873,
+    "num_samples": 600
+  },
+  "block22_head3": {
+    "mean_cosine_sim": 0.2967242522537708,
+    "std_cosine_sim": 0.022073615020137903,
+    "min_cosine_sim": 0.22423283755779266,
+    "num_samples": 600
+  },
+  "block22_head7": {
+    "mean_cosine_sim": 0.3188013458251953,
+    "std_cosine_sim": 0.029335343497152024,
+    "min_cosine_sim": 0.25277450680732727,
+    "num_samples": 600
+  },
+  "block22_head9": {
+    "mean_cosine_sim": 0.1563897550975283,
+    "std_cosine_sim": 0.035837160430027,
+    "min_cosine_sim": 0.04621940478682518,
+    "num_samples": 600
+  },
+  "block22_head10": {
+    "mean_cosine_sim": 0.2560194659233093,
+    "std_cosine_sim": 0.027680149244926486,
+    "min_cosine_sim": 0.14700940251350403,
+    "num_samples": 600
+  },
+  "block22_head12": {
+    "mean_cosine_sim": 0.2524162040154139,
+    "std_cosine_sim": 0.029443463926005543,
+    "min_cosine_sim": 0.15583336353302002,
+    "num_samples": 600
+  },
+  "block23_head0": {
+    "mean_cosine_sim": 0.4840614201625188,
+    "std_cosine_sim": 0.038340268427671034,
+    "min_cosine_sim": 0.3963034749031067,
+    "num_samples": 600
+  },
+  "block23_head2": {
+    "mean_cosine_sim": 0.46600369999806085,
+    "std_cosine_sim": 0.03336907096894591,
+    "min_cosine_sim": 0.3666077256202698,
+    "num_samples": 600
+  },
+  "block23_head6": {
+    "mean_cosine_sim": -0.059452165705151855,
+    "std_cosine_sim": 0.11575950540097736,
+    "min_cosine_sim": -0.1758873164653778,
+    "num_samples": 600
+  },
+  "block23_head10": {
+    "mean_cosine_sim": 0.30813471203049025,
+    "std_cosine_sim": 0.04971605677307196,
+    "min_cosine_sim": 0.18011511862277985,
+    "num_samples": 600
+  },
+  "block23_head13": {
+    "mean_cosine_sim": 0.33350481241941454,
+    "std_cosine_sim": 0.06384351751593789,
+    "min_cosine_sim": 0.1279980093240738,
+    "num_samples": 600
+  },
+  "block23_head14": {
+    "mean_cosine_sim": 0.35491130242745084,
+    "std_cosine_sim": 0.033842576776295874,
+    "min_cosine_sim": 0.2738092243671417,
+    "num_samples": 600
+  },
+  "block24_head1": {
+    "mean_cosine_sim": 0.14575651368747156,
+    "std_cosine_sim": 0.026430512821972802,
+    "min_cosine_sim": 0.051076870411634445,
+    "num_samples": 600
+  },
+  "block24_head4": {
+    "mean_cosine_sim": 0.23011016719043254,
+    "std_cosine_sim": 0.026834613379146537,
+    "min_cosine_sim": 0.1198834553360939,
+    "num_samples": 600
+  },
+  "block24_head6": {
+    "mean_cosine_sim": 0.020474274073033788,
+    "std_cosine_sim": 0.03469075729447383,
+    "min_cosine_sim": -0.09768428653478622,
+    "num_samples": 600
+  },
+  "block24_head9": {
+    "mean_cosine_sim": 0.28449795906742414,
+    "std_cosine_sim": 0.025041141853618935,
+    "min_cosine_sim": 0.2039923369884491,
+    "num_samples": 600
+  },
+  "block24_head14": {
+    "mean_cosine_sim": 0.21619057009617487,
+    "std_cosine_sim": 0.0204966036539117,
+    "min_cosine_sim": 0.14887496829032898,
+    "num_samples": 600
+  },
+  "block24_head15": {
+    "mean_cosine_sim": 0.3170879297455152,
+    "std_cosine_sim": 0.02845615947840079,
+    "min_cosine_sim": 0.23161345720291138,
+    "num_samples": 600
+  },
+  "block25_head0": {
+    "mean_cosine_sim": 0.18670224154988924,
+    "std_cosine_sim": 0.03228493290298354,
+    "min_cosine_sim": 0.0984821617603302,
+    "num_samples": 600
+  },
+  "block25_head3": {
+    "mean_cosine_sim": 0.17059770939250787,
+    "std_cosine_sim": 0.03457093324440204,
+    "min_cosine_sim": 0.07565958052873611,
+    "num_samples": 600
+  },
+  "block25_head7": {
+    "mean_cosine_sim": 0.20449517861008645,
+    "std_cosine_sim": 0.025171905700795496,
+    "min_cosine_sim": 0.09837935864925385,
+    "num_samples": 600
+  },
+  "block25_head8": {
+    "mean_cosine_sim": 0.22819217704236508,
+    "std_cosine_sim": 0.029987543964919084,
+    "min_cosine_sim": 0.10252582281827927,
+    "num_samples": 600
+  },
+  "block25_head13": {
+    "mean_cosine_sim": 0.252729183336099,
+    "std_cosine_sim": 0.026055672419060125,
+    "min_cosine_sim": 0.1811024248600006,
+    "num_samples": 600
+  },
+  "block25_head14": {
+    "mean_cosine_sim": 0.1238572966431578,
+    "std_cosine_sim": 0.03019543957674806,
+    "min_cosine_sim": 0.051073379814624786,
+    "num_samples": 600
+  },
+  "block26_head0": {
+    "mean_cosine_sim": 0.29467387864987055,
+    "std_cosine_sim": 0.026888118659661783,
+    "min_cosine_sim": 0.1981412023305893,
+    "num_samples": 600
+  },
+  "block26_head2": {
+    "mean_cosine_sim": 0.24019536937276523,
+    "std_cosine_sim": 0.03954864772969338,
+    "min_cosine_sim": 0.09894239902496338,
+    "num_samples": 600
+  },
+  "block26_head3": {
+    "mean_cosine_sim": 0.15191495090723037,
+    "std_cosine_sim": 0.030902500879839558,
+    "min_cosine_sim": 0.06417488306760788,
+    "num_samples": 600
+  },
+  "block26_head8": {
+    "mean_cosine_sim": 0.2204053548971812,
+    "std_cosine_sim": 0.020306652035152,
+    "min_cosine_sim": 0.16190357506275177,
+    "num_samples": 600
+  },
+  "block26_head12": {
+    "mean_cosine_sim": 0.025590046570893418,
+    "std_cosine_sim": 0.029064633376395446,
+    "min_cosine_sim": -0.043058738112449646,
+    "num_samples": 600
+  },
+  "block26_head13": {
+    "mean_cosine_sim": 0.19137313400705655,
+    "std_cosine_sim": 0.03291681761530935,
+    "min_cosine_sim": 0.10221277922391891,
+    "num_samples": 600
+  },
+  "block27_head0": {
+    "mean_cosine_sim": 0.016643241081619634,
+    "std_cosine_sim": 0.057065875374228574,
+    "min_cosine_sim": -0.14277933537960052,
+    "num_samples": 600
+  },
+  "block27_head1": {
+    "mean_cosine_sim": 0.20551977232098578,
+    "std_cosine_sim": 0.03413283721109899,
+    "min_cosine_sim": 0.08391720801591873,
+    "num_samples": 600
+  },
+  "block27_head4": {
+    "mean_cosine_sim": 0.20082119109729926,
+    "std_cosine_sim": 0.03795449390733346,
+    "min_cosine_sim": 0.09911153465509415,
+    "num_samples": 600
+  },
+  "block27_head5": {
+    "mean_cosine_sim": 0.18506388366222382,
+    "std_cosine_sim": 0.037075095261393694,
+    "min_cosine_sim": 0.08210330456495285,
+    "num_samples": 600
+  },
+  "block27_head11": {
+    "mean_cosine_sim": 0.15843540852268537,
+    "std_cosine_sim": 0.027339619140852894,
+    "min_cosine_sim": 0.06619606167078018,
+    "num_samples": 600
+  },
+  "block27_head14": {
+    "mean_cosine_sim": 0.09847032063640654,
+    "std_cosine_sim": 0.054423929414088315,
+    "min_cosine_sim": -0.04776966571807861,
+    "num_samples": 600
+  },
+  "block28_head0": {
+    "mean_cosine_sim": 0.051954808210333187,
+    "std_cosine_sim": 0.055519045038623344,
+    "min_cosine_sim": -0.10547103732824326,
+    "num_samples": 600
+  },
+  "block28_head2": {
+    "mean_cosine_sim": 0.225853714098533,
+    "std_cosine_sim": 0.018001274640668925,
+    "min_cosine_sim": 0.15892228484153748,
+    "num_samples": 600
+  },
+  "block28_head3": {
+    "mean_cosine_sim": 0.07509522237327473,
+    "std_cosine_sim": 0.05127887823306879,
+    "min_cosine_sim": -0.041714586317539215,
+    "num_samples": 600
+  },
+  "block28_head5": {
+    "mean_cosine_sim": 0.23481617495417595,
+    "std_cosine_sim": 0.03961954158877979,
+    "min_cosine_sim": 0.0947728306055069,
+    "num_samples": 600
+  },
+  "block28_head6": {
+    "mean_cosine_sim": 0.008872139167300095,
+    "std_cosine_sim": 0.04655441568075446,
+    "min_cosine_sim": -0.12970633804798126,
+    "num_samples": 600
+  },
+  "block28_head10": {
+    "mean_cosine_sim": 0.29914106816053393,
+    "std_cosine_sim": 0.016056754136839536,
+    "min_cosine_sim": 0.2541477382183075,
+    "num_samples": 600
+  },
+  "block29_head0": {
+    "mean_cosine_sim": 0.03641870050186602,
+    "std_cosine_sim": 0.055580003470620996,
+    "min_cosine_sim": -0.0815235897898674,
+    "num_samples": 600
+  },
+  "block29_head3": {
+    "mean_cosine_sim": 0.23160837481419244,
+    "std_cosine_sim": 0.03804964184024404,
+    "min_cosine_sim": 0.1233738362789154,
+    "num_samples": 600
+  },
+  "block29_head4": {
+    "mean_cosine_sim": 0.07084313078705842,
+    "std_cosine_sim": 0.06606308729566562,
+    "min_cosine_sim": -0.11143644154071808,
+    "num_samples": 600
+  },
+  "block29_head6": {
+    "mean_cosine_sim": 0.24416101773579915,
+    "std_cosine_sim": 0.024738731870363784,
+    "min_cosine_sim": 0.17281131446361542,
+    "num_samples": 600
+  },
+  "block29_head7": {
+    "mean_cosine_sim": 0.16307764125367005,
+    "std_cosine_sim": 0.029138985251220065,
+    "min_cosine_sim": 0.07650497555732727,
+    "num_samples": 600
+  },
+  "block29_head8": {
+    "mean_cosine_sim": -0.05872263713506982,
+    "std_cosine_sim": 0.05357267896478464,
+    "min_cosine_sim": -0.2385529726743698,
+    "num_samples": 600
+  },
+  "block30_head3": {
+    "mean_cosine_sim": 0.09851049632144471,
+    "std_cosine_sim": 0.02985721076190514,
+    "min_cosine_sim": -0.014579334296286106,
+    "num_samples": 600
+  },
+  "block30_head8": {
+    "mean_cosine_sim": 0.14187671817063044,
+    "std_cosine_sim": 0.045598895176985225,
+    "min_cosine_sim": 0.0022674878127872944,
+    "num_samples": 600
+  },
+  "block30_head9": {
+    "mean_cosine_sim": 0.08480126512993592,
+    "std_cosine_sim": 0.048244106634265524,
+    "min_cosine_sim": -0.05184601619839668,
+    "num_samples": 600
+  },
+  "block30_head10": {
+    "mean_cosine_sim": 0.1405097825763126,
+    "std_cosine_sim": 0.047865063061814865,
+    "min_cosine_sim": -0.009783970192074776,
+    "num_samples": 600
+  },
+  "block30_head11": {
+    "mean_cosine_sim": 0.08961453735207518,
+    "std_cosine_sim": 0.02744271068423683,
+    "min_cosine_sim": 0.014001000672578812,
+    "num_samples": 600
+  },
+  "block30_head14": {
+    "mean_cosine_sim": 0.16552130996463044,
+    "std_cosine_sim": 0.05197226907277083,
+    "min_cosine_sim": -0.04382947459816933,
+    "num_samples": 600
+  },
+  "block31_head5": {
+    "mean_cosine_sim": 0.15813680075109005,
+    "std_cosine_sim": 0.03283468658191905,
+    "min_cosine_sim": 0.07267216593027115,
+    "num_samples": 600
+  },
+  "block31_head6": {
+    "mean_cosine_sim": 0.2576286326845487,
+    "std_cosine_sim": 0.04017959544781842,
+    "min_cosine_sim": 0.14602841436862946,
+    "num_samples": 600
+  },
+  "block31_head8": {
+    "mean_cosine_sim": 0.3385075943171978,
+    "std_cosine_sim": 0.054684413018126744,
+    "min_cosine_sim": 0.18565508723258972,
+    "num_samples": 600
+  },
+  "block31_head10": {
+    "mean_cosine_sim": 0.119464263941627,
+    "std_cosine_sim": 0.057264046991825635,
+    "min_cosine_sim": -0.03786329925060272,
+    "num_samples": 600
+  },
+  "block31_head12": {
+    "mean_cosine_sim": 0.3331245187918345,
+    "std_cosine_sim": 0.03394669778862485,
+    "min_cosine_sim": 0.23094312846660614,
+    "num_samples": 600
+  },
+  "block31_head14": {
+    "mean_cosine_sim": 0.3984109886487325,
+    "std_cosine_sim": 0.03984763289697361,
+    "min_cosine_sim": 0.27600806951522827,
+    "num_samples": 600
+  }
+}

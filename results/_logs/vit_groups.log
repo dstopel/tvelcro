@@ -1,0 +1,30 @@
+
+=== dogs ===
+  118 classes, quota 3/class -> 300 profile + 300 eval images
+
+=== cats ===
+  13 classes, quota 24/class -> 300 profile + 300 eval images
+
+=== cars ===
+  26 classes, quota 12/class -> 300 profile + 300 eval images
+
+=== snakes ===
+  [WARN] 17 class dir(s) not found: ['thunder_snake_worm_snake_Carphophis_amoenus', 'ringneck_snake_ring-necked_snake_ring_snake', 'hognose_snake_puff_adder_sand_viper', 'green_snake_grass_snake', 'king_snake_kingsnake']...
+  [SKIP] no classes resolved
+
+=== fish ===
+  [WARN] 16 class dir(s) not found: ['tench_Tinca_tinca', 'goldfish_Carassius_auratus', 'great_white_shark_white_shark_man-eater_man-eating_shark_Carcharodon_carcharias', 'tiger_shark_Galeocerdo_cuvieri', 'hammerhead_hammerhead_shark']...
+  [SKIP] no classes resolved
+
+=== boats ===
+  [WARN] 16 class dir(s) not found: ['canoe', 'catamaran', 'schooner', 'lifeboat', 'gondola']...
+  [SKIP] no classes resolved
+
+=== birds ===
+  [WARN] 59 class dir(s) not found: ['cock', 'hen', 'ostrich_Struthio_camelus', 'brambling_Fringilla_montifringilla', 'goldfinch_Carduelis_carduelis']...
+  [SKIP] no classes resolved
+
+=== general ===
+  1000 classes, quota 1/class -> 300 profile + 300 eval images
+
+Manifest: data/vit_groups/groups_manifest.json

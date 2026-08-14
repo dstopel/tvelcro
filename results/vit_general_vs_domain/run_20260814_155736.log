@@ -1,0 +1,79 @@
+Log: results/vit_general_vs_domain/run_20260814_155736.log
+=== [vit_base] PROFILE 'general' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO PROFILE — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+
+  Group: general (data/vit_groups/general_profile)
+    Using all 300 images
+  [label mapping] 300 classes mapped via data/synset_words.txt
+    batch 5/10  top1=83.8%  top5=98.1%
+    batch 10/10  top1=83.7%  top5=97.0%
+    Top-1: 83.67%  Top-5: 97.00%  (300 images)
+  [profile] Saved 144 head variance/mean files + entropy for 'general'
+
+======================================================================
+DONE (PROFILE)  ->  results/vit_general_vs_domain/vit_base/seed0/profile
+Group           Top-1      Top-5      Images    
+general         83.67      97.00      300       
+======================================================================
+=== [vit_base] tk0: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=0/12)
+======================================================================
+  Checked 144 heads, froze 0
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=81.9%  top5=100.0%
+    batch 10/10  top1=82.7%  top5=99.7%
+    Top-1: 82.67%  Top-5: 99.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk0/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            82.67      99.67      300       
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=72.5%  top5=95.6%
+    batch 10/10  top1=81.7%  top5=97.3%
+    Top-1: 81.67%  Top-5: 97.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk0/eval_cats
+Group           Top-1      Top-5      Images    
+cats            81.67      97.33      300       
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'cars' ===

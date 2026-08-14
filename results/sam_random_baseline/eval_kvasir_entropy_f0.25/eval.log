@@ -1,0 +1,32 @@
+20:45:06 | INFO | Loading SAM ViT-H...
+20:45:19 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_kvasir_entropy_f0.25/freeze_manifest.json
+20:45:23 | INFO |   Frozen heads: 128 / 512
+20:45:23 | INFO | 
+============================================================
+20:45:23 | INFO | Evaluating group: kvasir
+20:45:24 | INFO |   Images: 300
+20:48:53 | INFO |     20/300 | running mean IoU: 0.9420
+20:52:20 | INFO |     40/300 | running mean IoU: 0.9412
+20:55:48 | INFO |     60/300 | running mean IoU: 0.9393
+20:59:20 | INFO |     80/300 | running mean IoU: 0.9392
+21:02:46 | INFO |     100/300 | running mean IoU: 0.9401
+21:06:15 | INFO |     120/300 | running mean IoU: 0.9408
+21:09:40 | INFO |     140/300 | running mean IoU: 0.9397
+21:13:08 | INFO |     160/300 | running mean IoU: 0.9393
+21:16:35 | INFO |     180/300 | running mean IoU: 0.9394
+21:20:01 | INFO |     200/300 | running mean IoU: 0.9399
+21:23:25 | INFO |     220/300 | running mean IoU: 0.9403
+21:26:50 | INFO |     240/300 | running mean IoU: 0.9400
+21:30:18 | INFO |     260/300 | running mean IoU: 0.9399
+21:33:44 | INFO |     280/300 | running mean IoU: 0.9403
+21:37:11 | INFO |     300/300 | running mean IoU: 0.9402
+21:37:11 | INFO | 
+  Results for 'kvasir':
+21:37:11 | INFO |     Mean IoU:       0.9408
+21:37:11 | INFO |     Miss rate:      0.2987
+21:37:11 | INFO |     False pos rate: 0.1465
+21:37:11 | INFO |     Feature sim:    0.8901
+21:37:11 | INFO |     Misses: 4512 (domain=79, redundant=547, background=3886)
+21:37:11 | INFO |     Added:  1846 (domain=26, redundant=194, background=1626)
+21:37:12 | INFO | 
+Eval phase complete.

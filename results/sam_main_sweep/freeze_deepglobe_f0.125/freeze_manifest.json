@@ -1,0 +1,861 @@
+{
+  "version": "5.0-sam-vit-h-svelcro",
+  "model": "SAM ViT-H (vit_h)",
+  "profile_group": "deepglobe",
+  "profile_root": "results/sam_main_sweep/profile",
+  "freeze_fraction": 0.125,
+  "num_freeze_per_block": null,
+  "freeze_method": "output-only pre-hook (replace frozen head slots with mean)",
+  "ranking_method": "variance",
+  "seed": 0,
+  "frozen_heads": [
+    {
+      "block": 0,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 1.4238357543945312,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block0_head15_mean.npy",
+      "variance_path": "deepglobe/block0_head15_variance.npy",
+      "entropy": 5.27807084643046
+    },
+    {
+      "block": 0,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 1.545519232749939,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block0_head6_mean.npy",
+      "variance_path": "deepglobe/block0_head6_variance.npy",
+      "entropy": 5.278077315648397
+    },
+    {
+      "block": 1,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 99.32188415527344,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block1_head11_mean.npy",
+      "variance_path": "deepglobe/block1_head11_variance.npy",
+      "entropy": 5.270329178555807
+    },
+    {
+      "block": 1,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 110.85704040527344,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block1_head13_mean.npy",
+      "variance_path": "deepglobe/block1_head13_variance.npy",
+      "entropy": 5.278055721728007
+    },
+    {
+      "block": 2,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 86.02825927734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block2_head4_mean.npy",
+      "variance_path": "deepglobe/block2_head4_variance.npy",
+      "entropy": 5.278061376825969
+    },
+    {
+      "block": 2,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 89.3333511352539,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block2_head1_mean.npy",
+      "variance_path": "deepglobe/block2_head1_variance.npy",
+      "entropy": 5.278082242329916
+    },
+    {
+      "block": 3,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 42.932064056396484,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block3_head6_mean.npy",
+      "variance_path": "deepglobe/block3_head6_variance.npy",
+      "entropy": 5.275333859761556
+    },
+    {
+      "block": 3,
+      "head": 3,
+      "block_type": "windowed",
+      "rank_score": 57.03481674194336,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block3_head3_mean.npy",
+      "variance_path": "deepglobe/block3_head3_variance.npy",
+      "entropy": 5.27695933081309
+    },
+    {
+      "block": 4,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 47.65478515625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block4_head2_mean.npy",
+      "variance_path": "deepglobe/block4_head2_variance.npy",
+      "entropy": 5.264951309776306
+    },
+    {
+      "block": 4,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 49.98478698730469,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block4_head5_mean.npy",
+      "variance_path": "deepglobe/block4_head5_variance.npy",
+      "entropy": 5.274864024035136
+    },
+    {
+      "block": 5,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 122.80009460449219,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block5_head6_mean.npy",
+      "variance_path": "deepglobe/block5_head6_variance.npy",
+      "entropy": 5.262424151293437
+    },
+    {
+      "block": 5,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 195.51809692382812,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block5_head7_mean.npy",
+      "variance_path": "deepglobe/block5_head7_variance.npy",
+      "entropy": 5.2729227256139115
+    },
+    {
+      "block": 6,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 331.5511474609375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block6_head13_mean.npy",
+      "variance_path": "deepglobe/block6_head13_variance.npy",
+      "entropy": 5.221050918706258
+    },
+    {
+      "block": 6,
+      "head": 11,
+      "block_type": "windowed",
+      "rank_score": 489.19232177734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block6_head11_mean.npy",
+      "variance_path": "deepglobe/block6_head11_variance.npy",
+      "entropy": 5.24733680712382
+    },
+    {
+      "block": 7,
+      "head": 12,
+      "block_type": "global",
+      "rank_score": 4429.90234375,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block7_head12_mean.npy",
+      "variance_path": "deepglobe/block7_head12_variance.npy",
+      "entropy": 8.314680852890014
+    },
+    {
+      "block": 7,
+      "head": 4,
+      "block_type": "global",
+      "rank_score": 4919.193359375,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block7_head4_mean.npy",
+      "variance_path": "deepglobe/block7_head4_variance.npy",
+      "entropy": 8.317042020161947
+    },
+    {
+      "block": 8,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 324.98944091796875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block8_head5_mean.npy",
+      "variance_path": "deepglobe/block8_head5_variance.npy",
+      "entropy": 5.219416583887736
+    },
+    {
+      "block": 8,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 341.6083068847656,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block8_head12_mean.npy",
+      "variance_path": "deepglobe/block8_head12_variance.npy",
+      "entropy": 5.269843720944722
+    },
+    {
+      "block": 9,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 280.05328369140625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block9_head7_mean.npy",
+      "variance_path": "deepglobe/block9_head7_variance.npy",
+      "entropy": 5.242984883626302
+    },
+    {
+      "block": 9,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 308.4182434082031,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block9_head9_mean.npy",
+      "variance_path": "deepglobe/block9_head9_variance.npy",
+      "entropy": 5.230147298367818
+    },
+    {
+      "block": 10,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 310.1441955566406,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block10_head5_mean.npy",
+      "variance_path": "deepglobe/block10_head5_variance.npy",
+      "entropy": 5.2217456232070925
+    },
+    {
+      "block": 10,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 312.4381103515625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block10_head15_mean.npy",
+      "variance_path": "deepglobe/block10_head15_variance.npy",
+      "entropy": 5.206146395111084
+    },
+    {
+      "block": 11,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 401.5220947265625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block11_head1_mean.npy",
+      "variance_path": "deepglobe/block11_head1_variance.npy",
+      "entropy": 5.243564646148681
+    },
+    {
+      "block": 11,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 431.4596252441406,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block11_head15_mean.npy",
+      "variance_path": "deepglobe/block11_head15_variance.npy",
+      "entropy": 5.22975734055837
+    },
+    {
+      "block": 12,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 353.73138427734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block12_head1_mean.npy",
+      "variance_path": "deepglobe/block12_head1_variance.npy",
+      "entropy": 5.256906421661377
+    },
+    {
+      "block": 12,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 442.26702880859375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block12_head2_mean.npy",
+      "variance_path": "deepglobe/block12_head2_variance.npy",
+      "entropy": 5.24636672560374
+    },
+    {
+      "block": 13,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 392.54193115234375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block13_head1_mean.npy",
+      "variance_path": "deepglobe/block13_head1_variance.npy",
+      "entropy": 5.261868559964498
+    },
+    {
+      "block": 13,
+      "head": 8,
+      "block_type": "windowed",
+      "rank_score": 393.0999755859375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block13_head8_mean.npy",
+      "variance_path": "deepglobe/block13_head8_variance.npy",
+      "entropy": 5.258155508995056
+    },
+    {
+      "block": 14,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 292.97509765625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block14_head12_mean.npy",
+      "variance_path": "deepglobe/block14_head12_variance.npy",
+      "entropy": 5.266051527404785
+    },
+    {
+      "block": 14,
+      "head": 5,
+      "block_type": "windowed",
+      "rank_score": 320.5665283203125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block14_head5_mean.npy",
+      "variance_path": "deepglobe/block14_head5_variance.npy",
+      "entropy": 5.247722658157349
+    },
+    {
+      "block": 15,
+      "head": 12,
+      "block_type": "global",
+      "rank_score": 9404.81640625,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block15_head12_mean.npy",
+      "variance_path": "deepglobe/block15_head12_variance.npy",
+      "entropy": 8.31612125078837
+    },
+    {
+      "block": 15,
+      "head": 9,
+      "block_type": "global",
+      "rank_score": 11837.3720703125,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block15_head9_mean.npy",
+      "variance_path": "deepglobe/block15_head9_variance.npy",
+      "entropy": 8.313379325866698
+    },
+    {
+      "block": 16,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 363.290771484375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block16_head1_mean.npy",
+      "variance_path": "deepglobe/block16_head1_variance.npy",
+      "entropy": 5.264276332155863
+    },
+    {
+      "block": 16,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 433.70330810546875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block16_head6_mean.npy",
+      "variance_path": "deepglobe/block16_head6_variance.npy",
+      "entropy": 5.249504358100891
+    },
+    {
+      "block": 17,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 277.87213134765625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block17_head2_mean.npy",
+      "variance_path": "deepglobe/block17_head2_variance.npy",
+      "entropy": 5.246674332046509
+    },
+    {
+      "block": 17,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 314.3401184082031,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block17_head13_mean.npy",
+      "variance_path": "deepglobe/block17_head13_variance.npy",
+      "entropy": 5.2609885896682735
+    },
+    {
+      "block": 18,
+      "head": 7,
+      "block_type": "windowed",
+      "rank_score": 214.9867401123047,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block18_head7_mean.npy",
+      "variance_path": "deepglobe/block18_head7_variance.npy",
+      "entropy": 5.266556808535258
+    },
+    {
+      "block": 18,
+      "head": 8,
+      "block_type": "windowed",
+      "rank_score": 229.4571990966797,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block18_head8_mean.npy",
+      "variance_path": "deepglobe/block18_head8_variance.npy",
+      "entropy": 5.260809916178386
+    },
+    {
+      "block": 19,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 278.48211669921875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block19_head14_mean.npy",
+      "variance_path": "deepglobe/block19_head14_variance.npy",
+      "entropy": 5.263677077929179
+    },
+    {
+      "block": 19,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 301.4195556640625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block19_head6_mean.npy",
+      "variance_path": "deepglobe/block19_head6_variance.npy",
+      "entropy": 5.2523524937311805
+    },
+    {
+      "block": 20,
+      "head": 10,
+      "block_type": "windowed",
+      "rank_score": 321.0150451660156,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block20_head10_mean.npy",
+      "variance_path": "deepglobe/block20_head10_variance.npy",
+      "entropy": 5.257732203992208
+    },
+    {
+      "block": 20,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 325.19769287109375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block20_head4_mean.npy",
+      "variance_path": "deepglobe/block20_head4_variance.npy",
+      "entropy": 5.2526566568374635
+    },
+    {
+      "block": 21,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 183.7743682861328,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block21_head13_mean.npy",
+      "variance_path": "deepglobe/block21_head13_variance.npy",
+      "entropy": 5.248156550470988
+    },
+    {
+      "block": 21,
+      "head": 0,
+      "block_type": "windowed",
+      "rank_score": 203.0936737060547,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block21_head0_mean.npy",
+      "variance_path": "deepglobe/block21_head0_variance.npy",
+      "entropy": 5.253942363039653
+    },
+    {
+      "block": 22,
+      "head": 3,
+      "block_type": "windowed",
+      "rank_score": 203.61260986328125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block22_head3_mean.npy",
+      "variance_path": "deepglobe/block22_head3_variance.npy",
+      "entropy": 5.25515555636088
+    },
+    {
+      "block": 22,
+      "head": 0,
+      "block_type": "windowed",
+      "rank_score": 236.300537109375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block22_head0_mean.npy",
+      "variance_path": "deepglobe/block22_head0_variance.npy",
+      "entropy": 5.250178983243306
+    },
+    {
+      "block": 23,
+      "head": 6,
+      "block_type": "global",
+      "rank_score": 3606.77685546875,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block23_head6_mean.npy",
+      "variance_path": "deepglobe/block23_head6_variance.npy",
+      "entropy": 8.29507794380188
+    },
+    {
+      "block": 23,
+      "head": 7,
+      "block_type": "global",
+      "rank_score": 4196.48291015625,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block23_head7_mean.npy",
+      "variance_path": "deepglobe/block23_head7_variance.npy",
+      "entropy": 8.317102467219035
+    },
+    {
+      "block": 24,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 309.9317626953125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block24_head6_mean.npy",
+      "variance_path": "deepglobe/block24_head6_variance.npy",
+      "entropy": 5.2621332589467364
+    },
+    {
+      "block": 24,
+      "head": 2,
+      "block_type": "windowed",
+      "rank_score": 413.57049560546875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block24_head2_mean.npy",
+      "variance_path": "deepglobe/block24_head2_variance.npy",
+      "entropy": 5.229156518681844
+    },
+    {
+      "block": 25,
+      "head": 1,
+      "block_type": "windowed",
+      "rank_score": 268.16998291015625,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block25_head1_mean.npy",
+      "variance_path": "deepglobe/block25_head1_variance.npy",
+      "entropy": 5.256043569119771
+    },
+    {
+      "block": 25,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 277.232177734375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block25_head12_mean.npy",
+      "variance_path": "deepglobe/block25_head12_variance.npy",
+      "entropy": 5.257636518033346
+    },
+    {
+      "block": 26,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 187.302490234375,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block26_head14_mean.npy",
+      "variance_path": "deepglobe/block26_head14_variance.npy",
+      "entropy": 5.248264130210877
+    },
+    {
+      "block": 26,
+      "head": 4,
+      "block_type": "windowed",
+      "rank_score": 214.38241577148438,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block26_head4_mean.npy",
+      "variance_path": "deepglobe/block26_head4_variance.npy",
+      "entropy": 5.253122241338094
+    },
+    {
+      "block": 27,
+      "head": 9,
+      "block_type": "windowed",
+      "rank_score": 208.73776245117188,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block27_head9_mean.npy",
+      "variance_path": "deepglobe/block27_head9_variance.npy",
+      "entropy": 5.260078813362122
+    },
+    {
+      "block": 27,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 299.37335205078125,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block27_head12_mean.npy",
+      "variance_path": "deepglobe/block27_head12_variance.npy",
+      "entropy": 5.206358263969421
+    },
+    {
+      "block": 28,
+      "head": 0,
+      "block_type": "windowed",
+      "rank_score": 224.72274780273438,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block28_head0_mean.npy",
+      "variance_path": "deepglobe/block28_head0_variance.npy",
+      "entropy": 5.229829298973083
+    },
+    {
+      "block": 28,
+      "head": 6,
+      "block_type": "windowed",
+      "rank_score": 248.74539184570312,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block28_head6_mean.npy",
+      "variance_path": "deepglobe/block28_head6_variance.npy",
+      "entropy": 5.1990356435775755
+    },
+    {
+      "block": 29,
+      "head": 12,
+      "block_type": "windowed",
+      "rank_score": 54.81425476074219,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block29_head12_mean.npy",
+      "variance_path": "deepglobe/block29_head12_variance.npy",
+      "entropy": 5.264470449829101
+    },
+    {
+      "block": 29,
+      "head": 15,
+      "block_type": "windowed",
+      "rank_score": 56.5242919921875,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block29_head15_mean.npy",
+      "variance_path": "deepglobe/block29_head15_variance.npy",
+      "entropy": 5.262166483879089
+    },
+    {
+      "block": 30,
+      "head": 14,
+      "block_type": "windowed",
+      "rank_score": 41.09557342529297,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block30_head14_mean.npy",
+      "variance_path": "deepglobe/block30_head14_variance.npy",
+      "entropy": 5.260806368509928
+    },
+    {
+      "block": 30,
+      "head": 13,
+      "block_type": "windowed",
+      "rank_score": 102.21017456054688,
+      "mean_shape": [
+        196,
+        80
+      ],
+      "mean_path": "deepglobe/block30_head13_mean.npy",
+      "variance_path": "deepglobe/block30_head13_variance.npy",
+      "entropy": 5.224349259503683
+    },
+    {
+      "block": 31,
+      "head": 4,
+      "block_type": "global",
+      "rank_score": 1104.2823486328125,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block31_head4_mean.npy",
+      "variance_path": "deepglobe/block31_head4_variance.npy",
+      "entropy": 8.3153125222524
+    },
+    {
+      "block": 31,
+      "head": 11,
+      "block_type": "global",
+      "rank_score": 1183.026123046875,
+      "mean_shape": [
+        4096,
+        80
+      ],
+      "mean_path": "deepglobe/block31_head11_mean.npy",
+      "variance_path": "deepglobe/block31_head11_variance.npy",
+      "entropy": 8.281652399698894
+    }
+  ],
+  "summary": {
+    "total_heads": 512,
+    "frozen": 64,
+    "frozen_windowed": 56,
+    "frozen_global": 8,
+    "freeze_rate": 0.125
+  },
+  "flops": {
+    "attention_flop_reduction_pct": 12.5,
+    "encoder_flop_reduction_pct": 5.26,
+    "saved_gflops": 311.8,
+    "total_attn_gflops": 2494.3,
+    "total_encoder_gflops": 5930.3,
+    "per_head_windowed_gflops": 4.32,
+    "per_head_global_gflops": 8.72
+  }
+}

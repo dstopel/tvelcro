@@ -1,0 +1,19 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+18:01:52 | INFO | Loading SAM ViT-H...
+18:02:43 | INFO | Domain groups: ['busi']
+18:02:49 | INFO | 
+============================================================
+18:02:49 | INFO | Profiling group: busi
+18:02:50 | INFO |   Images: 300
+18:04:20 | INFO |   [busi] 50/300 images profiled
+18:05:46 | INFO |   [busi] 100/300 images profiled
+18:07:12 | INFO |   [busi] 150/300 images profiled
+18:08:39 | INFO |   [busi] 200/300 images profiled
+18:10:07 | INFO |   [busi] 250/300 images profiled
+18:11:33 | INFO |   [busi] 300/300 images profiled
+18:12:13 | INFO |   Saved MLP profiles for 32 blocks
+18:12:28 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/busi/
+18:12:28 | INFO | 
+Profile phase complete.

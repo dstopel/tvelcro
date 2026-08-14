@@ -1,0 +1,35 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+10:01:21 | INFO | Loading SAM ViT-H...
+10:01:35 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_pcb_random_s1_f0.25/freeze_manifest.json
+10:01:37 | INFO |   Frozen heads: 128 / 512
+10:01:37 | INFO | 
+============================================================
+10:01:37 | INFO | Evaluating group: pcb
+10:01:38 | INFO |   Images: 300
+10:07:42 | INFO |     20/300 | running mean IoU: 0.9622
+10:13:43 | INFO |     40/300 | running mean IoU: 0.9623
+10:20:34 | INFO |     60/300 | running mean IoU: 0.9624
+10:27:34 | INFO |     80/300 | running mean IoU: 0.9624
+10:34:39 | INFO |     100/300 | running mean IoU: 0.9625
+10:41:22 | INFO |     120/300 | running mean IoU: 0.9638
+10:48:04 | INFO |     140/300 | running mean IoU: 0.9650
+10:55:11 | INFO |     160/300 | running mean IoU: 0.9658
+11:02:21 | INFO |     180/300 | running mean IoU: 0.9663
+11:08:59 | INFO |     200/300 | running mean IoU: 0.9671
+11:15:51 | INFO |     220/300 | running mean IoU: 0.9673
+11:23:18 | INFO |     240/300 | running mean IoU: 0.9671
+11:29:53 | INFO |     260/300 | running mean IoU: 0.9678
+11:35:44 | INFO |     280/300 | running mean IoU: 0.9686
+11:42:31 | INFO |     300/300 | running mean IoU: 0.9689
+11:42:31 | INFO | 
+  Results for 'pcb':
+11:42:31 | INFO |     Mean IoU:       0.9701
+11:42:31 | INFO |     Miss rate:      0.1058
+11:42:31 | INFO |     False pos rate: 0.0446
+11:42:31 | INFO |     Feature sim:    0.9486
+11:42:31 | INFO |     Misses: 4895 (domain=0, redundant=52, background=4843)
+11:42:31 | INFO |     Added:  2105 (domain=0, redundant=14, background=2091)
+11:42:32 | INFO | 
+Eval phase complete.

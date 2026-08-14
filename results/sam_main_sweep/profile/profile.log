@@ -1,0 +1,16 @@
+18:25:20 | INFO | Loading SAM ViT-H...
+18:26:28 | INFO | Domain groups: ['pcb']
+18:26:38 | INFO | 
+============================================================
+18:26:38 | INFO | Profiling group: pcb
+18:26:39 | INFO |   Images: 300
+18:28:10 | INFO |   [pcb] 50/300 images profiled
+18:29:39 | INFO |   [pcb] 100/300 images profiled
+18:31:10 | INFO |   [pcb] 150/300 images profiled
+18:32:39 | INFO |   [pcb] 200/300 images profiled
+18:34:10 | INFO |   [pcb] 250/300 images profiled
+18:35:40 | INFO |   [pcb] 300/300 images profiled
+18:36:19 | INFO |   Saved MLP profiles for 32 blocks
+18:36:33 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/pcb/
+18:36:33 | INFO | 
+Profile phase complete.

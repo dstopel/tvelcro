@@ -1,0 +1,31 @@
+{
+  "mode": "profile",
+  "model_key": "vit_base",
+  "model": "vit_base_patch16_224",
+  "num_blocks": 12,
+  "num_heads": 12,
+  "head_dim": 64,
+  "seq_len": 197,
+  "groups": [
+    "general"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/general_profile"
+  ],
+  "accuracy": {
+    "general": {
+      "top1": 83.67,
+      "top5": 97.0,
+      "correct_top1": 251,
+      "correct_top5": 291,
+      "total": 300,
+      "time_sec": 30.53
+    }
+  },
+  "N": {
+    "general": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 32
+}

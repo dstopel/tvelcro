@@ -1,0 +1,805 @@
+[17:38:15] Profiling kvasir (N=300)...
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+17:38:57 | INFO | Loading SAM ViT-H...
+17:39:49 | INFO | Domain groups: ['kvasir']
+17:39:56 | INFO | 
+============================================================
+17:39:56 | INFO | Profiling group: kvasir
+17:39:57 | INFO |   Images: 300
+17:41:26 | INFO |   [kvasir] 50/300 images profiled
+17:42:52 | INFO |   [kvasir] 100/300 images profiled
+17:44:17 | INFO |   [kvasir] 150/300 images profiled
+17:45:42 | INFO |   [kvasir] 200/300 images profiled
+17:47:09 | INFO |   [kvasir] 250/300 images profiled
+17:48:39 | INFO |   [kvasir] 300/300 images profiled
+17:49:13 | INFO |   Saved MLP profiles for 32 blocks
+17:49:23 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/kvasir/
+17:49:23 | INFO | 
+Profile phase complete.
+[17:49:28] Profiling isic (N=300)...
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+17:50:10 | INFO | Loading SAM ViT-H...
+17:50:59 | INFO | Domain groups: ['isic']
+17:51:06 | INFO | 
+============================================================
+17:51:06 | INFO | Profiling group: isic
+17:51:06 | INFO |   Images: 300
+17:52:41 | INFO |   [isic] 50/300 images profiled
+17:54:11 | INFO |   [isic] 100/300 images profiled
+17:55:38 | INFO |   [isic] 150/300 images profiled
+17:57:07 | INFO |   [isic] 200/300 images profiled
+17:58:39 | INFO |   [isic] 250/300 images profiled
+18:00:10 | INFO |   [isic] 300/300 images profiled
+18:00:44 | INFO |   Saved MLP profiles for 32 blocks
+18:00:56 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/isic/
+18:00:56 | INFO | 
+Profile phase complete.
+[18:01:01] Profiling busi (N=300)...
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+18:01:52 | INFO | Loading SAM ViT-H...
+18:02:43 | INFO | Domain groups: ['busi']
+18:02:49 | INFO | 
+============================================================
+18:02:49 | INFO | Profiling group: busi
+18:02:50 | INFO |   Images: 300
+18:04:20 | INFO |   [busi] 50/300 images profiled
+18:05:46 | INFO |   [busi] 100/300 images profiled
+18:07:12 | INFO |   [busi] 150/300 images profiled
+18:08:39 | INFO |   [busi] 200/300 images profiled
+18:10:07 | INFO |   [busi] 250/300 images profiled
+18:11:33 | INFO |   [busi] 300/300 images profiled
+18:12:13 | INFO |   Saved MLP profiles for 32 blocks
+18:12:28 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/busi/
+18:12:28 | INFO | 
+Profile phase complete.
+[18:12:32] Profiling deepglobe (N=300)...
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+18:13:30 | INFO | Loading SAM ViT-H...
+18:14:35 | INFO | Domain groups: ['deepglobe']
+18:14:44 | INFO | 
+============================================================
+18:14:44 | INFO | Profiling group: deepglobe
+18:14:45 | INFO |   Images: 300
+18:16:14 | INFO |   [deepglobe] 50/300 images profiled
+18:17:39 | INFO |   [deepglobe] 100/300 images profiled
+18:19:06 | INFO |   [deepglobe] 150/300 images profiled
+18:20:31 | INFO |   [deepglobe] 200/300 images profiled
+18:21:56 | INFO |   [deepglobe] 250/300 images profiled
+18:23:23 | INFO |   [deepglobe] 300/300 images profiled
+18:24:04 | INFO |   Saved MLP profiles for 32 blocks
+18:24:17 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/deepglobe/
+18:24:17 | INFO | 
+Profile phase complete.
+[18:24:22] Profiling pcb (N=300)...
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+18:25:20 | INFO | Loading SAM ViT-H...
+18:26:28 | INFO | Domain groups: ['pcb']
+18:26:38 | INFO | 
+============================================================
+18:26:38 | INFO | Profiling group: pcb
+18:26:39 | INFO |   Images: 300
+18:28:10 | INFO |   [pcb] 50/300 images profiled
+18:29:39 | INFO |   [pcb] 100/300 images profiled
+18:31:10 | INFO |   [pcb] 150/300 images profiled
+18:32:39 | INFO |   [pcb] 200/300 images profiled
+18:34:10 | INFO |   [pcb] 250/300 images profiled
+18:35:40 | INFO |   [pcb] 300/300 images profiled
+18:36:19 | INFO |   Saved MLP profiles for 32 blocks
+18:36:33 | INFO |   Saved 512 head profiles to ./results/sam_main_sweep/profile/pcb/
+18:36:33 | INFO | 
+Profile phase complete.
+[18:36:38] --- kvasir @ f=0.125 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+18:37:53 | INFO | Loading profile from: ./results/sam_main_sweep/profile/kvasir
+18:38:06 | INFO |   Found 512 head profiles
+18:38:06 | INFO |   Ranking method: variance (seed=0)
+18:38:06 | INFO |   Freezing 64 / 512 heads
+18:38:06 | INFO |   Manifest saved to results/sam_main_sweep/freeze_kvasir_f0.125/freeze_manifest.json
+18:38:12 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+18:38:12 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+18:40:20 | INFO | Loading SAM ViT-H...
+18:40:32 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_kvasir_f0.125/freeze_manifest.json
+18:40:34 | INFO |   Frozen heads: 64 / 512
+18:40:34 | INFO | 
+============================================================
+18:40:34 | INFO | Evaluating group: kvasir
+18:40:35 | INFO |   Images: 300
+18:44:07 | INFO |     20/300 | running mean IoU: 0.9792
+18:47:41 | INFO |     40/300 | running mean IoU: 0.9785
+18:51:12 | INFO |     60/300 | running mean IoU: 0.9788
+18:54:49 | INFO |     80/300 | running mean IoU: 0.9797
+18:58:20 | INFO |     100/300 | running mean IoU: 0.9789
+19:01:55 | INFO |     120/300 | running mean IoU: 0.9790
+19:05:25 | INFO |     140/300 | running mean IoU: 0.9790
+19:08:57 | INFO |     160/300 | running mean IoU: 0.9788
+19:12:30 | INFO |     180/300 | running mean IoU: 0.9789
+19:16:02 | INFO |     200/300 | running mean IoU: 0.9789
+19:19:35 | INFO |     220/300 | running mean IoU: 0.9789
+19:23:05 | INFO |     240/300 | running mean IoU: 0.9790
+19:26:37 | INFO |     260/300 | running mean IoU: 0.9791
+19:30:09 | INFO |     280/300 | running mean IoU: 0.9792
+19:33:42 | INFO |     300/300 | running mean IoU: 0.9792
+19:33:42 | INFO | 
+  Results for 'kvasir':
+19:33:42 | INFO |     Mean IoU:       0.9794
+19:33:42 | INFO |     Miss rate:      0.0793
+19:33:42 | INFO |     False pos rate: 0.1169
+19:33:42 | INFO |     Feature sim:    0.9905
+19:33:42 | INFO |     Misses: 1231 (domain=4, redundant=189, background=1038)
+19:33:42 | INFO |     Added:  1852 (domain=3, redundant=241, background=1608)
+19:33:43 | INFO | 
+Eval phase complete.
+[19:33:45] --- kvasir @ f=0.25 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+19:34:45 | INFO | Loading profile from: ./results/sam_main_sweep/profile/kvasir
+19:34:57 | INFO |   Found 512 head profiles
+19:34:57 | INFO |   Ranking method: variance (seed=0)
+19:34:57 | INFO |   Freezing 128 / 512 heads
+19:34:57 | INFO |   Manifest saved to results/sam_main_sweep/freeze_kvasir_f0.25/freeze_manifest.json
+19:35:02 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+19:35:02 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+19:36:50 | INFO | Loading SAM ViT-H...
+19:37:03 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_kvasir_f0.25/freeze_manifest.json
+19:37:06 | INFO |   Frozen heads: 128 / 512
+19:37:06 | INFO | 
+============================================================
+19:37:06 | INFO | Evaluating group: kvasir
+19:37:07 | INFO |   Images: 300
+19:40:39 | INFO |     20/300 | running mean IoU: 0.9618
+19:44:10 | INFO |     40/300 | running mean IoU: 0.9611
+19:47:43 | INFO |     60/300 | running mean IoU: 0.9607
+19:51:19 | INFO |     80/300 | running mean IoU: 0.9606
+19:54:48 | INFO |     100/300 | running mean IoU: 0.9606
+19:58:21 | INFO |     120/300 | running mean IoU: 0.9609
+20:01:51 | INFO |     140/300 | running mean IoU: 0.9611
+20:05:23 | INFO |     160/300 | running mean IoU: 0.9612
+20:08:53 | INFO |     180/300 | running mean IoU: 0.9615
+20:12:23 | INFO |     200/300 | running mean IoU: 0.9616
+20:15:50 | INFO |     220/300 | running mean IoU: 0.9617
+20:19:17 | INFO |     240/300 | running mean IoU: 0.9615
+20:22:49 | INFO |     260/300 | running mean IoU: 0.9613
+20:26:21 | INFO |     280/300 | running mean IoU: 0.9614
+20:29:52 | INFO |     300/300 | running mean IoU: 0.9614
+20:29:52 | INFO | 
+  Results for 'kvasir':
+20:29:52 | INFO |     Mean IoU:       0.9620
+20:29:52 | INFO |     Miss rate:      0.1276
+20:29:52 | INFO |     False pos rate: 0.2040
+20:29:52 | INFO |     Feature sim:    0.9661
+20:29:52 | INFO |     Misses: 1962 (domain=18, redundant=232, background=1712)
+20:29:52 | INFO |     Added:  3495 (domain=28, redundant=482, background=2985)
+20:29:53 | INFO | 
+Eval phase complete.
+[20:29:54] --- kvasir @ f=0.375 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+20:30:49 | INFO | Loading profile from: ./results/sam_main_sweep/profile/kvasir
+20:30:59 | INFO |   Found 512 head profiles
+20:30:59 | INFO |   Ranking method: variance (seed=0)
+20:30:59 | INFO |   Freezing 192 / 512 heads
+20:30:59 | INFO |   Manifest saved to results/sam_main_sweep/freeze_kvasir_f0.375/freeze_manifest.json
+20:31:04 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+20:31:04 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+20:32:55 | INFO | Loading SAM ViT-H...
+20:33:08 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_kvasir_f0.375/freeze_manifest.json
+20:33:12 | INFO |   Frozen heads: 192 / 512
+20:33:12 | INFO | 
+============================================================
+20:33:12 | INFO | Evaluating group: kvasir
+20:33:13 | INFO |   Images: 300
+20:36:44 | INFO |     20/300 | running mean IoU: 0.9545
+20:40:14 | INFO |     40/300 | running mean IoU: 0.9548
+20:43:45 | INFO |     60/300 | running mean IoU: 0.9552
+20:47:19 | INFO |     80/300 | running mean IoU: 0.9554
+20:50:47 | INFO |     100/300 | running mean IoU: 0.9559
+20:54:19 | INFO |     120/300 | running mean IoU: 0.9561
+20:57:48 | INFO |     140/300 | running mean IoU: 0.9554
+21:01:18 | INFO |     160/300 | running mean IoU: 0.9552
+21:04:46 | INFO |     180/300 | running mean IoU: 0.9556
+21:08:15 | INFO |     200/300 | running mean IoU: 0.9554
+21:11:42 | INFO |     220/300 | running mean IoU: 0.9557
+21:15:09 | INFO |     240/300 | running mean IoU: 0.9557
+21:18:40 | INFO |     260/300 | running mean IoU: 0.9553
+21:22:10 | INFO |     280/300 | running mean IoU: 0.9555
+21:25:40 | INFO |     300/300 | running mean IoU: 0.9553
+21:25:40 | INFO | 
+  Results for 'kvasir':
+21:25:40 | INFO |     Mean IoU:       0.9557
+21:25:40 | INFO |     Miss rate:      0.1880
+21:25:40 | INFO |     False pos rate: 0.1952
+21:25:40 | INFO |     Feature sim:    0.9329
+21:25:40 | INFO |     Misses: 2877 (domain=44, redundant=304, background=2529)
+21:25:40 | INFO |     Added:  2989 (domain=66, redundant=404, background=2519)
+21:25:41 | INFO | 
+Eval phase complete.
+[21:25:43] --- isic @ f=0.125 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+21:26:37 | INFO | Loading profile from: ./results/sam_main_sweep/profile/isic
+21:26:47 | INFO |   Found 512 head profiles
+21:26:47 | INFO |   Ranking method: variance (seed=0)
+21:26:47 | INFO |   Freezing 64 / 512 heads
+21:26:47 | INFO |   Manifest saved to results/sam_main_sweep/freeze_isic_f0.125/freeze_manifest.json
+21:26:52 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+21:26:52 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+21:28:47 | INFO | Loading SAM ViT-H...
+21:29:00 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_isic_f0.125/freeze_manifest.json
+21:29:01 | INFO |   Frozen heads: 64 / 512
+21:29:01 | INFO | 
+============================================================
+21:29:01 | INFO | Evaluating group: isic
+21:29:02 | INFO |   Images: 300
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+21:34:17 | INFO |     20/300 | running mean IoU: 0.9706
+21:39:55 | INFO |     40/300 | running mean IoU: 0.9723
+21:47:00 | INFO |     60/300 | running mean IoU: 0.9707
+21:55:22 | INFO |     80/300 | running mean IoU: 0.9711
+22:04:54 | INFO |     100/300 | running mean IoU: 0.9709
+22:11:18 | INFO |     120/300 | running mean IoU: 0.9717
+22:18:19 | INFO |     140/300 | running mean IoU: 0.9726
+22:25:28 | INFO |     160/300 | running mean IoU: 0.9730
+22:32:07 | INFO |     180/300 | running mean IoU: 0.9728
+22:39:25 | INFO |     200/300 | running mean IoU: 0.9733
+22:46:37 | INFO |     220/300 | running mean IoU: 0.9733
+22:53:53 | INFO |     240/300 | running mean IoU: 0.9735
+23:01:37 | INFO |     260/300 | running mean IoU: 0.9738
+23:09:17 | INFO |     280/300 | running mean IoU: 0.9741
+23:16:15 | INFO |     300/300 | running mean IoU: 0.9744
+23:16:15 | INFO | 
+  Results for 'isic':
+23:16:15 | INFO |     Mean IoU:       0.9755
+23:16:15 | INFO |     Miss rate:      0.0708
+23:16:15 | INFO |     False pos rate: 0.0779
+23:16:15 | INFO |     Feature sim:    0.9938
+23:16:15 | INFO |     Misses: 511 (domain=7, redundant=63, background=441)
+23:16:15 | INFO |     Added:  577 (domain=6, redundant=68, background=503)
+23:16:16 | INFO | 
+Eval phase complete.
+[23:16:20] --- isic @ f=0.25 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+23:17:17 | INFO | Loading profile from: ./results/sam_main_sweep/profile/isic
+23:17:29 | INFO |   Found 512 head profiles
+23:17:29 | INFO |   Ranking method: variance (seed=0)
+23:17:29 | INFO |   Freezing 128 / 512 heads
+23:17:29 | INFO |   Manifest saved to results/sam_main_sweep/freeze_isic_f0.25/freeze_manifest.json
+23:17:34 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+23:17:34 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+23:19:08 | INFO | Loading SAM ViT-H...
+23:19:21 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_isic_f0.25/freeze_manifest.json
+23:19:23 | INFO |   Frozen heads: 128 / 512
+23:19:23 | INFO | 
+============================================================
+23:19:23 | INFO | Evaluating group: isic
+23:19:23 | INFO |   Images: 300
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+23:24:30 | INFO |     20/300 | running mean IoU: 0.9587
+23:30:04 | INFO |     40/300 | running mean IoU: 0.9597
+23:37:16 | INFO |     60/300 | running mean IoU: 0.9569
+23:45:31 | INFO |     80/300 | running mean IoU: 0.9570
+23:55:04 | INFO |     100/300 | running mean IoU: 0.9569
+00:01:31 | INFO |     120/300 | running mean IoU: 0.9578
+00:08:22 | INFO |     140/300 | running mean IoU: 0.9592
+00:15:23 | INFO |     160/300 | running mean IoU: 0.9601
+00:22:00 | INFO |     180/300 | running mean IoU: 0.9598
+00:29:24 | INFO |     200/300 | running mean IoU: 0.9599
+00:36:41 | INFO |     220/300 | running mean IoU: 0.9596
+00:44:08 | INFO |     240/300 | running mean IoU: 0.9599
+00:51:56 | INFO |     260/300 | running mean IoU: 0.9603
+00:59:40 | INFO |     280/300 | running mean IoU: 0.9606
+01:06:42 | INFO |     300/300 | running mean IoU: 0.9608
+01:06:42 | INFO | 
+  Results for 'isic':
+01:06:42 | INFO |     Mean IoU:       0.9622
+01:06:42 | INFO |     Miss rate:      0.1457
+01:06:42 | INFO |     False pos rate: 0.1253
+01:06:42 | INFO |     Feature sim:    0.9799
+01:06:42 | INFO |     Misses: 1056 (domain=14, redundant=141, background=901)
+01:06:42 | INFO |     Added:  885 (domain=8, redundant=102, background=775)
+01:06:42 | INFO | 
+Eval phase complete.
+[01:06:44] --- isic @ f=0.375 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+01:07:22 | INFO | Loading profile from: ./results/sam_main_sweep/profile/isic
+01:07:29 | INFO |   Found 512 head profiles
+01:07:29 | INFO |   Ranking method: variance (seed=0)
+01:07:29 | INFO |   Freezing 192 / 512 heads
+01:07:29 | INFO |   Manifest saved to results/sam_main_sweep/freeze_isic_f0.375/freeze_manifest.json
+01:07:33 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+01:07:33 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+01:08:39 | INFO | Loading SAM ViT-H...
+01:08:52 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_isic_f0.375/freeze_manifest.json
+01:08:54 | INFO |   Frozen heads: 192 / 512
+01:08:54 | INFO | 
+============================================================
+01:08:54 | INFO | Evaluating group: isic
+01:08:55 | INFO |   Images: 300
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+01:13:59 | INFO |     20/300 | running mean IoU: 0.9428
+01:19:31 | INFO |     40/300 | running mean IoU: 0.9466
+01:26:20 | INFO |     60/300 | running mean IoU: 0.9435
+01:34:31 | INFO |     80/300 | running mean IoU: 0.9442
+01:43:59 | INFO |     100/300 | running mean IoU: 0.9452
+01:50:20 | INFO |     120/300 | running mean IoU: 0.9458
+01:57:09 | INFO |     140/300 | running mean IoU: 0.9470
+02:04:11 | INFO |     160/300 | running mean IoU: 0.9484
+02:10:46 | INFO |     180/300 | running mean IoU: 0.9482
+02:18:11 | INFO |     200/300 | running mean IoU: 0.9486
+02:25:31 | INFO |     220/300 | running mean IoU: 0.9488
+02:32:54 | INFO |     240/300 | running mean IoU: 0.9489
+02:40:42 | INFO |     260/300 | running mean IoU: 0.9494
+02:48:25 | INFO |     280/300 | running mean IoU: 0.9495
+02:55:18 | INFO |     300/300 | running mean IoU: 0.9494
+02:55:18 | INFO | 
+  Results for 'isic':
+02:55:18 | INFO |     Mean IoU:       0.9511
+02:55:18 | INFO |     Miss rate:      0.2435
+02:55:18 | INFO |     False pos rate: 0.1479
+02:55:18 | INFO |     Feature sim:    0.9587
+02:55:18 | INFO |     Misses: 1766 (domain=31, redundant=202, background=1533)
+02:55:18 | INFO |     Added:  929 (domain=4, redundant=109, background=816)
+02:55:19 | INFO | 
+Eval phase complete.
+[02:55:20] --- busi @ f=0.125 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+02:56:00 | INFO | Loading profile from: ./results/sam_main_sweep/profile/busi
+02:56:08 | INFO |   Found 512 head profiles
+02:56:08 | INFO |   Ranking method: variance (seed=0)
+02:56:08 | INFO |   Freezing 64 / 512 heads
+02:56:08 | INFO |   Manifest saved to results/sam_main_sweep/freeze_busi_f0.125/freeze_manifest.json
+02:56:12 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+02:56:12 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+02:57:19 | INFO | Loading SAM ViT-H...
+02:57:31 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_busi_f0.125/freeze_manifest.json
+02:57:32 | INFO |   Frozen heads: 64 / 512
+02:57:32 | INFO | 
+============================================================
+02:57:32 | INFO | Evaluating group: busi
+02:57:33 | INFO |   Images: 300
+03:01:10 | INFO |     20/300 | running mean IoU: 0.9591
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+03:04:43 | INFO |     40/300 | running mean IoU: 0.9630
+03:08:19 | INFO |     60/300 | running mean IoU: 0.9646
+03:11:50 | INFO |     80/300 | running mean IoU: 0.9649
+03:15:25 | INFO |     100/300 | running mean IoU: 0.9645
+03:18:56 | INFO |     120/300 | running mean IoU: 0.9641
+03:22:29 | INFO |     140/300 | running mean IoU: 0.9645
+03:26:04 | INFO |     160/300 | running mean IoU: 0.9641
+03:29:36 | INFO |     180/300 | running mean IoU: 0.9645
+03:33:02 | INFO |     200/300 | running mean IoU: 0.9646
+03:36:32 | INFO |     220/300 | running mean IoU: 0.9650
+03:40:06 | INFO |     240/300 | running mean IoU: 0.9649
+03:43:45 | INFO |     260/300 | running mean IoU: 0.9647
+03:47:18 | INFO |     280/300 | running mean IoU: 0.9646
+03:50:50 | INFO |     300/300 | running mean IoU: 0.9646
+03:50:50 | INFO | 
+  Results for 'busi':
+03:50:50 | INFO |     Mean IoU:       0.9651
+03:50:50 | INFO |     Miss rate:      0.1519
+03:50:50 | INFO |     False pos rate: 0.1679
+03:50:50 | INFO |     Feature sim:    0.9790
+03:50:50 | INFO |     Misses: 1227 (domain=4, redundant=115, background=1108)
+03:50:50 | INFO |     Added:  1374 (domain=6, redundant=101, background=1267)
+03:50:51 | INFO | 
+Eval phase complete.
+[03:50:53] --- busi @ f=0.25 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+03:51:32 | INFO | Loading profile from: ./results/sam_main_sweep/profile/busi
+03:51:39 | INFO |   Found 512 head profiles
+03:51:39 | INFO |   Ranking method: variance (seed=0)
+03:51:39 | INFO |   Freezing 128 / 512 heads
+03:51:39 | INFO |   Manifest saved to results/sam_main_sweep/freeze_busi_f0.25/freeze_manifest.json
+03:51:43 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+03:51:43 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+03:52:48 | INFO | Loading SAM ViT-H...
+03:53:01 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_busi_f0.25/freeze_manifest.json
+03:53:02 | INFO |   Frozen heads: 128 / 512
+03:53:02 | INFO | 
+============================================================
+03:53:02 | INFO | Evaluating group: busi
+03:53:03 | INFO |   Images: 300
+03:56:40 | INFO |     20/300 | running mean IoU: 0.9522
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+04:00:11 | INFO |     40/300 | running mean IoU: 0.9521
+04:03:44 | INFO |     60/300 | running mean IoU: 0.9519
+04:07:13 | INFO |     80/300 | running mean IoU: 0.9508
+04:10:46 | INFO |     100/300 | running mean IoU: 0.9505
+04:14:16 | INFO |     120/300 | running mean IoU: 0.9502
+04:17:48 | INFO |     140/300 | running mean IoU: 0.9502
+04:21:21 | INFO |     160/300 | running mean IoU: 0.9501
+04:24:53 | INFO |     180/300 | running mean IoU: 0.9498
+04:28:18 | INFO |     200/300 | running mean IoU: 0.9497
+04:31:48 | INFO |     220/300 | running mean IoU: 0.9501
+04:35:21 | INFO |     240/300 | running mean IoU: 0.9504
+04:38:58 | INFO |     260/300 | running mean IoU: 0.9503
+04:42:30 | INFO |     280/300 | running mean IoU: 0.9501
+04:46:02 | INFO |     300/300 | running mean IoU: 0.9498
+04:46:02 | INFO | 
+  Results for 'busi':
+04:46:02 | INFO |     Mean IoU:       0.9507
+04:46:02 | INFO |     Miss rate:      0.1503
+04:46:02 | INFO |     False pos rate: 0.2898
+04:46:02 | INFO |     Feature sim:    0.9508
+04:46:02 | INFO |     Misses: 1215 (domain=11, redundant=124, background=1080)
+04:46:02 | INFO |     Added:  2819 (domain=11, redundant=197, background=2611)
+04:46:03 | INFO | 
+Eval phase complete.
+[04:46:05] --- busi @ f=0.375 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+04:46:43 | INFO | Loading profile from: ./results/sam_main_sweep/profile/busi
+04:46:51 | INFO |   Found 512 head profiles
+04:46:51 | INFO |   Ranking method: variance (seed=0)
+04:46:51 | INFO |   Freezing 192 / 512 heads
+04:46:51 | INFO |   Manifest saved to results/sam_main_sweep/freeze_busi_f0.375/freeze_manifest.json
+04:46:55 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+04:46:55 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+04:48:01 | INFO | Loading SAM ViT-H...
+04:48:14 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_busi_f0.375/freeze_manifest.json
+04:48:16 | INFO |   Frozen heads: 192 / 512
+04:48:16 | INFO | 
+============================================================
+04:48:16 | INFO | Evaluating group: busi
+04:48:17 | INFO |   Images: 300
+04:51:52 | INFO |     20/300 | running mean IoU: 0.9449
+04:55:22 | INFO |     40/300 | running mean IoU: 0.9459
+04:58:53 | INFO |     60/300 | running mean IoU: 0.9445
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+05:02:21 | INFO |     80/300 | running mean IoU: 0.9426
+05:05:52 | INFO |     100/300 | running mean IoU: 0.9429
+05:09:22 | INFO |     120/300 | running mean IoU: 0.9433
+05:12:51 | INFO |     140/300 | running mean IoU: 0.9437
+05:16:24 | INFO |     160/300 | running mean IoU: 0.9435
+05:19:53 | INFO |     180/300 | running mean IoU: 0.9433
+05:23:17 | INFO |     200/300 | running mean IoU: 0.9433
+05:26:46 | INFO |     220/300 | running mean IoU: 0.9432
+05:30:18 | INFO |     240/300 | running mean IoU: 0.9434
+05:33:56 | INFO |     260/300 | running mean IoU: 0.9432
+05:37:27 | INFO |     280/300 | running mean IoU: 0.9429
+05:40:58 | INFO |     300/300 | running mean IoU: 0.9433
+05:40:58 | INFO | 
+  Results for 'busi':
+05:40:58 | INFO |     Mean IoU:       0.9442
+05:40:58 | INFO |     Miss rate:      0.2303
+05:40:58 | INFO |     False pos rate: 0.3160
+05:40:58 | INFO |     Feature sim:    0.9053
+05:40:58 | INFO |     Misses: 1906 (domain=22, redundant=187, background=1697)
+05:40:58 | INFO |     Added:  2852 (domain=13, redundant=210, background=2629)
+05:40:59 | INFO | 
+Eval phase complete.
+[05:41:01] --- deepglobe @ f=0.125 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+05:41:42 | INFO | Loading profile from: ./results/sam_main_sweep/profile/deepglobe
+05:41:50 | INFO |   Found 512 head profiles
+05:41:50 | INFO |   Ranking method: variance (seed=0)
+05:41:50 | INFO |   Freezing 64 / 512 heads
+05:41:50 | INFO |   Manifest saved to results/sam_main_sweep/freeze_deepglobe_f0.125/freeze_manifest.json
+05:41:55 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+05:41:55 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+05:43:05 | INFO | Loading SAM ViT-H...
+05:43:17 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_deepglobe_f0.125/freeze_manifest.json
+05:43:19 | INFO |   Frozen heads: 64 / 512
+05:43:19 | INFO | 
+============================================================
+05:43:19 | INFO | Evaluating group: deepglobe
+05:43:19 | INFO |   Images: 300
+05:47:25 | INFO |     20/300 | running mean IoU: 0.9817
+05:51:18 | INFO |     40/300 | running mean IoU: 0.9813
+05:55:15 | INFO |     60/300 | running mean IoU: 0.9812
+05:59:11 | INFO |     80/300 | running mean IoU: 0.9812
+06:03:09 | INFO |     100/300 | running mean IoU: 0.9815
+06:07:07 | INFO |     120/300 | running mean IoU: 0.9814
+06:11:07 | INFO |     140/300 | running mean IoU: 0.9812
+06:15:06 | INFO |     160/300 | running mean IoU: 0.9813
+06:19:05 | INFO |     180/300 | running mean IoU: 0.9814
+06:23:04 | INFO |     200/300 | running mean IoU: 0.9813
+06:26:59 | INFO |     220/300 | running mean IoU: 0.9814
+06:30:56 | INFO |     240/300 | running mean IoU: 0.9815
+06:34:54 | INFO |     260/300 | running mean IoU: 0.9815
+06:38:48 | INFO |     280/300 | running mean IoU: 0.9815
+06:42:46 | INFO |     300/300 | running mean IoU: 0.9816
+06:42:46 | INFO | 
+  Results for 'deepglobe':
+06:42:46 | INFO |     Mean IoU:       0.9816
+06:42:46 | INFO |     Miss rate:      0.0750
+06:42:46 | INFO |     False pos rate: 0.0736
+06:42:46 | INFO |     Feature sim:    0.9944
+06:42:46 | INFO |     Misses: 4693 (domain=62, redundant=5, background=4626)
+06:42:46 | INFO |     Added:  4368 (domain=59, redundant=1, background=4308)
+06:42:46 | INFO | 
+Eval phase complete.
+[06:42:49] --- deepglobe @ f=0.25 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+06:43:40 | INFO | Loading profile from: ./results/sam_main_sweep/profile/deepglobe
+06:43:49 | INFO |   Found 512 head profiles
+06:43:49 | INFO |   Ranking method: variance (seed=0)
+06:43:49 | INFO |   Freezing 128 / 512 heads
+06:43:49 | INFO |   Manifest saved to results/sam_main_sweep/freeze_deepglobe_f0.25/freeze_manifest.json
+06:43:54 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+06:43:54 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+06:45:20 | INFO | Loading SAM ViT-H...
+06:45:33 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_deepglobe_f0.25/freeze_manifest.json
+06:45:36 | INFO |   Frozen heads: 128 / 512
+06:45:36 | INFO | 
+============================================================
+06:45:36 | INFO | Evaluating group: deepglobe
+06:45:36 | INFO |   Images: 300
+06:49:38 | INFO |     20/300 | running mean IoU: 0.9680
+06:53:28 | INFO |     40/300 | running mean IoU: 0.9667
+06:57:21 | INFO |     60/300 | running mean IoU: 0.9670
+07:01:13 | INFO |     80/300 | running mean IoU: 0.9668
+07:05:05 | INFO |     100/300 | running mean IoU: 0.9671
+07:08:59 | INFO |     120/300 | running mean IoU: 0.9669
+07:12:54 | INFO |     140/300 | running mean IoU: 0.9665
+07:16:48 | INFO |     160/300 | running mean IoU: 0.9668
+07:20:42 | INFO |     180/300 | running mean IoU: 0.9673
+07:24:39 | INFO |     200/300 | running mean IoU: 0.9670
+07:28:31 | INFO |     220/300 | running mean IoU: 0.9670
+07:32:23 | INFO |     240/300 | running mean IoU: 0.9671
+07:36:18 | INFO |     260/300 | running mean IoU: 0.9671
+07:40:10 | INFO |     280/300 | running mean IoU: 0.9671
+07:44:05 | INFO |     300/300 | running mean IoU: 0.9673
+07:44:05 | INFO | 
+  Results for 'deepglobe':
+07:44:05 | INFO |     Mean IoU:       0.9676
+07:44:05 | INFO |     Miss rate:      0.1367
+07:44:05 | INFO |     False pos rate: 0.1099
+07:44:05 | INFO |     Feature sim:    0.9786
+07:44:05 | INFO |     Misses: 8470 (domain=118, redundant=13, background=8339)
+07:44:05 | INFO |     Added:  6538 (domain=94, redundant=2, background=6442)
+07:44:06 | INFO | 
+Eval phase complete.
+[07:44:07] --- deepglobe @ f=0.375 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+07:44:55 | INFO | Loading profile from: ./results/sam_main_sweep/profile/deepglobe
+07:45:05 | INFO |   Found 512 head profiles
+07:45:05 | INFO |   Ranking method: variance (seed=0)
+07:45:05 | INFO |   Freezing 192 / 512 heads
+07:45:06 | INFO |   Manifest saved to results/sam_main_sweep/freeze_deepglobe_f0.375/freeze_manifest.json
+07:45:10 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+07:45:10 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+07:46:44 | INFO | Loading SAM ViT-H...
+07:46:58 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_deepglobe_f0.375/freeze_manifest.json
+07:47:02 | INFO |   Frozen heads: 192 / 512
+07:47:02 | INFO | 
+============================================================
+07:47:02 | INFO | Evaluating group: deepglobe
+07:47:03 | INFO |   Images: 300
+07:51:01 | INFO |     20/300 | running mean IoU: 0.9540
+07:54:48 | INFO |     40/300 | running mean IoU: 0.9524
+07:58:38 | INFO |     60/300 | running mean IoU: 0.9518
+08:02:28 | INFO |     80/300 | running mean IoU: 0.9512
+08:06:16 | INFO |     100/300 | running mean IoU: 0.9513
+08:10:06 | INFO |     120/300 | running mean IoU: 0.9509
+08:13:57 | INFO |     140/300 | running mean IoU: 0.9505
+08:17:48 | INFO |     160/300 | running mean IoU: 0.9507
+08:21:40 | INFO |     180/300 | running mean IoU: 0.9512
+08:25:32 | INFO |     200/300 | running mean IoU: 0.9511
+08:29:21 | INFO |     220/300 | running mean IoU: 0.9510
+08:33:10 | INFO |     240/300 | running mean IoU: 0.9513
+08:37:03 | INFO |     260/300 | running mean IoU: 0.9516
+08:40:52 | INFO |     280/300 | running mean IoU: 0.9517
+08:44:43 | INFO |     300/300 | running mean IoU: 0.9519
+08:44:43 | INFO | 
+  Results for 'deepglobe':
+08:44:43 | INFO |     Mean IoU:       0.9510
+08:44:43 | INFO |     Miss rate:      0.3649
+08:44:43 | INFO |     False pos rate: 0.0963
+08:44:43 | INFO |     Feature sim:    0.8747
+08:44:43 | INFO |     Misses: 25118 (domain=370, redundant=16, background=24732)
+08:44:43 | INFO |     Added:  3794 (domain=40, redundant=1, background=3753)
+08:44:44 | INFO | 
+Eval phase complete.
+[08:44:46] --- pcb @ f=0.125 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+08:45:30 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+08:45:40 | INFO |   Found 512 head profiles
+08:45:40 | INFO |   Ranking method: variance (seed=0)
+08:45:40 | INFO |   Freezing 64 / 512 heads
+08:45:40 | INFO |   Manifest saved to results/sam_main_sweep/freeze_pcb_f0.125/freeze_manifest.json
+08:45:45 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+08:45:45 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+08:47:09 | INFO | Loading SAM ViT-H...
+08:47:23 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_pcb_f0.125/freeze_manifest.json
+08:47:24 | INFO |   Frozen heads: 64 / 512
+08:47:24 | INFO | 
+============================================================
+08:47:24 | INFO | Evaluating group: pcb
+08:47:25 | INFO |   Images: 300
+08:53:27 | INFO |     20/300 | running mean IoU: 0.9551
+08:59:26 | INFO |     40/300 | running mean IoU: 0.9550
+09:06:19 | INFO |     60/300 | running mean IoU: 0.9592
+09:13:21 | INFO |     80/300 | running mean IoU: 0.9619
+09:20:24 | INFO |     100/300 | running mean IoU: 0.9638
+09:27:03 | INFO |     120/300 | running mean IoU: 0.9653
+09:33:40 | INFO |     140/300 | running mean IoU: 0.9663
+09:40:34 | INFO |     160/300 | running mean IoU: 0.9673
+09:47:31 | INFO |     180/300 | running mean IoU: 0.9680
+09:54:09 | INFO |     200/300 | running mean IoU: 0.9685
+10:00:53 | INFO |     220/300 | running mean IoU: 0.9695
+10:08:03 | INFO |     240/300 | running mean IoU: 0.9708
+10:14:32 | INFO |     260/300 | running mean IoU: 0.9718
+10:20:23 | INFO |     280/300 | running mean IoU: 0.9725
+10:26:57 | INFO |     300/300 | running mean IoU: 0.9728
+10:26:57 | INFO | 
+  Results for 'pcb':
+10:26:57 | INFO |     Mean IoU:       0.9731
+10:26:57 | INFO |     Miss rate:      0.0703
+10:26:57 | INFO |     False pos rate: 0.0294
+10:26:57 | INFO |     Feature sim:    0.9915
+10:26:57 | INFO |     Misses: 3344 (domain=0, redundant=32, background=3312)
+10:26:57 | INFO |     Added:  1321 (domain=0, redundant=12, background=1309)
+10:26:58 | INFO | 
+Eval phase complete.
+[10:27:00] --- pcb @ f=0.25 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+10:27:47 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+10:27:57 | INFO |   Found 512 head profiles
+10:27:57 | INFO |   Ranking method: variance (seed=0)
+10:27:57 | INFO |   Freezing 128 / 512 heads
+10:27:57 | INFO |   Manifest saved to results/sam_main_sweep/freeze_pcb_f0.25/freeze_manifest.json
+10:28:01 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+10:28:01 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+10:29:27 | INFO | Loading SAM ViT-H...
+10:29:41 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_pcb_f0.25/freeze_manifest.json
+10:29:43 | INFO |   Frozen heads: 128 / 512
+10:29:43 | INFO | 
+============================================================
+10:29:43 | INFO | Evaluating group: pcb
+10:29:43 | INFO |   Images: 300
+10:35:55 | INFO |     20/300 | running mean IoU: 0.9356
+10:42:02 | INFO |     40/300 | running mean IoU: 0.9357
+10:49:02 | INFO |     60/300 | running mean IoU: 0.9419
+10:56:10 | INFO |     80/300 | running mean IoU: 0.9460
+11:03:17 | INFO |     100/300 | running mean IoU: 0.9486
+11:09:58 | INFO |     120/300 | running mean IoU: 0.9499
+11:16:38 | INFO |     140/300 | running mean IoU: 0.9509
+11:23:37 | INFO |     160/300 | running mean IoU: 0.9515
+11:30:40 | INFO |     180/300 | running mean IoU: 0.9519
+11:37:22 | INFO |     200/300 | running mean IoU: 0.9525
+11:44:14 | INFO |     220/300 | running mean IoU: 0.9543
+11:51:34 | INFO |     240/300 | running mean IoU: 0.9563
+11:58:08 | INFO |     260/300 | running mean IoU: 0.9576
+12:04:00 | INFO |     280/300 | running mean IoU: 0.9582
+12:10:40 | INFO |     300/300 | running mean IoU: 0.9584
+12:10:40 | INFO | 
+  Results for 'pcb':
+12:10:40 | INFO |     Mean IoU:       0.9579
+12:10:40 | INFO |     Miss rate:      0.0986
+12:10:40 | INFO |     False pos rate: 0.0290
+12:10:40 | INFO |     Feature sim:    0.9788
+12:10:40 | INFO |     Misses: 4769 (domain=0, redundant=45, background=4724)
+12:10:40 | INFO |     Added:  1316 (domain=0, redundant=13, background=1303)
+12:10:41 | INFO | 
+Eval phase complete.
+[12:10:43] --- pcb @ f=0.375 ---
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+12:11:39 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+12:11:50 | INFO |   Found 512 head profiles
+12:11:50 | INFO |   Ranking method: variance (seed=0)
+12:11:50 | INFO |   Freezing 192 / 512 heads
+12:11:50 | INFO |   Manifest saved to results/sam_main_sweep/freeze_pcb_f0.375/freeze_manifest.json
+12:11:56 | INFO |   Summary: {'total_heads': 512, 'frozen': 192, 'frozen_windowed': 168, 'frozen_global': 24, 'freeze_rate': 0.375}
+12:11:56 | INFO | Freeze phase complete.
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+12:13:45 | INFO | Loading SAM ViT-H...
+12:13:59 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_pcb_f0.375/freeze_manifest.json
+12:14:04 | INFO |   Frozen heads: 192 / 512
+12:14:04 | INFO | 
+============================================================
+12:14:04 | INFO | Evaluating group: pcb
+12:14:05 | INFO |   Images: 300
+12:20:20 | INFO |     20/300 | running mean IoU: 0.9132
+12:26:31 | INFO |     40/300 | running mean IoU: 0.9132
+12:33:33 | INFO |     60/300 | running mean IoU: 0.9191
+12:40:41 | INFO |     80/300 | running mean IoU: 0.9232
+12:47:49 | INFO |     100/300 | running mean IoU: 0.9254
+12:54:30 | INFO |     120/300 | running mean IoU: 0.9260
+13:01:10 | INFO |     140/300 | running mean IoU: 0.9262
+13:08:20 | INFO |     160/300 | running mean IoU: 0.9274
+13:15:34 | INFO |     180/300 | running mean IoU: 0.9285
+13:22:20 | INFO |     200/300 | running mean IoU: 0.9292
+13:29:30 | INFO |     220/300 | running mean IoU: 0.9316
+13:37:26 | INFO |     240/300 | running mean IoU: 0.9346
+13:44:23 | INFO |     260/300 | running mean IoU: 0.9365
+13:50:22 | INFO |     280/300 | running mean IoU: 0.9380
+13:57:09 | INFO |     300/300 | running mean IoU: 0.9382
+13:57:09 | INFO | 
+  Results for 'pcb':
+13:57:09 | INFO |     Mean IoU:       0.9379
+13:57:09 | INFO |     Miss rate:      0.2133
+13:57:09 | INFO |     False pos rate: 0.0188
+13:57:09 | INFO |     Feature sim:    0.9044
+13:57:09 | INFO |     Misses: 10432 (domain=0, redundant=103, background=10329)
+13:57:09 | INFO |     Added:  698 (domain=0, redundant=1, background=697)
+13:57:10 | INFO | 
+Eval phase complete.
+[13:57:12] Generating sweep plots...
+[1/7] Loading sweep data...
+  Found 15 data points
+[2/7] IoU vs FLOP reduction plots...
+  [sweep] Saved IoU-vs-FLOPs plots to results/sam_main_sweep/plots/iou_vs_flops
+[3/7] Cross-group variance comparison histograms...
+  [comparison] Saved cross-group plots to results/sam_main_sweep/plots/comparison
+[4/7] Windowed vs global rank comparison...
+[5/7] Before/after variance plots...
+  [before/after] Saved plots to results/sam_main_sweep/plots/before_after_f0.125/before_after
+  [before/after] Saved plots to results/sam_main_sweep/plots/before_after_f0.25/before_after
+  [before/after] Saved plots to results/sam_main_sweep/plots/before_after_f0.375/before_after
+[6/7] Domain specialization matrix...
+[7/7] Summary report...
+  Saved summary report to results/sam_main_sweep/plots/summary_report.txt
+
+Done! All plots saved to: results/sam_main_sweep/plots
+[14:07:54] Done. Results in ./results/sam_main_sweep/

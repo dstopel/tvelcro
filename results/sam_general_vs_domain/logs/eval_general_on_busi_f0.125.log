@@ -1,0 +1,37 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+19:53:25 | INFO | Loading SAM ViT-H...
+19:53:39 | INFO | Loading freeze manifest: ./results/sam_general_vs_domain/freeze_general_f0.125/freeze_manifest.json
+19:53:40 | INFO |   Frozen heads: 64 / 512
+19:53:40 | INFO | 
+============================================================
+19:53:40 | INFO | Evaluating group: busi
+19:53:40 | INFO |   Images: 300
+19:57:17 | INFO |     20/300 | running mean IoU: 0.9504
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+20:00:47 | INFO |     40/300 | running mean IoU: 0.9532
+20:04:19 | INFO |     60/300 | running mean IoU: 0.9540
+20:07:49 | INFO |     80/300 | running mean IoU: 0.9539
+20:11:21 | INFO |     100/300 | running mean IoU: 0.9534
+20:14:52 | INFO |     120/300 | running mean IoU: 0.9538
+20:18:22 | INFO |     140/300 | running mean IoU: 0.9544
+20:21:54 | INFO |     160/300 | running mean IoU: 0.9547
+20:25:24 | INFO |     180/300 | running mean IoU: 0.9548
+20:28:48 | INFO |     200/300 | running mean IoU: 0.9549
+20:32:17 | INFO |     220/300 | running mean IoU: 0.9550
+20:35:49 | INFO |     240/300 | running mean IoU: 0.9553
+20:39:25 | INFO |     260/300 | running mean IoU: 0.9553
+20:42:56 | INFO |     280/300 | running mean IoU: 0.9553
+20:46:28 | INFO |     300/300 | running mean IoU: 0.9555
+20:46:28 | INFO | 
+  Results for 'busi':
+20:46:28 | INFO |     Mean IoU:       0.9558
+20:46:28 | INFO |     Miss rate:      0.1047
+20:46:28 | INFO |     False pos rate: 0.2908
+20:46:28 | INFO |     Feature sim:    0.9730
+20:46:28 | INFO |     Misses: 855 (domain=2, redundant=93, background=760)
+20:46:28 | INFO |     Added:  3002 (domain=19, redundant=199, background=2784)
+20:46:29 | INFO | 
+Eval phase complete.

@@ -1,0 +1,24 @@
+
+############ ./results/sam_main_sweep/profile ############
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+================================================================
+SAM VELCRO Profile Size Report
+================================================================
+Profile dir:        results/sam_main_sweep/profile
+  .npy files:       5440
+  Total on disk:    1.0 GB
+  FP16-converted:   537.8 MB (50% of current)
+
+Freeze manifest:    ./results/sam_main_sweep/freeze_busi_f0.125/freeze_manifest.json
+  Frozen heads:     64
+  Frozen-only size: 13.4 MB (mean files only, what eval loads)
+  FP16-converted:   6.7 MB
+
+Hook micro-benchmark (CPU, 20 reps):
+  Mean .npy load:   1.0918 s (64 heads)
+  Manager init:     0.0425 s (numpy -> torch)
+  Hook attach:      0.093 +/- 0.022 ms
+  Hook detach:      0.026 +/- 0.002 ms
+
+JSON report: results/sam_main_sweep/profile/profile_size_report.json

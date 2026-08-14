@@ -1,0 +1,7 @@
+15:11:02 | INFO | Loading profile from: ./results/sam_main_sweep/profile/kvasir
+15:11:13 | INFO |   Found 512 head profiles
+15:11:13 | INFO |   Ranking method: random (seed=1)
+15:11:13 | INFO |   Freezing 64 / 512 heads
+15:11:13 | INFO |   Manifest saved to results/sam_random_baseline/freeze_kvasir_random_s1_f0.125/freeze_manifest.json
+15:11:18 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+15:11:18 | INFO | Freeze phase complete.

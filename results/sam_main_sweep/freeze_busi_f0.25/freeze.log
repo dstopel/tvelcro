@@ -1,0 +1,7 @@
+03:51:32 | INFO | Loading profile from: ./results/sam_main_sweep/profile/busi
+03:51:39 | INFO |   Found 512 head profiles
+03:51:39 | INFO |   Ranking method: variance (seed=0)
+03:51:39 | INFO |   Freezing 128 / 512 heads
+03:51:39 | INFO |   Manifest saved to results/sam_main_sweep/freeze_busi_f0.25/freeze_manifest.json
+03:51:43 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+03:51:43 | INFO | Freeze phase complete.

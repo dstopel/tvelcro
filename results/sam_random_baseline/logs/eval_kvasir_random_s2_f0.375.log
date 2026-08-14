@@ -1,0 +1,35 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+23:29:27 | INFO | Loading SAM ViT-H...
+23:29:40 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_kvasir_random_s2_f0.375/freeze_manifest.json
+23:29:43 | INFO |   Frozen heads: 192 / 512
+23:29:43 | INFO | 
+============================================================
+23:29:43 | INFO | Evaluating group: kvasir
+23:29:43 | INFO |   Images: 300
+23:33:11 | INFO |     20/300 | running mean IoU: 0.9404
+23:36:38 | INFO |     40/300 | running mean IoU: 0.9419
+23:40:04 | INFO |     60/300 | running mean IoU: 0.9409
+23:43:33 | INFO |     80/300 | running mean IoU: 0.9408
+23:46:57 | INFO |     100/300 | running mean IoU: 0.9405
+23:50:26 | INFO |     120/300 | running mean IoU: 0.9406
+23:53:51 | INFO |     140/300 | running mean IoU: 0.9396
+23:57:18 | INFO |     160/300 | running mean IoU: 0.9393
+00:00:47 | INFO |     180/300 | running mean IoU: 0.9397
+00:04:11 | INFO |     200/300 | running mean IoU: 0.9399
+00:07:35 | INFO |     220/300 | running mean IoU: 0.9398
+00:10:59 | INFO |     240/300 | running mean IoU: 0.9399
+00:14:26 | INFO |     260/300 | running mean IoU: 0.9397
+00:17:53 | INFO |     280/300 | running mean IoU: 0.9401
+00:21:19 | INFO |     300/300 | running mean IoU: 0.9403
+00:21:19 | INFO | 
+  Results for 'kvasir':
+00:21:19 | INFO |     Mean IoU:       0.9412
+00:21:19 | INFO |     Miss rate:      0.2904
+00:21:19 | INFO |     False pos rate: 0.1914
+00:21:19 | INFO |     Feature sim:    0.8997
+00:21:19 | INFO |     Misses: 4397 (domain=268, redundant=241, background=3888)
+00:21:19 | INFO |     Added:  2581 (domain=157, redundant=211, background=2213)
+00:21:20 | INFO | 
+Eval phase complete.

@@ -1,0 +1,7 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+ViT surgery self-test (Attention source: timm.Attention)
+  PASS N-match means                kept= 9/12  max abs diff 6.855e-07
+  PASS pooled means (N mismatch)    kept=10/12  max abs diff 1.192e-07
+  PASS all heads frozen             kept= 0/12  max abs diff 9.537e-07
+All ViT surgery self-tests passed.

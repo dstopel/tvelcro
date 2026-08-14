@@ -1,0 +1,9 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+04:42:35 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+04:42:45 | INFO |   Found 512 head profiles
+04:42:45 | INFO |   Ranking method: random (seed=2)
+04:42:45 | INFO |   Freezing 64 / 512 heads
+04:42:45 | INFO |   Manifest saved to results/sam_random_baseline/freeze_pcb_random_s2_f0.125/freeze_manifest.json
+04:42:49 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+04:42:49 | INFO | Freeze phase complete.

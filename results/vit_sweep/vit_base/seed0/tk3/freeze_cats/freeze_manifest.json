@@ -1,0 +1,253 @@
+{
+  "version": "3.0-tvelcro-unified",
+  "model_key": "vit_base",
+  "model": "vit_base_patch16_224",
+  "profile_root": "/workspace/tvelcro/results/vit_sweep/vit_base/seed0/profile",
+  "profile_group": "cats",
+  "rank_method": "variance",
+  "seed": 0,
+  "heads_per_block": 3,
+  "freeze_fraction": null,
+  "t_k": 3,
+  "t_k_per_block": {
+    "0": 3,
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 3
+  },
+  "profile_N": 300,
+  "profile_seed": 0,
+  "freeze_criterion": "bottom-T_k per block by variance rank",
+  "freeze_method": "output-only (forward pre-hook mean substitution)",
+  "frozen_heads": [
+    {
+      "block": 0,
+      "head": 5,
+      "rank_value": 15.191183090209961,
+      "mean_path": "head_variance/cats/cats_block0_head5_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 3,
+      "rank_value": 25.602462768554688,
+      "mean_path": "head_variance/cats/cats_block0_head3_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 7,
+      "rank_value": 31.10770606994629,
+      "mean_path": "head_variance/cats/cats_block0_head7_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 4,
+      "rank_value": 20.33753776550293,
+      "mean_path": "head_variance/cats/cats_block1_head4_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 9,
+      "rank_value": 92.5383529663086,
+      "mean_path": "head_variance/cats/cats_block1_head9_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 0,
+      "rank_value": 107.91282653808594,
+      "mean_path": "head_variance/cats/cats_block1_head0_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 0,
+      "rank_value": 83.29618835449219,
+      "mean_path": "head_variance/cats/cats_block2_head0_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 9,
+      "rank_value": 178.365478515625,
+      "mean_path": "head_variance/cats/cats_block2_head9_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 1,
+      "rank_value": 202.48519897460938,
+      "mean_path": "head_variance/cats/cats_block2_head1_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 2,
+      "rank_value": 150.9530029296875,
+      "mean_path": "head_variance/cats/cats_block3_head2_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 6,
+      "rank_value": 165.05152893066406,
+      "mean_path": "head_variance/cats/cats_block3_head6_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 4,
+      "rank_value": 181.31797790527344,
+      "mean_path": "head_variance/cats/cats_block3_head4_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 11,
+      "rank_value": 119.11300659179688,
+      "mean_path": "head_variance/cats/cats_block4_head11_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 5,
+      "rank_value": 131.16775512695312,
+      "mean_path": "head_variance/cats/cats_block4_head5_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 0,
+      "rank_value": 175.84376525878906,
+      "mean_path": "head_variance/cats/cats_block4_head0_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 6,
+      "rank_value": 373.77459716796875,
+      "mean_path": "head_variance/cats/cats_block5_head6_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 0,
+      "rank_value": 441.96514892578125,
+      "mean_path": "head_variance/cats/cats_block5_head0_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 3,
+      "rank_value": 569.0457763671875,
+      "mean_path": "head_variance/cats/cats_block5_head3_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 3,
+      "rank_value": 371.1947326660156,
+      "mean_path": "head_variance/cats/cats_block6_head3_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 1,
+      "rank_value": 417.2099609375,
+      "mean_path": "head_variance/cats/cats_block6_head1_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 8,
+      "rank_value": 448.09161376953125,
+      "mean_path": "head_variance/cats/cats_block6_head8_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 11,
+      "rank_value": 661.3162841796875,
+      "mean_path": "head_variance/cats/cats_block7_head11_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 7,
+      "rank_value": 966.09765625,
+      "mean_path": "head_variance/cats/cats_block7_head7_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 4,
+      "rank_value": 1148.7684326171875,
+      "mean_path": "head_variance/cats/cats_block7_head4_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 7,
+      "rank_value": 1102.50537109375,
+      "mean_path": "head_variance/cats/cats_block8_head7_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 10,
+      "rank_value": 1190.0806884765625,
+      "mean_path": "head_variance/cats/cats_block8_head10_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 1,
+      "rank_value": 1191.812744140625,
+      "mean_path": "head_variance/cats/cats_block8_head1_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 5,
+      "rank_value": 961.4599609375,
+      "mean_path": "head_variance/cats/cats_block9_head5_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 9,
+      "rank_value": 1495.26025390625,
+      "mean_path": "head_variance/cats/cats_block9_head9_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 1,
+      "rank_value": 1513.65673828125,
+      "mean_path": "head_variance/cats/cats_block9_head1_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 0,
+      "rank_value": 1793.974853515625,
+      "mean_path": "head_variance/cats/cats_block10_head0_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 7,
+      "rank_value": 1861.5611572265625,
+      "mean_path": "head_variance/cats/cats_block10_head7_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 9,
+      "rank_value": 2330.72412109375,
+      "mean_path": "head_variance/cats/cats_block10_head9_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 10,
+      "rank_value": 1339.4820556640625,
+      "mean_path": "head_variance/cats/cats_block11_head10_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 6,
+      "rank_value": 1373.24658203125,
+      "mean_path": "head_variance/cats/cats_block11_head6_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 7,
+      "rank_value": 1702.4620361328125,
+      "mean_path": "head_variance/cats/cats_block11_head7_mean.npy"
+    }
+  ],
+  "summary": {
+    "total_heads_checked": 144,
+    "total_frozen": 36,
+    "freeze_rate": 0.25
+  }
+}

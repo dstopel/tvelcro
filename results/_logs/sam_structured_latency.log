@@ -1,0 +1,25 @@
+[2026-08-13 14:07:54] SAM structured latency: domain=kvasir frac=0.25 eval_n=20
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading SAM ViT-H from ./data/sam_vit_h_4b8939.pth on cuda ...
+Manifest: 128 frozen heads (112 windowed, 16 global)
+Loaded 20 eval images from ./data/image_dirs/kvasir_eval
+[baseline] encoder-only forward ...
+[baseline] full AutomaticMaskGenerator over 20 images ...
+[hooked] encoder-only forward ...
+[hooked] full AutomaticMaskGenerator over 20 images ...
+[sliced] encoder-only forward ...
+[sliced] full AutomaticMaskGenerator over 20 images ...
+
+Wrote results/sam_structured_latency/kvasir_frac0.25/latency.json
+
+----------------------------------------------------------------------
+variant     enc ms (med)  enc J/fwd  gen s/img  gen J/img  enc speedup
+----------------------------------------------------------------------
+baseline           988.7       70.5       1.75      124.5        1.00x
+hooked            1047.6       74.6       1.77      126.4        0.94x
+sliced             910.4       65.6       1.64      116.2        1.09x
+(gen speedup sliced vs baseline: 1.07x)
+----------------------------------------------------------------------
+[2026-08-13 14:13:57] Done: results/sam_structured_latency/kvasir_frac0.25/latency.json
+Combined config disabled (attention-only run; set MLP_FRACTION=0.375 to enable)

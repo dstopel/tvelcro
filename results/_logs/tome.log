@@ -1,0 +1,18 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[r=0] analytical block-FLOP reduction: 0.0%
+[r=0] latency (batch=32): {'median': 170.1899878680706, 'mean': 169.57328096032143, 'std': 2.8159668691398436, 'p5': 165.6269071623683, 'p95': 173.78463204950094, 'iters': 50}
+[r=0] dogs: top1=82.67% (n=300)
+[r=0] cats: top1=81.67% (n=300)
+[r=0] cars: top1=85.67% (n=300)
+[r=8] analytical block-FLOP reduction: 25.6%
+[r=8] latency (batch=32): {'median': 132.10284523665905, 'mean': 132.32125595211983, 'std': 2.514234564239676, 'p5': 128.66511195898056, 'p95': 136.78302560001612, 'iters': 50}
+[r=8] dogs: top1=81.00% (n=300)
+[r=8] cats: top1=81.00% (n=300)
+[r=8] cars: top1=83.00% (n=300)
+[r=13] analytical block-FLOP reduction: 41.2%
+[r=13] latency (batch=32): {'median': 104.59601320326328, 'mean': 104.88333784043789, 'std': 2.1327546223130023, 'p5': 101.77964381873608, 'p95': 108.23908261954784, 'iters': 50}
+[r=13] dogs: top1=79.00% (n=300)
+[r=13] cats: top1=79.67% (n=300)
+[r=13] cars: top1=83.00% (n=300)
+wrote results/baselines/tome_comparison.json

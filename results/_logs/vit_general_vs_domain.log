@@ -1,0 +1,759 @@
+Log: results/vit_general_vs_domain/run_20260814_160839.log
+=== [vit_base] PROFILE 'general' ===
+  profile exists, skipping
+=== [vit_base] tk0: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=0/12)
+======================================================================
+  Checked 144 heads, froze 0
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=81.9%  top5=100.0%
+    batch 10/10  top1=82.7%  top5=99.7%
+    Top-1: 82.67%  Top-5: 99.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk0/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            82.67      99.67      300       
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=72.5%  top5=95.6%
+    batch 10/10  top1=81.7%  top5=97.3%
+    Top-1: 81.67%  Top-5: 97.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk0/eval_cats
+Group           Top-1      Top-5      Images    
+cats            81.67      97.33      300       
+======================================================================
+=== [vit_base] tk0: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=89.4%  top5=98.1%
+    batch 10/10  top1=85.7%  top5=98.3%
+    Top-1: 85.67%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk0/eval_cars
+Group           Top-1      Top-5      Images    
+cars            85.67      98.33      300       
+======================================================================
+=== [vit_base] tk2: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=2/12)
+======================================================================
+  Checked 144 heads, froze 24
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk2/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk2: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk2/freeze_general/freeze_manifest.json (24 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [5, 7] (10 active)
+  [mean-head] block 1: frozen heads [4, 9] (10 active)
+  [mean-head] block 2: frozen heads [0, 9] (10 active)
+  [mean-head] block 3: frozen heads [2, 6] (10 active)
+  [mean-head] block 4: frozen heads [5, 11] (10 active)
+  [mean-head] block 5: frozen heads [0, 6] (10 active)
+  [mean-head] block 6: frozen heads [3, 8] (10 active)
+  [mean-head] block 7: frozen heads [7, 11] (10 active)
+  [mean-head] block 8: frozen heads [4, 7] (10 active)
+  [mean-head] block 9: frozen heads [5, 6] (10 active)
+  [mean-head] block 10: frozen heads [0, 9] (10 active)
+  [mean-head] block 11: frozen heads [10, 11] (10 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=75.0%  top5=99.4%
+    batch 10/10  top1=79.0%  top5=98.7%
+    Top-1: 79.00%  Top-5: 98.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk2/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            79.00      98.67      300       
+======================================================================
+=== [vit_base] tk2: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk2/freeze_general/freeze_manifest.json (24 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [5, 7] (10 active)
+  [mean-head] block 1: frozen heads [4, 9] (10 active)
+  [mean-head] block 2: frozen heads [0, 9] (10 active)
+  [mean-head] block 3: frozen heads [2, 6] (10 active)
+  [mean-head] block 4: frozen heads [5, 11] (10 active)
+  [mean-head] block 5: frozen heads [0, 6] (10 active)
+  [mean-head] block 6: frozen heads [3, 8] (10 active)
+  [mean-head] block 7: frozen heads [7, 11] (10 active)
+  [mean-head] block 8: frozen heads [4, 7] (10 active)
+  [mean-head] block 9: frozen heads [5, 6] (10 active)
+  [mean-head] block 10: frozen heads [0, 9] (10 active)
+  [mean-head] block 11: frozen heads [10, 11] (10 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=73.1%  top5=97.5%
+    batch 10/10  top1=81.7%  top5=98.3%
+    Top-1: 81.67%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk2/eval_cats
+Group           Top-1      Top-5      Images    
+cats            81.67      98.33      300       
+======================================================================
+=== [vit_base] tk2: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk2/freeze_general/freeze_manifest.json (24 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [5, 7] (10 active)
+  [mean-head] block 1: frozen heads [4, 9] (10 active)
+  [mean-head] block 2: frozen heads [0, 9] (10 active)
+  [mean-head] block 3: frozen heads [2, 6] (10 active)
+  [mean-head] block 4: frozen heads [5, 11] (10 active)
+  [mean-head] block 5: frozen heads [0, 6] (10 active)
+  [mean-head] block 6: frozen heads [3, 8] (10 active)
+  [mean-head] block 7: frozen heads [7, 11] (10 active)
+  [mean-head] block 8: frozen heads [4, 7] (10 active)
+  [mean-head] block 9: frozen heads [5, 6] (10 active)
+  [mean-head] block 10: frozen heads [0, 9] (10 active)
+  [mean-head] block 11: frozen heads [10, 11] (10 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=74.4%  top5=93.8%
+    batch 10/10  top1=75.0%  top5=94.3%
+    Top-1: 75.00%  Top-5: 94.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk2/eval_cars
+Group           Top-1      Top-5      Images    
+cars            75.00      94.33      300       
+======================================================================
+=== [vit_base] tk3: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=3/12)
+======================================================================
+  Checked 144 heads, froze 36
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk3/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk3: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk3/freeze_general/freeze_manifest.json (36 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7] (9 active)
+  [mean-head] block 1: frozen heads [4, 7, 9] (9 active)
+  [mean-head] block 2: frozen heads [0, 9, 10] (9 active)
+  [mean-head] block 3: frozen heads [2, 6, 9] (9 active)
+  [mean-head] block 4: frozen heads [0, 5, 11] (9 active)
+  [mean-head] block 5: frozen heads [0, 3, 6] (9 active)
+  [mean-head] block 6: frozen heads [1, 3, 8] (9 active)
+  [mean-head] block 7: frozen heads [7, 10, 11] (9 active)
+  [mean-head] block 8: frozen heads [4, 5, 7] (9 active)
+  [mean-head] block 9: frozen heads [5, 6, 9] (9 active)
+  [mean-head] block 10: frozen heads [0, 5, 9] (9 active)
+  [mean-head] block 11: frozen heads [7, 10, 11] (9 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=71.9%  top5=97.5%
+    batch 10/10  top1=76.0%  top5=97.3%
+    Top-1: 76.00%  Top-5: 97.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk3/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            76.00      97.33      300       
+======================================================================
+=== [vit_base] tk3: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk3/freeze_general/freeze_manifest.json (36 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7] (9 active)
+  [mean-head] block 1: frozen heads [4, 7, 9] (9 active)
+  [mean-head] block 2: frozen heads [0, 9, 10] (9 active)
+  [mean-head] block 3: frozen heads [2, 6, 9] (9 active)
+  [mean-head] block 4: frozen heads [0, 5, 11] (9 active)
+  [mean-head] block 5: frozen heads [0, 3, 6] (9 active)
+  [mean-head] block 6: frozen heads [1, 3, 8] (9 active)
+  [mean-head] block 7: frozen heads [7, 10, 11] (9 active)
+  [mean-head] block 8: frozen heads [4, 5, 7] (9 active)
+  [mean-head] block 9: frozen heads [5, 6, 9] (9 active)
+  [mean-head] block 10: frozen heads [0, 5, 9] (9 active)
+  [mean-head] block 11: frozen heads [7, 10, 11] (9 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=71.2%  top5=96.9%
+    batch 10/10  top1=78.0%  top5=97.7%
+    Top-1: 78.00%  Top-5: 97.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk3/eval_cats
+Group           Top-1      Top-5      Images    
+cats            78.00      97.67      300       
+======================================================================
+=== [vit_base] tk3: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk3/freeze_general/freeze_manifest.json (36 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7] (9 active)
+  [mean-head] block 1: frozen heads [4, 7, 9] (9 active)
+  [mean-head] block 2: frozen heads [0, 9, 10] (9 active)
+  [mean-head] block 3: frozen heads [2, 6, 9] (9 active)
+  [mean-head] block 4: frozen heads [0, 5, 11] (9 active)
+  [mean-head] block 5: frozen heads [0, 3, 6] (9 active)
+  [mean-head] block 6: frozen heads [1, 3, 8] (9 active)
+  [mean-head] block 7: frozen heads [7, 10, 11] (9 active)
+  [mean-head] block 8: frozen heads [4, 5, 7] (9 active)
+  [mean-head] block 9: frozen heads [5, 6, 9] (9 active)
+  [mean-head] block 10: frozen heads [0, 5, 9] (9 active)
+  [mean-head] block 11: frozen heads [7, 10, 11] (9 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=71.2%  top5=91.9%
+    batch 10/10  top1=73.0%  top5=91.7%
+    Top-1: 73.00%  Top-5: 91.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk3/eval_cars
+Group           Top-1      Top-5      Images    
+cars            73.00      91.67      300       
+======================================================================
+=== [vit_base] tk4: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=4/12)
+======================================================================
+  Checked 144 heads, froze 48
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk4/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk4: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk4/freeze_general/freeze_manifest.json (48 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7, 10] (8 active)
+  [mean-head] block 1: frozen heads [0, 4, 7, 9] (8 active)
+  [mean-head] block 2: frozen heads [0, 1, 9, 10] (8 active)
+  [mean-head] block 3: frozen heads [2, 4, 6, 9] (8 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 11] (8 active)
+  [mean-head] block 5: frozen heads [0, 3, 5, 6] (8 active)
+  [mean-head] block 6: frozen heads [1, 3, 8, 10] (8 active)
+  [mean-head] block 7: frozen heads [7, 8, 10, 11] (8 active)
+  [mean-head] block 8: frozen heads [1, 4, 5, 7] (8 active)
+  [mean-head] block 9: frozen heads [2, 5, 6, 9] (8 active)
+  [mean-head] block 10: frozen heads [0, 5, 7, 9] (8 active)
+  [mean-head] block 11: frozen heads [6, 7, 10, 11] (8 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=64.4%  top5=92.5%
+    batch 10/10  top1=67.3%  top5=94.0%
+    Top-1: 67.33%  Top-5: 94.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk4/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            67.33      94.00      300       
+======================================================================
+=== [vit_base] tk4: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk4/freeze_general/freeze_manifest.json (48 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7, 10] (8 active)
+  [mean-head] block 1: frozen heads [0, 4, 7, 9] (8 active)
+  [mean-head] block 2: frozen heads [0, 1, 9, 10] (8 active)
+  [mean-head] block 3: frozen heads [2, 4, 6, 9] (8 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 11] (8 active)
+  [mean-head] block 5: frozen heads [0, 3, 5, 6] (8 active)
+  [mean-head] block 6: frozen heads [1, 3, 8, 10] (8 active)
+  [mean-head] block 7: frozen heads [7, 8, 10, 11] (8 active)
+  [mean-head] block 8: frozen heads [1, 4, 5, 7] (8 active)
+  [mean-head] block 9: frozen heads [2, 5, 6, 9] (8 active)
+  [mean-head] block 10: frozen heads [0, 5, 7, 9] (8 active)
+  [mean-head] block 11: frozen heads [6, 7, 10, 11] (8 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=66.9%  top5=95.0%
+    batch 10/10  top1=71.7%  top5=96.0%
+    Top-1: 71.67%  Top-5: 96.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk4/eval_cats
+Group           Top-1      Top-5      Images    
+cats            71.67      96.00      300       
+======================================================================
+=== [vit_base] tk4: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk4/freeze_general/freeze_manifest.json (48 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [3, 5, 7, 10] (8 active)
+  [mean-head] block 1: frozen heads [0, 4, 7, 9] (8 active)
+  [mean-head] block 2: frozen heads [0, 1, 9, 10] (8 active)
+  [mean-head] block 3: frozen heads [2, 4, 6, 9] (8 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 11] (8 active)
+  [mean-head] block 5: frozen heads [0, 3, 5, 6] (8 active)
+  [mean-head] block 6: frozen heads [1, 3, 8, 10] (8 active)
+  [mean-head] block 7: frozen heads [7, 8, 10, 11] (8 active)
+  [mean-head] block 8: frozen heads [1, 4, 5, 7] (8 active)
+  [mean-head] block 9: frozen heads [2, 5, 6, 9] (8 active)
+  [mean-head] block 10: frozen heads [0, 5, 7, 9] (8 active)
+  [mean-head] block 11: frozen heads [6, 7, 10, 11] (8 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=46.2%  top5=80.0%
+    batch 10/10  top1=54.0%  top5=83.3%
+    Top-1: 54.00%  Top-5: 83.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk4/eval_cars
+Group           Top-1      Top-5      Images    
+cars            54.00      83.33      300       
+======================================================================
+=== [vit_base] tk6: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=6/12)
+======================================================================
+  Checked 144 heads, froze 72
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk6/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk6: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk6/freeze_general/freeze_manifest.json (72 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 10] (6 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 7, 9] (6 active)
+  [mean-head] block 2: frozen heads [0, 1, 4, 9, 10, 11] (6 active)
+  [mean-head] block 3: frozen heads [2, 4, 5, 6, 9, 10] (6 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 6, 10, 11] (6 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 11] (6 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 6, 8, 10] (6 active)
+  [mean-head] block 7: frozen heads [0, 4, 7, 8, 10, 11] (6 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7] (6 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 9, 10] (6 active)
+  [mean-head] block 10: frozen heads [0, 1, 3, 5, 7, 9] (6 active)
+  [mean-head] block 11: frozen heads [4, 6, 7, 8, 10, 11] (6 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=44.4%  top5=75.0%
+    batch 10/10  top1=41.0%  top5=73.3%
+    Top-1: 41.00%  Top-5: 73.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk6/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            41.00      73.33      300       
+======================================================================
+=== [vit_base] tk6: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk6/freeze_general/freeze_manifest.json (72 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 10] (6 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 7, 9] (6 active)
+  [mean-head] block 2: frozen heads [0, 1, 4, 9, 10, 11] (6 active)
+  [mean-head] block 3: frozen heads [2, 4, 5, 6, 9, 10] (6 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 6, 10, 11] (6 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 11] (6 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 6, 8, 10] (6 active)
+  [mean-head] block 7: frozen heads [0, 4, 7, 8, 10, 11] (6 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7] (6 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 9, 10] (6 active)
+  [mean-head] block 10: frozen heads [0, 1, 3, 5, 7, 9] (6 active)
+  [mean-head] block 11: frozen heads [4, 6, 7, 8, 10, 11] (6 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=51.9%  top5=81.9%
+    batch 10/10  top1=52.3%  top5=77.3%
+    Top-1: 52.33%  Top-5: 77.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk6/eval_cats
+Group           Top-1      Top-5      Images    
+cats            52.33      77.33      300       
+======================================================================
+=== [vit_base] tk6: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk6/freeze_general/freeze_manifest.json (72 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 10] (6 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 7, 9] (6 active)
+  [mean-head] block 2: frozen heads [0, 1, 4, 9, 10, 11] (6 active)
+  [mean-head] block 3: frozen heads [2, 4, 5, 6, 9, 10] (6 active)
+  [mean-head] block 4: frozen heads [0, 4, 5, 6, 10, 11] (6 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 11] (6 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 6, 8, 10] (6 active)
+  [mean-head] block 7: frozen heads [0, 4, 7, 8, 10, 11] (6 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7] (6 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 9, 10] (6 active)
+  [mean-head] block 10: frozen heads [0, 1, 3, 5, 7, 9] (6 active)
+  [mean-head] block 11: frozen heads [4, 6, 7, 8, 10, 11] (6 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=15.0%  top5=28.1%
+    batch 10/10  top1=16.3%  top5=29.7%
+    Top-1: 16.33%  Top-5: 29.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk6/eval_cars
+Group           Top-1      Top-5      Images    
+cars            16.33      29.67      300       
+======================================================================
+=== [vit_base] tk8: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (vit_base, rank=variance, T_k=8/12)
+======================================================================
+  Checked 144 heads, froze 96
+  Manifest: results/vit_general_vs_domain/vit_base/seed0/tk8/freeze_general/freeze_manifest.json
+======================================================================
+=== [vit_base] tk8: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk8/freeze_general/freeze_manifest.json (96 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 8, 10, 11] (4 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 6, 7, 8, 9] (4 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 4, 5, 9, 10, 11] (4 active)
+  [mean-head] block 3: frozen heads [0, 2, 4, 5, 6, 9, 10, 11] (4 active)
+  [mean-head] block 4: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 5, 6, 8, 9, 10] (4 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 6, 7, 8, 10, 11] (4 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7, 9, 10] (4 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 8, 9, 10, 11] (4 active)
+  [mean-head] block 10: frozen heads [0, 1, 2, 3, 5, 6, 7, 9] (4 active)
+  [mean-head] block 11: frozen heads [0, 4, 6, 7, 8, 9, 10, 11] (4 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/10  top1=1.9%  top5=5.6%
+    batch 10/10  top1=1.7%  top5=6.0%
+    Top-1: 1.67%  Top-5: 6.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk8/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            1.67       6.00       300       
+======================================================================
+=== [vit_base] tk8: EVAL 'general' manifest on 'cats' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk8/freeze_general/freeze_manifest.json (96 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 8, 10, 11] (4 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 6, 7, 8, 9] (4 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 4, 5, 9, 10, 11] (4 active)
+  [mean-head] block 3: frozen heads [0, 2, 4, 5, 6, 9, 10, 11] (4 active)
+  [mean-head] block 4: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 5, 6, 8, 9, 10] (4 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 6, 7, 8, 10, 11] (4 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7, 9, 10] (4 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 8, 9, 10, 11] (4 active)
+  [mean-head] block 10: frozen heads [0, 1, 2, 3, 5, 6, 7, 9] (4 active)
+  [mean-head] block 11: frozen heads [0, 4, 6, 7, 8, 9, 10, 11] (4 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/10  top1=1.9%  top5=6.2%
+    batch 10/10  top1=3.7%  top5=7.7%
+    Top-1: 3.67%  Top-5: 7.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk8/eval_cats
+Group           Top-1      Top-5      Images    
+cats            3.67       7.67       300       
+======================================================================
+=== [vit_base] tk8: EVAL 'general' manifest on 'cars' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — vit_base
+======================================================================
+  Device: NVIDIA L4
+  Geometry: 12 blocks x 12 heads x 64 head_dim, seq_len=197
+  Freeze manifest: results/vit_general_vs_domain/vit_base/seed0/tk8/freeze_general/freeze_manifest.json (96 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 3, 4, 5, 7, 8, 10, 11] (4 active)
+  [mean-head] block 1: frozen heads [0, 1, 4, 5, 6, 7, 8, 9] (4 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 4, 5, 9, 10, 11] (4 active)
+  [mean-head] block 3: frozen heads [0, 2, 4, 5, 6, 9, 10, 11] (4 active)
+  [mean-head] block 4: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 5: frozen heads [0, 3, 4, 5, 6, 7, 10, 11] (4 active)
+  [mean-head] block 6: frozen heads [0, 1, 3, 5, 6, 8, 9, 10] (4 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 6, 7, 8, 10, 11] (4 active)
+  [mean-head] block 8: frozen heads [0, 1, 2, 4, 5, 7, 9, 10] (4 active)
+  [mean-head] block 9: frozen heads [1, 2, 5, 6, 8, 9, 10, 11] (4 active)
+  [mean-head] block 10: frozen heads [0, 1, 2, 3, 5, 6, 7, 9] (4 active)
+  [mean-head] block 11: frozen heads [0, 4, 6, 7, 8, 9, 10, 11] (4 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/10  top1=0.0%  top5=0.0%
+    batch 10/10  top1=0.0%  top5=0.0%
+    Top-1: 0.00%  Top-5: 0.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_general_vs_domain/vit_base/seed0/tk8/eval_cars
+Group           Top-1      Top-5      Images    
+cars            0.00       0.00       300       
+======================================================================
+=== [vit_base] PLOTS ===
+Found 18 data points, 3 series, 1 seed(s)
+  Saved results/vit_general_vs_domain/vit_base/plots/all_series_top1.png
+  Saved results/vit_general_vs_domain/vit_base/plots/cars_accuracy.png
+  Saved results/vit_general_vs_domain/vit_base/plots/cats_accuracy.png
+  Saved results/vit_general_vs_domain/vit_base/plots/dogs_accuracy.png
+  Saved results/vit_general_vs_domain/vit_base/plots/summary_report.txt
+=== [dinov3_7b] PROFILE 'general' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO PROFILE — dinov3_7b
+======================================================================
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1387.08it/s]
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 22/689 [00:00<00:05, 133.01it/s]Loading weights:   6%|▋         | 44/689 [00:00<00:03, 172.12it/s]Loading weights:   9%|▉         | 63/689 [00:00<00:04, 127.50it/s]Loading weights:  12%|█▏        | 84/689 [00:00<00:04, 149.75it/s]Loading weights:  15%|█▍        | 101/689 [00:00<00:04, 122.24it/s]Loading weights:  17%|█▋        | 118/689 [00:00<00:04, 133.68it/s]Loading weights:  19%|█▉        | 133/689 [00:00<00:04, 135.36it/s]Loading weights:  21%|██▏       | 148/689 [00:01<00:04, 111.19it/s]Loading weights:  24%|██▎       | 163/689 [00:01<00:04, 119.24it/s]Loading weights:  26%|██▌       | 177/689 [00:01<00:05, 101.20it/s]Loading weights:  27%|██▋       | 189/689 [00:01<00:04, 101.74it/s]Loading weights:  29%|██▉       | 200/689 [00:01<00:04, 103.54it/s]Loading weights:  31%|███       | 214/689 [00:01<00:05, 92.87it/s] Loading weights:  33%|███▎      | 224/689 [00:01<00:04, 93.20it/s]Loading weights:  35%|███▍      | 239/689 [00:02<00:04, 106.78it/s]Loading weights:  37%|███▋      | 254/689 [00:02<00:04, 94.92it/s] Loading weights:  39%|███▉      | 271/689 [00:02<00:03, 109.11it/s]Loading weights:  41%|████      | 284/689 [00:02<00:04, 94.55it/s] Loading weights:  44%|████▎     | 301/689 [00:02<00:03, 109.99it/s]Loading weights:  46%|████▌     | 316/689 [00:02<00:03, 119.50it/s]Loading weights:  48%|████▊     | 329/689 [00:02<00:02, 121.87it/s]Loading weights:  50%|████▉     | 342/689 [00:03<00:03, 98.32it/s] Loading weights:  52%|█████▏    | 356/689 [00:03<00:03, 107.51it/s]Loading weights:  54%|█████▎    | 369/689 [00:03<00:02, 113.04it/s]Loading weights:  56%|█████▌    | 384/689 [00:03<00:03, 98.78it/s] Loading weights:  57%|█████▋    | 395/689 [00:03<00:02, 100.91it/s]Loading weights:  59%|█████▉    | 407/689 [00:03<00:02, 105.57it/s]Loading weights:  61%|██████    | 419/689 [00:03<00:02, 108.43it/s]Loading weights:  63%|██████▎   | 435/689 [00:03<00:02, 94.67it/s] Loading weights:  66%|██████▌   | 454/689 [00:04<00:02, 97.21it/s]Loading weights:  68%|██████▊   | 467/689 [00:04<00:02, 103.78it/s]Loading weights:  69%|██████▉   | 478/689 [00:04<00:02, 104.13it/s]Loading weights:  71%|███████▏  | 492/689 [00:04<00:02, 91.74it/s] Loading weights:  74%|███████▍  | 509/689 [00:04<00:01, 107.52it/s]Loading weights:  76%|███████▋  | 526/689 [00:04<00:01, 100.21it/s]Loading weights:  78%|███████▊  | 538/689 [00:04<00:01, 104.39it/s]Loading weights:  80%|████████  | 554/689 [00:05<00:01, 117.45it/s]Loading weights:  82%|████████▏ | 567/689 [00:05<00:01, 120.26it/s]Loading weights:  84%|████████▍ | 580/689 [00:05<00:01, 97.10it/s] Loading weights:  87%|████████▋ | 596/689 [00:05<00:00, 111.14it/s]Loading weights:  88%|████████▊ | 609/689 [00:05<00:00, 115.77it/s]Loading weights:  91%|█████████ | 624/689 [00:05<00:00, 99.87it/s] Loading weights:  93%|█████████▎| 640/689 [00:05<00:00, 113.52it/s]Loading weights:  95%|█████████▍| 653/689 [00:05<00:00, 116.72it/s]Loading weights:  97%|█████████▋| 666/689 [00:06<00:00, 119.25it/s]Loading weights:  99%|█████████▉| 681/689 [00:06<00:00, 127.44it/s]Loading weights: 100%|██████████| 689/689 [00:06<00:00, 111.60it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+
+  Group: general (data/vit_groups/general_profile)
+    Using all 300 images
+  [label mapping] 300 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=100.0%  top5=100.0%
+    batch 15/300  top1=100.0%  top5=100.0%
+    batch 20/300  top1=100.0%  top5=100.0%
+    batch 25/300  top1=96.0%  top5=100.0%
+    batch 30/300  top1=90.0%  top5=100.0%
+    batch 35/300  top1=91.4%  top5=100.0%
+    batch 40/300  top1=90.0%  top5=100.0%
+    batch 45/300  top1=88.9%  top5=100.0%
+    batch 50/300  top1=88.0%  top5=100.0%
+    batch 55/300  top1=89.1%  top5=100.0%
+    batch 60/300  top1=86.7%  top5=100.0%
+    batch 65/300  top1=86.2%  top5=100.0%
+    batch 70/300  top1=87.1%  top5=100.0%
+    batch 75/300  top1=86.7%  top5=100.0%
+    batch 80/300  top1=85.0%  top5=98.8%
+    batch 85/300  top1=85.9%  top5=98.8%
+    batch 90/300  top1=86.7%  top5=98.9%
+    batch 95/300  top1=87.4%  top5=98.9%
+    batch 100/300  top1=87.0%  top5=99.0%
+    batch 105/300  top1=87.6%  top5=99.0%
+    batch 110/300  top1=88.2%  top5=99.1%
+    batch 115/300  top1=87.8%  top5=99.1%
+    batch 120/300  top1=87.5%  top5=99.2%
+    batch 125/300  top1=88.0%  top5=99.2%
+    batch 130/300  top1=88.5%  top5=99.2%
+    batch 135/300  top1=88.9%  top5=99.3%
+    batch 140/300  top1=89.3%  top5=99.3%
+    batch 145/300  top1=89.7%  top5=99.3%
+    batch 150/300  top1=90.0%  top5=99.3%
+    batch 155/300  top1=90.3%  top5=99.4%
+    batch 160/300  top1=90.0%  top5=99.4%
+    batch 165/300  top1=89.7%  top5=99.4%
+    batch 170/300  top1=89.4%  top5=98.8%
+    batch 175/300  top1=89.7%  top5=98.9%
+    batch 180/300  top1=90.0%  top5=98.9%
+    batch 185/300  top1=89.7%  top5=98.4%
+    batch 190/300  top1=90.0%  top5=98.4%
+    batch 195/300  top1=90.3%  top5=98.5%
+    batch 200/300  top1=90.5%  top5=98.5%
+    batch 205/300  top1=90.2%  top5=98.5%
+    batch 210/300  top1=89.5%  top5=98.6%
+    batch 215/300  top1=89.8%  top5=98.6%
+    batch 220/300  top1=90.0%  top5=98.6%
+    batch 225/300  top1=89.8%  top5=98.7%
+    batch 230/300  top1=90.0%  top5=98.7%
+    batch 235/300  top1=89.4%  top5=98.7%
+    batch 240/300  top1=88.8%  top5=98.8%
+    batch 245/300  top1=88.2%  top5=98.8%
+    batch 250/300  top1=88.4%  top5=98.8%
+    batch 255/300  top1=88.2%  top5=98.8%
+    batch 260/300  top1=88.5%  top5=98.8%
+    batch 265/300  top1=88.3%  top5=98.9%
+    batch 270/300  top1=88.5%  top5=98.9%
+    batch 275/300  top1=88.4%  top5=98.9%
+    batch 280/300  top1=88.6%  top5=98.9%
+    batch 285/300  top1=88.4%  top5=98.9%
+    batch 290/300  top1=88.3%  top5=98.6%
+    batch 295/300  top1=88.5%  top5=98.6%
+    batch 300/300  top1=88.3%  top5=98.7%
+    Top-1: 88.33%  Top-5: 98.67%  (300 images)
+  [profile] Saved 1280 head variance/mean files + entropy for 'general'
+
+======================================================================
+DONE (PROFILE)  ->  results/vit_general_vs_domain/dinov3_7b/seed0/profile
+Group           Top-1      Top-5      Images    
+general         88.33      98.67      300       
+======================================================================
+=== [dinov3_7b] tk0: FREEZE from 'general' ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=0/32)
+======================================================================
+  Checked 1280 heads, froze 0
+  Manifest: results/vit_general_vs_domain/dinov3_7b/seed0/tk0/freeze_general/freeze_manifest.json
+======================================================================
+=== [dinov3_7b] tk0: EVAL 'general' manifest on 'dogs' ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1164.55it/s]
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 29/689 [00:00<00:04, 153.78it/s]Loading weights:   7%|▋         | 45/689 [00:00<00:04, 156.15it/s]Loading weights:   9%|▉         | 63/689 [00:00<00:03, 163.05it/s]Loading weights:  12%|█▏        | 80/689 [00:00<00:03, 162.34it/s]Loading weights:  14%|█▍        | 97/689 [00:00<00:04, 127.17it/s]Loading weights:  16%|█▋        | 113/689 [00:00<00:04, 133.72it/s]Loading weights:  19%|█▉        | 131/689 [00:00<00:03, 145.45it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:04, 130.12it/s]Loading weights:  24%|██▍       | 168/689 [00:01<00:03, 137.29it/s]Loading weights:  27%|██▋       | 183/689 [00:01<00:03, 138.97it/s]Loading weights:  29%|██▊       | 198/689 [00:01<00:03, 141.54it/s]Loading weights:  31%|███       | 213/689 [00:01<00:03, 143.11it/s]Loading weights:  33%|███▎      | 228/689 [00:01<00:03, 144.75it/s]Loading weights:  35%|███▌      | 243/689 [00:01<00:03, 141.14it/s]Loading weights:  37%|███▋      | 258/689 [00:01<00:03, 117.18it/s]Loading weights:  39%|███▉      | 271/689 [00:01<00:03, 119.24it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 130.93it/s]Loading weights:  44%|████▍     | 305/689 [00:02<00:02, 140.88it/s]Loading weights:  46%|████▋     | 320/689 [00:02<00:02, 141.95it/s]Loading weights:  49%|████▊     | 335/689 [00:02<00:03, 116.12it/s]Loading weights:  51%|█████     | 352/689 [00:02<00:02, 129.26it/s]Loading weights:  53%|█████▎    | 368/689 [00:02<00:02, 136.20it/s]Loading weights:  56%|█████▌    | 386/689 [00:02<00:02, 147.29it/s]Loading weights:  59%|█████▉    | 407/689 [00:02<00:01, 160.78it/s]Loading weights:  62%|██████▏   | 424/689 [00:03<00:02, 131.01it/s]Loading weights:  65%|██████▍   | 445/689 [00:03<00:01, 144.63it/s]Loading weights:  67%|██████▋   | 461/689 [00:03<00:01, 122.73it/s]Loading weights:  69%|██████▉   | 475/689 [00:03<00:01, 124.09it/s]Loading weights:  71%|███████   | 489/689 [00:03<00:01, 103.68it/s]Loading weights:  73%|███████▎  | 505/689 [00:03<00:01, 115.57it/s]Loading weights:  75%|███████▌  | 520/689 [00:03<00:01, 123.46it/s]Loading weights:  78%|███████▊  | 535/689 [00:04<00:01, 128.40it/s]Loading weights:  80%|███████▉  | 549/689 [00:04<00:01, 107.20it/s]Loading weights:  81%|████████▏ | 561/689 [00:04<00:01, 109.53it/s]Loading weights:  83%|████████▎ | 573/689 [00:04<00:01, 111.98it/s]Loading weights:  85%|████████▍ | 585/689 [00:04<00:00, 113.48it/s]Loading weights:  87%|████████▋ | 597/689 [00:04<00:00, 113.15it/s]Loading weights:  88%|████████▊ | 609/689 [00:04<00:00, 92.80it/s] Loading weights:  91%|█████████ | 624/689 [00:04<00:00, 105.86it/s]Loading weights:  92%|█████████▏| 636/689 [00:04<00:00, 109.11it/s]Loading weights:  94%|█████████▍| 648/689 [00:05<00:00, 110.02it/s]Loading weights:  96%|█████████▌| 660/689 [00:05<00:00, 90.57it/s] Loading weights:  98%|█████████▊| 674/689 [00:05<00:00, 101.46it/s]Loading weights:  99%|█████████▉| 685/689 [00:05<00:00, 103.31it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 125.38it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_general_vs_domain/dinov3_7b/seed0/tk0/freeze_general/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt

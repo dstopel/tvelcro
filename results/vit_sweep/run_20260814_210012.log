@@ -1,0 +1,2040 @@
+Log: results/vit_sweep/run_20260814_210012.log
+=== [dinov3_7b] Phase 1: PROFILE (dogs,cats,cars) ===
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO PROFILE — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   5%|▍         | 33/689 [00:00<00:02, 225.87it/s]Loading weights:   8%|▊         | 56/689 [00:00<00:02, 221.02it/s]Loading weights:  11%|█▏        | 79/689 [00:00<00:03, 163.18it/s]Loading weights:  14%|█▍        | 97/689 [00:00<00:03, 164.01it/s]Loading weights:  17%|█▋        | 115/689 [00:00<00:04, 132.00it/s]Loading weights:  19%|█▉        | 131/689 [00:00<00:04, 137.42it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:04, 125.27it/s]Loading weights:  25%|██▍       | 169/689 [00:01<00:03, 134.19it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:04, 116.51it/s]Loading weights:  29%|██▉       | 203/689 [00:01<00:03, 127.18it/s]Loading weights:  32%|███▏      | 220/689 [00:01<00:04, 111.98it/s]Loading weights:  34%|███▍      | 233/689 [00:01<00:03, 115.17it/s]Loading weights:  36%|███▌      | 248/689 [00:01<00:03, 122.37it/s]Loading weights:  38%|███▊      | 261/689 [00:02<00:04, 100.54it/s]Loading weights:  40%|███▉      | 273/689 [00:02<00:04, 103.70it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:04, 92.98it/s] Loading weights:  44%|████▍     | 305/689 [00:02<00:03, 108.59it/s]Loading weights:  46%|████▋     | 319/689 [00:02<00:03, 115.09it/s]Loading weights:  49%|████▊     | 335/689 [00:02<00:02, 126.14it/s]Loading weights:  51%|█████     | 352/689 [00:02<00:03, 111.85it/s]Loading weights:  54%|█████▍    | 373/689 [00:02<00:02, 133.34it/s]Loading weights:  57%|█████▋    | 390/689 [00:03<00:02, 142.15it/s]Loading weights:  59%|█████▉    | 409/689 [00:03<00:01, 154.33it/s]Loading weights:  62%|██████▏   | 426/689 [00:03<00:01, 157.71it/s]Loading weights:  64%|██████▍   | 443/689 [00:03<00:01, 160.17it/s]Loading weights:  67%|██████▋   | 460/689 [00:03<00:01, 128.09it/s]Loading weights:  69%|██████▉   | 475/689 [00:03<00:01, 130.56it/s]Loading weights:  71%|███████▏  | 492/689 [00:03<00:01, 112.52it/s]Loading weights:  73%|███████▎  | 506/689 [00:04<00:01, 99.33it/s] Loading weights:  76%|███████▌  | 521/689 [00:04<00:01, 109.71it/s]Loading weights:  78%|███████▊  | 534/689 [00:04<00:01, 93.32it/s] Loading weights:  79%|███████▉  | 545/689 [00:04<00:01, 95.24it/s]Loading weights:  81%|████████▏ | 560/689 [00:04<00:01, 107.76it/s]Loading weights:  84%|████████▎ | 577/689 [00:04<00:01, 99.35it/s] Loading weights:  87%|████████▋ | 598/689 [00:04<00:00, 123.60it/s]Loading weights:  89%|████████▉ | 612/689 [00:05<00:00, 103.59it/s]Loading weights:  91%|█████████ | 628/689 [00:05<00:00, 114.74it/s]Loading weights:  93%|█████████▎| 641/689 [00:05<00:00, 96.96it/s] Loading weights:  95%|█████████▌| 656/689 [00:05<00:00, 106.76it/s]Loading weights:  98%|█████████▊| 674/689 [00:05<00:00, 123.61it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 121.88it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+
+  Group: dogs (data/vit_groups/dogs_profile)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=80.0%  top5=100.0%
+    batch 10/300  top1=80.0%  top5=100.0%
+    batch 15/300  top1=86.7%  top5=100.0%
+    batch 20/300  top1=90.0%  top5=100.0%
+    batch 25/300  top1=88.0%  top5=100.0%
+    batch 30/300  top1=90.0%  top5=100.0%
+    batch 35/300  top1=91.4%  top5=100.0%
+    batch 40/300  top1=90.0%  top5=100.0%
+    batch 45/300  top1=88.9%  top5=100.0%
+    batch 50/300  top1=90.0%  top5=100.0%
+    batch 55/300  top1=89.1%  top5=100.0%
+    batch 60/300  top1=90.0%  top5=100.0%
+    batch 65/300  top1=90.8%  top5=100.0%
+    batch 70/300  top1=91.4%  top5=100.0%
+    batch 75/300  top1=90.7%  top5=98.7%
+    batch 80/300  top1=91.2%  top5=98.8%
+    batch 85/300  top1=91.8%  top5=98.8%
+    batch 90/300  top1=92.2%  top5=98.9%
+    batch 95/300  top1=92.6%  top5=98.9%
+    batch 100/300  top1=93.0%  top5=99.0%
+    batch 105/300  top1=91.4%  top5=99.0%
+    batch 110/300  top1=91.8%  top5=99.1%
+    batch 115/300  top1=91.3%  top5=99.1%
+    batch 120/300  top1=90.8%  top5=99.2%
+    batch 125/300  top1=91.2%  top5=99.2%
+    batch 130/300  top1=90.0%  top5=99.2%
+    batch 135/300  top1=90.4%  top5=99.3%
+    batch 140/300  top1=89.3%  top5=99.3%
+    batch 145/300  top1=89.7%  top5=99.3%
+    batch 150/300  top1=89.3%  top5=99.3%
+    batch 155/300  top1=87.7%  top5=99.4%
+    batch 160/300  top1=88.1%  top5=99.4%
+    batch 165/300  top1=87.9%  top5=99.4%
+    batch 170/300  top1=88.2%  top5=99.4%
+    batch 175/300  top1=88.6%  top5=99.4%
+    batch 180/300  top1=88.9%  top5=99.4%
+    batch 185/300  top1=89.2%  top5=99.5%
+    batch 190/300  top1=89.5%  top5=99.5%
+    batch 195/300  top1=89.7%  top5=99.5%
+    batch 200/300  top1=90.0%  top5=99.5%
+    batch 205/300  top1=89.8%  top5=99.5%
+    batch 210/300  top1=90.0%  top5=99.5%
+    batch 215/300  top1=90.2%  top5=99.5%
+    batch 220/300  top1=90.5%  top5=99.5%
+    batch 225/300  top1=90.2%  top5=99.6%
+    batch 230/300  top1=90.0%  top5=99.6%
+    batch 235/300  top1=89.8%  top5=99.6%
+    batch 240/300  top1=90.0%  top5=99.6%
+    batch 245/300  top1=90.2%  top5=99.6%
+    batch 250/300  top1=90.4%  top5=99.6%
+    batch 255/300  top1=90.6%  top5=99.6%
+    batch 260/300  top1=90.8%  top5=99.6%
+    batch 265/300  top1=90.6%  top5=99.6%
+    batch 270/300  top1=90.4%  top5=99.3%
+    batch 275/300  top1=90.5%  top5=99.3%
+    batch 280/300  top1=90.7%  top5=99.3%
+    batch 285/300  top1=90.9%  top5=99.3%
+    batch 290/300  top1=91.0%  top5=99.3%
+    batch 295/300  top1=90.8%  top5=99.3%
+    batch 300/300  top1=90.7%  top5=99.3%
+    Top-1: 90.67%  Top-5: 99.33%  (300 images)
+  [profile] Saved 1280 head variance/mean files + entropy for 'dogs'
+
+  Group: cats (data/vit_groups/cats_profile)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=80.0%  top5=80.0%
+    batch 10/300  top1=90.0%  top5=90.0%
+    batch 15/300  top1=86.7%  top5=93.3%
+    batch 20/300  top1=90.0%  top5=95.0%
+    batch 25/300  top1=84.0%  top5=96.0%
+    batch 30/300  top1=76.7%  top5=96.7%
+    batch 35/300  top1=68.6%  top5=97.1%
+    batch 40/300  top1=60.0%  top5=97.5%
+    batch 45/300  top1=60.0%  top5=97.8%
+    batch 50/300  top1=62.0%  top5=98.0%
+    batch 55/300  top1=65.5%  top5=98.2%
+    batch 60/300  top1=66.7%  top5=98.3%
+    batch 65/300  top1=69.2%  top5=98.5%
+    batch 70/300  top1=70.0%  top5=98.6%
+    batch 75/300  top1=72.0%  top5=98.7%
+    batch 80/300  top1=72.5%  top5=98.8%
+    batch 85/300  top1=72.9%  top5=98.8%
+    batch 90/300  top1=74.4%  top5=98.9%
+    batch 95/300  top1=75.8%  top5=98.9%
+    batch 100/300  top1=75.0%  top5=98.0%
+    batch 105/300  top1=73.3%  top5=98.1%
+    batch 110/300  top1=74.5%  top5=98.2%
+    batch 115/300  top1=73.0%  top5=98.3%
+    batch 120/300  top1=73.3%  top5=98.3%
+    batch 125/300  top1=74.4%  top5=98.4%
+    batch 130/300  top1=75.4%  top5=98.5%
+    batch 135/300  top1=76.3%  top5=98.5%
+    batch 140/300  top1=77.1%  top5=98.6%
+    batch 145/300  top1=76.6%  top5=97.9%
+    batch 150/300  top1=76.7%  top5=98.0%
+    batch 155/300  top1=77.4%  top5=98.1%
+    batch 160/300  top1=77.5%  top5=97.5%
+    batch 165/300  top1=78.2%  top5=97.6%
+    batch 170/300  top1=78.8%  top5=97.6%
+    batch 175/300  top1=79.4%  top5=97.7%
+    batch 180/300  top1=80.0%  top5=97.8%
+    batch 185/300  top1=80.5%  top5=97.8%
+    batch 190/300  top1=80.5%  top5=97.9%
+    batch 195/300  top1=80.0%  top5=97.9%
+    batch 200/300  top1=80.5%  top5=98.0%
+    batch 205/300  top1=81.0%  top5=98.0%
+    batch 210/300  top1=81.4%  top5=98.1%
+    batch 215/300  top1=80.9%  top5=98.1%
+    batch 220/300  top1=80.9%  top5=98.2%
+    batch 225/300  top1=80.9%  top5=98.2%
+    batch 230/300  top1=81.3%  top5=98.3%
+    batch 235/300  top1=81.7%  top5=98.3%
+    batch 240/300  top1=82.1%  top5=98.3%
+    batch 245/300  top1=82.4%  top5=98.4%
+    batch 250/300  top1=82.8%  top5=98.4%
+    batch 255/300  top1=82.7%  top5=98.0%
+    batch 260/300  top1=83.1%  top5=98.1%
+    batch 265/300  top1=83.4%  top5=98.1%
+    batch 270/300  top1=83.7%  top5=98.1%
+    batch 275/300  top1=84.0%  top5=98.2%
+    batch 280/300  top1=84.3%  top5=98.2%
+    batch 285/300  top1=84.6%  top5=98.2%
+    batch 290/300  top1=84.8%  top5=98.3%
+    batch 295/300  top1=85.1%  top5=98.3%
+    batch 300/300  top1=85.3%  top5=98.3%
+    Top-1: 85.33%  Top-5: 98.33%  (300 images)
+  [profile] Saved 1280 head variance/mean files + entropy for 'cats'
+
+  Group: cars (data/vit_groups/cars_profile)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=90.0%  top5=100.0%
+    batch 15/300  top1=93.3%  top5=100.0%
+    batch 20/300  top1=85.0%  top5=100.0%
+    batch 25/300  top1=88.0%  top5=100.0%
+    batch 30/300  top1=86.7%  top5=100.0%
+    batch 35/300  top1=85.7%  top5=100.0%
+    batch 40/300  top1=87.5%  top5=100.0%
+    batch 45/300  top1=88.9%  top5=100.0%
+    batch 50/300  top1=90.0%  top5=100.0%
+    batch 55/300  top1=89.1%  top5=100.0%
+    batch 60/300  top1=90.0%  top5=100.0%
+    batch 65/300  top1=90.8%  top5=100.0%
+    batch 70/300  top1=90.0%  top5=98.6%
+    batch 75/300  top1=90.7%  top5=98.7%
+    batch 80/300  top1=91.2%  top5=98.8%
+    batch 85/300  top1=91.8%  top5=98.8%
+    batch 90/300  top1=92.2%  top5=98.9%
+    batch 95/300  top1=92.6%  top5=98.9%
+    batch 100/300  top1=93.0%  top5=99.0%
+    batch 105/300  top1=92.4%  top5=99.0%
+    batch 110/300  top1=92.7%  top5=99.1%
+    batch 115/300  top1=93.0%  top5=99.1%
+    batch 120/300  top1=92.5%  top5=99.2%
+    batch 125/300  top1=92.0%  top5=99.2%
+    batch 130/300  top1=91.5%  top5=99.2%
+    batch 135/300  top1=89.6%  top5=99.3%
+    batch 140/300  top1=87.9%  top5=97.9%
+    batch 145/300  top1=86.2%  top5=96.6%
+    batch 150/300  top1=86.7%  top5=96.7%
+    batch 155/300  top1=87.1%  top5=96.8%
+    batch 160/300  top1=87.5%  top5=96.9%
+    batch 165/300  top1=87.3%  top5=97.0%
+    batch 170/300  top1=87.1%  top5=97.1%
+    batch 175/300  top1=87.4%  top5=97.1%
+    batch 180/300  top1=87.8%  top5=97.2%
+    batch 185/300  top1=87.0%  top5=96.8%
+    batch 190/300  top1=85.3%  top5=96.8%
+    batch 195/300  top1=85.6%  top5=96.9%
+    batch 200/300  top1=85.5%  top5=97.0%
+    batch 205/300  top1=85.4%  top5=96.6%
+    batch 210/300  top1=85.7%  top5=96.7%
+    batch 215/300  top1=85.6%  top5=96.7%
+    batch 220/300  top1=85.5%  top5=96.8%
+    batch 225/300  top1=84.9%  top5=96.9%
+    batch 230/300  top1=84.8%  top5=97.0%
+    batch 235/300  top1=84.7%  top5=97.0%
+    batch 240/300  top1=84.6%  top5=97.1%
+    batch 245/300  top1=84.9%  top5=97.1%
+    batch 250/300  top1=85.2%  top5=97.2%
+    batch 255/300  top1=85.5%  top5=97.3%
+    batch 260/300  top1=85.4%  top5=97.3%
+    batch 265/300  top1=84.9%  top5=97.4%
+    batch 270/300  top1=84.4%  top5=97.0%
+    batch 275/300  top1=84.7%  top5=97.1%
+    batch 280/300  top1=85.0%  top5=97.1%
+    batch 285/300  top1=85.3%  top5=97.2%
+    batch 290/300  top1=85.5%  top5=97.2%
+    batch 295/300  top1=85.8%  top5=97.3%
+    batch 300/300  top1=86.0%  top5=97.3%
+    Top-1: 86.00%  Top-5: 97.33%  (300 images)
+  [profile] Saved 1280 head variance/mean files + entropy for 'cars'
+
+======================================================================
+DONE (PROFILE)  ->  results/vit_sweep/dinov3_7b/seed0/profile
+Group           Top-1      Top-5      Images    
+dogs            90.67      99.33      300       
+cats            85.33      98.33      300       
+cars            86.00      97.33      300       
+======================================================================
+=== [dinov3_7b] tk0 dogs: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=0/32)
+======================================================================
+  Checked 1280 heads, froze 0
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_dogs/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 18/689 [00:00<00:03, 179.70it/s]Loading weights:   5%|▌         | 37/689 [00:00<00:03, 184.13it/s]Loading weights:   8%|▊         | 56/689 [00:00<00:03, 184.28it/s]Loading weights:  11%|█         | 75/689 [00:00<00:03, 184.94it/s]Loading weights:  14%|█▎        | 94/689 [00:00<00:04, 140.91it/s]Loading weights:  16%|█▌        | 110/689 [00:00<00:03, 145.55it/s]Loading weights:  18%|█▊        | 126/689 [00:00<00:03, 148.76it/s]Loading weights:  21%|██        | 142/689 [00:00<00:03, 149.39it/s]Loading weights:  23%|██▎       | 158/689 [00:01<00:04, 120.46it/s]Loading weights:  25%|██▍       | 172/689 [00:01<00:04, 121.94it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:04, 103.56it/s]Loading weights:  29%|██▉       | 203/689 [00:01<00:05, 96.11it/s] Loading weights:  32%|███▏      | 220/689 [00:01<00:04, 111.29it/s]Loading weights:  34%|███▍      | 233/689 [00:01<00:04, 94.88it/s] Loading weights:  37%|███▋      | 254/689 [00:02<00:03, 117.26it/s]Loading weights:  39%|███▉      | 268/689 [00:02<00:04, 101.27it/s]Loading weights:  41%|████      | 284/689 [00:02<00:04, 93.85it/s] Loading weights:  44%|████▎     | 301/689 [00:02<00:03, 108.71it/s]Loading weights:  46%|████▌     | 314/689 [00:02<00:03, 112.43it/s]Loading weights:  47%|████▋     | 327/689 [00:02<00:03, 94.94it/s] Loading weights:  49%|████▉     | 339/689 [00:02<00:03, 99.34it/s]Loading weights:  51%|█████     | 352/689 [00:03<00:03, 105.09it/s]Loading weights:  54%|█████▎    | 369/689 [00:03<00:03, 99.10it/s] Loading weights:  56%|█████▌    | 384/689 [00:03<00:02, 110.48it/s]Loading weights:  57%|█████▋    | 396/689 [00:03<00:02, 111.28it/s]Loading weights:  59%|█████▉    | 408/689 [00:03<00:03, 91.85it/s] Loading weights:  61%|██████    | 420/689 [00:03<00:02, 97.79it/s]Loading weights:  63%|██████▎   | 435/689 [00:03<00:02, 110.49it/s]Loading weights:  65%|██████▍   | 447/689 [00:03<00:02, 110.69it/s]Loading weights:  67%|██████▋   | 459/689 [00:04<00:02, 91.17it/s] Loading weights:  69%|██████▉   | 475/689 [00:04<00:02, 105.47it/s]Loading weights:  71%|███████▏  | 492/689 [00:04<00:02, 97.75it/s] Loading weights:  73%|███████▎  | 506/689 [00:04<00:01, 105.29it/s]Loading weights:  76%|███████▌  | 522/689 [00:04<00:01, 97.23it/s] Loading weights:  78%|███████▊  | 535/689 [00:04<00:01, 104.27it/s]Loading weights:  79%|███████▉  | 547/689 [00:04<00:01, 104.35it/s]Loading weights:  81%|████████▏ | 560/689 [00:05<00:01, 92.24it/s] Loading weights:  83%|████████▎ | 573/689 [00:05<00:01, 100.28it/s]Loading weights:  85%|████████▍ | 584/689 [00:05<00:01, 101.94it/s]Loading weights:  87%|████████▋ | 596/689 [00:05<00:00, 104.59it/s]Loading weights:  89%|████████▊ | 611/689 [00:05<00:00, 93.92it/s] Loading weights:  91%|█████████ | 624/689 [00:05<00:00, 101.86it/s]Loading weights:  93%|█████████▎| 639/689 [00:05<00:00, 113.23it/s]Loading weights:  94%|█████████▍| 651/689 [00:05<00:00, 92.72it/s] Loading weights:  96%|█████████▌| 662/689 [00:06<00:00, 96.57it/s]Loading weights:  99%|█████████▊| 679/689 [00:06<00:00, 114.50it/s]Loading weights: 100%|██████████| 689/689 [00:06<00:00, 111.08it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_dogs/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=80.0%  top5=80.0%
+    batch 10/300  top1=80.0%  top5=90.0%
+    batch 15/300  top1=73.3%  top5=86.7%
+    batch 20/300  top1=80.0%  top5=90.0%
+    batch 25/300  top1=76.0%  top5=88.0%
+    batch 30/300  top1=80.0%  top5=90.0%
+    batch 35/300  top1=82.9%  top5=91.4%
+    batch 40/300  top1=85.0%  top5=92.5%
+    batch 45/300  top1=86.7%  top5=93.3%
+    batch 50/300  top1=86.0%  top5=94.0%
+    batch 55/300  top1=87.3%  top5=94.5%
+    batch 60/300  top1=88.3%  top5=95.0%
+    batch 65/300  top1=89.2%  top5=95.4%
+    batch 70/300  top1=90.0%  top5=95.7%
+    batch 75/300  top1=89.3%  top5=96.0%
+    batch 80/300  top1=90.0%  top5=96.2%
+    batch 85/300  top1=90.6%  top5=96.5%
+    batch 90/300  top1=88.9%  top5=96.7%
+    batch 95/300  top1=89.5%  top5=96.8%
+    batch 100/300  top1=90.0%  top5=97.0%
+    batch 105/300  top1=89.5%  top5=96.2%
+    batch 110/300  top1=90.0%  top5=96.4%
+    batch 115/300  top1=89.6%  top5=96.5%
+    batch 120/300  top1=88.3%  top5=96.7%
+    batch 125/300  top1=88.8%  top5=96.8%
+    batch 130/300  top1=89.2%  top5=96.9%
+    batch 135/300  top1=88.9%  top5=97.0%
+    batch 140/300  top1=88.6%  top5=97.1%
+    batch 145/300  top1=89.0%  top5=97.2%
+    batch 150/300  top1=88.7%  top5=97.3%
+    batch 155/300  top1=89.0%  top5=97.4%
+    batch 160/300  top1=88.8%  top5=97.5%
+    batch 165/300  top1=89.1%  top5=97.6%
+    batch 170/300  top1=89.4%  top5=97.6%
+    batch 175/300  top1=89.7%  top5=97.7%
+    batch 180/300  top1=90.0%  top5=97.8%
+    batch 185/300  top1=89.7%  top5=97.8%
+    batch 190/300  top1=89.5%  top5=97.9%
+    batch 195/300  top1=89.7%  top5=97.9%
+    batch 200/300  top1=90.0%  top5=98.0%
+    batch 205/300  top1=89.8%  top5=98.0%
+    batch 210/300  top1=90.0%  top5=98.1%
+    batch 215/300  top1=90.2%  top5=98.1%
+    batch 220/300  top1=90.5%  top5=98.2%
+    batch 225/300  top1=90.2%  top5=98.2%
+    batch 230/300  top1=90.0%  top5=98.3%
+    batch 235/300  top1=90.2%  top5=98.3%
+    batch 240/300  top1=90.0%  top5=98.3%
+    batch 245/300  top1=89.4%  top5=98.4%
+    batch 250/300  top1=89.2%  top5=98.4%
+    batch 255/300  top1=89.4%  top5=98.4%
+    batch 260/300  top1=89.2%  top5=98.5%
+    batch 265/300  top1=89.4%  top5=98.5%
+    batch 270/300  top1=88.5%  top5=98.1%
+    batch 275/300  top1=88.7%  top5=98.2%
+    batch 280/300  top1=88.2%  top5=98.2%
+    batch 285/300  top1=88.1%  top5=98.2%
+    batch 290/300  top1=88.3%  top5=98.3%
+    batch 295/300  top1=88.5%  top5=98.3%
+    batch 300/300  top1=88.7%  top5=98.3%
+    Top-1: 88.67%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk0/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            88.67      98.33      300       
+======================================================================
+=== [dinov3_7b] tk0 cats: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=0/32)
+======================================================================
+  Checked 1280 heads, froze 0
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_cats/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 20/689 [00:00<00:04, 142.78it/s]Loading weights:   5%|▌         | 35/689 [00:00<00:04, 145.65it/s]Loading weights:   7%|▋         | 50/689 [00:00<00:04, 145.46it/s]Loading weights:  10%|▉         | 67/689 [00:00<00:04, 153.00it/s]Loading weights:  12%|█▏        | 86/689 [00:00<00:04, 125.31it/s]Loading weights:  15%|█▍        | 102/689 [00:00<00:04, 134.66it/s]Loading weights:  17%|█▋        | 120/689 [00:00<00:03, 146.77it/s]Loading weights:  20%|█▉        | 136/689 [00:00<00:03, 148.76it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:04, 118.83it/s]Loading weights:  24%|██▍       | 166/689 [00:01<00:04, 123.28it/s]Loading weights:  26%|██▌       | 180/689 [00:01<00:04, 126.55it/s]Loading weights:  28%|██▊       | 194/689 [00:01<00:04, 104.70it/s]Loading weights:  30%|██▉       | 206/689 [00:01<00:04, 107.91it/s]Loading weights:  32%|███▏      | 220/689 [00:01<00:05, 93.19it/s] Loading weights:  34%|███▎      | 232/689 [00:01<00:04, 98.76it/s]Loading weights:  35%|███▌      | 243/689 [00:02<00:04, 100.29it/s]Loading weights:  37%|███▋      | 254/689 [00:02<00:04, 102.55it/s]Loading weights:  39%|███▉      | 267/689 [00:02<00:03, 109.66it/s]Loading weights:  40%|████      | 279/689 [00:02<00:03, 111.92it/s]Loading weights:  42%|████▏     | 291/689 [00:02<00:03, 112.46it/s]Loading weights:  44%|████▍     | 305/689 [00:02<00:04, 95.96it/s] Loading weights:  46%|████▌     | 317/689 [00:02<00:03, 101.81it/s]Loading weights:  48%|████▊     | 331/689 [00:02<00:03, 111.44it/s]Loading weights:  50%|████▉     | 343/689 [00:03<00:03, 90.45it/s] Loading weights:  52%|█████▏    | 356/689 [00:03<00:03, 98.74it/s]Loading weights:  54%|█████▍    | 373/689 [00:03<00:03, 94.23it/s]Loading weights:  56%|█████▌    | 384/689 [00:03<00:03, 97.73it/s]Loading weights:  57%|█████▋    | 395/689 [00:03<00:02, 98.14it/s]Loading weights:  59%|█████▉    | 409/689 [00:03<00:02, 108.26it/s]Loading weights:  61%|██████    | 421/689 [00:03<00:02, 110.51it/s]Loading weights:  63%|██████▎   | 437/689 [00:03<00:02, 100.18it/s]Loading weights:  65%|██████▌   | 448/689 [00:04<00:02, 102.19it/s]Loading weights:  67%|██████▋   | 459/689 [00:04<00:02, 83.75it/s] Loading weights:  69%|██████▉   | 475/689 [00:04<00:02, 99.62it/s]Loading weights:  71%|███████▏  | 492/689 [00:04<00:02, 94.55it/s]Loading weights:  74%|███████▍  | 509/689 [00:04<00:01, 91.52it/s]Loading weights:  76%|███████▌  | 521/689 [00:04<00:01, 97.34it/s]Loading weights:  77%|███████▋  | 532/689 [00:04<00:01, 98.95it/s]Loading weights:  79%|███████▉  | 543/689 [00:05<00:01, 100.91it/s]Loading weights:  81%|████████▏ | 560/689 [00:05<00:01, 95.20it/s] Loading weights:  83%|████████▎ | 572/689 [00:05<00:01, 100.57it/s]Loading weights:  85%|████████▍ | 583/689 [00:05<00:01, 102.80it/s]Loading weights:  86%|████████▌ | 594/689 [00:05<00:01, 83.85it/s] Loading weights:  89%|████████▊ | 611/689 [00:05<00:00, 100.99it/s]Loading weights:  91%|█████████ | 624/689 [00:05<00:00, 89.24it/s] Loading weights:  93%|█████████▎| 641/689 [00:06<00:00, 105.80it/s]Loading weights:  96%|█████████▌| 658/689 [00:06<00:00, 120.25it/s]Loading weights:  98%|█████████▊| 674/689 [00:06<00:00, 129.97it/s]Loading weights: 100%|██████████| 689/689 [00:06<00:00, 108.62it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_cats/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=40.0%  top5=100.0%
+    batch 10/300  top1=50.0%  top5=100.0%
+    batch 15/300  top1=66.7%  top5=100.0%
+    batch 20/300  top1=75.0%  top5=100.0%
+    batch 25/300  top1=76.0%  top5=100.0%
+    batch 30/300  top1=63.3%  top5=100.0%
+    batch 35/300  top1=57.1%  top5=100.0%
+    batch 40/300  top1=52.5%  top5=100.0%
+    batch 45/300  top1=51.1%  top5=100.0%
+    batch 50/300  top1=52.0%  top5=100.0%
+    batch 55/300  top1=56.4%  top5=100.0%
+    batch 60/300  top1=60.0%  top5=100.0%
+    batch 65/300  top1=63.1%  top5=100.0%
+    batch 70/300  top1=65.7%  top5=100.0%
+    batch 75/300  top1=68.0%  top5=100.0%
+    batch 80/300  top1=70.0%  top5=100.0%
+    batch 85/300  top1=71.8%  top5=100.0%
+    batch 90/300  top1=73.3%  top5=100.0%
+    batch 95/300  top1=74.7%  top5=100.0%
+    batch 100/300  top1=76.0%  top5=100.0%
+    batch 105/300  top1=76.2%  top5=99.0%
+    batch 110/300  top1=75.5%  top5=99.1%
+    batch 115/300  top1=74.8%  top5=99.1%
+    batch 120/300  top1=75.8%  top5=99.2%
+    batch 125/300  top1=76.0%  top5=98.4%
+    batch 130/300  top1=76.2%  top5=97.7%
+    batch 135/300  top1=77.0%  top5=97.8%
+    batch 140/300  top1=77.9%  top5=97.9%
+    batch 145/300  top1=77.2%  top5=97.9%
+    batch 150/300  top1=78.0%  top5=98.0%
+    batch 155/300  top1=77.4%  top5=96.8%
+    batch 160/300  top1=76.9%  top5=96.2%
+    batch 165/300  top1=77.0%  top5=96.4%
+    batch 170/300  top1=77.1%  top5=96.5%
+    batch 175/300  top1=77.1%  top5=96.6%
+    batch 180/300  top1=77.8%  top5=96.7%
+    batch 185/300  top1=78.4%  top5=96.8%
+    batch 190/300  top1=78.9%  top5=96.8%
+    batch 195/300  top1=79.5%  top5=96.9%
+    batch 200/300  top1=79.5%  top5=97.0%
+    batch 205/300  top1=80.0%  top5=97.1%
+    batch 210/300  top1=80.5%  top5=97.1%
+    batch 215/300  top1=80.0%  top5=96.7%
+    batch 220/300  top1=80.0%  top5=96.8%
+    batch 225/300  top1=80.0%  top5=96.9%
+    batch 230/300  top1=80.4%  top5=97.0%
+    batch 235/300  top1=80.4%  top5=97.0%
+    batch 240/300  top1=80.8%  top5=97.1%
+    batch 245/300  top1=81.2%  top5=97.1%
+    batch 250/300  top1=81.6%  top5=97.2%
+    batch 255/300  top1=82.0%  top5=97.3%
+    batch 260/300  top1=81.9%  top5=97.3%
+    batch 265/300  top1=82.3%  top5=97.4%
+    batch 270/300  top1=82.6%  top5=97.4%
+    batch 275/300  top1=82.9%  top5=97.5%
+    batch 280/300  top1=82.9%  top5=97.5%
+    batch 285/300  top1=83.2%  top5=97.5%
+    batch 290/300  top1=83.4%  top5=97.6%
+    batch 295/300  top1=83.4%  top5=97.6%
+    batch 300/300  top1=83.7%  top5=97.7%
+    Top-1: 83.67%  Top-5: 97.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk0/eval_cats
+Group           Top-1      Top-5      Images    
+cats            83.67      97.67      300       
+======================================================================
+=== [dinov3_7b] tk0 cars: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=0/32)
+======================================================================
+  Checked 1280 heads, froze 0
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_cars/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 27/689 [00:00<00:02, 267.08it/s]Loading weights:   8%|▊         | 54/689 [00:00<00:03, 170.31it/s]Loading weights:  11%|█▏        | 78/689 [00:00<00:03, 193.68it/s]Loading weights:  15%|█▍        | 100/689 [00:00<00:03, 153.37it/s]Loading weights:  17%|█▋        | 118/689 [00:00<00:03, 158.60it/s]Loading weights:  20%|█▉        | 136/689 [00:00<00:04, 130.92it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:03, 135.82it/s]Loading weights:  24%|██▍       | 167/689 [00:01<00:04, 112.82it/s]Loading weights:  27%|██▋       | 183/689 [00:01<00:04, 120.38it/s]Loading weights:  29%|██▊       | 197/689 [00:01<00:04, 103.80it/s]Loading weights:  30%|███       | 209/689 [00:01<00:04, 105.90it/s]Loading weights:  32%|███▏      | 221/689 [00:01<00:05, 89.43it/s] Loading weights:  34%|███▍      | 233/689 [00:01<00:04, 95.88it/s]Loading weights:  36%|███▌      | 249/689 [00:01<00:03, 111.01it/s]Loading weights:  38%|███▊      | 262/689 [00:02<00:03, 114.45it/s]Loading weights:  40%|███▉      | 275/689 [00:02<00:04, 94.60it/s] Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 101.89it/s]Loading weights:  44%|████▎     | 301/689 [00:02<00:03, 108.21it/s]Loading weights:  46%|████▌     | 316/689 [00:02<00:03, 118.89it/s]Loading weights:  48%|████▊     | 329/689 [00:02<00:03, 119.46it/s]Loading weights:  50%|████▉     | 342/689 [00:02<00:03, 98.14it/s] Loading weights:  52%|█████▏    | 356/689 [00:03<00:03, 88.16it/s]Loading weights:  54%|█████▍    | 373/689 [00:03<00:02, 105.95it/s]Loading weights:  56%|█████▌    | 385/689 [00:03<00:03, 88.40it/s] Loading weights:  58%|█████▊    | 401/689 [00:03<00:02, 102.97it/s]Loading weights:  60%|█████▉    | 413/689 [00:03<00:02, 105.82it/s]Loading weights:  62%|██████▏   | 425/689 [00:03<00:02, 89.10it/s] Loading weights:  63%|██████▎   | 436/689 [00:03<00:02, 93.10it/s]Loading weights:  66%|██████▌   | 454/689 [00:04<00:02, 112.83it/s]Loading weights:  68%|██████▊   | 467/689 [00:04<00:01, 116.83it/s]Loading weights:  70%|██████▉   | 480/689 [00:04<00:02, 96.74it/s] Loading weights:  71%|███████▏  | 492/689 [00:04<00:01, 101.36it/s]Loading weights:  74%|███████▍  | 509/689 [00:04<00:01, 117.59it/s]Loading weights:  76%|███████▌  | 523/689 [00:04<00:01, 123.38it/s]Loading weights:  78%|███████▊  | 538/689 [00:04<00:01, 130.50it/s]Loading weights:  80%|████████  | 552/689 [00:04<00:01, 133.07it/s]Loading weights:  82%|████████▏ | 566/689 [00:05<00:01, 105.14it/s]Loading weights:  84%|████████▍ | 579/689 [00:05<00:01, 109.47it/s]Loading weights:  86%|████████▌ | 591/689 [00:05<00:01, 92.09it/s] Loading weights:  88%|████████▊ | 607/689 [00:05<00:00, 106.66it/s]Loading weights:  90%|████████▉ | 619/689 [00:05<00:00, 109.48it/s]Loading weights:  92%|█████████▏| 631/689 [00:05<00:00, 109.60it/s]Loading weights:  94%|█████████▎| 645/689 [00:05<00:00, 96.10it/s] Loading weights:  96%|█████████▌| 658/689 [00:05<00:00, 104.01it/s]Loading weights:  99%|█████████▊| 679/689 [00:05<00:00, 130.58it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 114.89it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk0/freeze_cars/freeze_manifest.json (0 frozen heads, rank=variance)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=80.0%  top5=100.0%
+    batch 15/300  top1=80.0%  top5=100.0%
+    batch 20/300  top1=85.0%  top5=100.0%
+    batch 25/300  top1=88.0%  top5=100.0%
+    batch 30/300  top1=90.0%  top5=100.0%
+    batch 35/300  top1=91.4%  top5=100.0%
+    batch 40/300  top1=92.5%  top5=100.0%
+    batch 45/300  top1=91.1%  top5=100.0%
+    batch 50/300  top1=92.0%  top5=100.0%
+    batch 55/300  top1=92.7%  top5=100.0%
+    batch 60/300  top1=91.7%  top5=100.0%
+    batch 65/300  top1=92.3%  top5=100.0%
+    batch 70/300  top1=92.9%  top5=100.0%
+    batch 75/300  top1=93.3%  top5=100.0%
+    batch 80/300  top1=93.8%  top5=100.0%
+    batch 85/300  top1=94.1%  top5=100.0%
+    batch 90/300  top1=94.4%  top5=100.0%
+    batch 95/300  top1=94.7%  top5=100.0%
+    batch 100/300  top1=95.0%  top5=100.0%
+    batch 105/300  top1=95.2%  top5=100.0%
+    batch 110/300  top1=95.5%  top5=100.0%
+    batch 115/300  top1=95.7%  top5=100.0%
+    batch 120/300  top1=95.8%  top5=100.0%
+    batch 125/300  top1=96.0%  top5=100.0%
+    batch 130/300  top1=95.4%  top5=100.0%
+    batch 135/300  top1=95.6%  top5=100.0%
+    batch 140/300  top1=94.3%  top5=99.3%
+    batch 145/300  top1=93.1%  top5=97.9%
+    batch 150/300  top1=93.3%  top5=98.0%
+    batch 155/300  top1=93.5%  top5=98.1%
+    batch 160/300  top1=93.8%  top5=98.1%
+    batch 165/300  top1=93.9%  top5=98.2%
+    batch 170/300  top1=94.1%  top5=98.2%
+    batch 175/300  top1=94.3%  top5=98.3%
+    batch 180/300  top1=93.9%  top5=98.3%
+    batch 185/300  top1=92.4%  top5=97.8%
+    batch 190/300  top1=90.5%  top5=97.4%
+    batch 195/300  top1=90.8%  top5=97.4%
+    batch 200/300  top1=90.5%  top5=97.5%
+    batch 205/300  top1=90.7%  top5=97.6%
+    batch 210/300  top1=90.0%  top5=97.1%
+    batch 215/300  top1=90.2%  top5=97.2%
+    batch 220/300  top1=90.0%  top5=97.3%
+    batch 225/300  top1=89.8%  top5=97.3%
+    batch 230/300  top1=90.0%  top5=97.4%
+    batch 235/300  top1=90.2%  top5=97.4%
+    batch 240/300  top1=90.4%  top5=97.5%
+    batch 245/300  top1=90.6%  top5=97.6%
+    batch 250/300  top1=90.8%  top5=97.6%
+    batch 255/300  top1=91.0%  top5=97.6%
+    batch 260/300  top1=90.0%  top5=97.7%
+    batch 265/300  top1=89.1%  top5=97.7%
+    batch 270/300  top1=88.9%  top5=97.8%
+    batch 275/300  top1=89.1%  top5=97.8%
+    batch 280/300  top1=89.3%  top5=97.9%
+    batch 285/300  top1=89.5%  top5=97.9%
+    batch 290/300  top1=89.3%  top5=97.9%
+    batch 295/300  top1=89.5%  top5=98.0%
+    batch 300/300  top1=89.7%  top5=98.0%
+    Top-1: 89.67%  Top-5: 98.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk0/eval_cars
+Group           Top-1      Top-5      Images    
+cars            89.67      98.00      300       
+======================================================================
+=== [dinov3_7b] tk4 dogs: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=4/32)
+======================================================================
+  Checked 1280 heads, froze 160
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_dogs/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▎         | 25/689 [00:00<00:03, 185.09it/s]Loading weights:   6%|▋         | 44/689 [00:00<00:03, 180.01it/s]Loading weights:   9%|▉         | 62/689 [00:00<00:03, 178.46it/s]Loading weights:  12%|█▏        | 80/689 [00:00<00:04, 132.40it/s]Loading weights:  15%|█▍        | 101/689 [00:00<00:04, 121.46it/s]Loading weights:  17%|█▋        | 115/689 [00:00<00:04, 125.72it/s]Loading weights:  19%|█▉        | 130/689 [00:00<00:04, 131.60it/s]Loading weights:  21%|██        | 144/689 [00:01<00:04, 133.10it/s]Loading weights:  23%|██▎       | 158/689 [00:01<00:04, 106.22it/s]Loading weights:  25%|██▍       | 170/689 [00:01<00:04, 108.34it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:05, 97.73it/s] Loading weights:  29%|██▉       | 199/689 [00:01<00:04, 104.36it/s]Loading weights:  31%|███       | 212/689 [00:01<00:04, 110.53it/s]Loading weights:  33%|███▎      | 224/689 [00:01<00:05, 89.99it/s] Loading weights:  35%|███▍      | 239/689 [00:02<00:04, 102.93it/s]Loading weights:  36%|███▋      | 251/689 [00:02<00:04, 87.74it/s] Loading weights:  39%|███▊      | 266/689 [00:02<00:04, 101.12it/s]Loading weights:  40%|████      | 278/689 [00:02<00:03, 104.00it/s]Loading weights:  42%|████▏     | 290/689 [00:02<00:03, 107.41it/s]Loading weights:  44%|████▍     | 302/689 [00:02<00:03, 109.13it/s]Loading weights:  46%|████▌     | 315/689 [00:02<00:03, 113.72it/s]Loading weights:  47%|████▋     | 327/689 [00:02<00:03, 93.12it/s] Loading weights:  49%|████▉     | 339/689 [00:03<00:04, 81.22it/s]Loading weights:  51%|█████     | 352/689 [00:03<00:03, 91.92it/s]Loading weights:  53%|█████▎    | 368/689 [00:03<00:02, 107.82it/s]Loading weights:  56%|█████▌    | 385/689 [00:03<00:02, 123.44it/s]Loading weights:  58%|█████▊    | 399/689 [00:03<00:02, 126.92it/s]Loading weights:  60%|█████▉    | 413/689 [00:03<00:02, 128.60it/s]Loading weights:  62%|██████▏   | 427/689 [00:03<00:02, 127.70it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:02, 105.96it/s]Loading weights:  66%|██████▋   | 458/689 [00:04<00:02, 99.00it/s] Loading weights:  68%|██████▊   | 471/689 [00:04<00:02, 105.70it/s]Loading weights:  71%|███████   | 486/689 [00:04<00:01, 116.25it/s]Loading weights:  72%|███████▏  | 499/689 [00:04<00:01, 117.56it/s]Loading weights:  74%|███████▍  | 512/689 [00:04<00:01, 120.41it/s]Loading weights:  76%|███████▌  | 525/689 [00:04<00:01, 122.97it/s]Loading weights:  78%|███████▊  | 539/689 [00:04<00:01, 126.31it/s]Loading weights:  81%|████████▏ | 560/689 [00:04<00:01, 120.45it/s]Loading weights:  84%|████████▎ | 577/689 [00:05<00:00, 131.62it/s]Loading weights:  86%|████████▌ | 591/689 [00:05<00:00, 133.78it/s]Loading weights:  88%|████████▊ | 605/689 [00:05<00:00, 134.72it/s]Loading weights:  90%|█████████ | 622/689 [00:05<00:00, 142.93it/s]Loading weights:  93%|█████████▎| 641/689 [00:05<00:00, 124.61it/s]Loading weights:  96%|█████████▌| 662/689 [00:05<00:00, 144.62it/s]Loading weights:  99%|█████████▊| 679/689 [00:05<00:00, 150.34it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 119.98it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_dogs/freeze_manifest.json (160 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [7, 9, 14, 22] (28 active)
+  [mean-head] block 1: frozen heads [13, 23, 27, 29] (28 active)
+  [mean-head] block 2: frozen heads [1, 6, 13, 30] (28 active)
+  [mean-head] block 3: frozen heads [9, 12, 18, 25] (28 active)
+  [mean-head] block 4: frozen heads [6, 14, 23, 30] (28 active)
+  [mean-head] block 5: frozen heads [1, 7, 13, 27] (28 active)
+  [mean-head] block 6: frozen heads [4, 7, 16, 22] (28 active)
+  [mean-head] block 7: frozen heads [7, 9, 18, 23] (28 active)
+  [mean-head] block 8: frozen heads [4, 13, 27, 29] (28 active)
+  [mean-head] block 9: frozen heads [0, 9, 17, 30] (28 active)
+  [mean-head] block 10: frozen heads [9, 18, 20, 22] (28 active)
+  [mean-head] block 11: frozen heads [8, 11, 15, 19] (28 active)
+  [mean-head] block 12: frozen heads [0, 10, 17, 29] (28 active)
+  [mean-head] block 13: frozen heads [6, 10, 15, 18] (28 active)
+  [mean-head] block 14: frozen heads [6, 20, 26, 27] (28 active)
+  [mean-head] block 15: frozen heads [19, 26, 29, 31] (28 active)
+  [mean-head] block 16: frozen heads [7, 17, 23, 31] (28 active)
+  [mean-head] block 17: frozen heads [0, 7, 10, 11] (28 active)
+  [mean-head] block 18: frozen heads [3, 9, 26, 31] (28 active)
+  [mean-head] block 19: frozen heads [3, 6, 10, 11] (28 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 21] (28 active)
+  [mean-head] block 21: frozen heads [5, 18, 19, 25] (28 active)
+  [mean-head] block 22: frozen heads [5, 13, 20, 30] (28 active)
+  [mean-head] block 23: frozen heads [1, 5, 7, 13] (28 active)
+  [mean-head] block 24: frozen heads [0, 5, 12, 30] (28 active)
+  [mean-head] block 25: frozen heads [3, 4, 26, 28] (28 active)
+  [mean-head] block 26: frozen heads [5, 8, 14, 16] (28 active)
+  [mean-head] block 27: frozen heads [1, 7, 12, 26] (28 active)
+  [mean-head] block 28: frozen heads [10, 13, 14, 23] (28 active)
+  [mean-head] block 29: frozen heads [5, 6, 20, 25] (28 active)
+  [mean-head] block 30: frozen heads [2, 14, 20, 28] (28 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 19] (28 active)
+  [mean-head] block 32: frozen heads [0, 5, 13, 17] (28 active)
+  [mean-head] block 33: frozen heads [2, 12, 18, 31] (28 active)
+  [mean-head] block 34: frozen heads [6, 17, 28, 31] (28 active)
+  [mean-head] block 35: frozen heads [6, 7, 11, 22] (28 active)
+  [mean-head] block 36: frozen heads [4, 15, 18, 21] (28 active)
+  [mean-head] block 37: frozen heads [1, 4, 10, 20] (28 active)
+  [mean-head] block 38: frozen heads [2, 4, 6, 11] (28 active)
+  [mean-head] block 39: frozen heads [10, 17, 20, 31] (28 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=80.0%  top5=80.0%
+    batch 10/300  top1=80.0%  top5=90.0%
+    batch 15/300  top1=73.3%  top5=86.7%
+    batch 20/300  top1=80.0%  top5=90.0%
+    batch 25/300  top1=76.0%  top5=88.0%
+    batch 30/300  top1=80.0%  top5=90.0%
+    batch 35/300  top1=82.9%  top5=91.4%
+    batch 40/300  top1=85.0%  top5=92.5%
+    batch 45/300  top1=86.7%  top5=93.3%
+    batch 50/300  top1=86.0%  top5=94.0%
+    batch 55/300  top1=87.3%  top5=94.5%
+    batch 60/300  top1=88.3%  top5=95.0%
+    batch 65/300  top1=89.2%  top5=95.4%
+    batch 70/300  top1=90.0%  top5=95.7%
+    batch 75/300  top1=89.3%  top5=96.0%
+    batch 80/300  top1=90.0%  top5=96.2%
+    batch 85/300  top1=90.6%  top5=96.5%
+    batch 90/300  top1=88.9%  top5=96.7%
+    batch 95/300  top1=89.5%  top5=96.8%
+    batch 100/300  top1=90.0%  top5=97.0%
+    batch 105/300  top1=89.5%  top5=97.1%
+    batch 110/300  top1=90.0%  top5=97.3%
+    batch 115/300  top1=89.6%  top5=97.4%
+    batch 120/300  top1=88.3%  top5=97.5%
+    batch 125/300  top1=88.8%  top5=97.6%
+    batch 130/300  top1=89.2%  top5=97.7%
+    batch 135/300  top1=88.9%  top5=97.8%
+    batch 140/300  top1=88.6%  top5=97.9%
+    batch 145/300  top1=89.0%  top5=97.9%
+    batch 150/300  top1=88.7%  top5=98.0%
+    batch 155/300  top1=88.4%  top5=98.1%
+    batch 160/300  top1=88.1%  top5=98.1%
+    batch 165/300  top1=88.5%  top5=98.2%
+    batch 170/300  top1=88.8%  top5=98.2%
+    batch 175/300  top1=89.1%  top5=98.3%
+    batch 180/300  top1=89.4%  top5=98.3%
+    batch 185/300  top1=89.2%  top5=98.4%
+    batch 190/300  top1=88.9%  top5=98.4%
+    batch 195/300  top1=89.2%  top5=98.5%
+    batch 200/300  top1=89.5%  top5=98.5%
+    batch 205/300  top1=89.3%  top5=98.5%
+    batch 210/300  top1=89.5%  top5=98.6%
+    batch 215/300  top1=89.8%  top5=98.6%
+    batch 220/300  top1=90.0%  top5=98.6%
+    batch 225/300  top1=89.8%  top5=98.7%
+    batch 230/300  top1=89.6%  top5=98.7%
+    batch 235/300  top1=89.4%  top5=98.7%
+    batch 240/300  top1=88.8%  top5=98.8%
+    batch 245/300  top1=88.6%  top5=98.8%
+    batch 250/300  top1=88.0%  top5=98.8%
+    batch 255/300  top1=88.2%  top5=98.8%
+    batch 260/300  top1=88.1%  top5=98.8%
+    batch 265/300  top1=88.3%  top5=98.9%
+    batch 270/300  top1=87.4%  top5=98.1%
+    batch 275/300  top1=87.6%  top5=98.2%
+    batch 280/300  top1=87.1%  top5=98.2%
+    batch 285/300  top1=87.0%  top5=98.2%
+    batch 290/300  top1=87.2%  top5=98.3%
+    batch 295/300  top1=87.5%  top5=98.3%
+    batch 300/300  top1=87.7%  top5=98.3%
+    Top-1: 87.67%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk4/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            87.67      98.33      300       
+======================================================================
+=== [dinov3_7b] tk4 cats: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=4/32)
+======================================================================
+  Checked 1280 heads, froze 160
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_cats/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   2%|▏         | 16/689 [00:00<00:04, 159.28it/s]Loading weights:   5%|▍         | 33/689 [00:00<00:04, 163.06it/s]Loading weights:   7%|▋         | 50/689 [00:00<00:03, 162.11it/s]Loading weights:  10%|▉         | 67/689 [00:00<00:05, 121.59it/s]Loading weights:  12%|█▏        | 84/689 [00:00<00:04, 134.96it/s]Loading weights:  15%|█▍        | 101/689 [00:00<00:04, 144.03it/s]Loading weights:  17%|█▋        | 118/689 [00:00<00:03, 147.96it/s]Loading weights:  20%|█▉        | 135/689 [00:01<00:04, 122.66it/s]Loading weights:  22%|██▏       | 154/689 [00:01<00:03, 138.56it/s]Loading weights:  25%|██▍       | 169/689 [00:01<00:03, 138.33it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:04, 118.61it/s]Loading weights:  29%|██▉       | 199/689 [00:01<00:04, 121.20it/s]Loading weights:  31%|███       | 214/689 [00:01<00:03, 128.29it/s]Loading weights:  33%|███▎      | 228/689 [00:01<00:03, 129.77it/s]Loading weights:  35%|███▌      | 242/689 [00:01<00:04, 103.91it/s]Loading weights:  37%|███▋      | 256/689 [00:02<00:03, 111.23it/s]Loading weights:  39%|███▉      | 269/689 [00:02<00:04, 95.65it/s] Loading weights:  41%|████      | 280/689 [00:02<00:04, 98.87it/s]Loading weights:  42%|████▏     | 291/689 [00:02<00:03, 100.50it/s]Loading weights:  44%|████▍     | 305/689 [00:02<00:04, 88.76it/s] Loading weights:  47%|████▋     | 322/689 [00:02<00:03, 106.32it/s]Loading weights:  49%|████▊     | 335/689 [00:02<00:03, 111.42it/s]Loading weights:  52%|█████▏    | 356/689 [00:02<00:02, 135.75it/s]Loading weights:  54%|█████▍    | 373/689 [00:03<00:02, 143.52it/s]Loading weights:  57%|█████▋    | 392/689 [00:03<00:02, 126.13it/s]Loading weights:  60%|█████▉    | 411/689 [00:03<00:01, 140.66it/s]Loading weights:  63%|██████▎   | 435/689 [00:03<00:01, 165.74it/s]Loading weights:  66%|██████▌   | 453/689 [00:03<00:01, 166.39it/s]Loading weights:  68%|██████▊   | 471/689 [00:03<00:01, 135.63it/s]Loading weights:  71%|███████   | 487/689 [00:03<00:01, 139.48it/s]Loading weights:  73%|███████▎  | 503/689 [00:03<00:01, 142.54it/s]Loading weights:  75%|███████▌  | 519/689 [00:04<00:01, 118.60it/s]Loading weights:  77%|███████▋  | 533/689 [00:04<00:01, 119.62it/s]Loading weights:  79%|███████▉  | 546/689 [00:04<00:01, 101.63it/s]Loading weights:  82%|████████▏ | 564/689 [00:04<00:01, 118.01it/s]Loading weights:  84%|████████▍ | 581/689 [00:04<00:01, 107.20it/s]Loading weights:  86%|████████▌ | 593/689 [00:04<00:00, 109.76it/s]Loading weights:  89%|████████▊ | 611/689 [00:04<00:00, 122.76it/s]Loading weights:  91%|█████████ | 625/689 [00:05<00:00, 104.12it/s]Loading weights:  93%|█████████▎| 639/689 [00:05<00:00, 111.83it/s]Loading weights:  95%|█████████▍| 652/689 [00:05<00:00, 115.18it/s]Loading weights:  97%|█████████▋| 665/689 [00:05<00:00, 95.90it/s] Loading weights:  99%|█████████▊| 679/689 [00:05<00:00, 104.90it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 122.84it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_cats/freeze_manifest.json (160 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [6, 9, 14, 22] (28 active)
+  [mean-head] block 1: frozen heads [13, 23, 27, 29] (28 active)
+  [mean-head] block 2: frozen heads [1, 13, 24, 30] (28 active)
+  [mean-head] block 3: frozen heads [12, 18, 23, 25] (28 active)
+  [mean-head] block 4: frozen heads [6, 14, 29, 30] (28 active)
+  [mean-head] block 5: frozen heads [1, 7, 24, 27] (28 active)
+  [mean-head] block 6: frozen heads [6, 7, 16, 22] (28 active)
+  [mean-head] block 7: frozen heads [7, 9, 18, 23] (28 active)
+  [mean-head] block 8: frozen heads [4, 13, 27, 30] (28 active)
+  [mean-head] block 9: frozen heads [0, 9, 17, 30] (28 active)
+  [mean-head] block 10: frozen heads [9, 18, 20, 22] (28 active)
+  [mean-head] block 11: frozen heads [4, 8, 11, 19] (28 active)
+  [mean-head] block 12: frozen heads [0, 10, 17, 29] (28 active)
+  [mean-head] block 13: frozen heads [6, 15, 18, 22] (28 active)
+  [mean-head] block 14: frozen heads [12, 20, 26, 27] (28 active)
+  [mean-head] block 15: frozen heads [19, 26, 29, 31] (28 active)
+  [mean-head] block 16: frozen heads [7, 23, 29, 31] (28 active)
+  [mean-head] block 17: frozen heads [0, 7, 10, 11] (28 active)
+  [mean-head] block 18: frozen heads [0, 3, 9, 31] (28 active)
+  [mean-head] block 19: frozen heads [3, 6, 10, 11] (28 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 21] (28 active)
+  [mean-head] block 21: frozen heads [5, 18, 19, 25] (28 active)
+  [mean-head] block 22: frozen heads [5, 13, 20, 30] (28 active)
+  [mean-head] block 23: frozen heads [1, 5, 7, 13] (28 active)
+  [mean-head] block 24: frozen heads [0, 5, 12, 30] (28 active)
+  [mean-head] block 25: frozen heads [3, 4, 15, 26] (28 active)
+  [mean-head] block 26: frozen heads [5, 8, 14, 16] (28 active)
+  [mean-head] block 27: frozen heads [1, 7, 12, 26] (28 active)
+  [mean-head] block 28: frozen heads [10, 13, 15, 23] (28 active)
+  [mean-head] block 29: frozen heads [5, 6, 23, 25] (28 active)
+  [mean-head] block 30: frozen heads [2, 14, 20, 28] (28 active)
+  [mean-head] block 31: frozen heads [6, 13, 19, 20] (28 active)
+  [mean-head] block 32: frozen heads [0, 5, 13, 17] (28 active)
+  [mean-head] block 33: frozen heads [12, 15, 25, 31] (28 active)
+  [mean-head] block 34: frozen heads [17, 23, 28, 31] (28 active)
+  [mean-head] block 35: frozen heads [2, 3, 6, 7] (28 active)
+  [mean-head] block 36: frozen heads [4, 15, 18, 21] (28 active)
+  [mean-head] block 37: frozen heads [1, 4, 10, 30] (28 active)
+  [mean-head] block 38: frozen heads [2, 4, 6, 11] (28 active)
+  [mean-head] block 39: frozen heads [6, 10, 12, 17] (28 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=40.0%  top5=100.0%
+    batch 10/300  top1=50.0%  top5=100.0%
+    batch 15/300  top1=66.7%  top5=100.0%
+    batch 20/300  top1=65.0%  top5=100.0%
+    batch 25/300  top1=64.0%  top5=100.0%
+    batch 30/300  top1=56.7%  top5=100.0%
+    batch 35/300  top1=51.4%  top5=100.0%
+    batch 40/300  top1=47.5%  top5=100.0%
+    batch 45/300  top1=46.7%  top5=100.0%
+    batch 50/300  top1=48.0%  top5=100.0%
+    batch 55/300  top1=52.7%  top5=100.0%
+    batch 60/300  top1=56.7%  top5=100.0%
+    batch 65/300  top1=60.0%  top5=100.0%
+    batch 70/300  top1=62.9%  top5=100.0%
+    batch 75/300  top1=65.3%  top5=100.0%
+    batch 80/300  top1=67.5%  top5=100.0%
+    batch 85/300  top1=69.4%  top5=100.0%
+    batch 90/300  top1=71.1%  top5=100.0%
+    batch 95/300  top1=72.6%  top5=100.0%
+    batch 100/300  top1=74.0%  top5=100.0%
+    batch 105/300  top1=74.3%  top5=99.0%
+    batch 110/300  top1=72.7%  top5=99.1%
+    batch 115/300  top1=71.3%  top5=99.1%
+    batch 120/300  top1=72.5%  top5=99.2%
+    batch 125/300  top1=72.8%  top5=98.4%
+    batch 130/300  top1=73.1%  top5=97.7%
+    batch 135/300  top1=74.1%  top5=97.8%
+    batch 140/300  top1=75.0%  top5=97.9%
+    batch 145/300  top1=74.5%  top5=97.9%
+    batch 150/300  top1=75.3%  top5=98.0%
+    batch 155/300  top1=74.8%  top5=96.8%
+    batch 160/300  top1=74.4%  top5=96.2%
+    batch 165/300  top1=74.5%  top5=96.4%
+    batch 170/300  top1=74.7%  top5=96.5%
+    batch 175/300  top1=74.9%  top5=96.6%
+    batch 180/300  top1=75.6%  top5=96.7%
+    batch 185/300  top1=76.2%  top5=96.8%
+    batch 190/300  top1=76.8%  top5=96.8%
+    batch 195/300  top1=77.4%  top5=96.9%
+    batch 200/300  top1=77.5%  top5=97.0%
+    batch 205/300  top1=78.0%  top5=97.1%
+    batch 210/300  top1=78.6%  top5=97.1%
+    batch 215/300  top1=78.1%  top5=96.7%
+    batch 220/300  top1=78.2%  top5=96.8%
+    batch 225/300  top1=78.2%  top5=96.9%
+    batch 230/300  top1=78.7%  top5=97.0%
+    batch 235/300  top1=78.7%  top5=97.0%
+    batch 240/300  top1=79.2%  top5=97.1%
+    batch 245/300  top1=79.6%  top5=97.1%
+    batch 250/300  top1=80.0%  top5=97.2%
+    batch 255/300  top1=80.4%  top5=97.3%
+    batch 260/300  top1=80.8%  top5=97.3%
+    batch 265/300  top1=81.1%  top5=97.4%
+    batch 270/300  top1=81.5%  top5=97.4%
+    batch 275/300  top1=81.8%  top5=97.5%
+    batch 280/300  top1=81.8%  top5=97.1%
+    batch 285/300  top1=82.1%  top5=97.2%
+    batch 290/300  top1=82.4%  top5=97.2%
+    batch 295/300  top1=82.4%  top5=97.3%
+    batch 300/300  top1=82.7%  top5=97.3%
+    Top-1: 82.67%  Top-5: 97.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk4/eval_cats
+Group           Top-1      Top-5      Images    
+cats            82.67      97.33      300       
+======================================================================
+=== [dinov3_7b] tk4 cars: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=4/32)
+======================================================================
+  Checked 1280 heads, froze 160
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_cars/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 18/689 [00:00<00:03, 173.98it/s]Loading weights:   5%|▌         | 37/689 [00:00<00:03, 180.10it/s]Loading weights:   8%|▊         | 56/689 [00:00<00:03, 184.48it/s]Loading weights:  11%|█         | 75/689 [00:00<00:04, 136.52it/s]Loading weights:  13%|█▎        | 91/689 [00:00<00:04, 141.74it/s]Loading weights:  16%|█▌        | 107/689 [00:00<00:04, 145.20it/s]Loading weights:  18%|█▊        | 123/689 [00:00<00:04, 117.20it/s]Loading weights:  20%|█▉        | 136/689 [00:01<00:04, 118.67it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:05, 103.35it/s]Loading weights:  24%|██▍       | 165/689 [00:01<00:04, 107.30it/s]Loading weights:  26%|██▌       | 180/689 [00:01<00:05, 97.65it/s] Loading weights:  28%|██▊       | 191/689 [00:01<00:04, 100.00it/s]Loading weights:  29%|██▉       | 202/689 [00:01<00:04, 101.83it/s]Loading weights:  31%|███       | 215/689 [00:01<00:04, 108.91it/s]Loading weights:  33%|███▎      | 227/689 [00:01<00:04, 110.24it/s]Loading weights:  35%|███▍      | 239/689 [00:02<00:04, 90.10it/s] Loading weights:  36%|███▋      | 250/689 [00:02<00:04, 94.60it/s]Loading weights:  38%|███▊      | 264/689 [00:02<00:04, 106.05it/s]Loading weights:  40%|████      | 276/689 [00:02<00:03, 106.07it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:04, 88.65it/s] Loading weights:  44%|████▍     | 302/689 [00:02<00:03, 99.78it/s]Loading weights:  46%|████▌     | 317/689 [00:02<00:03, 110.64it/s]Loading weights:  48%|████▊     | 334/689 [00:03<00:03, 103.51it/s]Loading weights:  51%|█████     | 350/689 [00:03<00:02, 116.71it/s]Loading weights:  53%|█████▎    | 367/689 [00:03<00:02, 129.08it/s]Loading weights:  55%|█████▌    | 381/689 [00:03<00:02, 130.50it/s]Loading weights:  58%|█████▊    | 402/689 [00:03<00:02, 121.46it/s]Loading weights:  61%|██████    | 421/689 [00:03<00:01, 137.03it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:01, 150.57it/s]Loading weights:  66%|██████▋   | 457/689 [00:03<00:01, 123.56it/s]Loading weights:  68%|██████▊   | 471/689 [00:04<00:01, 127.23it/s]Loading weights:  71%|███████   | 488/689 [00:04<00:01, 136.42it/s]Loading weights:  73%|███████▎  | 505/689 [00:04<00:01, 144.05it/s]Loading weights:  76%|███████▌  | 522/689 [00:04<00:01, 150.44it/s]Loading weights:  78%|███████▊  | 539/689 [00:04<00:01, 124.53it/s]Loading weights:  80%|████████  | 554/689 [00:04<00:01, 130.46it/s]Loading weights:  82%|████████▏ | 568/689 [00:04<00:00, 131.74it/s]Loading weights:  84%|████████▍ | 582/689 [00:04<00:00, 132.41it/s]Loading weights:  87%|████████▋ | 596/689 [00:05<00:00, 106.23it/s]Loading weights:  89%|████████▊ | 611/689 [00:05<00:00, 112.85it/s]Loading weights:  91%|█████████ | 627/689 [00:05<00:00, 103.80it/s]Loading weights:  93%|█████████▎| 639/689 [00:05<00:00, 107.24it/s]Loading weights:  94%|█████████▍| 651/689 [00:05<00:00, 108.05it/s]Loading weights:  96%|█████████▌| 663/689 [00:05<00:00, 90.22it/s] Loading weights:  99%|█████████▊| 679/689 [00:05<00:00, 105.66it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 118.50it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk4/freeze_cars/freeze_manifest.json (160 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [7, 9, 14, 22] (28 active)
+  [mean-head] block 1: frozen heads [13, 23, 27, 29] (28 active)
+  [mean-head] block 2: frozen heads [1, 13, 24, 30] (28 active)
+  [mean-head] block 3: frozen heads [9, 12, 18, 25] (28 active)
+  [mean-head] block 4: frozen heads [6, 14, 23, 30] (28 active)
+  [mean-head] block 5: frozen heads [1, 7, 13, 27] (28 active)
+  [mean-head] block 6: frozen heads [7, 16, 22, 28] (28 active)
+  [mean-head] block 7: frozen heads [7, 9, 17, 18] (28 active)
+  [mean-head] block 8: frozen heads [3, 4, 13, 27] (28 active)
+  [mean-head] block 9: frozen heads [0, 9, 17, 30] (28 active)
+  [mean-head] block 10: frozen heads [18, 19, 20, 22] (28 active)
+  [mean-head] block 11: frozen heads [0, 11, 16, 19] (28 active)
+  [mean-head] block 12: frozen heads [0, 10, 17, 29] (28 active)
+  [mean-head] block 13: frozen heads [6, 10, 18, 31] (28 active)
+  [mean-head] block 14: frozen heads [12, 20, 26, 27] (28 active)
+  [mean-head] block 15: frozen heads [13, 19, 26, 31] (28 active)
+  [mean-head] block 16: frozen heads [7, 17, 29, 31] (28 active)
+  [mean-head] block 17: frozen heads [0, 10, 11, 13] (28 active)
+  [mean-head] block 18: frozen heads [0, 9, 26, 31] (28 active)
+  [mean-head] block 19: frozen heads [3, 6, 8, 10] (28 active)
+  [mean-head] block 20: frozen heads [1, 2, 20, 21] (28 active)
+  [mean-head] block 21: frozen heads [5, 18, 19, 25] (28 active)
+  [mean-head] block 22: frozen heads [4, 5, 20, 30] (28 active)
+  [mean-head] block 23: frozen heads [1, 5, 7, 13] (28 active)
+  [mean-head] block 24: frozen heads [0, 5, 12, 30] (28 active)
+  [mean-head] block 25: frozen heads [3, 4, 26, 28] (28 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 14] (28 active)
+  [mean-head] block 27: frozen heads [1, 7, 12, 26] (28 active)
+  [mean-head] block 28: frozen heads [10, 13, 15, 23] (28 active)
+  [mean-head] block 29: frozen heads [5, 6, 20, 25] (28 active)
+  [mean-head] block 30: frozen heads [8, 14, 25, 29] (28 active)
+  [mean-head] block 31: frozen heads [6, 13, 19, 24] (28 active)
+  [mean-head] block 32: frozen heads [0, 4, 5, 13] (28 active)
+  [mean-head] block 33: frozen heads [5, 10, 24, 31] (28 active)
+  [mean-head] block 34: frozen heads [4, 16, 22, 28] (28 active)
+  [mean-head] block 35: frozen heads [6, 7, 25, 26] (28 active)
+  [mean-head] block 36: frozen heads [4, 18, 21, 25] (28 active)
+  [mean-head] block 37: frozen heads [4, 7, 10, 27] (28 active)
+  [mean-head] block 38: frozen heads [4, 6, 11, 13] (28 active)
+  [mean-head] block 39: frozen heads [4, 12, 20, 29] (28 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=80.0%  top5=100.0%
+    batch 15/300  top1=80.0%  top5=100.0%
+    batch 20/300  top1=85.0%  top5=100.0%
+    batch 25/300  top1=88.0%  top5=100.0%
+    batch 30/300  top1=90.0%  top5=100.0%
+    batch 35/300  top1=91.4%  top5=100.0%
+    batch 40/300  top1=92.5%  top5=100.0%
+    batch 45/300  top1=91.1%  top5=100.0%
+    batch 50/300  top1=92.0%  top5=100.0%
+    batch 55/300  top1=92.7%  top5=100.0%
+    batch 60/300  top1=91.7%  top5=100.0%
+    batch 65/300  top1=92.3%  top5=100.0%
+    batch 70/300  top1=92.9%  top5=100.0%
+    batch 75/300  top1=93.3%  top5=100.0%
+    batch 80/300  top1=93.8%  top5=100.0%
+    batch 85/300  top1=94.1%  top5=100.0%
+    batch 90/300  top1=94.4%  top5=100.0%
+    batch 95/300  top1=94.7%  top5=100.0%
+    batch 100/300  top1=95.0%  top5=100.0%
+    batch 105/300  top1=95.2%  top5=100.0%
+    batch 110/300  top1=95.5%  top5=100.0%
+    batch 115/300  top1=95.7%  top5=100.0%
+    batch 120/300  top1=95.8%  top5=100.0%
+    batch 125/300  top1=95.2%  top5=100.0%
+    batch 130/300  top1=94.6%  top5=100.0%
+    batch 135/300  top1=94.8%  top5=100.0%
+    batch 140/300  top1=93.6%  top5=99.3%
+    batch 145/300  top1=92.4%  top5=97.9%
+    batch 150/300  top1=92.7%  top5=98.0%
+    batch 155/300  top1=92.9%  top5=98.1%
+    batch 160/300  top1=93.1%  top5=98.1%
+    batch 165/300  top1=93.3%  top5=98.2%
+    batch 170/300  top1=93.5%  top5=98.2%
+    batch 175/300  top1=93.7%  top5=98.3%
+    batch 180/300  top1=93.3%  top5=98.3%
+    batch 185/300  top1=92.4%  top5=97.8%
+    batch 190/300  top1=91.1%  top5=97.4%
+    batch 195/300  top1=91.3%  top5=97.4%
+    batch 200/300  top1=91.0%  top5=97.5%
+    batch 205/300  top1=91.2%  top5=97.6%
+    batch 210/300  top1=90.5%  top5=97.1%
+    batch 215/300  top1=90.7%  top5=97.2%
+    batch 220/300  top1=90.5%  top5=97.3%
+    batch 225/300  top1=90.2%  top5=97.3%
+    batch 230/300  top1=90.4%  top5=97.4%
+    batch 235/300  top1=90.6%  top5=97.4%
+    batch 240/300  top1=90.8%  top5=97.5%
+    batch 245/300  top1=91.0%  top5=97.6%
+    batch 250/300  top1=91.2%  top5=97.6%
+    batch 255/300  top1=91.4%  top5=97.6%
+    batch 260/300  top1=90.4%  top5=97.7%
+    batch 265/300  top1=89.4%  top5=97.7%
+    batch 270/300  top1=89.3%  top5=97.8%
+    batch 275/300  top1=89.1%  top5=97.8%
+    batch 280/300  top1=89.3%  top5=97.9%
+    batch 285/300  top1=89.5%  top5=97.9%
+    batch 290/300  top1=89.3%  top5=97.9%
+    batch 295/300  top1=89.5%  top5=98.0%
+    batch 300/300  top1=89.7%  top5=98.0%
+    Top-1: 89.67%  Top-5: 98.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk4/eval_cars
+Group           Top-1      Top-5      Images    
+cars            89.67      98.00      300       
+======================================================================
+=== [dinov3_7b] tk8 dogs: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=8/32)
+======================================================================
+  Checked 1280 heads, froze 320
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_dogs/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 21/689 [00:00<00:03, 209.72it/s]Loading weights:   7%|▋         | 46/689 [00:00<00:02, 229.17it/s]Loading weights:  10%|█         | 69/689 [00:00<00:03, 163.15it/s]Loading weights:  13%|█▎        | 87/689 [00:00<00:03, 167.66it/s]Loading weights:  15%|█▌        | 105/689 [00:00<00:03, 168.43it/s]Loading weights:  18%|█▊        | 123/689 [00:00<00:03, 169.55it/s]Loading weights:  20%|██        | 141/689 [00:00<00:04, 136.21it/s]Loading weights:  23%|██▎       | 156/689 [00:01<00:03, 137.14it/s]Loading weights:  25%|██▍       | 171/689 [00:01<00:04, 112.97it/s]Loading weights:  27%|██▋       | 184/689 [00:01<00:04, 116.78it/s]Loading weights:  29%|██▉       | 199/689 [00:01<00:04, 100.83it/s]Loading weights:  31%|███       | 215/689 [00:01<00:04, 113.61it/s]Loading weights:  33%|███▎      | 228/689 [00:01<00:03, 115.89it/s]Loading weights:  35%|███▍      | 241/689 [00:01<00:03, 116.70it/s]Loading weights:  37%|███▋      | 256/689 [00:01<00:04, 102.63it/s]Loading weights:  39%|███▉      | 271/689 [00:02<00:03, 112.20it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 101.64it/s]Loading weights:  44%|████▍     | 305/689 [00:02<00:03, 96.52it/s] Loading weights:  47%|████▋     | 322/689 [00:02<00:03, 110.54it/s]Loading weights:  49%|████▉     | 339/689 [00:02<00:03, 102.26it/s]Loading weights:  51%|█████     | 352/689 [00:02<00:03, 107.96it/s]Loading weights:  54%|█████▎    | 369/689 [00:02<00:02, 121.02it/s]Loading weights:  56%|█████▌    | 383/689 [00:03<00:02, 125.61it/s]Loading weights:  58%|█████▊    | 397/689 [00:03<00:02, 128.19it/s]Loading weights:  60%|█████▉    | 411/689 [00:03<00:02, 105.07it/s]Loading weights:  62%|██████▏   | 424/689 [00:03<00:02, 110.75it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:01, 124.96it/s]Loading weights:  66%|██████▌   | 455/689 [00:03<00:01, 128.63it/s]Loading weights:  68%|██████▊   | 469/689 [00:03<00:02, 103.72it/s]Loading weights:  70%|██████▉   | 481/689 [00:04<00:01, 106.71it/s]Loading weights:  72%|███████▏  | 493/689 [00:04<00:02, 89.14it/s] Loading weights:  73%|███████▎  | 505/689 [00:04<00:01, 96.03it/s]Loading weights:  76%|███████▌  | 522/689 [00:04<00:01, 113.69it/s]Loading weights:  78%|███████▊  | 535/689 [00:04<00:01, 117.10it/s]Loading weights:  80%|███████▉  | 548/689 [00:04<00:01, 117.98it/s]Loading weights:  82%|████████▏ | 564/689 [00:04<00:00, 128.68it/s]Loading weights:  84%|████████▍ | 581/689 [00:04<00:00, 113.14it/s]Loading weights:  86%|████████▌ | 594/689 [00:04<00:00, 117.14it/s]Loading weights:  89%|████████▊ | 611/689 [00:05<00:00, 130.16it/s]Loading weights:  91%|█████████ | 628/689 [00:05<00:00, 139.79it/s]Loading weights:  93%|█████████▎| 643/689 [00:05<00:00, 142.28it/s]Loading weights:  96%|█████████▌| 658/689 [00:05<00:00, 114.58it/s]Loading weights:  98%|█████████▊| 674/689 [00:05<00:00, 123.67it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 120.94it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_dogs/freeze_manifest.json (320 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 4, 6, 7, 9, 14, 22, 23] (24 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 11, 13, 23, 27, 29] (24 active)
+  [mean-head] block 2: frozen heads [1, 6, 11, 13, 16, 19, 24, 30] (24 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 18, 23, 25, 27, 28] (24 active)
+  [mean-head] block 4: frozen heads [6, 12, 14, 23, 27, 29, 30, 31] (24 active)
+  [mean-head] block 5: frozen heads [1, 7, 12, 13, 20, 24, 27, 30] (24 active)
+  [mean-head] block 6: frozen heads [4, 6, 7, 10, 16, 22, 26, 28] (24 active)
+  [mean-head] block 7: frozen heads [4, 7, 9, 13, 16, 17, 18, 23] (24 active)
+  [mean-head] block 8: frozen heads [3, 4, 13, 16, 20, 27, 29, 30] (24 active)
+  [mean-head] block 9: frozen heads [0, 7, 9, 10, 12, 13, 17, 30] (24 active)
+  [mean-head] block 10: frozen heads [0, 8, 9, 13, 18, 19, 20, 22] (24 active)
+  [mean-head] block 11: frozen heads [0, 4, 8, 11, 15, 16, 19, 20] (24 active)
+  [mean-head] block 12: frozen heads [0, 10, 11, 15, 17, 27, 29, 31] (24 active)
+  [mean-head] block 13: frozen heads [6, 10, 15, 18, 22, 23, 28, 31] (24 active)
+  [mean-head] block 14: frozen heads [6, 7, 12, 20, 25, 26, 27, 28] (24 active)
+  [mean-head] block 15: frozen heads [6, 13, 19, 23, 26, 29, 30, 31] (24 active)
+  [mean-head] block 16: frozen heads [1, 5, 7, 17, 23, 29, 30, 31] (24 active)
+  [mean-head] block 17: frozen heads [0, 7, 9, 10, 11, 12, 13, 15] (24 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 22, 26, 31] (24 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 10, 11, 25, 28] (24 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 7, 18, 20, 21, 30] (24 active)
+  [mean-head] block 21: frozen heads [5, 9, 16, 18, 19, 22, 25, 28] (24 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 19, 20, 29, 30] (24 active)
+  [mean-head] block 23: frozen heads [1, 5, 7, 9, 13, 20, 21, 23] (24 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 12, 18, 19, 24, 30] (24 active)
+  [mean-head] block 25: frozen heads [3, 4, 12, 15, 16, 18, 26, 28] (24 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 14, 15, 16, 20, 27] (24 active)
+  [mean-head] block 27: frozen heads [1, 7, 12, 14, 18, 19, 26, 30] (24 active)
+  [mean-head] block 28: frozen heads [4, 10, 13, 14, 15, 21, 23, 28] (24 active)
+  [mean-head] block 29: frozen heads [5, 6, 16, 17, 19, 20, 23, 25] (24 active)
+  [mean-head] block 30: frozen heads [2, 8, 11, 14, 20, 28, 29, 30] (24 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 16, 18, 19, 20, 28] (24 active)
+  [mean-head] block 32: frozen heads [0, 1, 5, 13, 15, 17, 21, 26] (24 active)
+  [mean-head] block 33: frozen heads [2, 12, 15, 18, 19, 22, 25, 31] (24 active)
+  [mean-head] block 34: frozen heads [4, 6, 15, 17, 23, 27, 28, 31] (24 active)
+  [mean-head] block 35: frozen heads [3, 6, 7, 11, 16, 22, 25, 30] (24 active)
+  [mean-head] block 36: frozen heads [4, 5, 10, 15, 18, 21, 26, 29] (24 active)
+  [mean-head] block 37: frozen heads [1, 4, 10, 12, 20, 24, 29, 30] (24 active)
+  [mean-head] block 38: frozen heads [2, 3, 4, 6, 9, 11, 16, 30] (24 active)
+  [mean-head] block 39: frozen heads [4, 8, 10, 12, 14, 17, 20, 31] (24 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=80.0%  top5=80.0%
+    batch 10/300  top1=80.0%  top5=90.0%
+    batch 15/300  top1=73.3%  top5=86.7%
+    batch 20/300  top1=80.0%  top5=90.0%
+    batch 25/300  top1=72.0%  top5=88.0%
+    batch 30/300  top1=76.7%  top5=90.0%
+    batch 35/300  top1=80.0%  top5=91.4%
+    batch 40/300  top1=82.5%  top5=92.5%
+    batch 45/300  top1=84.4%  top5=93.3%
+    batch 50/300  top1=84.0%  top5=94.0%
+    batch 55/300  top1=85.5%  top5=94.5%
+    batch 60/300  top1=86.7%  top5=95.0%
+    batch 65/300  top1=87.7%  top5=95.4%
+    batch 70/300  top1=88.6%  top5=95.7%
+    batch 75/300  top1=88.0%  top5=96.0%
+    batch 80/300  top1=87.5%  top5=96.2%
+    batch 85/300  top1=88.2%  top5=96.5%
+    batch 90/300  top1=87.8%  top5=96.7%
+    batch 95/300  top1=88.4%  top5=96.8%
+    batch 100/300  top1=89.0%  top5=97.0%
+    batch 105/300  top1=88.6%  top5=96.2%
+    batch 110/300  top1=88.2%  top5=96.4%
+    batch 115/300  top1=87.8%  top5=96.5%
+    batch 120/300  top1=86.7%  top5=95.8%
+    batch 125/300  top1=87.2%  top5=96.0%
+    batch 130/300  top1=87.7%  top5=96.2%
+    batch 135/300  top1=87.4%  top5=95.6%
+    batch 140/300  top1=87.1%  top5=95.7%
+    batch 145/300  top1=87.6%  top5=95.9%
+    batch 150/300  top1=88.0%  top5=96.0%
+    batch 155/300  top1=87.7%  top5=96.1%
+    batch 160/300  top1=86.9%  top5=96.2%
+    batch 165/300  top1=87.3%  top5=96.4%
+    batch 170/300  top1=87.1%  top5=96.5%
+    batch 175/300  top1=87.4%  top5=96.6%
+    batch 180/300  top1=87.8%  top5=96.7%
+    batch 185/300  top1=87.6%  top5=96.8%
+    batch 190/300  top1=87.4%  top5=96.8%
+    batch 195/300  top1=87.7%  top5=96.9%
+    batch 200/300  top1=88.0%  top5=97.0%
+    batch 205/300  top1=87.8%  top5=96.6%
+    batch 210/300  top1=88.1%  top5=96.7%
+    batch 215/300  top1=88.4%  top5=96.7%
+    batch 220/300  top1=88.2%  top5=96.8%
+    batch 225/300  top1=88.4%  top5=96.9%
+    batch 230/300  top1=88.3%  top5=97.0%
+    batch 235/300  top1=88.1%  top5=97.0%
+    batch 240/300  top1=87.5%  top5=97.1%
+    batch 245/300  top1=87.8%  top5=97.1%
+    batch 250/300  top1=87.2%  top5=97.2%
+    batch 255/300  top1=87.5%  top5=97.3%
+    batch 260/300  top1=87.3%  top5=97.3%
+    batch 265/300  top1=87.5%  top5=97.4%
+    batch 270/300  top1=86.7%  top5=96.7%
+    batch 275/300  top1=86.9%  top5=96.7%
+    batch 280/300  top1=86.8%  top5=96.8%
+    batch 285/300  top1=86.7%  top5=96.8%
+    batch 290/300  top1=86.9%  top5=96.9%
+    batch 295/300  top1=86.8%  top5=96.9%
+    batch 300/300  top1=87.0%  top5=97.0%
+    Top-1: 87.00%  Top-5: 97.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk8/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            87.00      97.00      300       
+======================================================================
+=== [dinov3_7b] tk8 cats: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=8/32)
+======================================================================
+  Checked 1280 heads, froze 320
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_cats/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   2%|▏         | 11/689 [00:00<00:07, 91.77it/s]Loading weights:   5%|▌         | 37/689 [00:00<00:03, 182.87it/s]Loading weights:   8%|▊         | 57/689 [00:00<00:03, 189.90it/s]Loading weights:  11%|█▏        | 78/689 [00:00<00:03, 196.27it/s]Loading weights:  14%|█▍        | 98/689 [00:00<00:03, 194.57it/s]Loading weights:  17%|█▋        | 118/689 [00:00<00:03, 151.75it/s]Loading weights:  20%|█▉        | 137/689 [00:00<00:03, 160.39it/s]Loading weights:  24%|██▎       | 163/689 [00:00<00:02, 186.74it/s]Loading weights:  27%|██▋       | 183/689 [00:01<00:02, 189.42it/s]Loading weights:  29%|██▉       | 203/689 [00:01<00:02, 191.24it/s]Loading weights:  32%|███▏      | 223/689 [00:01<00:02, 189.35it/s]Loading weights:  36%|███▌      | 246/689 [00:01<00:02, 162.50it/s]Loading weights:  38%|███▊      | 264/689 [00:01<00:02, 166.41it/s]Loading weights:  41%|████      | 282/689 [00:01<00:02, 167.65it/s]Loading weights:  44%|████▎     | 300/689 [00:01<00:02, 167.18it/s]Loading weights:  46%|████▌     | 318/689 [00:02<00:03, 113.38it/s]Loading weights:  48%|████▊     | 334/689 [00:02<00:02, 122.83it/s]Loading weights:  51%|█████     | 349/689 [00:02<00:02, 128.79it/s]Loading weights:  53%|█████▎    | 364/689 [00:02<00:02, 129.98it/s]Loading weights:  55%|█████▌    | 379/689 [00:02<00:02, 109.58it/s]Loading weights:  57%|█████▋    | 392/689 [00:02<00:02, 112.44it/s]Loading weights:  59%|█████▉    | 405/689 [00:02<00:02, 96.30it/s] Loading weights:  61%|██████    | 420/689 [00:02<00:02, 108.21it/s]Loading weights:  63%|██████▎   | 436/689 [00:03<00:02, 120.45it/s]Loading weights:  65%|██████▌   | 450/689 [00:03<00:01, 123.38it/s]Loading weights:  67%|██████▋   | 464/689 [00:03<00:01, 127.62it/s]Loading weights:  69%|██████▉   | 478/689 [00:03<00:02, 104.19it/s]Loading weights:  71%|███████   | 490/689 [00:03<00:01, 107.75it/s]Loading weights:  73%|███████▎  | 504/689 [00:03<00:01, 92.69it/s] Loading weights:  75%|███████▌  | 520/689 [00:03<00:01, 107.70it/s]Loading weights:  77%|███████▋  | 532/689 [00:03<00:01, 109.20it/s]Loading weights:  79%|███████▉  | 544/689 [00:04<00:01, 90.29it/s] Loading weights:  81%|████████  | 559/689 [00:04<00:01, 103.83it/s]Loading weights:  83%|████████▎ | 571/689 [00:04<00:01, 105.57it/s]Loading weights:  85%|████████▍ | 583/689 [00:04<00:01, 87.66it/s] Loading weights:  87%|████████▋ | 596/689 [00:04<00:00, 96.91it/s]Loading weights:  89%|████████▉ | 613/689 [00:04<00:00, 112.52it/s]Loading weights:  91%|█████████ | 626/689 [00:04<00:00, 96.29it/s] Loading weights:  93%|█████████▎| 639/689 [00:05<00:00, 103.81it/s]Loading weights:  94%|█████████▍| 651/689 [00:05<00:00, 107.05it/s]Loading weights:  96%|█████████▌| 663/689 [00:05<00:00, 108.83it/s]Loading weights:  98%|█████████▊| 678/689 [00:05<00:00, 118.21it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 127.12it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_cats/freeze_manifest.json (320 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 4, 6, 7, 9, 14, 22, 23] (24 active)
+  [mean-head] block 1: frozen heads [2, 3, 5, 11, 13, 23, 27, 29] (24 active)
+  [mean-head] block 2: frozen heads [1, 6, 8, 11, 13, 19, 24, 30] (24 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 13, 18, 23, 25, 28] (24 active)
+  [mean-head] block 4: frozen heads [6, 8, 12, 14, 27, 29, 30, 31] (24 active)
+  [mean-head] block 5: frozen heads [1, 7, 11, 14, 20, 24, 27, 30] (24 active)
+  [mean-head] block 6: frozen heads [4, 6, 7, 9, 16, 21, 22, 26] (24 active)
+  [mean-head] block 7: frozen heads [4, 7, 9, 16, 18, 19, 23, 29] (24 active)
+  [mean-head] block 8: frozen heads [4, 13, 16, 20, 24, 27, 29, 30] (24 active)
+  [mean-head] block 9: frozen heads [0, 7, 9, 10, 12, 17, 30, 31] (24 active)
+  [mean-head] block 10: frozen heads [0, 9, 13, 18, 19, 20, 22, 31] (24 active)
+  [mean-head] block 11: frozen heads [0, 4, 8, 11, 15, 18, 19, 20] (24 active)
+  [mean-head] block 12: frozen heads [0, 8, 10, 11, 15, 17, 27, 29] (24 active)
+  [mean-head] block 13: frozen heads [3, 6, 11, 15, 18, 22, 28, 31] (24 active)
+  [mean-head] block 14: frozen heads [6, 12, 20, 25, 26, 27, 28, 30] (24 active)
+  [mean-head] block 15: frozen heads [6, 13, 19, 23, 26, 29, 30, 31] (24 active)
+  [mean-head] block 16: frozen heads [5, 7, 15, 17, 23, 29, 30, 31] (24 active)
+  [mean-head] block 17: frozen heads [0, 7, 8, 9, 10, 11, 12, 13] (24 active)
+  [mean-head] block 18: frozen heads [0, 3, 8, 9, 12, 22, 26, 31] (24 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 10, 11, 17, 28] (24 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 7, 18, 20, 21, 30] (24 active)
+  [mean-head] block 21: frozen heads [5, 9, 16, 18, 19, 22, 25, 28] (24 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 19, 20, 29, 30] (24 active)
+  [mean-head] block 23: frozen heads [1, 5, 7, 9, 13, 15, 20, 23] (24 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 9, 12, 19, 24, 30] (24 active)
+  [mean-head] block 25: frozen heads [3, 4, 12, 15, 16, 18, 26, 28] (24 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 14, 15, 16, 20, 30] (24 active)
+  [mean-head] block 27: frozen heads [1, 7, 12, 13, 14, 18, 26, 31] (24 active)
+  [mean-head] block 28: frozen heads [4, 6, 10, 13, 14, 15, 23, 28] (24 active)
+  [mean-head] block 29: frozen heads [5, 6, 13, 15, 16, 20, 23, 25] (24 active)
+  [mean-head] block 30: frozen heads [2, 5, 14, 16, 20, 28, 29, 30] (24 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 14, 19, 20, 24, 28] (24 active)
+  [mean-head] block 32: frozen heads [0, 5, 13, 14, 17, 20, 21, 26] (24 active)
+  [mean-head] block 33: frozen heads [2, 12, 15, 18, 23, 25, 28, 31] (24 active)
+  [mean-head] block 34: frozen heads [4, 6, 15, 17, 22, 23, 28, 31] (24 active)
+  [mean-head] block 35: frozen heads [2, 3, 6, 7, 11, 17, 25, 30] (24 active)
+  [mean-head] block 36: frozen heads [4, 15, 16, 18, 21, 25, 26, 27] (24 active)
+  [mean-head] block 37: frozen heads [1, 4, 5, 7, 9, 10, 24, 30] (24 active)
+  [mean-head] block 38: frozen heads [2, 3, 4, 6, 11, 13, 18, 30] (24 active)
+  [mean-head] block 39: frozen heads [4, 6, 8, 10, 12, 14, 17, 20] (24 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=60.0%  top5=100.0%
+    batch 10/300  top1=50.0%  top5=100.0%
+    batch 15/300  top1=60.0%  top5=100.0%
+    batch 20/300  top1=60.0%  top5=100.0%
+    batch 25/300  top1=60.0%  top5=100.0%
+    batch 30/300  top1=53.3%  top5=100.0%
+    batch 35/300  top1=48.6%  top5=100.0%
+    batch 40/300  top1=47.5%  top5=100.0%
+    batch 45/300  top1=46.7%  top5=100.0%
+    batch 50/300  top1=48.0%  top5=100.0%
+    batch 55/300  top1=52.7%  top5=100.0%
+    batch 60/300  top1=56.7%  top5=100.0%
+    batch 65/300  top1=60.0%  top5=100.0%
+    batch 70/300  top1=62.9%  top5=100.0%
+    batch 75/300  top1=65.3%  top5=100.0%
+    batch 80/300  top1=67.5%  top5=100.0%
+    batch 85/300  top1=69.4%  top5=100.0%
+    batch 90/300  top1=71.1%  top5=100.0%
+    batch 95/300  top1=72.6%  top5=100.0%
+    batch 100/300  top1=73.0%  top5=100.0%
+    batch 105/300  top1=73.3%  top5=99.0%
+    batch 110/300  top1=71.8%  top5=99.1%
+    batch 115/300  top1=70.4%  top5=99.1%
+    batch 120/300  top1=71.7%  top5=99.2%
+    batch 125/300  top1=72.0%  top5=98.4%
+    batch 130/300  top1=72.3%  top5=97.7%
+    batch 135/300  top1=73.3%  top5=97.8%
+    batch 140/300  top1=74.3%  top5=97.9%
+    batch 145/300  top1=73.8%  top5=97.9%
+    batch 150/300  top1=74.7%  top5=98.0%
+    batch 155/300  top1=74.2%  top5=97.4%
+    batch 160/300  top1=73.8%  top5=96.9%
+    batch 165/300  top1=73.9%  top5=97.0%
+    batch 170/300  top1=74.1%  top5=97.1%
+    batch 175/300  top1=74.3%  top5=97.1%
+    batch 180/300  top1=75.0%  top5=97.2%
+    batch 185/300  top1=75.7%  top5=97.3%
+    batch 190/300  top1=75.8%  top5=97.4%
+    batch 195/300  top1=76.4%  top5=97.4%
+    batch 200/300  top1=76.5%  top5=97.5%
+    batch 205/300  top1=77.1%  top5=97.6%
+    batch 210/300  top1=77.6%  top5=97.6%
+    batch 215/300  top1=77.2%  top5=97.2%
+    batch 220/300  top1=77.3%  top5=97.3%
+    batch 225/300  top1=77.3%  top5=97.3%
+    batch 230/300  top1=77.8%  top5=97.4%
+    batch 235/300  top1=77.9%  top5=97.4%
+    batch 240/300  top1=78.3%  top5=97.5%
+    batch 245/300  top1=78.8%  top5=97.6%
+    batch 250/300  top1=79.2%  top5=97.6%
+    batch 255/300  top1=79.6%  top5=97.6%
+    batch 260/300  top1=80.0%  top5=97.7%
+    batch 265/300  top1=80.4%  top5=97.7%
+    batch 270/300  top1=80.7%  top5=97.8%
+    batch 275/300  top1=81.1%  top5=97.8%
+    batch 280/300  top1=81.1%  top5=97.9%
+    batch 285/300  top1=81.4%  top5=97.9%
+    batch 290/300  top1=81.7%  top5=97.9%
+    batch 295/300  top1=81.7%  top5=98.0%
+    batch 300/300  top1=82.0%  top5=98.0%
+    Top-1: 82.00%  Top-5: 98.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk8/eval_cats
+Group           Top-1      Top-5      Images    
+cats            82.00      98.00      300       
+======================================================================
+=== [dinov3_7b] tk8 cars: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=8/32)
+======================================================================
+  Checked 1280 heads, froze 320
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_cars/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 20/689 [00:00<00:05, 119.60it/s]Loading weights:   5%|▍         | 33/689 [00:00<00:05, 124.09it/s]Loading weights:   7%|▋         | 49/689 [00:00<00:04, 138.27it/s]Loading weights:   9%|▉         | 64/689 [00:00<00:04, 141.11it/s]Loading weights:  12%|█▏        | 83/689 [00:00<00:03, 156.53it/s]Loading weights:  14%|█▍        | 99/689 [00:00<00:04, 120.84it/s]Loading weights:  16%|█▋        | 113/689 [00:00<00:04, 123.55it/s]Loading weights:  19%|█▊        | 129/689 [00:00<00:04, 132.56it/s]Loading weights:  21%|██        | 144/689 [00:01<00:04, 135.43it/s]Loading weights:  23%|██▎       | 159/689 [00:01<00:04, 111.24it/s]Loading weights:  25%|██▍       | 172/689 [00:01<00:04, 113.26it/s]Loading weights:  27%|██▋       | 185/689 [00:01<00:05, 96.59it/s] Loading weights:  29%|██▊       | 197/689 [00:01<00:04, 101.94it/s]Loading weights:  30%|███       | 208/689 [00:01<00:04, 101.34it/s]Loading weights:  34%|███▎      | 231/689 [00:01<00:03, 133.33it/s]Loading weights:  36%|███▌      | 246/689 [00:02<00:03, 111.80it/s]Loading weights:  38%|███▊      | 259/689 [00:02<00:03, 114.26it/s]Loading weights:  40%|███▉      | 274/689 [00:02<00:03, 123.13it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 102.53it/s]Loading weights:  44%|████▎     | 300/689 [00:02<00:03, 106.02it/s]Loading weights:  45%|████▌     | 312/689 [00:02<00:03, 108.12it/s]Loading weights:  47%|████▋     | 324/689 [00:02<00:04, 89.58it/s] Loading weights:  49%|████▉     | 336/689 [00:02<00:03, 96.53it/s]Loading weights:  51%|█████     | 350/689 [00:03<00:03, 107.19it/s]Loading weights:  53%|█████▎    | 362/689 [00:03<00:02, 109.08it/s]Loading weights:  54%|█████▍    | 374/689 [00:03<00:03, 89.27it/s] Loading weights:  57%|█████▋    | 391/689 [00:03<00:02, 108.16it/s]Loading weights:  59%|█████▊    | 404/689 [00:03<00:02, 109.03it/s]Loading weights:  61%|██████    | 418/689 [00:03<00:02, 95.79it/s] Loading weights:  62%|██████▏   | 429/689 [00:03<00:02, 96.92it/s]Loading weights:  65%|██████▍   | 445/689 [00:03<00:02, 111.59it/s]Loading weights:  66%|██████▋   | 458/689 [00:04<00:02, 95.21it/s] Loading weights:  69%|██████▉   | 475/689 [00:04<00:01, 109.32it/s]Loading weights:  71%|███████   | 487/689 [00:04<00:02, 92.80it/s] Loading weights:  73%|███████▎  | 501/689 [00:04<00:01, 103.20it/s]Loading weights:  74%|███████▍  | 513/689 [00:04<00:02, 86.49it/s] Loading weights:  77%|███████▋  | 528/689 [00:04<00:01, 99.58it/s]Loading weights:  79%|███████▉  | 543/689 [00:04<00:01, 110.18it/s]Loading weights:  81%|████████▏ | 560/689 [00:05<00:01, 101.45it/s]Loading weights:  84%|████████▎ | 577/689 [00:05<00:00, 113.79it/s]Loading weights:  86%|████████▌ | 590/689 [00:05<00:01, 97.47it/s] Loading weights:  88%|████████▊ | 606/689 [00:05<00:00, 110.20it/s]Loading weights:  90%|█████████ | 622/689 [00:05<00:00, 120.88it/s]Loading weights:  92%|█████████▏| 636/689 [00:05<00:00, 124.07it/s]Loading weights:  94%|█████████▍| 650/689 [00:06<00:00, 86.28it/s] Loading weights:  96%|█████████▋| 664/689 [00:06<00:00, 96.86it/s]Loading weights:  99%|█████████▊| 679/689 [00:06<00:00, 107.24it/s]Loading weights: 100%|██████████| 689/689 [00:06<00:00, 109.78it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk8/freeze_cars/freeze_manifest.json (320 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 7, 9, 13, 14, 22, 23, 31] (24 active)
+  [mean-head] block 1: frozen heads [0, 3, 4, 11, 13, 23, 27, 29] (24 active)
+  [mean-head] block 2: frozen heads [1, 6, 13, 16, 19, 24, 27, 30] (24 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 18, 23, 25, 26, 27] (24 active)
+  [mean-head] block 4: frozen heads [6, 12, 14, 23, 27, 29, 30, 31] (24 active)
+  [mean-head] block 5: frozen heads [1, 7, 12, 13, 20, 24, 27, 30] (24 active)
+  [mean-head] block 6: frozen heads [4, 6, 7, 10, 16, 22, 26, 28] (24 active)
+  [mean-head] block 7: frozen heads [4, 7, 9, 16, 17, 18, 23, 28] (24 active)
+  [mean-head] block 8: frozen heads [3, 4, 9, 13, 20, 27, 29, 30] (24 active)
+  [mean-head] block 9: frozen heads [0, 9, 10, 12, 16, 17, 28, 30] (24 active)
+  [mean-head] block 10: frozen heads [2, 8, 9, 13, 18, 19, 20, 22] (24 active)
+  [mean-head] block 11: frozen heads [0, 4, 8, 11, 15, 16, 19, 20] (24 active)
+  [mean-head] block 12: frozen heads [0, 10, 11, 17, 19, 27, 29, 31] (24 active)
+  [mean-head] block 13: frozen heads [3, 6, 9, 10, 15, 18, 28, 31] (24 active)
+  [mean-head] block 14: frozen heads [7, 12, 20, 25, 26, 27, 28, 30] (24 active)
+  [mean-head] block 15: frozen heads [4, 6, 13, 19, 26, 29, 30, 31] (24 active)
+  [mean-head] block 16: frozen heads [5, 7, 15, 17, 23, 26, 29, 31] (24 active)
+  [mean-head] block 17: frozen heads [0, 2, 7, 9, 10, 11, 12, 13] (24 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 16, 26, 31] (24 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 10, 11, 25, 28] (24 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 18, 20, 21, 22, 30] (24 active)
+  [mean-head] block 21: frozen heads [2, 5, 13, 18, 19, 22, 25, 28] (24 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 20, 26, 29, 30] (24 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 13, 15, 20] (24 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 9, 12, 19, 24, 30] (24 active)
+  [mean-head] block 25: frozen heads [3, 4, 12, 18, 19, 26, 28, 30] (24 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 14, 20, 23, 26, 31] (24 active)
+  [mean-head] block 27: frozen heads [1, 7, 10, 12, 14, 16, 26, 28] (24 active)
+  [mean-head] block 28: frozen heads [3, 6, 10, 12, 13, 15, 23, 28] (24 active)
+  [mean-head] block 29: frozen heads [5, 6, 13, 16, 19, 20, 23, 25] (24 active)
+  [mean-head] block 30: frozen heads [2, 8, 14, 16, 20, 25, 28, 29] (24 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 14, 16, 17, 19, 24] (24 active)
+  [mean-head] block 32: frozen heads [0, 4, 5, 9, 11, 13, 17, 21] (24 active)
+  [mean-head] block 33: frozen heads [5, 10, 12, 18, 24, 26, 27, 31] (24 active)
+  [mean-head] block 34: frozen heads [0, 4, 15, 16, 22, 24, 27, 28] (24 active)
+  [mean-head] block 35: frozen heads [2, 3, 6, 7, 10, 22, 25, 26] (24 active)
+  [mean-head] block 36: frozen heads [4, 10, 15, 18, 21, 25, 26, 27] (24 active)
+  [mean-head] block 37: frozen heads [1, 4, 7, 9, 10, 20, 24, 27] (24 active)
+  [mean-head] block 38: frozen heads [3, 4, 6, 9, 11, 13, 26, 27] (24 active)
+  [mean-head] block 39: frozen heads [4, 8, 10, 12, 17, 20, 21, 29] (24 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=70.0%  top5=100.0%
+    batch 15/300  top1=66.7%  top5=100.0%
+    batch 20/300  top1=75.0%  top5=100.0%
+    batch 25/300  top1=80.0%  top5=100.0%
+    batch 30/300  top1=83.3%  top5=100.0%
+    batch 35/300  top1=85.7%  top5=100.0%
+    batch 40/300  top1=87.5%  top5=100.0%
+    batch 45/300  top1=86.7%  top5=100.0%
+    batch 50/300  top1=88.0%  top5=100.0%
+    batch 55/300  top1=89.1%  top5=100.0%
+    batch 60/300  top1=88.3%  top5=100.0%
+    batch 65/300  top1=89.2%  top5=100.0%
+    batch 70/300  top1=90.0%  top5=100.0%
+    batch 75/300  top1=90.7%  top5=100.0%
+    batch 80/300  top1=91.2%  top5=100.0%
+    batch 85/300  top1=91.8%  top5=100.0%
+    batch 90/300  top1=91.1%  top5=100.0%
+    batch 95/300  top1=91.6%  top5=100.0%
+    batch 100/300  top1=92.0%  top5=100.0%
+    batch 105/300  top1=92.4%  top5=100.0%
+    batch 110/300  top1=92.7%  top5=100.0%
+    batch 115/300  top1=93.0%  top5=100.0%
+    batch 120/300  top1=93.3%  top5=100.0%
+    batch 125/300  top1=92.8%  top5=100.0%
+    batch 130/300  top1=92.3%  top5=100.0%
+    batch 135/300  top1=92.6%  top5=100.0%
+    batch 140/300  top1=91.4%  top5=99.3%
+    batch 145/300  top1=90.3%  top5=97.9%
+    batch 150/300  top1=90.7%  top5=98.0%
+    batch 155/300  top1=91.0%  top5=98.1%
+    batch 160/300  top1=91.2%  top5=98.1%
+    batch 165/300  top1=91.5%  top5=98.2%
+    batch 170/300  top1=91.8%  top5=98.2%
+    batch 175/300  top1=92.0%  top5=98.3%
+    batch 180/300  top1=91.7%  top5=98.3%
+    batch 185/300  top1=90.8%  top5=98.4%
+    batch 190/300  top1=89.5%  top5=97.9%
+    batch 195/300  top1=89.2%  top5=97.9%
+    batch 200/300  top1=89.0%  top5=98.0%
+    batch 205/300  top1=89.3%  top5=98.0%
+    batch 210/300  top1=88.6%  top5=97.6%
+    batch 215/300  top1=88.8%  top5=97.7%
+    batch 220/300  top1=88.2%  top5=97.7%
+    batch 225/300  top1=88.0%  top5=97.8%
+    batch 230/300  top1=88.3%  top5=97.8%
+    batch 235/300  top1=88.5%  top5=97.9%
+    batch 240/300  top1=88.8%  top5=97.9%
+    batch 245/300  top1=89.0%  top5=98.0%
+    batch 250/300  top1=89.2%  top5=98.0%
+    batch 255/300  top1=89.4%  top5=98.0%
+    batch 260/300  top1=88.8%  top5=98.1%
+    batch 265/300  top1=87.9%  top5=98.1%
+    batch 270/300  top1=87.8%  top5=98.1%
+    batch 275/300  top1=87.6%  top5=98.2%
+    batch 280/300  top1=87.9%  top5=98.2%
+    batch 285/300  top1=87.7%  top5=98.2%
+    batch 290/300  top1=87.6%  top5=97.9%
+    batch 295/300  top1=87.8%  top5=98.0%
+    batch 300/300  top1=88.0%  top5=98.0%
+    Top-1: 88.00%  Top-5: 98.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk8/eval_cars
+Group           Top-1      Top-5      Images    
+cars            88.00      98.00      300       
+======================================================================
+=== [dinov3_7b] tk12 dogs: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=12/32)
+======================================================================
+  Checked 1280 heads, froze 480
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_dogs/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 27/689 [00:00<00:03, 206.74it/s]Loading weights:   7%|▋         | 48/689 [00:00<00:03, 207.16it/s]Loading weights:  10%|█         | 69/689 [00:00<00:03, 196.89it/s]Loading weights:  13%|█▎        | 89/689 [00:00<00:03, 150.29it/s]Loading weights:  15%|█▌        | 106/689 [00:00<00:03, 153.19it/s]Loading weights:  18%|█▊        | 123/689 [00:00<00:03, 157.88it/s]Loading weights:  20%|██        | 140/689 [00:00<00:04, 125.53it/s]Loading weights:  23%|██▎       | 156/689 [00:01<00:04, 109.56it/s]Loading weights:  25%|██▍       | 171/689 [00:01<00:04, 117.53it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:04, 124.17it/s]Loading weights:  29%|██▉       | 200/689 [00:01<00:03, 127.82it/s]Loading weights:  31%|███       | 214/689 [00:01<00:03, 130.56it/s]Loading weights:  33%|███▎      | 228/689 [00:01<00:03, 132.94it/s]Loading weights:  35%|███▌      | 242/689 [00:01<00:05, 88.04it/s] Loading weights:  37%|███▋      | 256/689 [00:02<00:04, 98.09it/s]Loading weights:  39%|███▉      | 271/689 [00:02<00:03, 108.88it/s]Loading weights:  41%|████▏     | 285/689 [00:02<00:03, 115.96it/s]Loading weights:  44%|████▎     | 301/689 [00:02<00:03, 103.08it/s]Loading weights:  46%|████▌     | 318/689 [00:02<00:03, 117.31it/s]Loading weights:  48%|████▊     | 331/689 [00:02<00:02, 119.52it/s]Loading weights:  50%|████▉     | 344/689 [00:02<00:03, 98.68it/s] Loading weights:  52%|█████▏    | 356/689 [00:02<00:03, 102.69it/s]Loading weights:  54%|█████▍    | 373/689 [00:03<00:02, 118.72it/s]Loading weights:  56%|█████▌    | 386/689 [00:03<00:02, 119.04it/s]Loading weights:  59%|█████▉    | 407/689 [00:03<00:02, 114.97it/s]Loading weights:  62%|██████▏   | 424/689 [00:03<00:02, 126.00it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:02, 112.55it/s]Loading weights:  66%|██████▋   | 458/689 [00:03<00:01, 124.36it/s]Loading weights:  69%|██████▊   | 472/689 [00:03<00:01, 127.77it/s]Loading weights:  71%|███████   | 488/689 [00:03<00:01, 135.59it/s]Loading weights:  73%|███████▎  | 503/689 [00:04<00:01, 136.60it/s]Loading weights:  75%|███████▌  | 518/689 [00:04<00:01, 112.50it/s]Loading weights:  77%|███████▋  | 531/689 [00:04<00:01, 113.85it/s]Loading weights:  79%|███████▉  | 544/689 [00:04<00:01, 96.64it/s] Loading weights:  81%|████████  | 556/689 [00:04<00:01, 101.83it/s]Loading weights:  82%|████████▏ | 567/689 [00:04<00:01, 103.29it/s]Loading weights:  84%|████████▍ | 578/689 [00:04<00:01, 104.83it/s]Loading weights:  86%|████████▌ | 594/689 [00:05<00:00, 95.74it/s] Loading weights:  88%|████████▊ | 606/689 [00:05<00:00, 101.14it/s]Loading weights:  90%|████████▉ | 620/689 [00:05<00:00, 110.87it/s]Loading weights:  92%|█████████▏| 632/689 [00:05<00:00, 89.53it/s] Loading weights:  94%|█████████▎| 645/689 [00:05<00:00, 98.34it/s]Loading weights:  96%|█████████▌| 658/689 [00:05<00:00, 105.57it/s]Loading weights:  97%|█████████▋| 671/689 [00:05<00:00, 111.61it/s]Loading weights:  99%|█████████▉| 683/689 [00:05<00:00, 113.56it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 118.02it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_dogs/freeze_manifest.json (480 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 4, 6, 7, 9, 14, 16, 18, 22, 23, 24, 31] (20 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 11, 13, 16, 19, 23, 27, 29] (20 active)
+  [mean-head] block 2: frozen heads [1, 2, 6, 8, 11, 13, 16, 19, 21, 22, 24, 30] (20 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 13, 15, 18, 22, 23, 25, 26, 27, 28] (20 active)
+  [mean-head] block 4: frozen heads [2, 6, 8, 12, 14, 19, 23, 27, 28, 29, 30, 31] (20 active)
+  [mean-head] block 5: frozen heads [1, 3, 7, 11, 12, 13, 14, 20, 22, 24, 27, 30] (20 active)
+  [mean-head] block 6: frozen heads [0, 4, 6, 7, 9, 10, 16, 21, 22, 26, 27, 28] (20 active)
+  [mean-head] block 7: frozen heads [0, 4, 7, 9, 13, 16, 17, 18, 19, 23, 28, 29] (20 active)
+  [mean-head] block 8: frozen heads [3, 4, 6, 9, 13, 16, 20, 23, 24, 27, 29, 30] (20 active)
+  [mean-head] block 9: frozen heads [0, 7, 9, 10, 12, 13, 16, 17, 21, 28, 30, 31] (20 active)
+  [mean-head] block 10: frozen heads [0, 2, 8, 9, 12, 13, 18, 19, 20, 22, 28, 31] (20 active)
+  [mean-head] block 11: frozen heads [0, 2, 4, 8, 11, 15, 16, 18, 19, 20, 30, 31] (20 active)
+  [mean-head] block 12: frozen heads [0, 8, 10, 11, 13, 15, 17, 19, 20, 27, 29, 31] (20 active)
+  [mean-head] block 13: frozen heads [3, 6, 9, 10, 11, 15, 16, 18, 22, 23, 28, 31] (20 active)
+  [mean-head] block 14: frozen heads [0, 6, 7, 9, 12, 20, 21, 25, 26, 27, 28, 30] (20 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 9, 10, 13, 19, 23, 26, 29, 30, 31] (20 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 15, 17, 23, 26, 29, 30, 31] (20 active)
+  [mean-head] block 17: frozen heads [0, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 22] (20 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 10, 12, 14, 16, 22, 26, 31] (20 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 10, 11, 12, 16, 17, 24, 25, 28] (20 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 17, 18, 20, 21, 22, 27, 30] (20 active)
+  [mean-head] block 21: frozen heads [2, 5, 9, 11, 16, 18, 19, 22, 25, 26, 27, 28] (20 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 19, 20, 23, 26, 28, 29, 30, 31] (20 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 12, 13, 15, 20, 21, 22, 23] (20 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 9, 12, 14, 18, 19, 23, 24, 29, 30] (20 active)
+  [mean-head] block 25: frozen heads [3, 4, 5, 7, 12, 15, 16, 18, 19, 26, 28, 30] (20 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 9, 10, 12, 14, 15, 16, 20, 27, 31] (20 active)
+  [mean-head] block 27: frozen heads [1, 6, 7, 10, 12, 13, 14, 18, 19, 24, 26, 30] (20 active)
+  [mean-head] block 28: frozen heads [0, 4, 6, 9, 10, 13, 14, 15, 18, 21, 23, 28] (20 active)
+  [mean-head] block 29: frozen heads [5, 6, 12, 13, 15, 16, 17, 18, 19, 20, 23, 25] (20 active)
+  [mean-head] block 30: frozen heads [2, 5, 6, 8, 10, 11, 14, 16, 20, 28, 29, 30] (20 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 14, 16, 17, 18, 19, 20, 23, 28, 29] (20 active)
+  [mean-head] block 32: frozen heads [0, 1, 4, 5, 8, 11, 13, 15, 17, 21, 22, 26] (20 active)
+  [mean-head] block 33: frozen heads [2, 7, 9, 12, 15, 18, 19, 22, 23, 25, 28, 31] (20 active)
+  [mean-head] block 34: frozen heads [4, 6, 9, 10, 12, 15, 17, 23, 24, 27, 28, 31] (20 active)
+  [mean-head] block 35: frozen heads [2, 3, 4, 6, 7, 10, 11, 16, 17, 22, 25, 30] (20 active)
+  [mean-head] block 36: frozen heads [4, 5, 7, 10, 15, 16, 17, 18, 21, 26, 27, 29] (20 active)
+  [mean-head] block 37: frozen heads [1, 4, 5, 7, 8, 10, 12, 16, 20, 24, 29, 30] (20 active)
+  [mean-head] block 38: frozen heads [2, 3, 4, 6, 9, 11, 16, 18, 26, 27, 30, 31] (20 active)
+  [mean-head] block 39: frozen heads [0, 4, 6, 8, 10, 12, 14, 17, 20, 24, 29, 31] (20 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=60.0%  top5=80.0%
+    batch 10/300  top1=60.0%  top5=90.0%
+    batch 15/300  top1=53.3%  top5=86.7%
+    batch 20/300  top1=60.0%  top5=90.0%
+    batch 25/300  top1=56.0%  top5=88.0%
+    batch 30/300  top1=63.3%  top5=90.0%
+    batch 35/300  top1=68.6%  top5=91.4%
+    batch 40/300  top1=70.0%  top5=92.5%
+    batch 45/300  top1=73.3%  top5=93.3%
+    batch 50/300  top1=72.0%  top5=94.0%
+    batch 55/300  top1=72.7%  top5=94.5%
+    batch 60/300  top1=75.0%  top5=95.0%
+    batch 65/300  top1=76.9%  top5=95.4%
+    batch 70/300  top1=78.6%  top5=95.7%
+    batch 75/300  top1=78.7%  top5=94.7%
+    batch 80/300  top1=78.8%  top5=95.0%
+    batch 85/300  top1=80.0%  top5=95.3%
+    batch 90/300  top1=77.8%  top5=95.6%
+    batch 95/300  top1=78.9%  top5=95.8%
+    batch 100/300  top1=80.0%  top5=96.0%
+    batch 105/300  top1=80.0%  top5=95.2%
+    batch 110/300  top1=79.1%  top5=95.5%
+    batch 115/300  top1=79.1%  top5=95.7%
+    batch 120/300  top1=78.3%  top5=95.0%
+    batch 125/300  top1=79.2%  top5=95.2%
+    batch 130/300  top1=80.0%  top5=95.4%
+    batch 135/300  top1=80.0%  top5=94.8%
+    batch 140/300  top1=79.3%  top5=95.0%
+    batch 145/300  top1=80.0%  top5=95.2%
+    batch 150/300  top1=80.7%  top5=95.3%
+    batch 155/300  top1=80.6%  top5=95.5%
+    batch 160/300  top1=78.8%  top5=95.6%
+    batch 165/300  top1=79.4%  top5=95.8%
+    batch 170/300  top1=78.8%  top5=95.9%
+    batch 175/300  top1=79.4%  top5=96.0%
+    batch 180/300  top1=80.0%  top5=96.1%
+    batch 185/300  top1=80.5%  top5=96.2%
+    batch 190/300  top1=81.1%  top5=96.3%
+    batch 195/300  top1=81.5%  top5=96.4%
+    batch 200/300  top1=82.0%  top5=96.5%
+    batch 205/300  top1=81.5%  top5=96.1%
+    batch 210/300  top1=81.9%  top5=96.2%
+    batch 215/300  top1=81.9%  top5=96.3%
+    batch 220/300  top1=81.8%  top5=96.4%
+    batch 225/300  top1=81.8%  top5=96.4%
+    batch 230/300  top1=82.2%  top5=96.5%
+    batch 235/300  top1=82.1%  top5=96.6%
+    batch 240/300  top1=81.7%  top5=96.7%
+    batch 245/300  top1=81.6%  top5=96.7%
+    batch 250/300  top1=81.6%  top5=96.4%
+    batch 255/300  top1=81.6%  top5=96.5%
+    batch 260/300  top1=81.2%  top5=96.5%
+    batch 265/300  top1=81.5%  top5=96.6%
+    batch 270/300  top1=80.7%  top5=95.9%
+    batch 275/300  top1=81.1%  top5=96.0%
+    batch 280/300  top1=81.1%  top5=96.1%
+    batch 285/300  top1=81.1%  top5=96.1%
+    batch 290/300  top1=81.4%  top5=96.2%
+    batch 295/300  top1=81.4%  top5=96.3%
+    batch 300/300  top1=81.7%  top5=96.3%
+    Top-1: 81.67%  Top-5: 96.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk12/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            81.67      96.33      300       
+======================================================================
+=== [dinov3_7b] tk12 cats: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=12/32)
+======================================================================
+  Checked 1280 heads, froze 480
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_cats/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 28/689 [00:00<00:03, 165.26it/s]Loading weights:   7%|▋         | 46/689 [00:00<00:03, 171.29it/s]Loading weights:   9%|▉         | 64/689 [00:00<00:03, 169.76it/s]Loading weights:  12%|█▏        | 82/689 [00:00<00:04, 131.84it/s]Loading weights:  14%|█▍        | 97/689 [00:00<00:04, 136.57it/s]Loading weights:  16%|█▋        | 113/689 [00:00<00:04, 142.44it/s]Loading weights:  19%|█▉        | 130/689 [00:00<00:03, 150.16it/s]Loading weights:  21%|██        | 146/689 [00:00<00:03, 148.30it/s]Loading weights:  24%|██▎       | 162/689 [00:01<00:04, 120.04it/s]Loading weights:  26%|██▌       | 176/689 [00:01<00:04, 124.53it/s]Loading weights:  28%|██▊       | 190/689 [00:01<00:04, 103.06it/s]Loading weights:  29%|██▉       | 203/689 [00:01<00:04, 108.46it/s]Loading weights:  32%|███▏      | 220/689 [00:01<00:04, 100.26it/s]Loading weights:  34%|███▍      | 233/689 [00:01<00:04, 106.83it/s]Loading weights:  36%|███▌      | 246/689 [00:01<00:03, 112.38it/s]Loading weights:  37%|███▋      | 258/689 [00:02<00:03, 112.06it/s]Loading weights:  39%|███▉      | 271/689 [00:02<00:04, 93.99it/s] Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 110.87it/s]Loading weights:  44%|████▍     | 305/689 [00:02<00:03, 124.01it/s]Loading weights:  46%|████▋     | 319/689 [00:02<00:03, 103.62it/s]Loading weights:  49%|████▊     | 335/689 [00:02<00:03, 115.69it/s]Loading weights:  51%|█████     | 351/689 [00:02<00:02, 126.43it/s]Loading weights:  53%|█████▎    | 365/689 [00:02<00:02, 128.05it/s]Loading weights:  55%|█████▌    | 379/689 [00:03<00:02, 104.97it/s]Loading weights:  57%|█████▋    | 391/689 [00:03<00:02, 105.60it/s]Loading weights:  59%|█████▉    | 407/689 [00:03<00:02, 98.34it/s] Loading weights:  61%|██████    | 418/689 [00:03<00:02, 100.55it/s]Loading weights:  62%|██████▏   | 429/689 [00:03<00:02, 102.76it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:02, 107.06it/s]Loading weights:  66%|██████▋   | 458/689 [00:03<00:01, 123.11it/s]Loading weights:  69%|██████▊   | 472/689 [00:03<00:01, 127.08it/s]Loading weights:  71%|███████   | 488/689 [00:04<00:01, 135.45it/s]Loading weights:  73%|███████▎  | 504/689 [00:04<00:01, 142.22it/s]Loading weights:  75%|███████▌  | 519/689 [00:04<00:01, 114.37it/s]Loading weights:  77%|███████▋  | 532/689 [00:04<00:01, 115.75it/s]Loading weights:  79%|███████▉  | 545/689 [00:04<00:01, 96.58it/s] Loading weights:  81%|████████▏ | 560/689 [00:04<00:01, 107.07it/s]Loading weights:  83%|████████▎ | 573/689 [00:04<00:01, 92.11it/s] Loading weights:  85%|████████▌ | 589/689 [00:05<00:00, 106.06it/s]Loading weights:  87%|████████▋ | 601/689 [00:05<00:00, 108.77it/s]Loading weights:  89%|████████▉ | 613/689 [00:05<00:00, 90.16it/s] Loading weights:  91%|█████████ | 628/689 [00:05<00:00, 102.29it/s]Loading weights:  93%|█████████▎| 641/689 [00:05<00:00, 88.79it/s] Loading weights:  95%|█████████▌| 657/689 [00:05<00:00, 104.02it/s]Loading weights:  97%|█████████▋| 669/689 [00:05<00:00, 106.98it/s]Loading weights:  99%|█████████▉| 681/689 [00:05<00:00, 109.66it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 115.27it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_cats/freeze_manifest.json (480 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [1, 2, 4, 6, 7, 9, 13, 14, 18, 22, 23, 30] (20 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 11, 13, 16, 19, 23, 27, 29] (20 active)
+  [mean-head] block 2: frozen heads [0, 1, 6, 8, 11, 13, 16, 19, 21, 22, 24, 30] (20 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 13, 15, 18, 22, 23, 25, 26, 27, 28] (20 active)
+  [mean-head] block 4: frozen heads [2, 6, 8, 12, 14, 19, 23, 27, 28, 29, 30, 31] (20 active)
+  [mean-head] block 5: frozen heads [1, 4, 7, 11, 12, 13, 14, 20, 22, 24, 27, 30] (20 active)
+  [mean-head] block 6: frozen heads [0, 4, 6, 7, 9, 16, 21, 22, 23, 26, 28, 30] (20 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 7, 8, 9, 13, 16, 18, 19, 23, 29] (20 active)
+  [mean-head] block 8: frozen heads [3, 4, 6, 9, 13, 16, 19, 20, 24, 27, 29, 30] (20 active)
+  [mean-head] block 9: frozen heads [0, 7, 9, 10, 12, 13, 17, 18, 21, 28, 30, 31] (20 active)
+  [mean-head] block 10: frozen heads [0, 2, 8, 9, 12, 13, 18, 19, 20, 22, 28, 31] (20 active)
+  [mean-head] block 11: frozen heads [0, 2, 4, 8, 11, 15, 16, 18, 19, 20, 30, 31] (20 active)
+  [mean-head] block 12: frozen heads [0, 8, 10, 11, 13, 15, 17, 19, 20, 22, 27, 29] (20 active)
+  [mean-head] block 13: frozen heads [3, 6, 8, 9, 11, 12, 15, 18, 19, 22, 28, 31] (20 active)
+  [mean-head] block 14: frozen heads [0, 6, 7, 9, 12, 20, 21, 25, 26, 27, 28, 30] (20 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 9, 13, 19, 23, 25, 26, 29, 30, 31] (20 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 15, 17, 23, 26, 29, 30, 31] (20 active)
+  [mean-head] block 17: frozen heads [0, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 31] (20 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 10, 12, 14, 16, 22, 26, 31] (20 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 10, 11, 12, 16, 17, 24, 25, 28] (20 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 12, 17, 18, 20, 21, 22, 30] (20 active)
+  [mean-head] block 21: frozen heads [2, 5, 9, 11, 13, 16, 18, 19, 22, 25, 26, 28] (20 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 19, 20, 23, 26, 28, 29, 30, 31] (20 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 13, 14, 15, 18, 20, 21, 23] (20 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 9, 12, 14, 18, 19, 23, 24, 29, 30] (20 active)
+  [mean-head] block 25: frozen heads [3, 4, 7, 12, 15, 16, 17, 18, 19, 26, 28, 30] (20 active)
+  [mean-head] block 26: frozen heads [0, 3, 5, 8, 14, 15, 16, 20, 26, 27, 28, 30] (20 active)
+  [mean-head] block 27: frozen heads [1, 7, 10, 12, 13, 14, 18, 19, 20, 26, 30, 31] (20 active)
+  [mean-head] block 28: frozen heads [0, 4, 6, 9, 10, 13, 14, 15, 18, 23, 28, 30] (20 active)
+  [mean-head] block 29: frozen heads [5, 6, 12, 13, 15, 16, 17, 19, 20, 23, 25, 27] (20 active)
+  [mean-head] block 30: frozen heads [2, 5, 8, 10, 11, 14, 15, 16, 20, 28, 29, 30] (20 active)
+  [mean-head] block 31: frozen heads [3, 6, 13, 14, 16, 17, 19, 20, 23, 24, 28, 29] (20 active)
+  [mean-head] block 32: frozen heads [0, 5, 8, 11, 13, 14, 15, 17, 20, 21, 22, 26] (20 active)
+  [mean-head] block 33: frozen heads [0, 2, 7, 9, 12, 15, 18, 22, 23, 25, 28, 31] (20 active)
+  [mean-head] block 34: frozen heads [4, 5, 6, 12, 15, 16, 17, 22, 23, 24, 28, 31] (20 active)
+  [mean-head] block 35: frozen heads [2, 3, 6, 7, 10, 11, 16, 17, 22, 25, 27, 30] (20 active)
+  [mean-head] block 36: frozen heads [0, 4, 5, 7, 10, 15, 16, 18, 21, 25, 26, 27] (20 active)
+  [mean-head] block 37: frozen heads [1, 4, 5, 7, 9, 10, 12, 16, 20, 24, 29, 30] (20 active)
+  [mean-head] block 38: frozen heads [2, 3, 4, 6, 9, 11, 13, 16, 18, 25, 30, 31] (20 active)
+  [mean-head] block 39: frozen heads [0, 4, 6, 8, 10, 12, 14, 17, 19, 20, 29, 31] (20 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=40.0%  top5=100.0%
+    batch 10/300  top1=40.0%  top5=100.0%
+    batch 15/300  top1=53.3%  top5=100.0%
+    batch 20/300  top1=50.0%  top5=100.0%
+    batch 25/300  top1=52.0%  top5=100.0%
+    batch 30/300  top1=46.7%  top5=100.0%
+    batch 35/300  top1=45.7%  top5=100.0%
+    batch 40/300  top1=45.0%  top5=100.0%
+    batch 45/300  top1=44.4%  top5=100.0%
+    batch 50/300  top1=46.0%  top5=100.0%
+    batch 55/300  top1=50.9%  top5=100.0%
+    batch 60/300  top1=55.0%  top5=100.0%
+    batch 65/300  top1=58.5%  top5=100.0%
+    batch 70/300  top1=61.4%  top5=100.0%
+    batch 75/300  top1=64.0%  top5=100.0%
+    batch 80/300  top1=66.2%  top5=100.0%
+    batch 85/300  top1=68.2%  top5=100.0%
+    batch 90/300  top1=70.0%  top5=100.0%
+    batch 95/300  top1=71.6%  top5=100.0%
+    batch 100/300  top1=72.0%  top5=100.0%
+    batch 105/300  top1=72.4%  top5=99.0%
+    batch 110/300  top1=69.1%  top5=99.1%
+    batch 115/300  top1=67.8%  top5=99.1%
+    batch 120/300  top1=69.2%  top5=99.2%
+    batch 125/300  top1=69.6%  top5=98.4%
+    batch 130/300  top1=70.0%  top5=98.5%
+    batch 135/300  top1=71.1%  top5=98.5%
+    batch 140/300  top1=72.1%  top5=98.6%
+    batch 145/300  top1=71.7%  top5=98.6%
+    batch 150/300  top1=72.7%  top5=98.7%
+    batch 155/300  top1=72.3%  top5=98.1%
+    batch 160/300  top1=71.9%  top5=97.5%
+    batch 165/300  top1=72.1%  top5=97.6%
+    batch 170/300  top1=72.4%  top5=97.6%
+    batch 175/300  top1=72.6%  top5=97.7%
+    batch 180/300  top1=73.3%  top5=97.8%
+    batch 185/300  top1=74.1%  top5=97.8%
+    batch 190/300  top1=73.7%  top5=97.9%
+    batch 195/300  top1=74.4%  top5=97.9%
+    batch 200/300  top1=74.5%  top5=98.0%
+    batch 205/300  top1=74.6%  top5=98.0%
+    batch 210/300  top1=75.2%  top5=98.1%
+    batch 215/300  top1=74.9%  top5=97.7%
+    batch 220/300  top1=75.0%  top5=97.7%
+    batch 225/300  top1=75.1%  top5=97.8%
+    batch 230/300  top1=75.7%  top5=97.8%
+    batch 235/300  top1=75.7%  top5=97.9%
+    batch 240/300  top1=76.2%  top5=97.9%
+    batch 245/300  top1=76.7%  top5=98.0%
+    batch 250/300  top1=77.2%  top5=98.0%
+    batch 255/300  top1=77.6%  top5=98.0%
+    batch 260/300  top1=78.1%  top5=98.1%
+    batch 265/300  top1=78.5%  top5=98.1%
+    batch 270/300  top1=78.9%  top5=98.1%
+    batch 275/300  top1=79.3%  top5=98.2%
+    batch 280/300  top1=79.3%  top5=98.2%
+    batch 285/300  top1=79.6%  top5=98.2%
+    batch 290/300  top1=80.0%  top5=98.3%
+    batch 295/300  top1=80.0%  top5=98.3%
+    batch 300/300  top1=80.3%  top5=98.3%
+    Top-1: 80.33%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk12/eval_cats
+Group           Top-1      Top-5      Images    
+cats            80.33      98.33      300       
+======================================================================
+=== [dinov3_7b] tk12 cars: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=12/32)
+======================================================================
+  Checked 1280 heads, froze 480
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_cars/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 28/689 [00:00<00:02, 273.46it/s]Loading weights:   8%|▊         | 56/689 [00:00<00:04, 130.59it/s]Loading weights:  11%|█         | 73/689 [00:00<00:04, 139.37it/s]Loading weights:  13%|█▎        | 93/689 [00:00<00:04, 124.80it/s]Loading weights:  16%|█▌        | 108/689 [00:00<00:04, 129.27it/s]Loading weights:  18%|█▊        | 123/689 [00:00<00:04, 133.25it/s]Loading weights:  20%|██        | 138/689 [00:01<00:05, 110.16it/s]Loading weights:  22%|██▏       | 152/689 [00:01<00:04, 116.45it/s]Loading weights:  25%|██▍       | 169/689 [00:01<00:04, 129.07it/s]Loading weights:  27%|██▋       | 183/689 [00:01<00:04, 106.15it/s]Loading weights:  29%|██▊       | 198/689 [00:01<00:04, 116.23it/s]Loading weights:  31%|███       | 211/689 [00:01<00:04, 96.05it/s] Loading weights:  34%|███▎      | 231/689 [00:01<00:03, 117.85it/s]Loading weights:  36%|███▌      | 245/689 [00:02<00:03, 121.41it/s]Loading weights:  38%|███▊      | 259/689 [00:02<00:04, 101.65it/s]Loading weights:  40%|███▉      | 273/689 [00:02<00:03, 110.20it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 119.67it/s]Loading weights:  44%|████▍     | 302/689 [00:02<00:03, 124.33it/s]Loading weights:  46%|████▌     | 318/689 [00:02<00:02, 133.25it/s]Loading weights:  48%|████▊     | 333/689 [00:02<00:02, 136.13it/s]Loading weights:  51%|█████     | 350/689 [00:02<00:02, 117.59it/s]Loading weights:  53%|█████▎    | 363/689 [00:02<00:02, 118.86it/s]Loading weights:  55%|█████▍    | 376/689 [00:03<00:02, 119.18it/s]Loading weights:  57%|█████▋    | 390/689 [00:03<00:02, 101.39it/s]Loading weights:  59%|█████▉    | 407/689 [00:03<00:02, 116.04it/s]Loading weights:  61%|██████    | 420/689 [00:03<00:02, 97.11it/s] Loading weights:  63%|██████▎   | 436/689 [00:03<00:02, 110.27it/s]Loading weights:  65%|██████▌   | 449/689 [00:03<00:02, 114.25it/s]Loading weights:  67%|██████▋   | 462/689 [00:03<00:02, 93.81it/s] Loading weights:  70%|███████   | 484/689 [00:04<00:01, 121.74it/s]Loading weights:  72%|███████▏  | 498/689 [00:04<00:01, 103.02it/s]Loading weights:  74%|███████▍  | 510/689 [00:04<00:01, 105.17it/s]Loading weights:  76%|███████▌  | 522/689 [00:04<00:01, 89.53it/s] Loading weights:  78%|███████▊  | 538/689 [00:04<00:01, 86.18it/s]Loading weights:  81%|████████  | 557/689 [00:04<00:01, 106.64it/s]Loading weights:  83%|████████▎ | 570/689 [00:04<00:01, 111.57it/s]Loading weights:  85%|████████▍ | 583/689 [00:05<00:00, 111.09it/s]Loading weights:  86%|████████▋ | 595/689 [00:05<00:00, 94.78it/s] Loading weights:  88%|████████▊ | 607/689 [00:05<00:00, 100.54it/s]Loading weights:  90%|████████▉ | 620/689 [00:05<00:00, 107.80it/s]Loading weights:  92%|█████████▏| 632/689 [00:05<00:00, 88.15it/s] Loading weights:  94%|█████████▎| 645/689 [00:05<00:00, 96.97it/s]Loading weights:  95%|█████████▌| 657/689 [00:05<00:00, 102.31it/s]Loading weights:  97%|█████████▋| 670/689 [00:05<00:00, 109.44it/s]Loading weights:  99%|█████████▉| 683/689 [00:06<00:00, 114.75it/s]Loading weights: 100%|██████████| 689/689 [00:06<00:00, 113.00it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk12/freeze_cars/freeze_manifest.json (480 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [1, 2, 4, 6, 7, 9, 13, 14, 22, 23, 24, 31] (20 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 11, 13, 16, 22, 23, 27, 29] (20 active)
+  [mean-head] block 2: frozen heads [1, 6, 8, 11, 13, 16, 17, 19, 22, 24, 27, 30] (20 active)
+  [mean-head] block 3: frozen heads [5, 9, 12, 13, 15, 18, 22, 23, 25, 26, 27, 28] (20 active)
+  [mean-head] block 4: frozen heads [2, 6, 8, 9, 12, 14, 23, 27, 28, 29, 30, 31] (20 active)
+  [mean-head] block 5: frozen heads [0, 1, 3, 4, 5, 7, 12, 13, 20, 24, 27, 30] (20 active)
+  [mean-head] block 6: frozen heads [0, 4, 6, 7, 9, 10, 14, 16, 22, 26, 27, 28] (20 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 7, 9, 12, 16, 17, 18, 23, 27, 28] (20 active)
+  [mean-head] block 8: frozen heads [3, 4, 9, 13, 16, 20, 23, 24, 25, 27, 29, 30] (20 active)
+  [mean-head] block 9: frozen heads [0, 7, 9, 10, 11, 12, 13, 16, 17, 21, 28, 30] (20 active)
+  [mean-head] block 10: frozen heads [0, 2, 8, 9, 11, 13, 18, 19, 20, 22, 28, 31] (20 active)
+  [mean-head] block 11: frozen heads [0, 2, 4, 8, 11, 15, 16, 17, 18, 19, 20, 30] (20 active)
+  [mean-head] block 12: frozen heads [0, 3, 7, 8, 10, 11, 15, 17, 19, 27, 29, 31] (20 active)
+  [mean-head] block 13: frozen heads [3, 6, 8, 9, 10, 12, 15, 18, 19, 23, 28, 31] (20 active)
+  [mean-head] block 14: frozen heads [0, 6, 7, 9, 12, 20, 21, 25, 26, 27, 28, 30] (20 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 10, 13, 14, 19, 23, 26, 29, 30, 31] (20 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 15, 17, 23, 26, 29, 30, 31] (20 active)
+  [mean-head] block 17: frozen heads [0, 1, 2, 7, 8, 9, 10, 11, 12, 13, 15, 20] (20 active)
+  [mean-head] block 18: frozen heads [0, 1, 3, 6, 8, 9, 14, 16, 20, 22, 26, 31] (20 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 9, 10, 11, 12, 16, 25, 27, 28] (20 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 17, 18, 20, 21, 22, 27, 30] (20 active)
+  [mean-head] block 21: frozen heads [2, 3, 5, 10, 13, 16, 18, 19, 22, 25, 27, 28] (20 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 19, 20, 23, 24, 26, 27, 29, 30] (20 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 13, 15, 18, 19, 20, 21, 22] (20 active)
+  [mean-head] block 24: frozen heads [0, 1, 5, 9, 12, 14, 18, 19, 22, 24, 26, 30] (20 active)
+  [mean-head] block 25: frozen heads [3, 4, 12, 14, 17, 18, 19, 20, 23, 26, 28, 30] (20 active)
+  [mean-head] block 26: frozen heads [0, 3, 5, 8, 14, 15, 16, 17, 20, 23, 26, 31] (20 active)
+  [mean-head] block 27: frozen heads [1, 3, 7, 10, 12, 14, 15, 16, 20, 24, 26, 28] (20 active)
+  [mean-head] block 28: frozen heads [3, 4, 5, 6, 7, 10, 12, 13, 15, 16, 23, 28] (20 active)
+  [mean-head] block 29: frozen heads [1, 3, 5, 6, 12, 13, 16, 19, 20, 23, 25, 27] (20 active)
+  [mean-head] block 30: frozen heads [2, 5, 8, 11, 13, 14, 16, 20, 25, 28, 29, 30] (20 active)
+  [mean-head] block 31: frozen heads [3, 5, 6, 11, 13, 14, 16, 17, 19, 20, 24, 25] (20 active)
+  [mean-head] block 32: frozen heads [0, 4, 5, 9, 11, 13, 14, 17, 21, 22, 26, 27] (20 active)
+  [mean-head] block 33: frozen heads [2, 5, 10, 12, 18, 22, 23, 24, 25, 26, 27, 31] (20 active)
+  [mean-head] block 34: frozen heads [0, 4, 10, 12, 15, 16, 22, 23, 24, 27, 28, 31] (20 active)
+  [mean-head] block 35: frozen heads [2, 3, 6, 7, 10, 11, 16, 17, 19, 22, 25, 26] (20 active)
+  [mean-head] block 36: frozen heads [0, 4, 10, 13, 15, 17, 18, 21, 23, 25, 26, 27] (20 active)
+  [mean-head] block 37: frozen heads [1, 2, 4, 5, 7, 9, 10, 13, 20, 24, 27, 30] (20 active)
+  [mean-head] block 38: frozen heads [2, 3, 4, 6, 9, 11, 13, 24, 26, 27, 30, 31] (20 active)
+  [mean-head] block 39: frozen heads [0, 4, 6, 8, 10, 12, 17, 20, 21, 24, 29, 31] (20 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=70.0%  top5=100.0%
+    batch 15/300  top1=66.7%  top5=100.0%
+    batch 20/300  top1=70.0%  top5=100.0%
+    batch 25/300  top1=76.0%  top5=100.0%
+    batch 30/300  top1=80.0%  top5=100.0%
+    batch 35/300  top1=82.9%  top5=100.0%
+    batch 40/300  top1=85.0%  top5=100.0%
+    batch 45/300  top1=84.4%  top5=100.0%
+    batch 50/300  top1=86.0%  top5=100.0%
+    batch 55/300  top1=85.5%  top5=100.0%
+    batch 60/300  top1=85.0%  top5=100.0%
+    batch 65/300  top1=86.2%  top5=100.0%
+    batch 70/300  top1=87.1%  top5=100.0%
+    batch 75/300  top1=88.0%  top5=100.0%
+    batch 80/300  top1=88.8%  top5=100.0%
+    batch 85/300  top1=89.4%  top5=100.0%
+    batch 90/300  top1=90.0%  top5=100.0%
+    batch 95/300  top1=90.5%  top5=100.0%
+    batch 100/300  top1=91.0%  top5=100.0%
+    batch 105/300  top1=91.4%  top5=100.0%
+    batch 110/300  top1=91.8%  top5=100.0%
+    batch 115/300  top1=92.2%  top5=100.0%
+    batch 120/300  top1=92.5%  top5=100.0%
+    batch 125/300  top1=92.8%  top5=100.0%
+    batch 130/300  top1=92.3%  top5=100.0%
+    batch 135/300  top1=92.6%  top5=100.0%
+    batch 140/300  top1=91.4%  top5=99.3%
+    batch 145/300  top1=90.3%  top5=97.9%
+    batch 150/300  top1=90.7%  top5=98.0%
+    batch 155/300  top1=91.0%  top5=98.1%
+    batch 160/300  top1=91.2%  top5=98.1%
+    batch 165/300  top1=91.5%  top5=98.2%
+    batch 170/300  top1=91.8%  top5=98.2%
+    batch 175/300  top1=92.0%  top5=98.3%
+    batch 180/300  top1=91.7%  top5=98.3%
+    batch 185/300  top1=90.8%  top5=98.4%
+    batch 190/300  top1=89.5%  top5=97.9%
+    batch 195/300  top1=89.2%  top5=97.9%
+    batch 200/300  top1=89.0%  top5=98.0%
+    batch 205/300  top1=89.3%  top5=98.0%
+    batch 210/300  top1=88.6%  top5=97.6%
+    batch 215/300  top1=88.8%  top5=97.7%
+    batch 220/300  top1=88.2%  top5=97.7%
+    batch 225/300  top1=88.0%  top5=97.8%
+    batch 230/300  top1=88.3%  top5=97.8%
+    batch 235/300  top1=88.5%  top5=97.9%
+    batch 240/300  top1=88.8%  top5=97.9%
+    batch 245/300  top1=89.0%  top5=98.0%
+    batch 250/300  top1=89.2%  top5=98.0%
+    batch 255/300  top1=89.4%  top5=98.0%
+    batch 260/300  top1=88.8%  top5=98.1%
+    batch 265/300  top1=87.9%  top5=98.1%
+    batch 270/300  top1=87.8%  top5=98.1%
+    batch 275/300  top1=87.6%  top5=98.2%
+    batch 280/300  top1=87.9%  top5=98.2%
+    batch 285/300  top1=87.7%  top5=98.2%
+    batch 290/300  top1=87.6%  top5=97.9%
+    batch 295/300  top1=87.8%  top5=98.0%
+    batch 300/300  top1=88.0%  top5=98.0%
+    Top-1: 88.00%  Top-5: 98.00%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk12/eval_cars
+Group           Top-1      Top-5      Images    
+cars            88.00      98.00      300       
+======================================================================
+=== [dinov3_7b] tk16 dogs: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=16/32)
+======================================================================
+  Checked 1280 heads, froze 640
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_dogs/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   4%|▍         | 28/689 [00:00<00:02, 278.68it/s]Loading weights:   8%|▊         | 56/689 [00:00<00:03, 172.24it/s]Loading weights:  11%|█         | 76/689 [00:00<00:03, 177.91it/s]Loading weights:  14%|█▍        | 96/689 [00:00<00:04, 142.59it/s]Loading weights:  16%|█▋        | 112/689 [00:00<00:04, 143.58it/s]Loading weights:  19%|█▊        | 129/689 [00:00<00:04, 123.12it/s]Loading weights:  21%|██        | 143/689 [00:01<00:04, 126.55it/s]Loading weights:  23%|██▎       | 157/689 [00:01<00:04, 128.42it/s]Loading weights:  25%|██▍       | 171/689 [00:01<00:04, 104.85it/s]Loading weights:  27%|██▋       | 188/689 [00:01<00:04, 118.81it/s]Loading weights:  29%|██▉       | 203/689 [00:01<00:04, 102.09it/s]Loading weights:  31%|███▏      | 216/689 [00:01<00:04, 107.57it/s]Loading weights:  34%|███▎      | 232/689 [00:01<00:03, 118.58it/s]Loading weights:  36%|███▌      | 245/689 [00:01<00:03, 119.14it/s]Loading weights:  37%|███▋      | 258/689 [00:02<00:04, 101.15it/s]Loading weights:  39%|███▉      | 271/689 [00:02<00:03, 107.55it/s]Loading weights:  42%|████▏     | 288/689 [00:02<00:03, 123.16it/s]Loading weights:  45%|████▍     | 309/689 [00:02<00:02, 145.61it/s]Loading weights:  47%|████▋     | 326/689 [00:02<00:02, 151.02it/s]Loading weights:  50%|████▉     | 342/689 [00:02<00:02, 153.06it/s]Loading weights:  52%|█████▏    | 358/689 [00:02<00:02, 122.73it/s]Loading weights:  54%|█████▍    | 373/689 [00:02<00:02, 128.14it/s]Loading weights:  56%|█████▌    | 387/689 [00:03<00:02, 131.08it/s]Loading weights:  58%|█████▊    | 401/689 [00:03<00:02, 132.48it/s]Loading weights:  60%|██████    | 415/689 [00:03<00:02, 129.65it/s]Loading weights:  62%|██████▏   | 429/689 [00:03<00:02, 106.59it/s]Loading weights:  64%|██████▍   | 441/689 [00:03<00:02, 90.00it/s] Loading weights:  66%|██████▌   | 455/689 [00:03<00:02, 100.94it/s]Loading weights:  68%|██████▊   | 467/689 [00:03<00:02, 105.47it/s]Loading weights:  70%|██████▉   | 479/689 [00:03<00:01, 108.58it/s]Loading weights:  71%|███████▏  | 492/689 [00:04<00:01, 113.15it/s]Loading weights:  73%|███████▎  | 504/689 [00:04<00:01, 114.40it/s]Loading weights:  75%|███████▍  | 516/689 [00:04<00:01, 113.67it/s]Loading weights:  77%|███████▋  | 528/689 [00:04<00:01, 92.27it/s] Loading weights:  79%|███████▉  | 543/689 [00:04<00:01, 105.60it/s]Loading weights:  81%|████████  | 556/689 [00:04<00:01, 90.36it/s] Loading weights:  84%|████████▎ | 577/689 [00:04<00:00, 116.55it/s]Loading weights:  86%|████████▌ | 591/689 [00:04<00:00, 121.54it/s]Loading weights:  88%|████████▊ | 605/689 [00:05<00:00, 125.37it/s]Loading weights:  90%|████████▉ | 619/689 [00:05<00:00, 104.13it/s]Loading weights:  92%|█████████▏| 631/689 [00:05<00:00, 107.49it/s]Loading weights:  94%|█████████▎| 645/689 [00:05<00:00, 114.40it/s]Loading weights:  96%|█████████▌| 660/689 [00:05<00:00, 123.71it/s]Loading weights:  98%|█████████▊| 674/689 [00:05<00:00, 125.01it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 120.73it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_dogs/freeze_manifest.json (640 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [2, 4, 6, 7, 9, 11, 13, 14, 16, 18, 22, 23, 24, 26, 28, 31] (16 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 7, 11, 13, 15, 16, 18, 19, 22, 23, 27, 29] (16 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 3, 6, 8, 11, 13, 16, 17, 19, 21, 22, 24, 27, 30] (16 active)
+  [mean-head] block 3: frozen heads [4, 5, 6, 9, 12, 13, 15, 16, 18, 20, 22, 23, 25, 26, 27, 28] (16 active)
+  [mean-head] block 4: frozen heads [2, 3, 6, 8, 9, 10, 12, 14, 19, 23, 24, 27, 28, 29, 30, 31] (16 active)
+  [mean-head] block 5: frozen heads [0, 1, 3, 4, 5, 7, 11, 12, 13, 14, 20, 22, 24, 27, 28, 30] (16 active)
+  [mean-head] block 6: frozen heads [0, 3, 4, 6, 7, 9, 10, 14, 16, 21, 22, 26, 27, 28, 30, 31] (16 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 7, 8, 9, 12, 13, 16, 17, 18, 19, 23, 27, 28, 29] (16 active)
+  [mean-head] block 8: frozen heads [3, 4, 6, 9, 11, 13, 16, 19, 20, 22, 23, 24, 25, 27, 29, 30] (16 active)
+  [mean-head] block 9: frozen heads [0, 4, 7, 9, 10, 11, 12, 13, 14, 16, 17, 18, 21, 28, 30, 31] (16 active)
+  [mean-head] block 10: frozen heads [0, 2, 7, 8, 9, 11, 12, 13, 18, 19, 20, 22, 23, 24, 28, 31] (16 active)
+  [mean-head] block 11: frozen heads [0, 2, 4, 5, 8, 11, 12, 15, 16, 17, 18, 19, 20, 22, 30, 31] (16 active)
+  [mean-head] block 12: frozen heads [0, 2, 6, 7, 8, 10, 11, 13, 15, 17, 19, 20, 22, 27, 29, 31] (16 active)
+  [mean-head] block 13: frozen heads [3, 4, 6, 8, 9, 10, 11, 12, 15, 16, 18, 19, 22, 23, 28, 31] (16 active)
+  [mean-head] block 14: frozen heads [0, 2, 6, 7, 8, 9, 12, 15, 20, 21, 25, 26, 27, 28, 29, 30] (16 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 9, 10, 11, 13, 14, 17, 19, 23, 25, 26, 29, 30, 31] (16 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 10, 15, 17, 21, 22, 23, 25, 26, 29, 30, 31] (16 active)
+  [mean-head] block 17: frozen heads [0, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 19, 20, 22, 29, 31] (16 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 10, 11, 12, 14, 16, 20, 22, 23, 26, 29, 31] (16 active)
+  [mean-head] block 19: frozen heads [1, 3, 5, 6, 8, 9, 10, 11, 12, 14, 16, 17, 24, 25, 28, 31] (16 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 12, 15, 17, 18, 19, 20, 21, 22, 26, 27, 30] (16 active)
+  [mean-head] block 21: frozen heads [2, 5, 6, 9, 10, 11, 13, 16, 17, 18, 19, 22, 25, 26, 27, 28] (16 active)
+  [mean-head] block 22: frozen heads [4, 5, 6, 12, 13, 16, 19, 20, 23, 25, 26, 27, 28, 29, 30, 31] (16 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 10, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23] (16 active)
+  [mean-head] block 24: frozen heads [0, 1, 2, 4, 5, 9, 12, 14, 18, 19, 23, 24, 25, 26, 29, 30] (16 active)
+  [mean-head] block 25: frozen heads [3, 4, 5, 7, 8, 12, 14, 15, 16, 17, 18, 19, 23, 26, 28, 30] (16 active)
+  [mean-head] block 26: frozen heads [3, 5, 8, 9, 10, 12, 14, 15, 16, 17, 20, 23, 26, 27, 30, 31] (16 active)
+  [mean-head] block 27: frozen heads [0, 1, 3, 5, 6, 7, 10, 12, 13, 14, 15, 18, 19, 24, 26, 30] (16 active)
+  [mean-head] block 28: frozen heads [0, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16, 18, 21, 23, 28] (16 active)
+  [mean-head] block 29: frozen heads [5, 6, 7, 12, 13, 15, 16, 17, 18, 19, 20, 23, 25, 27, 28, 30] (16 active)
+  [mean-head] block 30: frozen heads [1, 2, 5, 6, 8, 10, 11, 13, 14, 15, 16, 20, 21, 28, 29, 30] (16 active)
+  [mean-head] block 31: frozen heads [1, 3, 6, 11, 13, 14, 16, 17, 18, 19, 20, 23, 24, 28, 29, 31] (16 active)
+  [mean-head] block 32: frozen heads [0, 1, 3, 4, 5, 6, 8, 11, 13, 15, 17, 18, 20, 21, 22, 26] (16 active)
+  [mean-head] block 33: frozen heads [0, 2, 7, 9, 10, 12, 15, 18, 19, 22, 23, 24, 25, 26, 28, 31] (16 active)
+  [mean-head] block 34: frozen heads [4, 6, 9, 10, 12, 15, 17, 19, 21, 22, 23, 24, 25, 27, 28, 31] (16 active)
+  [mean-head] block 35: frozen heads [2, 3, 4, 6, 7, 10, 11, 16, 17, 19, 22, 25, 27, 28, 30, 31] (16 active)
+  [mean-head] block 36: frozen heads [0, 4, 5, 7, 8, 10, 11, 15, 16, 17, 18, 21, 26, 27, 29, 30] (16 active)
+  [mean-head] block 37: frozen heads [1, 2, 4, 5, 7, 8, 9, 10, 12, 13, 14, 16, 20, 24, 29, 30] (16 active)
+  [mean-head] block 38: frozen heads [0, 2, 3, 4, 6, 9, 11, 13, 16, 18, 21, 25, 26, 27, 30, 31] (16 active)
+  [mean-head] block 39: frozen heads [0, 4, 6, 8, 9, 10, 12, 14, 16, 17, 19, 20, 21, 24, 29, 31] (16 active)
+
+  Group: dogs (data/vit_groups/dogs_eval)
+    Using all 300 images
+  [label mapping] 118 classes mapped via data/synset_words.txt
+    batch 5/300  top1=40.0%  top5=80.0%
+    batch 10/300  top1=40.0%  top5=80.0%
+    batch 15/300  top1=33.3%  top5=73.3%
+    batch 20/300  top1=45.0%  top5=80.0%
+    batch 25/300  top1=40.0%  top5=76.0%
+    batch 30/300  top1=46.7%  top5=80.0%
+    batch 35/300  top1=54.3%  top5=82.9%
+    batch 40/300  top1=60.0%  top5=85.0%
+    batch 45/300  top1=64.4%  top5=86.7%
+    batch 50/300  top1=60.0%  top5=86.0%
+    batch 55/300  top1=60.0%  top5=87.3%
+    batch 60/300  top1=61.7%  top5=88.3%
+    batch 65/300  top1=63.1%  top5=89.2%
+    batch 70/300  top1=65.7%  top5=90.0%
+    batch 75/300  top1=65.3%  top5=90.7%
+    batch 80/300  top1=65.0%  top5=91.2%
+    batch 85/300  top1=65.9%  top5=91.8%
+    batch 90/300  top1=63.3%  top5=91.1%
+    batch 95/300  top1=64.2%  top5=91.6%
+    batch 100/300  top1=66.0%  top5=92.0%
+    batch 105/300  top1=66.7%  top5=91.4%
+    batch 110/300  top1=66.4%  top5=91.8%
+    batch 115/300  top1=66.1%  top5=91.3%
+    batch 120/300  top1=65.8%  top5=90.8%
+    batch 125/300  top1=66.4%  top5=91.2%
+    batch 130/300  top1=67.7%  top5=91.5%
+    batch 135/300  top1=68.1%  top5=91.1%
+    batch 140/300  top1=67.1%  top5=91.4%
+    batch 145/300  top1=67.6%  top5=91.7%
+    batch 150/300  top1=68.0%  top5=92.0%
+    batch 155/300  top1=68.4%  top5=92.3%
+    batch 160/300  top1=66.9%  top5=91.2%
+    batch 165/300  top1=67.9%  top5=91.5%
+    batch 170/300  top1=67.1%  top5=91.8%
+    batch 175/300  top1=68.0%  top5=92.0%
+    batch 180/300  top1=68.9%  top5=92.2%
+    batch 185/300  top1=69.2%  top5=92.4%
+    batch 190/300  top1=70.0%  top5=92.6%
+    batch 195/300  top1=70.8%  top5=92.8%
+    batch 200/300  top1=71.5%  top5=93.0%
+    batch 205/300  top1=71.2%  top5=92.2%
+    batch 210/300  top1=71.4%  top5=92.4%
+    batch 215/300  top1=71.6%  top5=92.6%
+    batch 220/300  top1=71.4%  top5=92.7%
+    batch 225/300  top1=71.1%  top5=92.9%
+    batch 230/300  top1=71.3%  top5=93.0%
+    batch 235/300  top1=71.5%  top5=93.2%
+    batch 240/300  top1=70.8%  top5=92.9%
+    batch 245/300  top1=70.2%  top5=93.1%
+    batch 250/300  top1=70.0%  top5=92.8%
+    batch 255/300  top1=70.2%  top5=92.5%
+    batch 260/300  top1=69.6%  top5=92.3%
+    batch 265/300  top1=69.8%  top5=92.5%
+    batch 270/300  top1=69.3%  top5=91.9%
+    batch 275/300  top1=69.8%  top5=92.0%
+    batch 280/300  top1=70.0%  top5=92.1%
+    batch 285/300  top1=70.2%  top5=91.9%
+    batch 290/300  top1=70.3%  top5=92.1%
+    batch 295/300  top1=70.2%  top5=92.2%
+    batch 300/300  top1=70.3%  top5=92.3%
+    Top-1: 70.33%  Top-5: 92.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk16/eval_dogs
+Group           Top-1      Top-5      Images    
+dogs            70.33      92.33      300       
+======================================================================
+=== [dinov3_7b] tk16 cats: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=16/32)
+======================================================================
+  Checked 1280 heads, froze 640
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_cats/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   3%|▎         | 18/689 [00:00<00:03, 170.60it/s]Loading weights:   5%|▌         | 36/689 [00:00<00:03, 172.61it/s]Loading weights:   8%|▊         | 54/689 [00:00<00:03, 173.79it/s]Loading weights:  10%|█         | 72/689 [00:00<00:04, 128.34it/s]Loading weights:  13%|█▎        | 88/689 [00:00<00:04, 136.86it/s]Loading weights:  15%|█▌        | 105/689 [00:00<00:04, 143.07it/s]Loading weights:  18%|█▊        | 122/689 [00:00<00:04, 121.33it/s]Loading weights:  20%|█▉        | 137/689 [00:01<00:04, 127.45it/s]Loading weights:  22%|██▏       | 154/689 [00:01<00:03, 137.88it/s]Loading weights:  25%|██▍       | 169/689 [00:01<00:03, 138.42it/s]Loading weights:  27%|██▋       | 186/689 [00:01<00:04, 117.66it/s]Loading weights:  30%|██▉       | 205/689 [00:01<00:03, 133.54it/s]Loading weights:  32%|███▏      | 220/689 [00:01<00:03, 137.42it/s]Loading weights:  34%|███▍      | 235/689 [00:01<00:03, 140.06it/s]Loading weights:  36%|███▋      | 250/689 [00:01<00:03, 114.47it/s]Loading weights:  39%|███▊      | 266/689 [00:02<00:03, 124.58it/s]Loading weights:  41%|████      | 280/689 [00:02<00:03, 127.59it/s]Loading weights:  43%|████▎     | 294/689 [00:02<00:03, 128.16it/s]Loading weights:  45%|████▍     | 308/689 [00:02<00:03, 106.49it/s]Loading weights:  47%|████▋     | 327/689 [00:02<00:02, 126.36it/s]Loading weights:  49%|████▉     | 341/689 [00:02<00:02, 128.36it/s]Loading weights:  52%|█████▏    | 356/689 [00:02<00:02, 133.58it/s]Loading weights:  54%|█████▍    | 371/689 [00:02<00:02, 137.13it/s]Loading weights:  56%|█████▌    | 386/689 [00:02<00:02, 140.37it/s]Loading weights:  58%|█████▊    | 401/689 [00:03<00:02, 143.08it/s]Loading weights:  60%|██████    | 416/689 [00:03<00:02, 113.43it/s]Loading weights:  62%|██████▏   | 429/689 [00:03<00:02, 94.49it/s] Loading weights:  64%|██████▍   | 441/689 [00:03<00:02, 82.97it/s]Loading weights:  66%|██████▌   | 453/689 [00:03<00:02, 90.51it/s]Loading weights:  67%|██████▋   | 464/689 [00:03<00:02, 93.85it/s]Loading weights:  69%|██████▉   | 475/689 [00:03<00:02, 97.29it/s]Loading weights:  71%|███████▏  | 492/689 [00:04<00:02, 93.68it/s]Loading weights:  73%|███████▎  | 505/689 [00:04<00:01, 101.38it/s]Loading weights:  76%|███████▋  | 526/689 [00:04<00:01, 127.28it/s]Loading weights:  79%|███████▉  | 545/689 [00:04<00:01, 143.15it/s]Loading weights:  82%|████████▏ | 565/689 [00:04<00:00, 158.42it/s]Loading weights:  84%|████████▍ | 582/689 [00:04<00:00, 160.59it/s]Loading weights:  88%|████████▊ | 607/689 [00:04<00:00, 184.39it/s]Loading weights:  91%|█████████ | 626/689 [00:04<00:00, 185.58it/s]Loading weights:  94%|█████████▎| 645/689 [00:05<00:00, 148.56it/s]Loading weights:  96%|█████████▋| 664/689 [00:05<00:00, 158.71it/s]Loading weights: 100%|█████████▉| 688/689 [00:05<00:00, 179.93it/s]Loading weights: 100%|██████████| 689/689 [00:05<00:00, 132.39it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_cats/freeze_manifest.json (640 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [1, 2, 4, 6, 7, 9, 11, 13, 14, 18, 22, 23, 24, 25, 26, 30] (16 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 11, 13, 15, 16, 18, 19, 21, 22, 23, 27, 29] (16 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 3, 6, 8, 11, 13, 16, 17, 19, 21, 22, 24, 27, 30] (16 active)
+  [mean-head] block 3: frozen heads [1, 4, 5, 6, 9, 12, 13, 15, 16, 18, 22, 23, 25, 26, 27, 28] (16 active)
+  [mean-head] block 4: frozen heads [2, 3, 6, 8, 9, 10, 12, 14, 19, 23, 24, 27, 28, 29, 30, 31] (16 active)
+  [mean-head] block 5: frozen heads [1, 3, 4, 5, 7, 11, 12, 13, 14, 17, 20, 22, 24, 27, 28, 30] (16 active)
+  [mean-head] block 6: frozen heads [0, 3, 4, 6, 7, 9, 14, 15, 16, 21, 22, 23, 26, 27, 28, 30] (16 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 7, 8, 9, 13, 16, 17, 18, 19, 23, 24, 27, 28, 29] (16 active)
+  [mean-head] block 8: frozen heads [3, 4, 6, 9, 11, 13, 16, 19, 20, 22, 23, 24, 27, 28, 29, 30] (16 active)
+  [mean-head] block 9: frozen heads [0, 4, 7, 9, 10, 11, 12, 13, 14, 16, 17, 18, 21, 28, 30, 31] (16 active)
+  [mean-head] block 10: frozen heads [0, 2, 7, 8, 9, 11, 12, 13, 16, 18, 19, 20, 22, 24, 28, 31] (16 active)
+  [mean-head] block 11: frozen heads [0, 2, 4, 5, 8, 9, 11, 12, 15, 16, 17, 18, 19, 20, 30, 31] (16 active)
+  [mean-head] block 12: frozen heads [0, 2, 3, 6, 7, 8, 10, 11, 13, 15, 17, 19, 20, 22, 27, 29] (16 active)
+  [mean-head] block 13: frozen heads [3, 4, 6, 8, 9, 10, 11, 12, 15, 16, 18, 19, 22, 23, 28, 31] (16 active)
+  [mean-head] block 14: frozen heads [0, 2, 4, 6, 7, 8, 9, 12, 20, 21, 25, 26, 27, 28, 29, 30] (16 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 9, 11, 13, 14, 15, 17, 19, 23, 25, 26, 29, 30, 31] (16 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 8, 10, 11, 15, 17, 21, 23, 26, 29, 30, 31] (16 active)
+  [mean-head] block 17: frozen heads [0, 1, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 19, 20, 22, 31] (16 active)
+  [mean-head] block 18: frozen heads [0, 3, 6, 8, 9, 10, 11, 12, 14, 16, 20, 22, 26, 29, 30, 31] (16 active)
+  [mean-head] block 19: frozen heads [1, 3, 5, 6, 8, 9, 10, 11, 12, 16, 17, 19, 23, 24, 25, 28] (16 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 12, 13, 14, 17, 18, 19, 20, 21, 22, 26, 30] (16 active)
+  [mean-head] block 21: frozen heads [2, 5, 9, 10, 11, 13, 15, 16, 17, 18, 19, 22, 25, 26, 27, 28] (16 active)
+  [mean-head] block 22: frozen heads [4, 5, 12, 13, 14, 16, 19, 20, 23, 25, 26, 27, 28, 29, 30, 31] (16 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 10, 12, 13, 14, 15, 18, 19, 20, 21, 23, 26] (16 active)
+  [mean-head] block 24: frozen heads [0, 1, 2, 4, 5, 9, 10, 12, 14, 15, 18, 19, 23, 24, 29, 30] (16 active)
+  [mean-head] block 25: frozen heads [0, 3, 4, 5, 7, 8, 12, 15, 16, 17, 18, 19, 23, 26, 28, 30] (16 active)
+  [mean-head] block 26: frozen heads [0, 3, 5, 8, 10, 14, 15, 16, 20, 21, 23, 26, 27, 28, 30, 31] (16 active)
+  [mean-head] block 27: frozen heads [1, 3, 5, 7, 10, 12, 13, 14, 15, 18, 19, 20, 24, 26, 30, 31] (16 active)
+  [mean-head] block 28: frozen heads [0, 4, 5, 6, 7, 9, 10, 13, 14, 15, 18, 23, 28, 29, 30, 31] (16 active)
+  [mean-head] block 29: frozen heads [5, 6, 12, 13, 15, 16, 17, 18, 19, 20, 23, 24, 25, 27, 28, 30] (16 active)
+  [mean-head] block 30: frozen heads [0, 1, 2, 5, 8, 10, 11, 13, 14, 15, 16, 20, 21, 28, 29, 30] (16 active)
+  [mean-head] block 31: frozen heads [1, 2, 3, 6, 9, 13, 14, 16, 17, 19, 20, 23, 24, 28, 29, 31] (16 active)
+  [mean-head] block 32: frozen heads [0, 4, 5, 8, 9, 11, 13, 14, 15, 17, 20, 21, 22, 26, 27, 29] (16 active)
+  [mean-head] block 33: frozen heads [0, 2, 7, 9, 10, 12, 15, 18, 22, 23, 24, 25, 26, 27, 28, 31] (16 active)
+  [mean-head] block 34: frozen heads [4, 5, 6, 10, 11, 12, 15, 16, 17, 19, 22, 23, 24, 27, 28, 31] (16 active)
+  [mean-head] block 35: frozen heads [2, 3, 4, 6, 7, 10, 11, 13, 16, 17, 19, 22, 25, 27, 30, 31] (16 active)
+  [mean-head] block 36: frozen heads [0, 4, 5, 7, 8, 10, 11, 15, 16, 17, 18, 21, 25, 26, 27, 30] (16 active)
+  [mean-head] block 37: frozen heads [1, 4, 5, 7, 8, 9, 10, 12, 13, 15, 16, 20, 24, 27, 29, 30] (16 active)
+  [mean-head] block 38: frozen heads [0, 2, 3, 4, 6, 9, 11, 13, 16, 18, 24, 25, 26, 27, 30, 31] (16 active)
+  [mean-head] block 39: frozen heads [0, 4, 6, 8, 9, 10, 12, 14, 16, 17, 19, 20, 21, 24, 29, 31] (16 active)
+
+  Group: cats (data/vit_groups/cats_eval)
+    Using all 300 images
+  [label mapping] 13 classes mapped via data/synset_words.txt
+    batch 5/300  top1=40.0%  top5=100.0%
+    batch 10/300  top1=40.0%  top5=100.0%
+    batch 15/300  top1=46.7%  top5=100.0%
+    batch 20/300  top1=45.0%  top5=100.0%
+    batch 25/300  top1=44.0%  top5=100.0%
+    batch 30/300  top1=43.3%  top5=100.0%
+    batch 35/300  top1=45.7%  top5=100.0%
+    batch 40/300  top1=47.5%  top5=100.0%
+    batch 45/300  top1=46.7%  top5=100.0%
+    batch 50/300  top1=50.0%  top5=100.0%
+    batch 55/300  top1=54.5%  top5=100.0%
+    batch 60/300  top1=58.3%  top5=100.0%
+    batch 65/300  top1=61.5%  top5=100.0%
+    batch 70/300  top1=64.3%  top5=100.0%
+    batch 75/300  top1=66.7%  top5=100.0%
+    batch 80/300  top1=68.8%  top5=100.0%
+    batch 85/300  top1=70.6%  top5=100.0%
+    batch 90/300  top1=72.2%  top5=100.0%
+    batch 95/300  top1=72.6%  top5=100.0%
+    batch 100/300  top1=71.0%  top5=100.0%
+    batch 105/300  top1=67.6%  top5=99.0%
+    batch 110/300  top1=65.5%  top5=99.1%
+    batch 115/300  top1=64.3%  top5=99.1%
+    batch 120/300  top1=65.8%  top5=99.2%
+    batch 125/300  top1=66.4%  top5=98.4%
+    batch 130/300  top1=66.9%  top5=98.5%
+    batch 135/300  top1=68.1%  top5=98.5%
+    batch 140/300  top1=69.3%  top5=98.6%
+    batch 145/300  top1=69.0%  top5=98.6%
+    batch 150/300  top1=70.0%  top5=98.7%
+    batch 155/300  top1=69.7%  top5=98.1%
+    batch 160/300  top1=69.4%  top5=97.5%
+    batch 165/300  top1=69.7%  top5=97.6%
+    batch 170/300  top1=70.0%  top5=97.6%
+    batch 175/300  top1=70.3%  top5=97.7%
+    batch 180/300  top1=71.1%  top5=97.8%
+    batch 185/300  top1=71.9%  top5=97.8%
+    batch 190/300  top1=71.6%  top5=97.9%
+    batch 195/300  top1=72.3%  top5=97.9%
+    batch 200/300  top1=72.5%  top5=98.0%
+    batch 205/300  top1=72.7%  top5=98.0%
+    batch 210/300  top1=73.3%  top5=98.1%
+    batch 215/300  top1=73.0%  top5=97.7%
+    batch 220/300  top1=73.2%  top5=97.7%
+    batch 225/300  top1=73.3%  top5=97.8%
+    batch 230/300  top1=73.5%  top5=97.8%
+    batch 235/300  top1=73.6%  top5=97.9%
+    batch 240/300  top1=73.8%  top5=97.9%
+    batch 245/300  top1=74.3%  top5=98.0%
+    batch 250/300  top1=74.8%  top5=98.0%
+    batch 255/300  top1=74.9%  top5=98.0%
+    batch 260/300  top1=75.4%  top5=98.1%
+    batch 265/300  top1=74.7%  top5=98.1%
+    batch 270/300  top1=74.1%  top5=98.1%
+    batch 275/300  top1=74.2%  top5=98.2%
+    batch 280/300  top1=74.3%  top5=98.2%
+    batch 285/300  top1=74.7%  top5=98.2%
+    batch 290/300  top1=75.2%  top5=98.3%
+    batch 295/300  top1=75.3%  top5=98.3%
+    batch 300/300  top1=75.7%  top5=98.3%
+    Top-1: 75.67%  Top-5: 98.33%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk16/eval_cats
+Group           Top-1      Top-5      Images    
+cats            75.67      98.33      300       
+======================================================================
+=== [dinov3_7b] tk16 cars: FREEZE + EVAL ===
+
+======================================================================
+FREEZE MODE — T-VELCRO (dinov3_7b, rank=variance, T_k=16/32)
+======================================================================
+  Checked 1280 heads, froze 640
+  Manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_cars/freeze_manifest.json
+======================================================================
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+T-VELCRO EVAL (MEAN-HEAD) — dinov3_7b
+======================================================================
+Loading weights:   0%|          | 0/689 [00:00<?, ?it/s]Loading weights:   5%|▍         | 33/689 [00:00<00:02, 266.67it/s]Loading weights:   9%|▊         | 60/689 [00:00<00:02, 264.37it/s]Loading weights:  13%|█▎        | 87/689 [00:00<00:02, 257.03it/s]Loading weights:  16%|█▋        | 113/689 [00:00<00:02, 193.47it/s]Loading weights:  19%|█▉        | 134/689 [00:00<00:02, 196.66it/s]Loading weights:  22%|██▏       | 155/689 [00:00<00:02, 198.24it/s]Loading weights:  26%|██▌       | 176/689 [00:00<00:02, 196.26it/s]Loading weights:  29%|██▊       | 198/689 [00:01<00:02, 164.33it/s]Loading weights:  31%|███▏      | 216/689 [00:01<00:02, 166.92it/s]Loading weights:  34%|███▍      | 234/689 [00:01<00:02, 169.99it/s]Loading weights:  37%|███▋      | 254/689 [00:01<00:02, 174.18it/s]Loading weights:  39%|███▉      | 272/689 [00:01<00:02, 140.67it/s]Loading weights:  42%|████▏     | 288/689 [00:01<00:02, 145.03it/s]Loading weights:  44%|████▍     | 304/689 [00:01<00:03, 119.83it/s]Loading weights:  46%|████▌     | 318/689 [00:01<00:02, 124.13it/s]Loading weights:  48%|████▊     | 332/689 [00:02<00:02, 127.30it/s]Loading weights:  50%|█████     | 346/689 [00:02<00:02, 130.37it/s]Loading weights:  52%|█████▏    | 360/689 [00:02<00:02, 132.41it/s]Loading weights:  54%|█████▍    | 375/689 [00:02<00:02, 136.74it/s]Loading weights:  57%|█████▋    | 392/689 [00:02<00:02, 146.08it/s]Loading weights:  59%|█████▉    | 407/689 [00:02<00:01, 146.95it/s]Loading weights:  62%|██████▏   | 424/689 [00:02<00:01, 150.50it/s]Loading weights:  64%|██████▍   | 441/689 [00:02<00:01, 124.91it/s]Loading weights:  66%|██████▋   | 458/689 [00:02<00:01, 135.99it/s]Loading weights:  69%|██████▉   | 475/689 [00:03<00:01, 144.37it/s]Loading weights:  71%|███████▏  | 492/689 [00:03<00:01, 150.02it/s]Loading weights:  74%|███████▍  | 509/689 [00:03<00:01, 154.82it/s]Loading weights:  76%|███████▋  | 526/689 [00:03<00:01, 155.59it/s]Loading weights:  79%|███████▉  | 547/689 [00:03<00:01, 137.33it/s]Loading weights:  82%|████████▏ | 564/689 [00:03<00:00, 145.09it/s]Loading weights:  85%|████████▌ | 586/689 [00:03<00:00, 162.97it/s]Loading weights:  88%|████████▊ | 606/689 [00:03<00:00, 171.60it/s]Loading weights:  91%|█████████ | 624/689 [00:03<00:00, 172.86it/s]Loading weights:  93%|█████████▎| 642/689 [00:04<00:00, 172.59it/s]Loading weights:  96%|█████████▌| 660/689 [00:04<00:00, 140.89it/s]Loading weights:  98%|█████████▊| 676/689 [00:04<00:00, 143.13it/s]Loading weights: 100%|██████████| 689/689 [00:04<00:00, 155.70it/s]
+  Device: NVIDIA L4
+  Geometry: 40 blocks x 32 heads x 128 head_dim, seq_len=201
+  Freeze manifest: results/vit_sweep/dinov3_7b/seed0/tk16/freeze_cars/freeze_manifest.json (640 frozen heads, rank=variance)
+  [mean-head] block 0: frozen heads [1, 2, 4, 6, 7, 8, 9, 13, 14, 18, 22, 23, 24, 28, 30, 31] (16 active)
+  [mean-head] block 1: frozen heads [0, 2, 3, 4, 5, 11, 13, 15, 16, 18, 19, 21, 22, 23, 27, 29] (16 active)
+  [mean-head] block 2: frozen heads [0, 1, 2, 3, 6, 8, 11, 13, 16, 17, 19, 21, 22, 24, 27, 30] (16 active)
+  [mean-head] block 3: frozen heads [3, 4, 5, 6, 9, 12, 13, 15, 16, 18, 22, 23, 25, 26, 27, 28] (16 active)
+  [mean-head] block 4: frozen heads [2, 3, 6, 8, 9, 10, 12, 14, 17, 23, 24, 27, 28, 29, 30, 31] (16 active)
+  [mean-head] block 5: frozen heads [0, 1, 3, 4, 5, 7, 11, 12, 13, 16, 20, 22, 24, 27, 28, 30] (16 active)
+  [mean-head] block 6: frozen heads [0, 3, 4, 6, 7, 9, 10, 14, 15, 16, 21, 22, 23, 26, 27, 28] (16 active)
+  [mean-head] block 7: frozen heads [0, 2, 4, 7, 9, 12, 13, 16, 17, 18, 19, 23, 24, 27, 28, 29] (16 active)
+  [mean-head] block 8: frozen heads [3, 4, 6, 8, 9, 11, 13, 16, 19, 20, 23, 24, 25, 27, 29, 30] (16 active)
+  [mean-head] block 9: frozen heads [0, 1, 4, 7, 9, 10, 11, 12, 13, 14, 16, 17, 21, 28, 30, 31] (16 active)
+  [mean-head] block 10: frozen heads [0, 2, 8, 9, 11, 12, 13, 15, 16, 18, 19, 20, 22, 24, 28, 31] (16 active)
+  [mean-head] block 11: frozen heads [0, 1, 2, 4, 5, 8, 11, 15, 16, 17, 18, 19, 20, 22, 30, 31] (16 active)
+  [mean-head] block 12: frozen heads [0, 1, 3, 7, 8, 10, 11, 13, 15, 17, 19, 20, 22, 27, 29, 31] (16 active)
+  [mean-head] block 13: frozen heads [0, 3, 4, 6, 8, 9, 10, 12, 15, 16, 18, 19, 22, 23, 28, 31] (16 active)
+  [mean-head] block 14: frozen heads [0, 6, 7, 8, 9, 12, 15, 16, 20, 21, 25, 26, 27, 28, 29, 30] (16 active)
+  [mean-head] block 15: frozen heads [0, 4, 6, 8, 10, 11, 13, 14, 17, 19, 23, 24, 26, 29, 30, 31] (16 active)
+  [mean-head] block 16: frozen heads [0, 1, 2, 5, 7, 10, 11, 15, 17, 22, 23, 26, 28, 29, 30, 31] (16 active)
+  [mean-head] block 17: frozen heads [0, 1, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 19, 20, 26, 29] (16 active)
+  [mean-head] block 18: frozen heads [0, 1, 3, 6, 8, 9, 10, 11, 14, 16, 20, 22, 23, 26, 29, 31] (16 active)
+  [mean-head] block 19: frozen heads [3, 5, 6, 8, 9, 10, 11, 12, 13, 14, 16, 25, 27, 28, 29, 31] (16 active)
+  [mean-head] block 20: frozen heads [1, 2, 4, 5, 7, 11, 14, 17, 18, 19, 20, 21, 22, 26, 27, 30] (16 active)
+  [mean-head] block 21: frozen heads [2, 3, 5, 9, 10, 13, 15, 16, 18, 19, 22, 24, 25, 27, 28, 30] (16 active)
+  [mean-head] block 22: frozen heads [4, 5, 6, 12, 13, 14, 16, 19, 20, 23, 24, 26, 27, 29, 30, 31] (16 active)
+  [mean-head] block 23: frozen heads [1, 4, 5, 7, 9, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 26] (16 active)
+  [mean-head] block 24: frozen heads [0, 1, 2, 5, 9, 12, 14, 18, 19, 21, 22, 24, 25, 26, 29, 30] (16 active)
+  [mean-head] block 25: frozen heads [3, 4, 8, 12, 14, 15, 16, 17, 18, 19, 20, 23, 24, 26, 28, 30] (16 active)
+  [mean-head] block 26: frozen heads [0, 3, 5, 6, 8, 9, 14, 15, 16, 17, 20, 22, 23, 26, 27, 31] (16 active)
+  [mean-head] block 27: frozen heads [1, 2, 3, 6, 7, 10, 12, 13, 14, 15, 16, 20, 24, 26, 28, 30] (16 active)
+  [mean-head] block 28: frozen heads [3, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 18, 22, 23, 28] (16 active)
+  [mean-head] block 29: frozen heads [1, 3, 5, 6, 7, 9, 12, 13, 15, 16, 19, 20, 21, 23, 25, 27] (16 active)
+  [mean-head] block 30: frozen heads [0, 2, 5, 6, 8, 11, 12, 13, 14, 16, 20, 22, 25, 28, 29, 30] (16 active)
+  [mean-head] block 31: frozen heads [1, 3, 5, 6, 11, 13, 14, 16, 17, 18, 19, 20, 24, 25, 28, 29] (16 active)
+  [mean-head] block 32: frozen heads [0, 4, 5, 8, 9, 11, 13, 14, 15, 17, 20, 21, 22, 25, 26, 27] (16 active)
+  [mean-head] block 33: frozen heads [1, 2, 5, 9, 10, 12, 18, 22, 23, 24, 25, 26, 27, 28, 29, 31] (16 active)
+  [mean-head] block 34: frozen heads [0, 4, 9, 10, 11, 12, 15, 16, 21, 22, 23, 24, 27, 28, 30, 31] (16 active)
+  [mean-head] block 35: frozen heads [2, 3, 4, 6, 7, 10, 11, 16, 17, 19, 22, 25, 26, 27, 28, 30] (16 active)
+  [mean-head] block 36: frozen heads [0, 4, 5, 8, 10, 13, 15, 17, 18, 21, 23, 25, 26, 27, 29, 30] (16 active)
+  [mean-head] block 37: frozen heads [1, 2, 4, 5, 7, 8, 9, 10, 12, 13, 16, 20, 24, 27, 29, 30] (16 active)
+  [mean-head] block 38: frozen heads [0, 2, 3, 4, 6, 9, 11, 13, 16, 18, 24, 25, 26, 27, 30, 31] (16 active)
+  [mean-head] block 39: frozen heads [0, 3, 4, 6, 8, 10, 12, 17, 19, 20, 21, 24, 25, 28, 29, 31] (16 active)
+
+  Group: cars (data/vit_groups/cars_eval)
+    Using all 300 images
+  [label mapping] 26 classes mapped via data/synset_words.txt
+    batch 5/300  top1=100.0%  top5=100.0%
+    batch 10/300  top1=70.0%  top5=100.0%
+    batch 15/300  top1=66.7%  top5=100.0%
+    batch 20/300  top1=65.0%  top5=100.0%
+    batch 25/300  top1=72.0%  top5=100.0%
+    batch 30/300  top1=76.7%  top5=100.0%
+    batch 35/300  top1=80.0%  top5=100.0%
+    batch 40/300  top1=80.0%  top5=100.0%
+    batch 45/300  top1=77.8%  top5=100.0%
+    batch 50/300  top1=78.0%  top5=100.0%
+    batch 55/300  top1=76.4%  top5=100.0%
+    batch 60/300  top1=76.7%  top5=98.3%
+    batch 65/300  top1=78.5%  top5=98.5%
+    batch 70/300  top1=80.0%  top5=98.6%
+    batch 75/300  top1=80.0%  top5=98.7%
+    batch 80/300  top1=81.2%  top5=98.8%
+    batch 85/300  top1=82.4%  top5=98.8%
+    batch 90/300  top1=83.3%  top5=98.9%
+    batch 95/300  top1=83.2%  top5=98.9%
+    batch 100/300  top1=83.0%  top5=99.0%
+    batch 105/300  top1=82.9%  top5=99.0%
+    batch 110/300  top1=83.6%  top5=99.1%
+    batch 115/300  top1=84.3%  top5=99.1%
+    batch 120/300  top1=85.0%  top5=99.2%
+    batch 125/300  top1=85.6%  top5=99.2%
+    batch 130/300  top1=85.4%  top5=99.2%
+    batch 135/300  top1=85.2%  top5=99.3%
+    batch 140/300  top1=84.3%  top5=99.3%
+    batch 145/300  top1=83.4%  top5=98.6%
+    batch 150/300  top1=84.0%  top5=98.7%
+    batch 155/300  top1=83.9%  top5=98.7%
+    batch 160/300  top1=84.4%  top5=98.8%
+    batch 165/300  top1=84.8%  top5=98.8%
+    batch 170/300  top1=85.3%  top5=98.8%
+    batch 175/300  top1=85.7%  top5=98.9%
+    batch 180/300  top1=85.6%  top5=98.9%
+    batch 185/300  top1=84.9%  top5=98.9%
+    batch 190/300  top1=84.2%  top5=98.4%
+    batch 195/300  top1=84.1%  top5=97.9%
+    batch 200/300  top1=84.0%  top5=98.0%
+    batch 205/300  top1=84.4%  top5=98.0%
+    batch 210/300  top1=83.3%  top5=97.6%
+    batch 215/300  top1=83.7%  top5=97.7%
+    batch 220/300  top1=83.2%  top5=97.3%
+    batch 225/300  top1=82.2%  top5=97.3%
+    batch 230/300  top1=82.6%  top5=97.4%
+    batch 235/300  top1=83.0%  top5=97.4%
+    batch 240/300  top1=83.3%  top5=97.5%
+    batch 245/300  top1=83.7%  top5=97.6%
+    batch 250/300  top1=83.6%  top5=97.6%
+    batch 255/300  top1=83.9%  top5=97.6%
+    batch 260/300  top1=83.5%  top5=97.7%
+    batch 265/300  top1=82.6%  top5=97.7%
+    batch 270/300  top1=82.6%  top5=97.8%
+    batch 275/300  top1=82.5%  top5=97.8%
+    batch 280/300  top1=82.5%  top5=97.9%
+    batch 285/300  top1=82.1%  top5=97.9%
+    batch 290/300  top1=81.4%  top5=97.6%
+    batch 295/300  top1=81.7%  top5=97.6%
+    batch 300/300  top1=82.0%  top5=97.7%
+    Top-1: 82.00%  Top-5: 97.67%  (300 images)
+
+======================================================================
+DONE (EVAL (MEAN-HEAD))  ->  results/vit_sweep/dinov3_7b/seed0/tk16/eval_cars
+Group           Top-1      Top-5      Images    
+cars            82.00      97.67      300       
+======================================================================
+=== [dinov3_7b] PLOTS ===
+Found 15 data points, 3 series, 1 seed(s)
+  Saved results/vit_sweep/dinov3_7b/plots/all_series_top1.png
+  Saved results/vit_sweep/dinov3_7b/plots/cars_accuracy.png
+  Saved results/vit_sweep/dinov3_7b/plots/cats_accuracy.png
+  Saved results/vit_sweep/dinov3_7b/plots/dogs_accuracy.png
+  Saved results/vit_sweep/dinov3_7b/plots/summary_report.txt
+DONE: results/vit_sweep/

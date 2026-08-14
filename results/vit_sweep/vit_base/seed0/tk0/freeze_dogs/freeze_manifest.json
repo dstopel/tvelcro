@@ -1,0 +1,36 @@
+{
+  "version": "3.0-tvelcro-unified",
+  "model_key": "vit_base",
+  "model": "vit_base_patch16_224",
+  "profile_root": "/workspace/tvelcro/results/vit_sweep/vit_base/seed0/profile",
+  "profile_group": "dogs",
+  "rank_method": "variance",
+  "seed": 0,
+  "heads_per_block": 0,
+  "freeze_fraction": null,
+  "t_k": 0,
+  "t_k_per_block": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0
+  },
+  "profile_N": 300,
+  "profile_seed": 0,
+  "freeze_criterion": "bottom-T_k per block by variance rank",
+  "freeze_method": "output-only (forward pre-hook mean substitution)",
+  "frozen_heads": [],
+  "summary": {
+    "total_heads_checked": 144,
+    "total_frozen": 0,
+    "freeze_rate": 0.0
+  }
+}

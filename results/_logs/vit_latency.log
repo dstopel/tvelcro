@@ -1,0 +1,27 @@
+[2026-08-14 20:58:17] ViT latency: model=vit_base_patch16_224 manifest=results/vit_sweep/vit_base/seed0/tk3/freeze_dogs/freeze_manifest.json batches=1,8
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading vit_base_patch16_224 (pretrained=False) on cuda ...
+Manifest: 36 frozen heads
+[baseline] batch 1 ...
+[baseline] batch 8 ...
+[hooked] batch 1 ...
+[hooked] batch 8 ...
+[sliced] batch 1 ...
+[sliced] batch 8 ...
+
+Wrote results/vit_latency/latency_vit_base_patch16_224.json
+
+---------------------------------------------------------
+variant     batch   ms (med)   images/s    J/fwd  speedup
+---------------------------------------------------------
+baseline        1       6.68      149.8     0.34    1.00x
+hooked          1       6.85      146.0     0.43    0.97x
+sliced          1       6.15      162.6     0.32    1.09x
+
+baseline        8      43.18      185.3     3.12    1.00x
+hooked          8      44.19      181.0     3.19    0.98x
+sliced          8      40.28      198.6     2.82    1.07x
+
+---------------------------------------------------------
+[2026-08-14 21:00:06] Done: results/vit_latency/

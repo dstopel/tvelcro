@@ -1,0 +1,31 @@
+{
+  "mode": "profile",
+  "model_key": "dinov3_7b",
+  "model": "dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc",
+  "num_blocks": 40,
+  "num_heads": 32,
+  "head_dim": 128,
+  "seq_len": 201,
+  "groups": [
+    "general"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/general_profile"
+  ],
+  "accuracy": {
+    "general": {
+      "top1": 88.33,
+      "top5": 98.67,
+      "correct_top1": 265,
+      "correct_top5": 296,
+      "total": 300,
+      "time_sec": 417.65
+    }
+  },
+  "N": {
+    "general": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 1
+}

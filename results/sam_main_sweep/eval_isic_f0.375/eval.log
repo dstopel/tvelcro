@@ -1,0 +1,32 @@
+01:08:39 | INFO | Loading SAM ViT-H...
+01:08:52 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_isic_f0.375/freeze_manifest.json
+01:08:54 | INFO |   Frozen heads: 192 / 512
+01:08:54 | INFO | 
+============================================================
+01:08:54 | INFO | Evaluating group: isic
+01:08:55 | INFO |   Images: 300
+01:13:59 | INFO |     20/300 | running mean IoU: 0.9428
+01:19:31 | INFO |     40/300 | running mean IoU: 0.9466
+01:26:20 | INFO |     60/300 | running mean IoU: 0.9435
+01:34:31 | INFO |     80/300 | running mean IoU: 0.9442
+01:43:59 | INFO |     100/300 | running mean IoU: 0.9452
+01:50:20 | INFO |     120/300 | running mean IoU: 0.9458
+01:57:09 | INFO |     140/300 | running mean IoU: 0.9470
+02:04:11 | INFO |     160/300 | running mean IoU: 0.9484
+02:10:46 | INFO |     180/300 | running mean IoU: 0.9482
+02:18:11 | INFO |     200/300 | running mean IoU: 0.9486
+02:25:31 | INFO |     220/300 | running mean IoU: 0.9488
+02:32:54 | INFO |     240/300 | running mean IoU: 0.9489
+02:40:42 | INFO |     260/300 | running mean IoU: 0.9494
+02:48:25 | INFO |     280/300 | running mean IoU: 0.9495
+02:55:18 | INFO |     300/300 | running mean IoU: 0.9494
+02:55:18 | INFO | 
+  Results for 'isic':
+02:55:18 | INFO |     Mean IoU:       0.9511
+02:55:18 | INFO |     Miss rate:      0.2435
+02:55:18 | INFO |     False pos rate: 0.1479
+02:55:18 | INFO |     Feature sim:    0.9587
+02:55:18 | INFO |     Misses: 1766 (domain=31, redundant=202, background=1533)
+02:55:18 | INFO |     Added:  929 (domain=4, redundant=109, background=816)
+02:55:19 | INFO | 
+Eval phase complete.

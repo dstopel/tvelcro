@@ -1,0 +1,7 @@
+08:45:30 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+08:45:40 | INFO |   Found 512 head profiles
+08:45:40 | INFO |   Ranking method: variance (seed=0)
+08:45:40 | INFO |   Freezing 64 / 512 heads
+08:45:40 | INFO |   Manifest saved to results/sam_main_sweep/freeze_pcb_f0.125/freeze_manifest.json
+08:45:45 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+08:45:45 | INFO | Freeze phase complete.

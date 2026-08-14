@@ -1,0 +1,13 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda  domains=['kvasir', 'isic', 'busi', 'pcb', 'deepglobe']  variants=['mobile_sam', 'slimsam_50']
+Traceback (most recent call last):
+  File "/workspace/tvelcro/baselines/sam_competitors.py", line 232, in <module>
+    main()
+  File "/workspace/tvelcro/baselines/sam_competitors.py", line 180, in main
+    references[domain] = reference_masks_for(
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tvelcro/baselines/sam_competitors.py", line 131, in reference_masks_for
+    img, name = dataset[idx]
+    ^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

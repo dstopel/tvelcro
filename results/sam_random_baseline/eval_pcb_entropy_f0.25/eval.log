@@ -1,0 +1,14 @@
+13:29:38 | INFO | Loading SAM ViT-H...
+13:29:53 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_pcb_entropy_f0.25/freeze_manifest.json
+13:29:55 | INFO |   Frozen heads: 128 / 512
+13:29:55 | INFO | 
+============================================================
+13:29:55 | INFO | Evaluating group: pcb
+13:29:56 | INFO |   Images: 300
+13:36:11 | INFO |     20/300 | running mean IoU: 0.9510
+13:42:21 | INFO |     40/300 | running mean IoU: 0.9509
+13:49:14 | INFO |     60/300 | running mean IoU: 0.9489
+13:56:14 | INFO |     80/300 | running mean IoU: 0.9473
+14:03:15 | INFO |     100/300 | running mean IoU: 0.9465
+14:10:03 | INFO |     120/300 | running mean IoU: 0.9479
+14:16:54 | INFO |     140/300 | running mean IoU: 0.9493

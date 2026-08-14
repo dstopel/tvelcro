@@ -1,0 +1,32 @@
+07:46:44 | INFO | Loading SAM ViT-H...
+07:46:58 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_deepglobe_f0.375/freeze_manifest.json
+07:47:02 | INFO |   Frozen heads: 192 / 512
+07:47:02 | INFO | 
+============================================================
+07:47:02 | INFO | Evaluating group: deepglobe
+07:47:03 | INFO |   Images: 300
+07:51:01 | INFO |     20/300 | running mean IoU: 0.9540
+07:54:48 | INFO |     40/300 | running mean IoU: 0.9524
+07:58:38 | INFO |     60/300 | running mean IoU: 0.9518
+08:02:28 | INFO |     80/300 | running mean IoU: 0.9512
+08:06:16 | INFO |     100/300 | running mean IoU: 0.9513
+08:10:06 | INFO |     120/300 | running mean IoU: 0.9509
+08:13:57 | INFO |     140/300 | running mean IoU: 0.9505
+08:17:48 | INFO |     160/300 | running mean IoU: 0.9507
+08:21:40 | INFO |     180/300 | running mean IoU: 0.9512
+08:25:32 | INFO |     200/300 | running mean IoU: 0.9511
+08:29:21 | INFO |     220/300 | running mean IoU: 0.9510
+08:33:10 | INFO |     240/300 | running mean IoU: 0.9513
+08:37:03 | INFO |     260/300 | running mean IoU: 0.9516
+08:40:52 | INFO |     280/300 | running mean IoU: 0.9517
+08:44:43 | INFO |     300/300 | running mean IoU: 0.9519
+08:44:43 | INFO | 
+  Results for 'deepglobe':
+08:44:43 | INFO |     Mean IoU:       0.9510
+08:44:43 | INFO |     Miss rate:      0.3649
+08:44:43 | INFO |     False pos rate: 0.0963
+08:44:43 | INFO |     Feature sim:    0.8747
+08:44:43 | INFO |     Misses: 25118 (domain=370, redundant=16, background=24732)
+08:44:43 | INFO |     Added:  3794 (domain=40, redundant=1, background=3753)
+08:44:44 | INFO | 
+Eval phase complete.

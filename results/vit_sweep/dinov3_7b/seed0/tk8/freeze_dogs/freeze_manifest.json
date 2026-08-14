@@ -1,0 +1,1985 @@
+{
+  "version": "3.0-tvelcro-unified",
+  "model_key": "dinov3_7b",
+  "model": "dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc",
+  "profile_root": "/workspace/tvelcro/results/vit_sweep/dinov3_7b/seed0/profile",
+  "profile_group": "dogs",
+  "rank_method": "variance",
+  "seed": 0,
+  "heads_per_block": 8,
+  "freeze_fraction": null,
+  "t_k": 8,
+  "t_k_per_block": {
+    "0": 8,
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8,
+    "11": 8,
+    "12": 8,
+    "13": 8,
+    "14": 8,
+    "15": 8,
+    "16": 8,
+    "17": 8,
+    "18": 8,
+    "19": 8,
+    "20": 8,
+    "21": 8,
+    "22": 8,
+    "23": 8,
+    "24": 8,
+    "25": 8,
+    "26": 8,
+    "27": 8,
+    "28": 8,
+    "29": 8,
+    "30": 8,
+    "31": 8,
+    "32": 8,
+    "33": 8,
+    "34": 8,
+    "35": 8,
+    "36": 8,
+    "37": 8,
+    "38": 8,
+    "39": 8
+  },
+  "profile_N": 300,
+  "profile_seed": 0,
+  "freeze_criterion": "bottom-T_k per block by variance rank",
+  "freeze_method": "output-only (forward pre-hook mean substitution)",
+  "frozen_heads": [
+    {
+      "block": 0,
+      "head": 22,
+      "rank_value": 636.468017578125,
+      "mean_path": "head_variance/dogs/dogs_block0_head22_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 14,
+      "rank_value": 682.5966796875,
+      "mean_path": "head_variance/dogs/dogs_block0_head14_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 7,
+      "rank_value": 779.1986694335938,
+      "mean_path": "head_variance/dogs/dogs_block0_head7_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 9,
+      "rank_value": 808.907958984375,
+      "mean_path": "head_variance/dogs/dogs_block0_head9_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 2,
+      "rank_value": 952.437255859375,
+      "mean_path": "head_variance/dogs/dogs_block0_head2_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 23,
+      "rank_value": 982.9765014648438,
+      "mean_path": "head_variance/dogs/dogs_block0_head23_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 4,
+      "rank_value": 1082.130126953125,
+      "mean_path": "head_variance/dogs/dogs_block0_head4_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 6,
+      "rank_value": 1186.39501953125,
+      "mean_path": "head_variance/dogs/dogs_block0_head6_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 29,
+      "rank_value": 10.02653694152832,
+      "mean_path": "head_variance/dogs/dogs_block1_head29_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 23,
+      "rank_value": 88.79292297363281,
+      "mean_path": "head_variance/dogs/dogs_block1_head23_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 13,
+      "rank_value": 112.35293579101562,
+      "mean_path": "head_variance/dogs/dogs_block1_head13_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 27,
+      "rank_value": 133.65399169921875,
+      "mean_path": "head_variance/dogs/dogs_block1_head27_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 3,
+      "rank_value": 183.44915771484375,
+      "mean_path": "head_variance/dogs/dogs_block1_head3_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 11,
+      "rank_value": 310.4192810058594,
+      "mean_path": "head_variance/dogs/dogs_block1_head11_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 2,
+      "rank_value": 352.9746398925781,
+      "mean_path": "head_variance/dogs/dogs_block1_head2_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 0,
+      "rank_value": 359.99615478515625,
+      "mean_path": "head_variance/dogs/dogs_block1_head0_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 1,
+      "rank_value": 15.604312896728516,
+      "mean_path": "head_variance/dogs/dogs_block2_head1_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 13,
+      "rank_value": 64.31533813476562,
+      "mean_path": "head_variance/dogs/dogs_block2_head13_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 30,
+      "rank_value": 76.47897338867188,
+      "mean_path": "head_variance/dogs/dogs_block2_head30_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 6,
+      "rank_value": 98.8558349609375,
+      "mean_path": "head_variance/dogs/dogs_block2_head6_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 24,
+      "rank_value": 111.36323547363281,
+      "mean_path": "head_variance/dogs/dogs_block2_head24_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 11,
+      "rank_value": 250.92584228515625,
+      "mean_path": "head_variance/dogs/dogs_block2_head11_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 16,
+      "rank_value": 253.1190643310547,
+      "mean_path": "head_variance/dogs/dogs_block2_head16_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 19,
+      "rank_value": 272.42010498046875,
+      "mean_path": "head_variance/dogs/dogs_block2_head19_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 25,
+      "rank_value": 11.180096626281738,
+      "mean_path": "head_variance/dogs/dogs_block3_head25_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 12,
+      "rank_value": 62.629215240478516,
+      "mean_path": "head_variance/dogs/dogs_block3_head12_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 18,
+      "rank_value": 80.21892547607422,
+      "mean_path": "head_variance/dogs/dogs_block3_head18_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 9,
+      "rank_value": 82.27980041503906,
+      "mean_path": "head_variance/dogs/dogs_block3_head9_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 23,
+      "rank_value": 89.80673217773438,
+      "mean_path": "head_variance/dogs/dogs_block3_head23_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 5,
+      "rank_value": 117.65388488769531,
+      "mean_path": "head_variance/dogs/dogs_block3_head5_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 27,
+      "rank_value": 150.69000244140625,
+      "mean_path": "head_variance/dogs/dogs_block3_head27_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 28,
+      "rank_value": 159.39932250976562,
+      "mean_path": "head_variance/dogs/dogs_block3_head28_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 6,
+      "rank_value": 0.8650414347648621,
+      "mean_path": "head_variance/dogs/dogs_block4_head6_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 23,
+      "rank_value": 5.407450199127197,
+      "mean_path": "head_variance/dogs/dogs_block4_head23_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 30,
+      "rank_value": 7.298864364624023,
+      "mean_path": "head_variance/dogs/dogs_block4_head30_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 14,
+      "rank_value": 20.322437286376953,
+      "mean_path": "head_variance/dogs/dogs_block4_head14_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 29,
+      "rank_value": 33.62921905517578,
+      "mean_path": "head_variance/dogs/dogs_block4_head29_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 27,
+      "rank_value": 50.47133255004883,
+      "mean_path": "head_variance/dogs/dogs_block4_head27_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 12,
+      "rank_value": 51.105140686035156,
+      "mean_path": "head_variance/dogs/dogs_block4_head12_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 31,
+      "rank_value": 51.33953857421875,
+      "mean_path": "head_variance/dogs/dogs_block4_head31_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 13,
+      "rank_value": 27.298233032226562,
+      "mean_path": "head_variance/dogs/dogs_block5_head13_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 7,
+      "rank_value": 45.34748458862305,
+      "mean_path": "head_variance/dogs/dogs_block5_head7_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 1,
+      "rank_value": 59.60478210449219,
+      "mean_path": "head_variance/dogs/dogs_block5_head1_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 27,
+      "rank_value": 71.45187377929688,
+      "mean_path": "head_variance/dogs/dogs_block5_head27_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 30,
+      "rank_value": 105.9945068359375,
+      "mean_path": "head_variance/dogs/dogs_block5_head30_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 24,
+      "rank_value": 113.5687255859375,
+      "mean_path": "head_variance/dogs/dogs_block5_head24_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 20,
+      "rank_value": 113.73439025878906,
+      "mean_path": "head_variance/dogs/dogs_block5_head20_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 12,
+      "rank_value": 181.51739501953125,
+      "mean_path": "head_variance/dogs/dogs_block5_head12_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 7,
+      "rank_value": 21.81167984008789,
+      "mean_path": "head_variance/dogs/dogs_block6_head7_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 22,
+      "rank_value": 25.829994201660156,
+      "mean_path": "head_variance/dogs/dogs_block6_head22_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 16,
+      "rank_value": 32.6944694519043,
+      "mean_path": "head_variance/dogs/dogs_block6_head16_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 4,
+      "rank_value": 107.19749450683594,
+      "mean_path": "head_variance/dogs/dogs_block6_head4_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 6,
+      "rank_value": 107.95561981201172,
+      "mean_path": "head_variance/dogs/dogs_block6_head6_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 26,
+      "rank_value": 136.91763305664062,
+      "mean_path": "head_variance/dogs/dogs_block6_head26_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 10,
+      "rank_value": 183.5293731689453,
+      "mean_path": "head_variance/dogs/dogs_block6_head10_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 28,
+      "rank_value": 192.35044860839844,
+      "mean_path": "head_variance/dogs/dogs_block6_head28_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 7,
+      "rank_value": 15.808855056762695,
+      "mean_path": "head_variance/dogs/dogs_block7_head7_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 18,
+      "rank_value": 49.117427825927734,
+      "mean_path": "head_variance/dogs/dogs_block7_head18_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 9,
+      "rank_value": 76.39044189453125,
+      "mean_path": "head_variance/dogs/dogs_block7_head9_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 23,
+      "rank_value": 133.47976684570312,
+      "mean_path": "head_variance/dogs/dogs_block7_head23_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 4,
+      "rank_value": 150.26840209960938,
+      "mean_path": "head_variance/dogs/dogs_block7_head4_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 16,
+      "rank_value": 167.411865234375,
+      "mean_path": "head_variance/dogs/dogs_block7_head16_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 17,
+      "rank_value": 176.95977783203125,
+      "mean_path": "head_variance/dogs/dogs_block7_head17_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 13,
+      "rank_value": 233.55276489257812,
+      "mean_path": "head_variance/dogs/dogs_block7_head13_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 4,
+      "rank_value": 43.61511993408203,
+      "mean_path": "head_variance/dogs/dogs_block8_head4_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 27,
+      "rank_value": 89.77052307128906,
+      "mean_path": "head_variance/dogs/dogs_block8_head27_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 13,
+      "rank_value": 91.01170349121094,
+      "mean_path": "head_variance/dogs/dogs_block8_head13_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 29,
+      "rank_value": 142.74362182617188,
+      "mean_path": "head_variance/dogs/dogs_block8_head29_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 30,
+      "rank_value": 158.32615661621094,
+      "mean_path": "head_variance/dogs/dogs_block8_head30_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 20,
+      "rank_value": 160.00926208496094,
+      "mean_path": "head_variance/dogs/dogs_block8_head20_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 16,
+      "rank_value": 243.68772888183594,
+      "mean_path": "head_variance/dogs/dogs_block8_head16_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 3,
+      "rank_value": 250.6988525390625,
+      "mean_path": "head_variance/dogs/dogs_block8_head3_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 9,
+      "rank_value": 54.14302444458008,
+      "mean_path": "head_variance/dogs/dogs_block9_head9_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 17,
+      "rank_value": 79.5742416381836,
+      "mean_path": "head_variance/dogs/dogs_block9_head17_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 30,
+      "rank_value": 115.87418365478516,
+      "mean_path": "head_variance/dogs/dogs_block9_head30_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 0,
+      "rank_value": 184.98684692382812,
+      "mean_path": "head_variance/dogs/dogs_block9_head0_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 12,
+      "rank_value": 232.37351989746094,
+      "mean_path": "head_variance/dogs/dogs_block9_head12_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 7,
+      "rank_value": 232.7605438232422,
+      "mean_path": "head_variance/dogs/dogs_block9_head7_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 10,
+      "rank_value": 319.4300231933594,
+      "mean_path": "head_variance/dogs/dogs_block9_head10_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 13,
+      "rank_value": 552.7979736328125,
+      "mean_path": "head_variance/dogs/dogs_block9_head13_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 22,
+      "rank_value": 139.69393920898438,
+      "mean_path": "head_variance/dogs/dogs_block10_head22_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 20,
+      "rank_value": 155.26634216308594,
+      "mean_path": "head_variance/dogs/dogs_block10_head20_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 9,
+      "rank_value": 284.16827392578125,
+      "mean_path": "head_variance/dogs/dogs_block10_head9_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 18,
+      "rank_value": 359.48883056640625,
+      "mean_path": "head_variance/dogs/dogs_block10_head18_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 0,
+      "rank_value": 395.208740234375,
+      "mean_path": "head_variance/dogs/dogs_block10_head0_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 19,
+      "rank_value": 506.89154052734375,
+      "mean_path": "head_variance/dogs/dogs_block10_head19_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 8,
+      "rank_value": 523.7320556640625,
+      "mean_path": "head_variance/dogs/dogs_block10_head8_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 13,
+      "rank_value": 533.0393676757812,
+      "mean_path": "head_variance/dogs/dogs_block10_head13_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 11,
+      "rank_value": 399.05279541015625,
+      "mean_path": "head_variance/dogs/dogs_block11_head11_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 19,
+      "rank_value": 421.9212646484375,
+      "mean_path": "head_variance/dogs/dogs_block11_head19_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 8,
+      "rank_value": 486.56512451171875,
+      "mean_path": "head_variance/dogs/dogs_block11_head8_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 15,
+      "rank_value": 534.7738037109375,
+      "mean_path": "head_variance/dogs/dogs_block11_head15_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 4,
+      "rank_value": 627.128173828125,
+      "mean_path": "head_variance/dogs/dogs_block11_head4_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 16,
+      "rank_value": 672.7077026367188,
+      "mean_path": "head_variance/dogs/dogs_block11_head16_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 0,
+      "rank_value": 705.403076171875,
+      "mean_path": "head_variance/dogs/dogs_block11_head0_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 20,
+      "rank_value": 942.6786499023438,
+      "mean_path": "head_variance/dogs/dogs_block11_head20_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 29,
+      "rank_value": 535.9638061523438,
+      "mean_path": "head_variance/dogs/dogs_block12_head29_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 17,
+      "rank_value": 562.267822265625,
+      "mean_path": "head_variance/dogs/dogs_block12_head17_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 0,
+      "rank_value": 590.7633056640625,
+      "mean_path": "head_variance/dogs/dogs_block12_head0_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 10,
+      "rank_value": 700.5410766601562,
+      "mean_path": "head_variance/dogs/dogs_block12_head10_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 11,
+      "rank_value": 777.1287841796875,
+      "mean_path": "head_variance/dogs/dogs_block12_head11_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 27,
+      "rank_value": 1005.78466796875,
+      "mean_path": "head_variance/dogs/dogs_block12_head27_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 31,
+      "rank_value": 1118.4212646484375,
+      "mean_path": "head_variance/dogs/dogs_block12_head31_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 15,
+      "rank_value": 1121.06689453125,
+      "mean_path": "head_variance/dogs/dogs_block12_head15_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 6,
+      "rank_value": 796.869873046875,
+      "mean_path": "head_variance/dogs/dogs_block13_head6_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 15,
+      "rank_value": 875.7034912109375,
+      "mean_path": "head_variance/dogs/dogs_block13_head15_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 10,
+      "rank_value": 957.6015625,
+      "mean_path": "head_variance/dogs/dogs_block13_head10_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 18,
+      "rank_value": 1217.554931640625,
+      "mean_path": "head_variance/dogs/dogs_block13_head18_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 22,
+      "rank_value": 1326.013671875,
+      "mean_path": "head_variance/dogs/dogs_block13_head22_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 28,
+      "rank_value": 1345.43408203125,
+      "mean_path": "head_variance/dogs/dogs_block13_head28_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 23,
+      "rank_value": 1375.219970703125,
+      "mean_path": "head_variance/dogs/dogs_block13_head23_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 31,
+      "rank_value": 1399.445556640625,
+      "mean_path": "head_variance/dogs/dogs_block13_head31_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 20,
+      "rank_value": 719.6424560546875,
+      "mean_path": "head_variance/dogs/dogs_block14_head20_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 27,
+      "rank_value": 793.8353271484375,
+      "mean_path": "head_variance/dogs/dogs_block14_head27_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 6,
+      "rank_value": 1074.27490234375,
+      "mean_path": "head_variance/dogs/dogs_block14_head6_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 26,
+      "rank_value": 1120.942138671875,
+      "mean_path": "head_variance/dogs/dogs_block14_head26_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 25,
+      "rank_value": 1187.143310546875,
+      "mean_path": "head_variance/dogs/dogs_block14_head25_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 12,
+      "rank_value": 1335.010498046875,
+      "mean_path": "head_variance/dogs/dogs_block14_head12_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 7,
+      "rank_value": 1422.7783203125,
+      "mean_path": "head_variance/dogs/dogs_block14_head7_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 28,
+      "rank_value": 1454.4876708984375,
+      "mean_path": "head_variance/dogs/dogs_block14_head28_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 26,
+      "rank_value": 554.9847412109375,
+      "mean_path": "head_variance/dogs/dogs_block15_head26_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 19,
+      "rank_value": 845.8195190429688,
+      "mean_path": "head_variance/dogs/dogs_block15_head19_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 31,
+      "rank_value": 1025.6641845703125,
+      "mean_path": "head_variance/dogs/dogs_block15_head31_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 29,
+      "rank_value": 1042.91845703125,
+      "mean_path": "head_variance/dogs/dogs_block15_head29_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 13,
+      "rank_value": 1332.4002685546875,
+      "mean_path": "head_variance/dogs/dogs_block15_head13_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 6,
+      "rank_value": 1421.911376953125,
+      "mean_path": "head_variance/dogs/dogs_block15_head6_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 23,
+      "rank_value": 1536.146728515625,
+      "mean_path": "head_variance/dogs/dogs_block15_head23_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 30,
+      "rank_value": 1715.0513916015625,
+      "mean_path": "head_variance/dogs/dogs_block15_head30_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 7,
+      "rank_value": 856.2989501953125,
+      "mean_path": "head_variance/dogs/dogs_block16_head7_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 31,
+      "rank_value": 1191.862060546875,
+      "mean_path": "head_variance/dogs/dogs_block16_head31_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 23,
+      "rank_value": 1228.885009765625,
+      "mean_path": "head_variance/dogs/dogs_block16_head23_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 17,
+      "rank_value": 1339.108154296875,
+      "mean_path": "head_variance/dogs/dogs_block16_head17_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 29,
+      "rank_value": 1436.2366943359375,
+      "mean_path": "head_variance/dogs/dogs_block16_head29_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 5,
+      "rank_value": 1672.284912109375,
+      "mean_path": "head_variance/dogs/dogs_block16_head5_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 30,
+      "rank_value": 1794.002685546875,
+      "mean_path": "head_variance/dogs/dogs_block16_head30_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 1,
+      "rank_value": 1824.92138671875,
+      "mean_path": "head_variance/dogs/dogs_block16_head1_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 10,
+      "rank_value": 758.154296875,
+      "mean_path": "head_variance/dogs/dogs_block17_head10_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 7,
+      "rank_value": 1316.99169921875,
+      "mean_path": "head_variance/dogs/dogs_block17_head7_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 0,
+      "rank_value": 1341.938720703125,
+      "mean_path": "head_variance/dogs/dogs_block17_head0_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 11,
+      "rank_value": 1643.9755859375,
+      "mean_path": "head_variance/dogs/dogs_block17_head11_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 9,
+      "rank_value": 1678.0621337890625,
+      "mean_path": "head_variance/dogs/dogs_block17_head9_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 12,
+      "rank_value": 1686.56884765625,
+      "mean_path": "head_variance/dogs/dogs_block17_head12_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 13,
+      "rank_value": 1746.2392578125,
+      "mean_path": "head_variance/dogs/dogs_block17_head13_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 15,
+      "rank_value": 1846.512939453125,
+      "mean_path": "head_variance/dogs/dogs_block17_head15_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 31,
+      "rank_value": 485.3731689453125,
+      "mean_path": "head_variance/dogs/dogs_block18_head31_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 9,
+      "rank_value": 1058.172607421875,
+      "mean_path": "head_variance/dogs/dogs_block18_head9_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 3,
+      "rank_value": 1135.281982421875,
+      "mean_path": "head_variance/dogs/dogs_block18_head3_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 26,
+      "rank_value": 1393.0390625,
+      "mean_path": "head_variance/dogs/dogs_block18_head26_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 8,
+      "rank_value": 1415.72998046875,
+      "mean_path": "head_variance/dogs/dogs_block18_head8_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 0,
+      "rank_value": 1441.227783203125,
+      "mean_path": "head_variance/dogs/dogs_block18_head0_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 6,
+      "rank_value": 2003.672119140625,
+      "mean_path": "head_variance/dogs/dogs_block18_head6_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 22,
+      "rank_value": 2006.441650390625,
+      "mean_path": "head_variance/dogs/dogs_block18_head22_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 3,
+      "rank_value": 997.1937866210938,
+      "mean_path": "head_variance/dogs/dogs_block19_head3_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 11,
+      "rank_value": 1102.657958984375,
+      "mean_path": "head_variance/dogs/dogs_block19_head11_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 6,
+      "rank_value": 1143.973388671875,
+      "mean_path": "head_variance/dogs/dogs_block19_head6_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 10,
+      "rank_value": 1224.540283203125,
+      "mean_path": "head_variance/dogs/dogs_block19_head10_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 8,
+      "rank_value": 1286.5362548828125,
+      "mean_path": "head_variance/dogs/dogs_block19_head8_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 28,
+      "rank_value": 1538.2772216796875,
+      "mean_path": "head_variance/dogs/dogs_block19_head28_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 25,
+      "rank_value": 2141.074951171875,
+      "mean_path": "head_variance/dogs/dogs_block19_head25_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 5,
+      "rank_value": 2279.54541015625,
+      "mean_path": "head_variance/dogs/dogs_block19_head5_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 21,
+      "rank_value": 857.3472900390625,
+      "mean_path": "head_variance/dogs/dogs_block20_head21_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 4,
+      "rank_value": 967.6898803710938,
+      "mean_path": "head_variance/dogs/dogs_block20_head4_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 1,
+      "rank_value": 1504.9388427734375,
+      "mean_path": "head_variance/dogs/dogs_block20_head1_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 2,
+      "rank_value": 1654.153564453125,
+      "mean_path": "head_variance/dogs/dogs_block20_head2_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 30,
+      "rank_value": 1737.474365234375,
+      "mean_path": "head_variance/dogs/dogs_block20_head30_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 20,
+      "rank_value": 1752.964111328125,
+      "mean_path": "head_variance/dogs/dogs_block20_head20_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 7,
+      "rank_value": 1814.208251953125,
+      "mean_path": "head_variance/dogs/dogs_block20_head7_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 18,
+      "rank_value": 1879.68603515625,
+      "mean_path": "head_variance/dogs/dogs_block20_head18_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 19,
+      "rank_value": 752.59765625,
+      "mean_path": "head_variance/dogs/dogs_block21_head19_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 18,
+      "rank_value": 1265.9208984375,
+      "mean_path": "head_variance/dogs/dogs_block21_head18_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 5,
+      "rank_value": 1458.236328125,
+      "mean_path": "head_variance/dogs/dogs_block21_head5_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 25,
+      "rank_value": 1544.544677734375,
+      "mean_path": "head_variance/dogs/dogs_block21_head25_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 22,
+      "rank_value": 1794.6036376953125,
+      "mean_path": "head_variance/dogs/dogs_block21_head22_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 9,
+      "rank_value": 2177.114013671875,
+      "mean_path": "head_variance/dogs/dogs_block21_head9_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 28,
+      "rank_value": 2600.490234375,
+      "mean_path": "head_variance/dogs/dogs_block21_head28_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 16,
+      "rank_value": 2683.91015625,
+      "mean_path": "head_variance/dogs/dogs_block21_head16_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 30,
+      "rank_value": 1192.849853515625,
+      "mean_path": "head_variance/dogs/dogs_block22_head30_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 5,
+      "rank_value": 1388.00537109375,
+      "mean_path": "head_variance/dogs/dogs_block22_head5_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 13,
+      "rank_value": 1758.80810546875,
+      "mean_path": "head_variance/dogs/dogs_block22_head13_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 20,
+      "rank_value": 1957.7313232421875,
+      "mean_path": "head_variance/dogs/dogs_block22_head20_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 4,
+      "rank_value": 2023.70703125,
+      "mean_path": "head_variance/dogs/dogs_block22_head4_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 29,
+      "rank_value": 2194.703125,
+      "mean_path": "head_variance/dogs/dogs_block22_head29_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 12,
+      "rank_value": 2433.37744140625,
+      "mean_path": "head_variance/dogs/dogs_block22_head12_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 19,
+      "rank_value": 2812.35498046875,
+      "mean_path": "head_variance/dogs/dogs_block22_head19_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 5,
+      "rank_value": 1155.356201171875,
+      "mean_path": "head_variance/dogs/dogs_block23_head5_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 13,
+      "rank_value": 1341.464111328125,
+      "mean_path": "head_variance/dogs/dogs_block23_head13_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 7,
+      "rank_value": 1482.2802734375,
+      "mean_path": "head_variance/dogs/dogs_block23_head7_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 1,
+      "rank_value": 1730.678466796875,
+      "mean_path": "head_variance/dogs/dogs_block23_head1_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 9,
+      "rank_value": 1782.62060546875,
+      "mean_path": "head_variance/dogs/dogs_block23_head9_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 20,
+      "rank_value": 1957.443115234375,
+      "mean_path": "head_variance/dogs/dogs_block23_head20_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 23,
+      "rank_value": 2198.634033203125,
+      "mean_path": "head_variance/dogs/dogs_block23_head23_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 21,
+      "rank_value": 2367.6845703125,
+      "mean_path": "head_variance/dogs/dogs_block23_head21_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 0,
+      "rank_value": 1019.3168334960938,
+      "mean_path": "head_variance/dogs/dogs_block24_head0_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 12,
+      "rank_value": 1136.357666015625,
+      "mean_path": "head_variance/dogs/dogs_block24_head12_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 5,
+      "rank_value": 1223.04150390625,
+      "mean_path": "head_variance/dogs/dogs_block24_head5_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 30,
+      "rank_value": 1311.46630859375,
+      "mean_path": "head_variance/dogs/dogs_block24_head30_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 19,
+      "rank_value": 1765.84228515625,
+      "mean_path": "head_variance/dogs/dogs_block24_head19_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 1,
+      "rank_value": 1798.716552734375,
+      "mean_path": "head_variance/dogs/dogs_block24_head1_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 18,
+      "rank_value": 1955.1290283203125,
+      "mean_path": "head_variance/dogs/dogs_block24_head18_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 24,
+      "rank_value": 2128.732666015625,
+      "mean_path": "head_variance/dogs/dogs_block24_head24_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 4,
+      "rank_value": 1129.32861328125,
+      "mean_path": "head_variance/dogs/dogs_block25_head4_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 3,
+      "rank_value": 1344.7735595703125,
+      "mean_path": "head_variance/dogs/dogs_block25_head3_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 26,
+      "rank_value": 1398.8408203125,
+      "mean_path": "head_variance/dogs/dogs_block25_head26_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 28,
+      "rank_value": 1469.1744384765625,
+      "mean_path": "head_variance/dogs/dogs_block25_head28_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 15,
+      "rank_value": 1587.2191162109375,
+      "mean_path": "head_variance/dogs/dogs_block25_head15_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 16,
+      "rank_value": 1754.36865234375,
+      "mean_path": "head_variance/dogs/dogs_block25_head16_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 18,
+      "rank_value": 1976.151611328125,
+      "mean_path": "head_variance/dogs/dogs_block25_head18_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 12,
+      "rank_value": 2021.5616455078125,
+      "mean_path": "head_variance/dogs/dogs_block25_head12_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 14,
+      "rank_value": 977.450927734375,
+      "mean_path": "head_variance/dogs/dogs_block26_head14_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 16,
+      "rank_value": 1032.2703857421875,
+      "mean_path": "head_variance/dogs/dogs_block26_head16_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 5,
+      "rank_value": 1323.1322021484375,
+      "mean_path": "head_variance/dogs/dogs_block26_head5_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 8,
+      "rank_value": 1325.765869140625,
+      "mean_path": "head_variance/dogs/dogs_block26_head8_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 20,
+      "rank_value": 1439.2041015625,
+      "mean_path": "head_variance/dogs/dogs_block26_head20_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 3,
+      "rank_value": 1644.8515625,
+      "mean_path": "head_variance/dogs/dogs_block26_head3_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 15,
+      "rank_value": 2252.427001953125,
+      "mean_path": "head_variance/dogs/dogs_block26_head15_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 27,
+      "rank_value": 2258.77197265625,
+      "mean_path": "head_variance/dogs/dogs_block26_head27_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 12,
+      "rank_value": 1031.896484375,
+      "mean_path": "head_variance/dogs/dogs_block27_head12_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 1,
+      "rank_value": 1119.3701171875,
+      "mean_path": "head_variance/dogs/dogs_block27_head1_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 26,
+      "rank_value": 1341.6650390625,
+      "mean_path": "head_variance/dogs/dogs_block27_head26_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 7,
+      "rank_value": 1356.940185546875,
+      "mean_path": "head_variance/dogs/dogs_block27_head7_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 18,
+      "rank_value": 2045.7490234375,
+      "mean_path": "head_variance/dogs/dogs_block27_head18_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 14,
+      "rank_value": 2057.98681640625,
+      "mean_path": "head_variance/dogs/dogs_block27_head14_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 30,
+      "rank_value": 2160.767578125,
+      "mean_path": "head_variance/dogs/dogs_block27_head30_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 19,
+      "rank_value": 2227.259033203125,
+      "mean_path": "head_variance/dogs/dogs_block27_head19_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 10,
+      "rank_value": 1114.25390625,
+      "mean_path": "head_variance/dogs/dogs_block28_head10_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 23,
+      "rank_value": 1178.50537109375,
+      "mean_path": "head_variance/dogs/dogs_block28_head23_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 13,
+      "rank_value": 1669.050048828125,
+      "mean_path": "head_variance/dogs/dogs_block28_head13_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 14,
+      "rank_value": 1906.857666015625,
+      "mean_path": "head_variance/dogs/dogs_block28_head14_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 28,
+      "rank_value": 1940.13623046875,
+      "mean_path": "head_variance/dogs/dogs_block28_head28_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 15,
+      "rank_value": 1979.33056640625,
+      "mean_path": "head_variance/dogs/dogs_block28_head15_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 21,
+      "rank_value": 1981.182861328125,
+      "mean_path": "head_variance/dogs/dogs_block28_head21_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 4,
+      "rank_value": 2144.6015625,
+      "mean_path": "head_variance/dogs/dogs_block28_head4_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 5,
+      "rank_value": 927.665771484375,
+      "mean_path": "head_variance/dogs/dogs_block29_head5_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 6,
+      "rank_value": 1098.697998046875,
+      "mean_path": "head_variance/dogs/dogs_block29_head6_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 25,
+      "rank_value": 1243.86865234375,
+      "mean_path": "head_variance/dogs/dogs_block29_head25_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 20,
+      "rank_value": 1360.592041015625,
+      "mean_path": "head_variance/dogs/dogs_block29_head20_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 23,
+      "rank_value": 1392.1337890625,
+      "mean_path": "head_variance/dogs/dogs_block29_head23_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 16,
+      "rank_value": 1497.400634765625,
+      "mean_path": "head_variance/dogs/dogs_block29_head16_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 17,
+      "rank_value": 1865.100341796875,
+      "mean_path": "head_variance/dogs/dogs_block29_head17_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 19,
+      "rank_value": 1881.004638671875,
+      "mean_path": "head_variance/dogs/dogs_block29_head19_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 20,
+      "rank_value": 1580.393798828125,
+      "mean_path": "head_variance/dogs/dogs_block30_head20_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 28,
+      "rank_value": 1592.695556640625,
+      "mean_path": "head_variance/dogs/dogs_block30_head28_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 2,
+      "rank_value": 1760.092041015625,
+      "mean_path": "head_variance/dogs/dogs_block30_head2_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 14,
+      "rank_value": 1765.87060546875,
+      "mean_path": "head_variance/dogs/dogs_block30_head14_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 8,
+      "rank_value": 1823.0711669921875,
+      "mean_path": "head_variance/dogs/dogs_block30_head8_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 29,
+      "rank_value": 1861.49853515625,
+      "mean_path": "head_variance/dogs/dogs_block30_head29_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 30,
+      "rank_value": 1881.1754150390625,
+      "mean_path": "head_variance/dogs/dogs_block30_head30_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 11,
+      "rank_value": 2071.803955078125,
+      "mean_path": "head_variance/dogs/dogs_block30_head11_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 6,
+      "rank_value": 963.465576171875,
+      "mean_path": "head_variance/dogs/dogs_block31_head6_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 13,
+      "rank_value": 1279.4283447265625,
+      "mean_path": "head_variance/dogs/dogs_block31_head13_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 19,
+      "rank_value": 1402.3212890625,
+      "mean_path": "head_variance/dogs/dogs_block31_head19_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 3,
+      "rank_value": 1463.168212890625,
+      "mean_path": "head_variance/dogs/dogs_block31_head3_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 18,
+      "rank_value": 1687.5479736328125,
+      "mean_path": "head_variance/dogs/dogs_block31_head18_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 20,
+      "rank_value": 1737.8460693359375,
+      "mean_path": "head_variance/dogs/dogs_block31_head20_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 16,
+      "rank_value": 2160.02880859375,
+      "mean_path": "head_variance/dogs/dogs_block31_head16_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 28,
+      "rank_value": 2222.2119140625,
+      "mean_path": "head_variance/dogs/dogs_block31_head28_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 5,
+      "rank_value": 989.3558349609375,
+      "mean_path": "head_variance/dogs/dogs_block32_head5_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 0,
+      "rank_value": 1436.3218994140625,
+      "mean_path": "head_variance/dogs/dogs_block32_head0_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 13,
+      "rank_value": 1546.831787109375,
+      "mean_path": "head_variance/dogs/dogs_block32_head13_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 17,
+      "rank_value": 1777.4521484375,
+      "mean_path": "head_variance/dogs/dogs_block32_head17_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 26,
+      "rank_value": 2022.6600341796875,
+      "mean_path": "head_variance/dogs/dogs_block32_head26_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 1,
+      "rank_value": 2366.959716796875,
+      "mean_path": "head_variance/dogs/dogs_block32_head1_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 21,
+      "rank_value": 2556.486572265625,
+      "mean_path": "head_variance/dogs/dogs_block32_head21_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 15,
+      "rank_value": 2645.00927734375,
+      "mean_path": "head_variance/dogs/dogs_block32_head15_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 31,
+      "rank_value": 1078.90283203125,
+      "mean_path": "head_variance/dogs/dogs_block33_head31_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 18,
+      "rank_value": 1381.650390625,
+      "mean_path": "head_variance/dogs/dogs_block33_head18_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 12,
+      "rank_value": 1487.617919921875,
+      "mean_path": "head_variance/dogs/dogs_block33_head12_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 2,
+      "rank_value": 1641.751220703125,
+      "mean_path": "head_variance/dogs/dogs_block33_head2_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 25,
+      "rank_value": 2087.099853515625,
+      "mean_path": "head_variance/dogs/dogs_block33_head25_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 15,
+      "rank_value": 2110.64892578125,
+      "mean_path": "head_variance/dogs/dogs_block33_head15_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 22,
+      "rank_value": 2182.596923828125,
+      "mean_path": "head_variance/dogs/dogs_block33_head22_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 19,
+      "rank_value": 2416.17431640625,
+      "mean_path": "head_variance/dogs/dogs_block33_head19_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 31,
+      "rank_value": 1370.273681640625,
+      "mean_path": "head_variance/dogs/dogs_block34_head31_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 6,
+      "rank_value": 1499.158447265625,
+      "mean_path": "head_variance/dogs/dogs_block34_head6_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 28,
+      "rank_value": 1506.325439453125,
+      "mean_path": "head_variance/dogs/dogs_block34_head28_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 17,
+      "rank_value": 1617.356201171875,
+      "mean_path": "head_variance/dogs/dogs_block34_head17_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 23,
+      "rank_value": 1824.674072265625,
+      "mean_path": "head_variance/dogs/dogs_block34_head23_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 15,
+      "rank_value": 1865.926025390625,
+      "mean_path": "head_variance/dogs/dogs_block34_head15_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 4,
+      "rank_value": 1936.3929443359375,
+      "mean_path": "head_variance/dogs/dogs_block34_head4_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 27,
+      "rank_value": 1998.382568359375,
+      "mean_path": "head_variance/dogs/dogs_block34_head27_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 11,
+      "rank_value": 1035.134033203125,
+      "mean_path": "head_variance/dogs/dogs_block35_head11_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 6,
+      "rank_value": 1334.447998046875,
+      "mean_path": "head_variance/dogs/dogs_block35_head6_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 22,
+      "rank_value": 1385.967041015625,
+      "mean_path": "head_variance/dogs/dogs_block35_head22_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 7,
+      "rank_value": 1522.267822265625,
+      "mean_path": "head_variance/dogs/dogs_block35_head7_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 3,
+      "rank_value": 1802.2689208984375,
+      "mean_path": "head_variance/dogs/dogs_block35_head3_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 30,
+      "rank_value": 1863.1552734375,
+      "mean_path": "head_variance/dogs/dogs_block35_head30_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 16,
+      "rank_value": 1903.566162109375,
+      "mean_path": "head_variance/dogs/dogs_block35_head16_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 25,
+      "rank_value": 1921.1746826171875,
+      "mean_path": "head_variance/dogs/dogs_block35_head25_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 18,
+      "rank_value": 682.4161376953125,
+      "mean_path": "head_variance/dogs/dogs_block36_head18_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 4,
+      "rank_value": 746.4923095703125,
+      "mean_path": "head_variance/dogs/dogs_block36_head4_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 21,
+      "rank_value": 1164.30517578125,
+      "mean_path": "head_variance/dogs/dogs_block36_head21_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 15,
+      "rank_value": 1229.1651611328125,
+      "mean_path": "head_variance/dogs/dogs_block36_head15_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 5,
+      "rank_value": 1282.2449951171875,
+      "mean_path": "head_variance/dogs/dogs_block36_head5_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 26,
+      "rank_value": 1563.1768798828125,
+      "mean_path": "head_variance/dogs/dogs_block36_head26_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 10,
+      "rank_value": 1591.4951171875,
+      "mean_path": "head_variance/dogs/dogs_block36_head10_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 29,
+      "rank_value": 1776.538818359375,
+      "mean_path": "head_variance/dogs/dogs_block36_head29_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 10,
+      "rank_value": 588.974609375,
+      "mean_path": "head_variance/dogs/dogs_block37_head10_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 4,
+      "rank_value": 935.625732421875,
+      "mean_path": "head_variance/dogs/dogs_block37_head4_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 1,
+      "rank_value": 1319.9130859375,
+      "mean_path": "head_variance/dogs/dogs_block37_head1_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 20,
+      "rank_value": 1438.4080810546875,
+      "mean_path": "head_variance/dogs/dogs_block37_head20_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 30,
+      "rank_value": 1545.343994140625,
+      "mean_path": "head_variance/dogs/dogs_block37_head30_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 24,
+      "rank_value": 1570.2900390625,
+      "mean_path": "head_variance/dogs/dogs_block37_head24_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 29,
+      "rank_value": 1582.6201171875,
+      "mean_path": "head_variance/dogs/dogs_block37_head29_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 12,
+      "rank_value": 1693.260009765625,
+      "mean_path": "head_variance/dogs/dogs_block37_head12_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 4,
+      "rank_value": 435.4601745605469,
+      "mean_path": "head_variance/dogs/dogs_block38_head4_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 6,
+      "rank_value": 499.63482666015625,
+      "mean_path": "head_variance/dogs/dogs_block38_head6_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 11,
+      "rank_value": 507.4107971191406,
+      "mean_path": "head_variance/dogs/dogs_block38_head11_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 2,
+      "rank_value": 1142.92236328125,
+      "mean_path": "head_variance/dogs/dogs_block38_head2_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 16,
+      "rank_value": 1351.437744140625,
+      "mean_path": "head_variance/dogs/dogs_block38_head16_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 9,
+      "rank_value": 1449.369140625,
+      "mean_path": "head_variance/dogs/dogs_block38_head9_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 3,
+      "rank_value": 1450.802001953125,
+      "mean_path": "head_variance/dogs/dogs_block38_head3_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 30,
+      "rank_value": 1502.398193359375,
+      "mean_path": "head_variance/dogs/dogs_block38_head30_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 17,
+      "rank_value": 1188.4752197265625,
+      "mean_path": "head_variance/dogs/dogs_block39_head17_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 20,
+      "rank_value": 2164.7392578125,
+      "mean_path": "head_variance/dogs/dogs_block39_head20_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 10,
+      "rank_value": 2559.74365234375,
+      "mean_path": "head_variance/dogs/dogs_block39_head10_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 31,
+      "rank_value": 2809.5654296875,
+      "mean_path": "head_variance/dogs/dogs_block39_head31_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 12,
+      "rank_value": 2985.91845703125,
+      "mean_path": "head_variance/dogs/dogs_block39_head12_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 8,
+      "rank_value": 3054.033203125,
+      "mean_path": "head_variance/dogs/dogs_block39_head8_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 4,
+      "rank_value": 3258.8291015625,
+      "mean_path": "head_variance/dogs/dogs_block39_head4_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 14,
+      "rank_value": 3262.627197265625,
+      "mean_path": "head_variance/dogs/dogs_block39_head14_mean.npy"
+    }
+  ],
+  "summary": {
+    "total_heads_checked": 1280,
+    "total_frozen": 320,
+    "freeze_rate": 0.25
+  }
+}

@@ -1,0 +1,37 @@
+/workspace/tvelcro/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using GPU: NVIDIA L4 (23.7 GB)
+03:52:48 | INFO | Loading SAM ViT-H...
+03:53:01 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_busi_f0.25/freeze_manifest.json
+03:53:02 | INFO |   Frozen heads: 128 / 512
+03:53:02 | INFO | 
+============================================================
+03:53:02 | INFO | Evaluating group: busi
+03:53:03 | INFO |   Images: 300
+03:56:40 | INFO |     20/300 | running mean IoU: 0.9522
+/workspace/tvelcro/sam/sam_velcro_pkg/evaluation.py:82: RuntimeWarning: invalid value encountered in divide
+  iou_matrix = np.where(union > 0, intersection / union, 0.0).astype(np.float32)
+04:00:11 | INFO |     40/300 | running mean IoU: 0.9521
+04:03:44 | INFO |     60/300 | running mean IoU: 0.9519
+04:07:13 | INFO |     80/300 | running mean IoU: 0.9508
+04:10:46 | INFO |     100/300 | running mean IoU: 0.9505
+04:14:16 | INFO |     120/300 | running mean IoU: 0.9502
+04:17:48 | INFO |     140/300 | running mean IoU: 0.9502
+04:21:21 | INFO |     160/300 | running mean IoU: 0.9501
+04:24:53 | INFO |     180/300 | running mean IoU: 0.9498
+04:28:18 | INFO |     200/300 | running mean IoU: 0.9497
+04:31:48 | INFO |     220/300 | running mean IoU: 0.9501
+04:35:21 | INFO |     240/300 | running mean IoU: 0.9504
+04:38:58 | INFO |     260/300 | running mean IoU: 0.9503
+04:42:30 | INFO |     280/300 | running mean IoU: 0.9501
+04:46:02 | INFO |     300/300 | running mean IoU: 0.9498
+04:46:02 | INFO | 
+  Results for 'busi':
+04:46:02 | INFO |     Mean IoU:       0.9507
+04:46:02 | INFO |     Miss rate:      0.1503
+04:46:02 | INFO |     False pos rate: 0.2898
+04:46:02 | INFO |     Feature sim:    0.9508
+04:46:02 | INFO |     Misses: 1215 (domain=11, redundant=124, background=1080)
+04:46:02 | INFO |     Added:  2819 (domain=11, redundant=197, background=2611)
+04:46:03 | INFO | 
+Eval phase complete.

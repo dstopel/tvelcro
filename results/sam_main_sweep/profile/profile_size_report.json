@@ -1,0 +1,24 @@
+{
+  "profile_dir": "results/sam_main_sweep/profile",
+  "num_npy_files": 5440,
+  "total_disk_bytes": 1127096320,
+  "total_fp16_bytes": 563896320,
+  "frozen": {
+    "manifest": "./results/sam_main_sweep/freeze_busi_f0.125/freeze_manifest.json",
+    "num_frozen_heads": 64,
+    "num_mean_files_found": 64,
+    "num_mean_files_missing": 0,
+    "mean_files_disk_bytes": 14006272,
+    "mean_files_fp16_bytes": 7007232
+  },
+  "hook_benchmark": {
+    "num_frozen_heads": 64,
+    "mean_load_seconds": 1.0918,
+    "manager_init_seconds": 0.0425,
+    "attach_ms_mean": 0.0933,
+    "attach_ms_std": 0.0225,
+    "detach_ms_mean": 0.0262,
+    "detach_ms_std": 0.0022,
+    "reps": 20
+  }
+}

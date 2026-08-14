@@ -1,0 +1,7 @@
+21:26:37 | INFO | Loading profile from: ./results/sam_main_sweep/profile/isic
+21:26:47 | INFO |   Found 512 head profiles
+21:26:47 | INFO |   Ranking method: variance (seed=0)
+21:26:47 | INFO |   Freezing 64 / 512 heads
+21:26:47 | INFO |   Manifest saved to results/sam_main_sweep/freeze_isic_f0.125/freeze_manifest.json
+21:26:52 | INFO |   Summary: {'total_heads': 512, 'frozen': 64, 'frozen_windowed': 56, 'frozen_global': 8, 'freeze_rate': 0.125}
+21:26:52 | INFO | Freeze phase complete.

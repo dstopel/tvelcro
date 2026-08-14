@@ -1,0 +1,32 @@
+04:48:01 | INFO | Loading SAM ViT-H...
+04:48:14 | INFO | Loading freeze manifest: ./results/sam_main_sweep/freeze_busi_f0.375/freeze_manifest.json
+04:48:16 | INFO |   Frozen heads: 192 / 512
+04:48:16 | INFO | 
+============================================================
+04:48:16 | INFO | Evaluating group: busi
+04:48:17 | INFO |   Images: 300
+04:51:52 | INFO |     20/300 | running mean IoU: 0.9449
+04:55:22 | INFO |     40/300 | running mean IoU: 0.9459
+04:58:53 | INFO |     60/300 | running mean IoU: 0.9445
+05:02:21 | INFO |     80/300 | running mean IoU: 0.9426
+05:05:52 | INFO |     100/300 | running mean IoU: 0.9429
+05:09:22 | INFO |     120/300 | running mean IoU: 0.9433
+05:12:51 | INFO |     140/300 | running mean IoU: 0.9437
+05:16:24 | INFO |     160/300 | running mean IoU: 0.9435
+05:19:53 | INFO |     180/300 | running mean IoU: 0.9433
+05:23:17 | INFO |     200/300 | running mean IoU: 0.9433
+05:26:46 | INFO |     220/300 | running mean IoU: 0.9432
+05:30:18 | INFO |     240/300 | running mean IoU: 0.9434
+05:33:56 | INFO |     260/300 | running mean IoU: 0.9432
+05:37:27 | INFO |     280/300 | running mean IoU: 0.9429
+05:40:58 | INFO |     300/300 | running mean IoU: 0.9433
+05:40:58 | INFO | 
+  Results for 'busi':
+05:40:58 | INFO |     Mean IoU:       0.9442
+05:40:58 | INFO |     Miss rate:      0.2303
+05:40:58 | INFO |     False pos rate: 0.3160
+05:40:58 | INFO |     Feature sim:    0.9053
+05:40:58 | INFO |     Misses: 1906 (domain=22, redundant=187, background=1697)
+05:40:58 | INFO |     Added:  2852 (domain=13, redundant=210, background=2629)
+05:40:59 | INFO | 
+Eval phase complete.

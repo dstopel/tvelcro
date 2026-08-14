@@ -1,0 +1,78 @@
+{
+  "mode": "eval",
+  "model_key": "dinov3_7b",
+  "model": "dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc",
+  "num_blocks": 40,
+  "num_heads": 32,
+  "head_dim": 128,
+  "seq_len": 201,
+  "groups": [
+    "cars"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/cars_eval"
+  ],
+  "accuracy": {
+    "cars": {
+      "top1": 88.0,
+      "top5": 98.0,
+      "correct_top1": 264,
+      "correct_top5": 294,
+      "total": 300,
+      "time_sec": 35.72
+    }
+  },
+  "N": {
+    "cars": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 1,
+  "freeze_manifest": "/workspace/tvelcro/results/vit_sweep/dinov3_7b/seed0/tk8/freeze_cars/freeze_manifest.json",
+  "rank_method": "variance",
+  "t_k": 8,
+  "t_k_per_block": {
+    "0": 8,
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8,
+    "11": 8,
+    "12": 8,
+    "13": 8,
+    "14": 8,
+    "15": 8,
+    "16": 8,
+    "17": 8,
+    "18": 8,
+    "19": 8,
+    "20": 8,
+    "21": 8,
+    "22": 8,
+    "23": 8,
+    "24": 8,
+    "25": 8,
+    "26": 8,
+    "27": 8,
+    "28": 8,
+    "29": 8,
+    "30": 8,
+    "31": 8,
+    "32": 8,
+    "33": 8,
+    "34": 8,
+    "35": 8,
+    "36": 8,
+    "37": 8,
+    "38": 8,
+    "39": 8
+  },
+  "profile_group": "cars",
+  "flop_savings_pct": 25.0
+}

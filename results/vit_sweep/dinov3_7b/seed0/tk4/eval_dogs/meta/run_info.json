@@ -1,0 +1,78 @@
+{
+  "mode": "eval",
+  "model_key": "dinov3_7b",
+  "model": "dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc",
+  "num_blocks": 40,
+  "num_heads": 32,
+  "head_dim": 128,
+  "seq_len": 201,
+  "groups": [
+    "dogs"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/dogs_eval"
+  ],
+  "accuracy": {
+    "dogs": {
+      "top1": 87.67,
+      "top5": 98.33,
+      "correct_top1": 263,
+      "correct_top5": 295,
+      "total": 300,
+      "time_sec": 35.96
+    }
+  },
+  "N": {
+    "dogs": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 1,
+  "freeze_manifest": "/workspace/tvelcro/results/vit_sweep/dinov3_7b/seed0/tk4/freeze_dogs/freeze_manifest.json",
+  "rank_method": "variance",
+  "t_k": 4,
+  "t_k_per_block": {
+    "0": 4,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4,
+    "8": 4,
+    "9": 4,
+    "10": 4,
+    "11": 4,
+    "12": 4,
+    "13": 4,
+    "14": 4,
+    "15": 4,
+    "16": 4,
+    "17": 4,
+    "18": 4,
+    "19": 4,
+    "20": 4,
+    "21": 4,
+    "22": 4,
+    "23": 4,
+    "24": 4,
+    "25": 4,
+    "26": 4,
+    "27": 4,
+    "28": 4,
+    "29": 4,
+    "30": 4,
+    "31": 4,
+    "32": 4,
+    "33": 4,
+    "34": 4,
+    "35": 4,
+    "36": 4,
+    "37": 4,
+    "38": 4,
+    "39": 4
+  },
+  "profile_group": "dogs",
+  "flop_savings_pct": 12.5
+}

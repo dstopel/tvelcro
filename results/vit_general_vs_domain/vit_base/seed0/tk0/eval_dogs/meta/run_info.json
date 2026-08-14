@@ -1,0 +1,50 @@
+{
+  "mode": "eval",
+  "model_key": "vit_base",
+  "model": "vit_base_patch16_224",
+  "num_blocks": 12,
+  "num_heads": 12,
+  "head_dim": 64,
+  "seq_len": 197,
+  "groups": [
+    "dogs"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/dogs_eval"
+  ],
+  "accuracy": {
+    "dogs": {
+      "top1": 82.67,
+      "top5": 99.67,
+      "correct_top1": 248,
+      "correct_top5": 299,
+      "total": 300,
+      "time_sec": 6.85
+    }
+  },
+  "N": {
+    "dogs": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 32,
+  "freeze_manifest": "/workspace/tvelcro/results/vit_general_vs_domain/vit_base/seed0/tk0/freeze_general/freeze_manifest.json",
+  "rank_method": "variance",
+  "t_k": 0,
+  "t_k_per_block": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0
+  },
+  "profile_group": "general",
+  "flop_savings_pct": 0.0
+}

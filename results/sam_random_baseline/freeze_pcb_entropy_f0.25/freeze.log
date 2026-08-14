@@ -1,0 +1,7 @@
+13:27:37 | INFO | Loading profile from: ./results/sam_main_sweep/profile/pcb
+13:27:48 | INFO |   Found 512 head profiles
+13:27:48 | INFO |   Ranking method: entropy (seed=0)
+13:27:48 | INFO |   Freezing 128 / 512 heads
+13:27:48 | INFO |   Manifest saved to results/sam_random_baseline/freeze_pcb_entropy_f0.25/freeze_manifest.json
+13:27:53 | INFO |   Summary: {'total_heads': 512, 'frozen': 128, 'frozen_windowed': 112, 'frozen_global': 16, 'freeze_rate': 0.25}
+13:27:53 | INFO | Freeze phase complete.

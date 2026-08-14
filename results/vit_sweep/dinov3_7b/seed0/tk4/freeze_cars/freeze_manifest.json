@@ -1,0 +1,1025 @@
+{
+  "version": "3.0-tvelcro-unified",
+  "model_key": "dinov3_7b",
+  "model": "dimidagd/dinov3-vit7b16-pretrain-lvd1689m-imagenet1k-lc",
+  "profile_root": "/workspace/tvelcro/results/vit_sweep/dinov3_7b/seed0/profile",
+  "profile_group": "cars",
+  "rank_method": "variance",
+  "seed": 0,
+  "heads_per_block": 4,
+  "freeze_fraction": null,
+  "t_k": 4,
+  "t_k_per_block": {
+    "0": 4,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4,
+    "8": 4,
+    "9": 4,
+    "10": 4,
+    "11": 4,
+    "12": 4,
+    "13": 4,
+    "14": 4,
+    "15": 4,
+    "16": 4,
+    "17": 4,
+    "18": 4,
+    "19": 4,
+    "20": 4,
+    "21": 4,
+    "22": 4,
+    "23": 4,
+    "24": 4,
+    "25": 4,
+    "26": 4,
+    "27": 4,
+    "28": 4,
+    "29": 4,
+    "30": 4,
+    "31": 4,
+    "32": 4,
+    "33": 4,
+    "34": 4,
+    "35": 4,
+    "36": 4,
+    "37": 4,
+    "38": 4,
+    "39": 4
+  },
+  "profile_N": 300,
+  "profile_seed": 0,
+  "freeze_criterion": "bottom-T_k per block by variance rank",
+  "freeze_method": "output-only (forward pre-hook mean substitution)",
+  "frozen_heads": [
+    {
+      "block": 0,
+      "head": 7,
+      "rank_value": 679.6302490234375,
+      "mean_path": "head_variance/cars/cars_block0_head7_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 14,
+      "rank_value": 879.73095703125,
+      "mean_path": "head_variance/cars/cars_block0_head14_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 22,
+      "rank_value": 927.53515625,
+      "mean_path": "head_variance/cars/cars_block0_head22_mean.npy"
+    },
+    {
+      "block": 0,
+      "head": 9,
+      "rank_value": 1057.7183837890625,
+      "mean_path": "head_variance/cars/cars_block0_head9_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 29,
+      "rank_value": 14.527751922607422,
+      "mean_path": "head_variance/cars/cars_block1_head29_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 23,
+      "rank_value": 124.31100463867188,
+      "mean_path": "head_variance/cars/cars_block1_head23_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 13,
+      "rank_value": 130.6641845703125,
+      "mean_path": "head_variance/cars/cars_block1_head13_mean.npy"
+    },
+    {
+      "block": 1,
+      "head": 27,
+      "rank_value": 140.8007354736328,
+      "mean_path": "head_variance/cars/cars_block1_head27_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 1,
+      "rank_value": 12.661893844604492,
+      "mean_path": "head_variance/cars/cars_block2_head1_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 13,
+      "rank_value": 64.22106170654297,
+      "mean_path": "head_variance/cars/cars_block2_head13_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 30,
+      "rank_value": 77.99481201171875,
+      "mean_path": "head_variance/cars/cars_block2_head30_mean.npy"
+    },
+    {
+      "block": 2,
+      "head": 24,
+      "rank_value": 129.63211059570312,
+      "mean_path": "head_variance/cars/cars_block2_head24_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 25,
+      "rank_value": 10.977733612060547,
+      "mean_path": "head_variance/cars/cars_block3_head25_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 9,
+      "rank_value": 70.78288269042969,
+      "mean_path": "head_variance/cars/cars_block3_head9_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 12,
+      "rank_value": 79.03067016601562,
+      "mean_path": "head_variance/cars/cars_block3_head12_mean.npy"
+    },
+    {
+      "block": 3,
+      "head": 18,
+      "rank_value": 80.08153533935547,
+      "mean_path": "head_variance/cars/cars_block3_head18_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 6,
+      "rank_value": 0.6630651950836182,
+      "mean_path": "head_variance/cars/cars_block4_head6_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 23,
+      "rank_value": 3.028496265411377,
+      "mean_path": "head_variance/cars/cars_block4_head23_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 30,
+      "rank_value": 9.618363380432129,
+      "mean_path": "head_variance/cars/cars_block4_head30_mean.npy"
+    },
+    {
+      "block": 4,
+      "head": 14,
+      "rank_value": 19.255096435546875,
+      "mean_path": "head_variance/cars/cars_block4_head14_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 13,
+      "rank_value": 23.980789184570312,
+      "mean_path": "head_variance/cars/cars_block5_head13_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 7,
+      "rank_value": 47.00260925292969,
+      "mean_path": "head_variance/cars/cars_block5_head7_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 1,
+      "rank_value": 57.03238296508789,
+      "mean_path": "head_variance/cars/cars_block5_head1_mean.npy"
+    },
+    {
+      "block": 5,
+      "head": 27,
+      "rank_value": 69.38787841796875,
+      "mean_path": "head_variance/cars/cars_block5_head27_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 7,
+      "rank_value": 20.876270294189453,
+      "mean_path": "head_variance/cars/cars_block6_head7_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 22,
+      "rank_value": 31.27398109436035,
+      "mean_path": "head_variance/cars/cars_block6_head22_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 16,
+      "rank_value": 38.19548797607422,
+      "mean_path": "head_variance/cars/cars_block6_head16_mean.npy"
+    },
+    {
+      "block": 6,
+      "head": 28,
+      "rank_value": 119.54793548583984,
+      "mean_path": "head_variance/cars/cars_block6_head28_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 7,
+      "rank_value": 14.57783317565918,
+      "mean_path": "head_variance/cars/cars_block7_head7_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 18,
+      "rank_value": 56.81305694580078,
+      "mean_path": "head_variance/cars/cars_block7_head18_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 9,
+      "rank_value": 91.79678344726562,
+      "mean_path": "head_variance/cars/cars_block7_head9_mean.npy"
+    },
+    {
+      "block": 7,
+      "head": 17,
+      "rank_value": 139.03805541992188,
+      "mean_path": "head_variance/cars/cars_block7_head17_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 4,
+      "rank_value": 51.5808219909668,
+      "mean_path": "head_variance/cars/cars_block8_head4_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 13,
+      "rank_value": 96.41171264648438,
+      "mean_path": "head_variance/cars/cars_block8_head13_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 27,
+      "rank_value": 100.25110626220703,
+      "mean_path": "head_variance/cars/cars_block8_head27_mean.npy"
+    },
+    {
+      "block": 8,
+      "head": 3,
+      "rank_value": 127.86952209472656,
+      "mean_path": "head_variance/cars/cars_block8_head3_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 9,
+      "rank_value": 49.905052185058594,
+      "mean_path": "head_variance/cars/cars_block9_head9_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 17,
+      "rank_value": 95.84187316894531,
+      "mean_path": "head_variance/cars/cars_block9_head17_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 30,
+      "rank_value": 97.54561614990234,
+      "mean_path": "head_variance/cars/cars_block9_head30_mean.npy"
+    },
+    {
+      "block": 9,
+      "head": 0,
+      "rank_value": 222.01100158691406,
+      "mean_path": "head_variance/cars/cars_block9_head0_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 20,
+      "rank_value": 101.54861450195312,
+      "mean_path": "head_variance/cars/cars_block10_head20_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 22,
+      "rank_value": 123.93083953857422,
+      "mean_path": "head_variance/cars/cars_block10_head22_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 18,
+      "rank_value": 321.353759765625,
+      "mean_path": "head_variance/cars/cars_block10_head18_mean.npy"
+    },
+    {
+      "block": 10,
+      "head": 19,
+      "rank_value": 379.34173583984375,
+      "mean_path": "head_variance/cars/cars_block10_head19_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 19,
+      "rank_value": 359.6262512207031,
+      "mean_path": "head_variance/cars/cars_block11_head19_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 11,
+      "rank_value": 425.96832275390625,
+      "mean_path": "head_variance/cars/cars_block11_head11_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 16,
+      "rank_value": 551.479736328125,
+      "mean_path": "head_variance/cars/cars_block11_head16_mean.npy"
+    },
+    {
+      "block": 11,
+      "head": 0,
+      "rank_value": 567.5648193359375,
+      "mean_path": "head_variance/cars/cars_block11_head0_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 10,
+      "rank_value": 454.346435546875,
+      "mean_path": "head_variance/cars/cars_block12_head10_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 0,
+      "rank_value": 599.7591552734375,
+      "mean_path": "head_variance/cars/cars_block12_head0_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 17,
+      "rank_value": 658.5555419921875,
+      "mean_path": "head_variance/cars/cars_block12_head17_mean.npy"
+    },
+    {
+      "block": 12,
+      "head": 29,
+      "rank_value": 724.9140014648438,
+      "mean_path": "head_variance/cars/cars_block12_head29_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 6,
+      "rank_value": 659.65625,
+      "mean_path": "head_variance/cars/cars_block13_head6_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 31,
+      "rank_value": 814.4656372070312,
+      "mean_path": "head_variance/cars/cars_block13_head31_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 10,
+      "rank_value": 993.29931640625,
+      "mean_path": "head_variance/cars/cars_block13_head10_mean.npy"
+    },
+    {
+      "block": 13,
+      "head": 18,
+      "rank_value": 1019.317626953125,
+      "mean_path": "head_variance/cars/cars_block13_head18_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 27,
+      "rank_value": 576.0244140625,
+      "mean_path": "head_variance/cars/cars_block14_head27_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 20,
+      "rank_value": 861.2896728515625,
+      "mean_path": "head_variance/cars/cars_block14_head20_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 12,
+      "rank_value": 1204.426513671875,
+      "mean_path": "head_variance/cars/cars_block14_head12_mean.npy"
+    },
+    {
+      "block": 14,
+      "head": 26,
+      "rank_value": 1232.302978515625,
+      "mean_path": "head_variance/cars/cars_block14_head26_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 26,
+      "rank_value": 832.03369140625,
+      "mean_path": "head_variance/cars/cars_block15_head26_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 19,
+      "rank_value": 870.3343505859375,
+      "mean_path": "head_variance/cars/cars_block15_head19_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 31,
+      "rank_value": 946.7020263671875,
+      "mean_path": "head_variance/cars/cars_block15_head31_mean.npy"
+    },
+    {
+      "block": 15,
+      "head": 13,
+      "rank_value": 1184.6136474609375,
+      "mean_path": "head_variance/cars/cars_block15_head13_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 7,
+      "rank_value": 814.7182006835938,
+      "mean_path": "head_variance/cars/cars_block16_head7_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 17,
+      "rank_value": 945.9329833984375,
+      "mean_path": "head_variance/cars/cars_block16_head17_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 31,
+      "rank_value": 1043.68359375,
+      "mean_path": "head_variance/cars/cars_block16_head31_mean.npy"
+    },
+    {
+      "block": 16,
+      "head": 29,
+      "rank_value": 1427.07421875,
+      "mean_path": "head_variance/cars/cars_block16_head29_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 10,
+      "rank_value": 606.1044921875,
+      "mean_path": "head_variance/cars/cars_block17_head10_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 0,
+      "rank_value": 1329.093994140625,
+      "mean_path": "head_variance/cars/cars_block17_head0_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 11,
+      "rank_value": 1460.067138671875,
+      "mean_path": "head_variance/cars/cars_block17_head11_mean.npy"
+    },
+    {
+      "block": 17,
+      "head": 13,
+      "rank_value": 1505.8287353515625,
+      "mean_path": "head_variance/cars/cars_block17_head13_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 31,
+      "rank_value": 403.372802734375,
+      "mean_path": "head_variance/cars/cars_block18_head31_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 9,
+      "rank_value": 985.4344482421875,
+      "mean_path": "head_variance/cars/cars_block18_head9_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 26,
+      "rank_value": 1115.140380859375,
+      "mean_path": "head_variance/cars/cars_block18_head26_mean.npy"
+    },
+    {
+      "block": 18,
+      "head": 0,
+      "rank_value": 1378.8756103515625,
+      "mean_path": "head_variance/cars/cars_block18_head0_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 6,
+      "rank_value": 999.714111328125,
+      "mean_path": "head_variance/cars/cars_block19_head6_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 3,
+      "rank_value": 1005.3074951171875,
+      "mean_path": "head_variance/cars/cars_block19_head3_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 8,
+      "rank_value": 1188.0726318359375,
+      "mean_path": "head_variance/cars/cars_block19_head8_mean.npy"
+    },
+    {
+      "block": 19,
+      "head": 10,
+      "rank_value": 1285.43017578125,
+      "mean_path": "head_variance/cars/cars_block19_head10_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 21,
+      "rank_value": 816.045654296875,
+      "mean_path": "head_variance/cars/cars_block20_head21_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 1,
+      "rank_value": 1455.927001953125,
+      "mean_path": "head_variance/cars/cars_block20_head1_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 20,
+      "rank_value": 1575.6968994140625,
+      "mean_path": "head_variance/cars/cars_block20_head20_mean.npy"
+    },
+    {
+      "block": 20,
+      "head": 2,
+      "rank_value": 1603.351318359375,
+      "mean_path": "head_variance/cars/cars_block20_head2_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 19,
+      "rank_value": 1011.3713989257812,
+      "mean_path": "head_variance/cars/cars_block21_head19_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 18,
+      "rank_value": 1039.0228271484375,
+      "mean_path": "head_variance/cars/cars_block21_head18_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 5,
+      "rank_value": 1499.2939453125,
+      "mean_path": "head_variance/cars/cars_block21_head5_mean.npy"
+    },
+    {
+      "block": 21,
+      "head": 25,
+      "rank_value": 1684.8193359375,
+      "mean_path": "head_variance/cars/cars_block21_head25_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 30,
+      "rank_value": 1220.037841796875,
+      "mean_path": "head_variance/cars/cars_block22_head30_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 5,
+      "rank_value": 1489.9710693359375,
+      "mean_path": "head_variance/cars/cars_block22_head5_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 4,
+      "rank_value": 1640.2076416015625,
+      "mean_path": "head_variance/cars/cars_block22_head4_mean.npy"
+    },
+    {
+      "block": 22,
+      "head": 20,
+      "rank_value": 1925.985595703125,
+      "mean_path": "head_variance/cars/cars_block22_head20_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 5,
+      "rank_value": 1124.654541015625,
+      "mean_path": "head_variance/cars/cars_block23_head5_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 13,
+      "rank_value": 1196.9859619140625,
+      "mean_path": "head_variance/cars/cars_block23_head13_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 7,
+      "rank_value": 1433.0972900390625,
+      "mean_path": "head_variance/cars/cars_block23_head7_mean.npy"
+    },
+    {
+      "block": 23,
+      "head": 1,
+      "rank_value": 1594.1448974609375,
+      "mean_path": "head_variance/cars/cars_block23_head1_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 12,
+      "rank_value": 889.4744873046875,
+      "mean_path": "head_variance/cars/cars_block24_head12_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 30,
+      "rank_value": 1137.925048828125,
+      "mean_path": "head_variance/cars/cars_block24_head30_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 5,
+      "rank_value": 1330.44140625,
+      "mean_path": "head_variance/cars/cars_block24_head5_mean.npy"
+    },
+    {
+      "block": 24,
+      "head": 0,
+      "rank_value": 1358.1522216796875,
+      "mean_path": "head_variance/cars/cars_block24_head0_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 4,
+      "rank_value": 1112.5240478515625,
+      "mean_path": "head_variance/cars/cars_block25_head4_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 3,
+      "rank_value": 1263.70068359375,
+      "mean_path": "head_variance/cars/cars_block25_head3_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 26,
+      "rank_value": 1399.5933837890625,
+      "mean_path": "head_variance/cars/cars_block25_head26_mean.npy"
+    },
+    {
+      "block": 25,
+      "head": 28,
+      "rank_value": 1460.4808349609375,
+      "mean_path": "head_variance/cars/cars_block25_head28_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 14,
+      "rank_value": 831.990234375,
+      "mean_path": "head_variance/cars/cars_block26_head14_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 3,
+      "rank_value": 997.1917114257812,
+      "mean_path": "head_variance/cars/cars_block26_head3_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 8,
+      "rank_value": 1301.705810546875,
+      "mean_path": "head_variance/cars/cars_block26_head8_mean.npy"
+    },
+    {
+      "block": 26,
+      "head": 5,
+      "rank_value": 1432.209716796875,
+      "mean_path": "head_variance/cars/cars_block26_head5_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 12,
+      "rank_value": 1040.830078125,
+      "mean_path": "head_variance/cars/cars_block27_head12_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 1,
+      "rank_value": 1349.9326171875,
+      "mean_path": "head_variance/cars/cars_block27_head1_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 7,
+      "rank_value": 1364.11474609375,
+      "mean_path": "head_variance/cars/cars_block27_head7_mean.npy"
+    },
+    {
+      "block": 27,
+      "head": 26,
+      "rank_value": 1650.677978515625,
+      "mean_path": "head_variance/cars/cars_block27_head26_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 23,
+      "rank_value": 945.445068359375,
+      "mean_path": "head_variance/cars/cars_block28_head23_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 10,
+      "rank_value": 1358.083740234375,
+      "mean_path": "head_variance/cars/cars_block28_head10_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 13,
+      "rank_value": 1748.800537109375,
+      "mean_path": "head_variance/cars/cars_block28_head13_mean.npy"
+    },
+    {
+      "block": 28,
+      "head": 15,
+      "rank_value": 1767.3597412109375,
+      "mean_path": "head_variance/cars/cars_block28_head15_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 5,
+      "rank_value": 1115.89501953125,
+      "mean_path": "head_variance/cars/cars_block29_head5_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 6,
+      "rank_value": 1226.1396484375,
+      "mean_path": "head_variance/cars/cars_block29_head6_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 25,
+      "rank_value": 1606.1728515625,
+      "mean_path": "head_variance/cars/cars_block29_head25_mean.npy"
+    },
+    {
+      "block": 29,
+      "head": 20,
+      "rank_value": 1684.310791015625,
+      "mean_path": "head_variance/cars/cars_block29_head20_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 8,
+      "rank_value": 1355.6815185546875,
+      "mean_path": "head_variance/cars/cars_block30_head8_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 25,
+      "rank_value": 1725.040771484375,
+      "mean_path": "head_variance/cars/cars_block30_head25_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 14,
+      "rank_value": 1795.8145751953125,
+      "mean_path": "head_variance/cars/cars_block30_head14_mean.npy"
+    },
+    {
+      "block": 30,
+      "head": 29,
+      "rank_value": 1911.49267578125,
+      "mean_path": "head_variance/cars/cars_block30_head29_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 6,
+      "rank_value": 1030.4849853515625,
+      "mean_path": "head_variance/cars/cars_block31_head6_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 19,
+      "rank_value": 1673.94140625,
+      "mean_path": "head_variance/cars/cars_block31_head19_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 24,
+      "rank_value": 1884.7735595703125,
+      "mean_path": "head_variance/cars/cars_block31_head24_mean.npy"
+    },
+    {
+      "block": 31,
+      "head": 13,
+      "rank_value": 2191.8115234375,
+      "mean_path": "head_variance/cars/cars_block31_head13_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 5,
+      "rank_value": 1376.80078125,
+      "mean_path": "head_variance/cars/cars_block32_head5_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 13,
+      "rank_value": 1782.0906982421875,
+      "mean_path": "head_variance/cars/cars_block32_head13_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 0,
+      "rank_value": 1883.57275390625,
+      "mean_path": "head_variance/cars/cars_block32_head0_mean.npy"
+    },
+    {
+      "block": 32,
+      "head": 4,
+      "rank_value": 2089.2578125,
+      "mean_path": "head_variance/cars/cars_block32_head4_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 31,
+      "rank_value": 1322.647705078125,
+      "mean_path": "head_variance/cars/cars_block33_head31_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 10,
+      "rank_value": 2041.232177734375,
+      "mean_path": "head_variance/cars/cars_block33_head10_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 24,
+      "rank_value": 2180.51806640625,
+      "mean_path": "head_variance/cars/cars_block33_head24_mean.npy"
+    },
+    {
+      "block": 33,
+      "head": 5,
+      "rank_value": 2318.45556640625,
+      "mean_path": "head_variance/cars/cars_block33_head5_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 4,
+      "rank_value": 2059.3642578125,
+      "mean_path": "head_variance/cars/cars_block34_head4_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 28,
+      "rank_value": 2263.771484375,
+      "mean_path": "head_variance/cars/cars_block34_head28_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 22,
+      "rank_value": 2517.070556640625,
+      "mean_path": "head_variance/cars/cars_block34_head22_mean.npy"
+    },
+    {
+      "block": 34,
+      "head": 16,
+      "rank_value": 2562.583251953125,
+      "mean_path": "head_variance/cars/cars_block34_head16_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 7,
+      "rank_value": 1607.65283203125,
+      "mean_path": "head_variance/cars/cars_block35_head7_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 25,
+      "rank_value": 2225.91552734375,
+      "mean_path": "head_variance/cars/cars_block35_head25_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 26,
+      "rank_value": 2242.047119140625,
+      "mean_path": "head_variance/cars/cars_block35_head26_mean.npy"
+    },
+    {
+      "block": 35,
+      "head": 6,
+      "rank_value": 2325.4228515625,
+      "mean_path": "head_variance/cars/cars_block35_head6_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 25,
+      "rank_value": 1322.0966796875,
+      "mean_path": "head_variance/cars/cars_block36_head25_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 21,
+      "rank_value": 1483.1053466796875,
+      "mean_path": "head_variance/cars/cars_block36_head21_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 4,
+      "rank_value": 1493.83642578125,
+      "mean_path": "head_variance/cars/cars_block36_head4_mean.npy"
+    },
+    {
+      "block": 36,
+      "head": 18,
+      "rank_value": 1544.013427734375,
+      "mean_path": "head_variance/cars/cars_block36_head18_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 4,
+      "rank_value": 1031.1268310546875,
+      "mean_path": "head_variance/cars/cars_block37_head4_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 10,
+      "rank_value": 1098.024658203125,
+      "mean_path": "head_variance/cars/cars_block37_head10_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 7,
+      "rank_value": 1683.1585693359375,
+      "mean_path": "head_variance/cars/cars_block37_head7_mean.npy"
+    },
+    {
+      "block": 37,
+      "head": 27,
+      "rank_value": 1690.93798828125,
+      "mean_path": "head_variance/cars/cars_block37_head27_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 11,
+      "rank_value": 562.896484375,
+      "mean_path": "head_variance/cars/cars_block38_head11_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 6,
+      "rank_value": 567.6241455078125,
+      "mean_path": "head_variance/cars/cars_block38_head6_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 13,
+      "rank_value": 1306.295654296875,
+      "mean_path": "head_variance/cars/cars_block38_head13_mean.npy"
+    },
+    {
+      "block": 38,
+      "head": 4,
+      "rank_value": 1479.906982421875,
+      "mean_path": "head_variance/cars/cars_block38_head4_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 12,
+      "rank_value": 2640.385986328125,
+      "mean_path": "head_variance/cars/cars_block39_head12_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 29,
+      "rank_value": 3644.36572265625,
+      "mean_path": "head_variance/cars/cars_block39_head29_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 20,
+      "rank_value": 3899.11376953125,
+      "mean_path": "head_variance/cars/cars_block39_head20_mean.npy"
+    },
+    {
+      "block": 39,
+      "head": 4,
+      "rank_value": 4032.590576171875,
+      "mean_path": "head_variance/cars/cars_block39_head4_mean.npy"
+    }
+  ],
+  "summary": {
+    "total_heads_checked": 1280,
+    "total_frozen": 160,
+    "freeze_rate": 0.125
+  }
+}

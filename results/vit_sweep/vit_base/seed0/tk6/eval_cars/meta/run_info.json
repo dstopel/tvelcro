@@ -1,0 +1,50 @@
+{
+  "mode": "eval",
+  "model_key": "vit_base",
+  "model": "vit_base_patch16_224",
+  "num_blocks": 12,
+  "num_heads": 12,
+  "head_dim": 64,
+  "seq_len": 197,
+  "groups": [
+    "cars"
+  ],
+  "image_dirs": [
+    "/workspace/tvelcro/data/vit_groups/cars_eval"
+  ],
+  "accuracy": {
+    "cars": {
+      "top1": 53.33,
+      "top5": 84.33,
+      "correct_top1": 160,
+      "correct_top5": 253,
+      "total": 300,
+      "time_sec": 8.49
+    }
+  },
+  "N": {
+    "cars": 300
+  },
+  "seed": 0,
+  "max_images": 300,
+  "batch_size": 32,
+  "freeze_manifest": "/workspace/tvelcro/results/vit_sweep/vit_base/seed0/tk6/freeze_cars/freeze_manifest.json",
+  "rank_method": "variance",
+  "t_k": 6,
+  "t_k_per_block": {
+    "0": 6,
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 6,
+    "6": 6,
+    "7": 6,
+    "8": 6,
+    "9": 6,
+    "10": 6,
+    "11": 6
+  },
+  "profile_group": "cars",
+  "flop_savings_pct": 50.0
+}

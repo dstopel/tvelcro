@@ -1,0 +1,518 @@
+{
+  "group": "kvasir",
+  "sample_count": 300,
+  "neurons": {
+    "block0": {
+      "block": 0,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 8.365257263183594,
+      "rank_score_mean": 0.00163383933249861,
+      "rank_score_max": 0.4488757252693176,
+      "rank_score_min": 1.6631373611630806e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block1": {
+      "block": 1,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 0.40483927726745605,
+      "rank_score_mean": 7.907017425168306e-05,
+      "rank_score_max": 0.030055951327085495,
+      "rank_score_min": 2.0366563990847908e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block2": {
+      "block": 2,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 3.7759103775024414,
+      "rank_score_mean": 0.0007374825072474778,
+      "rank_score_max": 0.059718675911426544,
+      "rank_score_min": 1.306990782268258e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block3": {
+      "block": 3,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 0.8147081136703491,
+      "rank_score_mean": 0.00015912267554085702,
+      "rank_score_max": 0.05401322990655899,
+      "rank_score_min": 1.6965331361973313e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block4": {
+      "block": 4,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.629805326461792,
+      "rank_score_mean": 0.00031832134118303657,
+      "rank_score_max": 0.07780696451663971,
+      "rank_score_min": 2.2635551033545198e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block5": {
+      "block": 5,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.993011713027954,
+      "rank_score_mean": 0.0005845726118423045,
+      "rank_score_max": 0.15984106063842773,
+      "rank_score_min": 4.40750014263358e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block6": {
+      "block": 6,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.253361225128174,
+      "rank_score_mean": 0.00044010960846208036,
+      "rank_score_max": 0.14101329445838928,
+      "rank_score_min": 2.9521123323661413e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block7": {
+      "block": 7,
+      "block_type": "global",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.464028835296631,
+      "rank_score_mean": 0.0004812556435354054,
+      "rank_score_max": 0.16946400701999664,
+      "rank_score_min": 1.9294753883514204e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block8": {
+      "block": 8,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.4571056365966797,
+      "rank_score_mean": 0.0002845909330062568,
+      "rank_score_max": 0.033750128000974655,
+      "rank_score_min": 1.3120576625169633e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block9": {
+      "block": 9,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.3979616165161133,
+      "rank_score_mean": 0.00027303938986733556,
+      "rank_score_max": 0.07828892022371292,
+      "rank_score_min": 4.57242208540265e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block10": {
+      "block": 10,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.0599498748779297,
+      "rank_score_mean": 0.00020702145411632955,
+      "rank_score_max": 0.05164942517876625,
+      "rank_score_min": 4.0148324842448346e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block11": {
+      "block": 11,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.1293632984161377,
+      "rank_score_mean": 0.00022057877504266798,
+      "rank_score_max": 0.1119338721036911,
+      "rank_score_min": 4.0185389593716536e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block12": {
+      "block": 12,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 0.824499249458313,
+      "rank_score_mean": 0.00016103501548059285,
+      "rank_score_max": 0.050137560814619064,
+      "rank_score_min": 7.971190996158839e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block13": {
+      "block": 13,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 0.7339333295822144,
+      "rank_score_mean": 0.00014334634761326015,
+      "rank_score_max": 0.05328613892197609,
+      "rank_score_min": 1.1376444675192943e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block14": {
+      "block": 14,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 0.7548156976699829,
+      "rank_score_mean": 0.00014742494386155158,
+      "rank_score_max": 0.02358749322593212,
+      "rank_score_min": 4.2682191114806756e-11,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block15": {
+      "block": 15,
+      "block_type": "global",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.1144394874572754,
+      "rank_score_mean": 0.0002176639682147652,
+      "rank_score_max": 0.021175919100642204,
+      "rank_score_min": 3.0943390072479815e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block16": {
+      "block": 16,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.1161479949951172,
+      "rank_score_mean": 0.00021799765818286687,
+      "rank_score_max": 0.03204581141471863,
+      "rank_score_min": 1.0230700553393035e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block17": {
+      "block": 17,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.0824594497680664,
+      "rank_score_mean": 0.00021141786419320852,
+      "rank_score_max": 0.06937567889690399,
+      "rank_score_min": 1.4288488614511152e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block18": {
+      "block": 18,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.1029999256134033,
+      "rank_score_mean": 0.00021542966715060174,
+      "rank_score_max": 0.031228892505168915,
+      "rank_score_min": 1.0111986057381728e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block19": {
+      "block": 19,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.0946922302246094,
+      "rank_score_mean": 0.00021380707039497793,
+      "rank_score_max": 0.04531893879175186,
+      "rank_score_min": 2.2063302367314463e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block20": {
+      "block": 20,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.2315996885299683,
+      "rank_score_mean": 0.00024054681125562638,
+      "rank_score_max": 0.06749051064252853,
+      "rank_score_min": 1.2715146340269712e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block21": {
+      "block": 21,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.3752713203430176,
+      "rank_score_mean": 0.0002686076913960278,
+      "rank_score_max": 0.03152879700064659,
+      "rank_score_min": 1.2973388265891117e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block22": {
+      "block": 22,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.4326214790344238,
+      "rank_score_mean": 0.0002798088826239109,
+      "rank_score_max": 0.12421921640634537,
+      "rank_score_min": 1.3444968089970644e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block23": {
+      "block": 23,
+      "block_type": "global",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.5268561840057373,
+      "rank_score_mean": 0.0004935265751555562,
+      "rank_score_max": 0.12279308587312698,
+      "rank_score_min": 1.0242910093438695e-06,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block24": {
+      "block": 24,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.504642963409424,
+      "rank_score_mean": 0.0004891880671493709,
+      "rank_score_max": 0.2700974941253662,
+      "rank_score_min": 2.0675810219472623e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block25": {
+      "block": 25,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.676990032196045,
+      "rank_score_mean": 0.00052284961566329,
+      "rank_score_max": 0.23551543056964874,
+      "rank_score_min": 1.1462200966150249e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block26": {
+      "block": 26,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.099376678466797,
+      "rank_score_mean": 0.0004100344958715141,
+      "rank_score_max": 0.1462412029504776,
+      "rank_score_min": 5.130241120809842e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block27": {
+      "block": 27,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.8769629001617432,
+      "rank_score_mean": 0.00036659432225860655,
+      "rank_score_max": 0.20373547077178955,
+      "rank_score_min": 8.112699845241877e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block28": {
+      "block": 28,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.677567481994629,
+      "rank_score_mean": 0.00032764990464784205,
+      "rank_score_max": 0.1870860606431961,
+      "rank_score_min": 3.268428656610922e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block29": {
+      "block": 29,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.3828946352005005,
+      "rank_score_mean": 0.00027009661425836384,
+      "rank_score_max": 0.12590532004833221,
+      "rank_score_min": 1.8995115169673227e-07,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block30": {
+      "block": 30,
+      "block_type": "windowed",
+      "total_neurons": 5120,
+      "rank_score_sum": 1.4114222526550293,
+      "rank_score_mean": 0.0002756683970801532,
+      "rank_score_max": 0.19366176426410675,
+      "rank_score_min": 9.224165431476194e-09,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    },
+    "block31": {
+      "block": 31,
+      "block_type": "global",
+      "total_neurons": 5120,
+      "rank_score_sum": 2.1037185192108154,
+      "rank_score_mean": 0.0004108825232833624,
+      "rank_score_max": 0.14265289902687073,
+      "rank_score_min": 3.183802377293432e-08,
+      "mean_shape": [
+        5120
+      ],
+      "variance_shape": [
+        5120
+      ],
+      "count": 300
+    }
+  }
+}

@@ -1,0 +1,32 @@
+11:45:46 | INFO | Loading SAM ViT-H...
+11:46:00 | INFO | Loading freeze manifest: ./results/sam_random_baseline/freeze_pcb_random_s2_f0.25/freeze_manifest.json
+11:46:02 | INFO |   Frozen heads: 128 / 512
+11:46:02 | INFO | 
+============================================================
+11:46:02 | INFO | Evaluating group: pcb
+11:46:03 | INFO |   Images: 300
+11:52:09 | INFO |     20/300 | running mean IoU: 0.9474
+11:58:09 | INFO |     40/300 | running mean IoU: 0.9475
+12:05:01 | INFO |     60/300 | running mean IoU: 0.9515
+12:12:02 | INFO |     80/300 | running mean IoU: 0.9541
+12:19:01 | INFO |     100/300 | running mean IoU: 0.9555
+12:25:43 | INFO |     120/300 | running mean IoU: 0.9575
+12:32:25 | INFO |     140/300 | running mean IoU: 0.9592
+12:39:25 | INFO |     160/300 | running mean IoU: 0.9599
+12:46:27 | INFO |     180/300 | running mean IoU: 0.9603
+12:53:08 | INFO |     200/300 | running mean IoU: 0.9608
+12:59:54 | INFO |     220/300 | running mean IoU: 0.9613
+13:07:18 | INFO |     240/300 | running mean IoU: 0.9620
+13:13:56 | INFO |     260/300 | running mean IoU: 0.9632
+13:19:53 | INFO |     280/300 | running mean IoU: 0.9642
+13:26:37 | INFO |     300/300 | running mean IoU: 0.9649
+13:26:37 | INFO | 
+  Results for 'pcb':
+13:26:37 | INFO |     Mean IoU:       0.9659
+13:26:37 | INFO |     Miss rate:      0.0929
+13:26:37 | INFO |     False pos rate: 0.0587
+13:26:37 | INFO |     Feature sim:    0.9615
+13:26:37 | INFO |     Misses: 4363 (domain=0, redundant=55, background=4308)
+13:26:37 | INFO |     Added:  2812 (domain=0, redundant=19, background=2793)
+13:26:38 | INFO | 
+Eval phase complete.

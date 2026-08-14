@@ -1,0 +1,27 @@
+{
+  "num_images": 300,
+  "total_masks_original": 15073,
+  "total_masks_patched": 15694,
+  "total_matched": 13842,
+  "overall_mean_iou": 0.9791914951058933,
+  "overall_median_iou": 0.9986366927623749,
+  "per_image_mean_iou": 0.9794247836200924,
+  "per_image_miss_rate": 0.07932629892988513,
+  "per_image_false_pos_rate": 0.11694283758775588,
+  "mean_feature_cosine_sim": 0.990490403175354,
+  "min_feature_cosine_sim": 0.9727373123168945,
+  "miss_decomposition": {
+    "images_with_gt": 300,
+    "total_misses": 1231,
+    "domain_misses": 4,
+    "redundant_misses": 189,
+    "background_misses": 1038
+  },
+  "added_decomposition": {
+    "images_with_gt": 300,
+    "total_added": 1852,
+    "added_domain": 3,
+    "added_redundant": 241,
+    "added_background": 1608
+  }
+}

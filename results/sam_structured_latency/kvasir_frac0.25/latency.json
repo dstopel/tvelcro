@@ -1,0 +1,105 @@
+{
+  "config": {
+    "checkpoint": "./data/sam_vit_h_4b8939.pth",
+    "freeze_manifest": "results/sam_main_sweep/freeze_kvasir_f0.25/freeze_manifest.json",
+    "image_dir": "./data/image_dirs/kvasir_eval",
+    "eval_n": 20,
+    "device": "cuda",
+    "points_per_side": 16,
+    "warmup": 5,
+    "iters": 20,
+    "seed": 0,
+    "frozen_heads": 128,
+    "frozen_mlp_neurons": 0,
+    "mlp_fraction": 0.0
+  },
+  "variants": {
+    "baseline": {
+      "encoder": {
+        "median": 988.716347143054,
+        "mean": 989.090139977634,
+        "std": 7.8302849588463594,
+        "p5": 979.6978851780295,
+        "p95": 1001.3002753257751,
+        "iters": 20
+      },
+      "encoder_energy": {
+        "joules": 1409.214789876787,
+        "avg_watts": 70.94937878525369,
+        "duration_s": 19.911450367420912,
+        "iters": 20,
+        "joules_per_iter": 70.46073949383936
+      },
+      "maskgen": {
+        "median_s_per_image": 1.7504729349166155,
+        "mean_s_per_image": 1.7667483735829592,
+        "std_s_per_image": 0.04585866735090325,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 2490.5382338013424,
+        "avg_watts": 70.5027701435152,
+        "duration_s": 35.33561959862709,
+        "joules_per_image": 124.52691169006712
+      }
+    },
+    "hooked": {
+      "encoder": {
+        "median": 1047.593330964446,
+        "mean": 1046.9793213531375,
+        "std": 5.126085493088878,
+        "p5": 1039.8006981238723,
+        "p95": 1055.6853974238038,
+        "iters": 20
+      },
+      "encoder_energy": {
+        "joules": 1491.7948041080163,
+        "avg_watts": 71.85089857483415,
+        "duration_s": 20.775810793042183,
+        "iters": 20,
+        "joules_per_iter": 74.58974020540082
+      },
+      "maskgen": {
+        "median_s_per_image": 1.7690270766615868,
+        "mean_s_per_image": 1.772372495010495,
+        "std_s_per_image": 0.034348733933408704,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 2528.3747585196047,
+        "avg_watts": 71.34623949259189,
+        "duration_s": 35.44802589714527,
+        "joules_per_image": 126.41873792598024
+      }
+    },
+    "sliced": {
+      "encoder": {
+        "median": 910.3950876742601,
+        "mean": 910.0014040246606,
+        "std": 2.3270037447209955,
+        "p5": 906.4680783078074,
+        "p95": 913.9523386955261,
+        "iters": 20
+      },
+      "encoder_energy": {
+        "joules": 1311.4214551000277,
+        "avg_watts": 72.03451500869566,
+        "duration_s": 18.21075524762273,
+        "iters": 20,
+        "joules_per_iter": 65.57107275500138
+      },
+      "maskgen": {
+        "median_s_per_image": 1.6365015339106321,
+        "mean_s_per_image": 1.6412035405635834,
+        "std_s_per_image": 0.038972368766687984,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 2323.127881811114,
+        "avg_watts": 70.85189320516487,
+        "duration_s": 32.82472192496061,
+        "joules_per_image": 116.15639409055571
+      }
+    }
+  }
+}
