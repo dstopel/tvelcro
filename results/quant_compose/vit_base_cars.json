@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model": "vit_base_patch16_224",
+    "manifest": "results/vit_sweep/vit_base/seed0/tk3/freeze_cars/freeze_manifest.json",
+    "frozen_heads": 36,
+    "eval_dir": "data/vit_groups/cars_eval",
+    "images": 300
+  },
+  "variants": {
+    "fp": {
+      "top1": 85.66666666666667,
+      "n": 300,
+      "linear_bytes": 343146400,
+      "cpu_ms_b1": 596.4107643812895,
+      "storage_vs_fp": 1.0,
+      "cpu_speedup_vs_fp": 1.0
+    },
+    "fp+tvelcro": {
+      "top1": 83.66666666666667,
+      "n": 300,
+      "linear_bytes": 314807200,
+      "cpu_ms_b1": 446.05270214378834,
+      "storage_vs_fp": 0.9174,
+      "cpu_speedup_vs_fp": 1.337
+    },
+    "int8": {
+      "top1": 83.33333333333333,
+      "n": 300,
+      "linear_bytes": 86038432,
+      "cpu_ms_b1": 194.04699467122555,
+      "storage_vs_fp": 0.2507,
+      "cpu_speedup_vs_fp": 3.074
+    },
+    "int8+tvelcro": {
+      "top1": 80.0,
+      "n": 300,
+      "linear_bytes": 78932896,
+      "cpu_ms_b1": 190.96781685948372,
+      "storage_vs_fp": 0.23,
+      "cpu_speedup_vs_fp": 3.123
+    }
+  }
+}

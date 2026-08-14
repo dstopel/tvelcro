@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model": "vit_base_patch16_224",
+    "manifest": "results/vit_sweep/vit_base/seed0/tk3/freeze_cats/freeze_manifest.json",
+    "frozen_heads": 36,
+    "eval_dir": "data/vit_groups/cats_eval",
+    "images": 300
+  },
+  "variants": {
+    "fp": {
+      "top1": 81.66666666666667,
+      "n": 300,
+      "linear_bytes": 343146400,
+      "cpu_ms_b1": 589.9617802351713,
+      "storage_vs_fp": 1.0,
+      "cpu_speedup_vs_fp": 1.0
+    },
+    "fp+tvelcro": {
+      "top1": 79.0,
+      "n": 300,
+      "linear_bytes": 314807200,
+      "cpu_ms_b1": 405.7922065258026,
+      "storage_vs_fp": 0.9174,
+      "cpu_speedup_vs_fp": 1.454
+    },
+    "int8": {
+      "top1": 80.66666666666667,
+      "n": 300,
+      "linear_bytes": 86038432,
+      "cpu_ms_b1": 190.47079607844353,
+      "storage_vs_fp": 0.2507,
+      "cpu_speedup_vs_fp": 3.097
+    },
+    "int8+tvelcro": {
+      "top1": 79.33333333333333,
+      "n": 300,
+      "linear_bytes": 78932896,
+      "cpu_ms_b1": 106.70982487499714,
+      "storage_vs_fp": 0.23,
+      "cpu_speedup_vs_fp": 5.529
+    }
+  }
+}
