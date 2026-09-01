@@ -1,0 +1,21 @@
+mean file shape=(201, 128) dtype=float32  (S x d_h to verify against MODELS)
+model           frac t_b |  removed W     means  NET saved % model mean/rm% |   profile
+---------------------------------------------------------------------------------------
+vit_base       0.125   1 |     4.5 MB  295.5 KB     4.2 MB    2.6%     6.4% |  295.5 KB
+vit_base        0.25   3 |    13.5 MB  886.5 KB    12.6 MB    7.7%     6.4% |  886.5 KB
+vit_base       0.375   4 |    18.0 MB    1.2 MB    16.9 MB   10.2%     6.4% |    1.2 MB
+vit_base         0.5   6 |    27.0 MB    1.7 MB    25.3 MB   15.3%     6.4% |    1.7 MB
+dinov2_giant   0.125   3 |    90.0 MB   20.1 MB    70.0 MB    3.2%    22.3% |   20.1 MB
+dinov2_giant    0.25   6 |   180.1 MB   40.1 MB   140.0 MB    6.4%    22.3% |   40.1 MB
+dinov2_giant   0.375   9 |   270.1 MB   60.2 MB   209.9 MB    9.7%    22.3% |   60.2 MB
+dinov2_giant     0.5  12 |   360.2 MB   80.3 MB   279.9 MB   12.9%    22.3% |   80.3 MB
+dinov3_7b      0.125   4 |   640.1 MB    7.9 MB   632.3 MB    4.9%     1.2% |    7.9 MB
+dinov3_7b       0.25   8 |     1.3 GB   15.7 MB     1.2 GB    9.9%     1.2% |   15.7 MB
+dinov3_7b      0.375  12 |     1.9 GB   23.6 MB     1.9 GB   14.8%     1.2% |   23.6 MB
+dinov3_7b        0.5  16 |     2.5 GB   31.4 MB     2.5 GB   19.8%     1.2% |   31.4 MB
+sam_vit_h      0.125   2 |    50.0 MB    6.7 MB    43.4 MB    3.6%    13.3% |    6.7 MB
+sam_vit_h       0.25   4 |   100.1 MB   13.3 MB    86.7 MB    7.1%    13.3% |   13.3 MB
+sam_vit_h      0.375   6 |   150.1 MB   20.0 MB   130.1 MB   10.7%    13.3% |   20.0 MB
+sam_vit_h        0.5   8 |   200.1 MB   26.7 MB   173.4 MB   14.3%    13.3% |   26.7 MB
+
+wrote results/freddy_hw/storage_report.json

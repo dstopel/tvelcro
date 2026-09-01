@@ -1,0 +1,2 @@
+name, driver_version, memory.total [MiB], power.limit [W]
+NVIDIA L4, 580.126.20, 23034 MiB, 72.00 W
