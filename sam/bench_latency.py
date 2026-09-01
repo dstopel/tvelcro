@@ -28,17 +28,22 @@ from surgery import build_sliced_sam
 def bench_variant(name, sam, images, args, use_cuda):
     from segment_anything import SamAutomaticMaskGenerator
 
-    result = {}
+    result = {"encoder_params": sum(p.numel() for p in sam.image_encoder.parameters()),
+              "dtype": str(next(sam.parameters()).dtype)}
     x = torch.randn(1, 3, 1024, 1024, device=next(sam.parameters()).device)
 
     def enc_fwd():
         sam.image_encoder(x)
 
     print(f"[{name}] encoder-only forward ...")
+    if use_cuda:
+        torch.cuda.reset_peak_memory_stats()
     result["encoder"] = measure_latency(enc_fwd, warmup=args.warmup,
                                         iters=args.iters, device=args.device)
     result["encoder_energy"] = measure_energy(enc_fwd, iters=args.iters,
                                               device=args.device)
+    if use_cuda:
+        result["encoder_peak_mem_bytes"] = torch.cuda.max_memory_allocated()
 
     if images:
         print(f"[{name}] full AutomaticMaskGenerator over {len(images)} images ...")

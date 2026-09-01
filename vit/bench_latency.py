@@ -28,7 +28,8 @@ def load_frozen_heads(manifest):
 
 
 def bench_variant(name, model, batch_sizes, args, device, input_size=224):
-    result = {}
+    result = {"params": sum(p.numel() for p in model.parameters()),
+              "dtype": str(next(model.parameters()).dtype)}
     for bs in batch_sizes:
         x = torch.randn(bs, 3, input_size, input_size, device=device)
 
@@ -36,11 +37,16 @@ def bench_variant(name, model, batch_sizes, args, device, input_size=224):
             model(x)
 
         print(f"[{name}] batch {bs} ...")
+        if device.type == "cuda":
+            torch.cuda.reset_peak_memory_stats(device)
         lat = measure_latency(fwd, warmup=args.warmup, iters=args.iters,
                               device=args.device)
         lat["images_per_s"] = bs * 1000.0 / lat["median"]
         energy = measure_energy(fwd, iters=args.iters, device=args.device)
-        result[f"batch{bs}"] = {"latency": lat, "energy": energy}
+        entry = {"latency": lat, "energy": energy}
+        if device.type == "cuda":
+            entry["peak_mem_bytes"] = torch.cuda.max_memory_allocated(device)
+        result[f"batch{bs}"] = entry
     return result
 
 
