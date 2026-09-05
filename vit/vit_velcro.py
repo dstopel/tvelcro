@@ -384,6 +384,7 @@ def run_inference(model, dataset, batch_size: int, num_workers: int):
     from torch.utils.data import DataLoader
 
     device = next(model.parameters()).device
+    dtype = next(model.parameters()).dtype
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=False,
                         num_workers=num_workers, pin_memory=(device.type == "cuda"))
     total_batches = len(loader)
@@ -391,7 +392,7 @@ def run_inference(model, dataset, batch_size: int, num_workers: int):
 
     with torch.inference_mode():
         for i, (inp, target) in enumerate(loader):
-            inp = inp.to(device, non_blocking=True)
+            inp = inp.to(device, dtype=dtype, non_blocking=True)
             target = target.to(device, non_blocking=True)
 
             output = model(inp)
@@ -634,6 +635,8 @@ def profile_eval_mode(args):
     print("=" * 70)
 
     adapter = build_adapter(args.model)
+    if args.fp16:
+        adapter.model.half()
 
     patcher = None
     manifest = None
@@ -761,6 +764,8 @@ def main():
 
     # Eval
     ap.add_argument("--freeze_manifest", default=None)
+    ap.add_argument("--fp16", action="store_true",
+                    help="Run the model in float16 (CUDA)")
 
     args = ap.parse_args()
 

@@ -31,7 +31,8 @@ def bench_variant(name, model, batch_sizes, args, device, input_size=224):
     result = {"params": sum(p.numel() for p in model.parameters()),
               "dtype": str(next(model.parameters()).dtype)}
     for bs in batch_sizes:
-        x = torch.randn(bs, 3, input_size, input_size, device=device)
+        x = torch.randn(bs, 3, input_size, input_size, device=device,
+                        dtype=next(model.parameters()).dtype)
 
         def fwd():
             model(x)
@@ -83,6 +84,7 @@ def main():
     p.add_argument("--iters", type=int, default=50)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--out", required=True, help="Output JSON path")
+    p.add_argument("--fp16", action="store_true")
     args = p.parse_args()
 
     torch.manual_seed(args.seed)
@@ -116,6 +118,8 @@ def main():
         input_size = 224
         hook_cls, slicer = ViTFreezeHookManager, build_sliced_vit
     model.to(device)
+    if args.fp16:
+        model.half()
     model.eval()
 
     with open(args.freeze_manifest) as f:

@@ -30,7 +30,8 @@ def bench_variant(name, sam, images, args, use_cuda):
 
     result = {"encoder_params": sum(p.numel() for p in sam.image_encoder.parameters()),
               "dtype": str(next(sam.parameters()).dtype)}
-    x = torch.randn(1, 3, 1024, 1024, device=next(sam.parameters()).device)
+    x = torch.randn(1, 3, 1024, 1024, device=next(sam.parameters()).device,
+                    dtype=next(sam.parameters()).dtype)
 
     def enc_fwd():
         sam.image_encoder(x)
@@ -55,13 +56,16 @@ def bench_variant(name, sam, images, args, use_cuda):
         )
         # Warmup one image, then time each image with CUDA fences, energy over
         # the whole timed loop.
-        with torch.inference_mode():
+        import contextlib
+        amp = ((lambda: torch.autocast("cuda", dtype=torch.float16))
+               if getattr(args, "fp16", False) else contextlib.nullcontext)
+        with torch.inference_mode(), amp():
             gen.generate(images[0])
         per_image_s = []
         if use_cuda:
             torch.cuda.synchronize()
         with EnergyMeter() as em:
-            with torch.inference_mode():
+            with torch.inference_mode(), amp():
                 for img in images:
                     if use_cuda:
                         torch.cuda.synchronize()
@@ -123,6 +127,7 @@ def main():
     p.add_argument("--iters", type=int, default=20)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--out", required=True, help="Output JSON path")
+    p.add_argument("--fp16", action="store_true")
     p.add_argument("--mlp_profile_dir", default=None,
                    help="Enable the combined config: MLP profile root dir")
     p.add_argument("--mlp_group", default=None,
@@ -138,6 +143,8 @@ def main():
 
     print(f"Loading SAM ViT-H from {args.checkpoint} on {device} ...")
     sam = load_sam_model(args.checkpoint, device)
+    if args.fp16:
+        sam.half()
     sam.eval()
 
     manifest = load_manifest(Path(args.freeze_manifest))

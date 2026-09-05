@@ -225,6 +225,12 @@ def run_eval(args):
 
     logger.info("Loading SAM ViT-H...")
     sam = load_sam_model(args.checkpoint, device)
+    import contextlib
+    amp = ((lambda: torch.autocast("cuda", dtype=torch.float16))
+           if args.fp16 else contextlib.nullcontext)
+    if args.fp16:
+        sam.half()
+        logger.info("  fp16: half weights + fp16 autocast")
 
     logger.info(f"Loading freeze manifest: {args.freeze_manifest}")
     manifest = load_manifest(Path(args.freeze_manifest))
@@ -288,7 +294,7 @@ def run_eval(args):
 
             try:
                 # --- Original pass (no hooks) ---
-                with torch.inference_mode():
+                with torch.inference_mode(), amp():
                     masks_orig = gen.generate(image)
 
                 feat_orig = None
@@ -300,7 +306,7 @@ def run_eval(args):
                 freeze_mgr.register()
                 if mlp_mgr is not None:
                     mlp_mgr.register()
-                with torch.inference_mode():
+                with torch.inference_mode(), amp():
                     masks_patch = gen.generate(image)
 
                 feat_patch_result = None
@@ -431,6 +437,8 @@ def parse_args():
                     choices=["rank", "ratio", "random", "entropy"], default="rank",
                     help="Freeze selection: rank (lowest variance), ratio (domain vs general), "
                          "random (seeded shuffle per block), entropy (lowest entropy)")
+    p.add_argument("--fp16", action="store_true",
+                   help="Half-precision weights + fp16 autocast for mask generation")
     p.add_argument("--seed", type=int, default=0,
                     help="Seed for stochastic ranking methods (random)")
     p.add_argument("--ratio_threshold", type=float, default=None,

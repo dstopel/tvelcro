@@ -72,7 +72,9 @@ if [ -n "${STOP:-}" ]; then
 fi
 
 payload() {   # $1 = gpu type id
-  GPU="$1" python3 - <<PY
+  # quoted delimiter: the SETUP script below is shell code for the POD, and must reach
+  # it verbatim. Unquoted, this shell would expand $ZSRC/$(...) here and blank the payload.
+  GPU="$1" python3 - <<'PY'
 import json, os
 
 # Runs at pod boot. Backgrounded so sshd is up immediately; the install continues
