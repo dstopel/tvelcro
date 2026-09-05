@@ -1,0 +1,22 @@
+08:33:08 | INFO | Loading SAM ViT-H...
+08:33:22 | INFO |   fp16: half weights + fp16 autocast
+08:33:22 | INFO | Loading freeze manifest: results/sam_main_sweep/freeze_kvasir_f0.25/freeze_manifest.json
+08:33:23 | INFO |   Frozen heads: 128 / 512
+08:33:23 | INFO | 
+============================================================
+08:33:23 | INFO | Evaluating group: kvasir
+08:33:23 | INFO |   Images: 100
+08:35:22 | INFO |     20/100 | running mean IoU: 0.9619
+08:37:18 | INFO |     40/100 | running mean IoU: 0.9613
+08:39:13 | INFO |     60/100 | running mean IoU: 0.9611
+08:41:12 | INFO |     80/100 | running mean IoU: 0.9609
+08:43:05 | INFO |     100/100 | running mean IoU: 0.9610
+08:43:05 | INFO | 
+  Results for 'kvasir':
+08:43:05 | INFO |     Mean IoU:       0.9615
+08:43:05 | INFO |     Miss rate:      0.1219
+08:43:05 | INFO |     False pos rate: 0.2017
+08:43:05 | INFO |     Misses: 614 (domain=3, redundant=82, background=529)
+08:43:05 | INFO |     Added:  1135 (domain=8, redundant=182, background=945)
+08:43:05 | INFO | 
+Eval phase complete.

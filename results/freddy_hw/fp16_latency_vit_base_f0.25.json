@@ -1,0 +1,144 @@
+{
+  "config": {
+    "model": "vit_base_patch16_224",
+    "pretrained": false,
+    "freeze_manifest": "results/vit_ood_matrix/vit_base/seed0/tk3/freeze_dogs/freeze_manifest.json",
+    "batch_sizes": [
+      1,
+      8
+    ],
+    "device": "cuda",
+    "warmup": 30,
+    "iters": 200,
+    "seed": 0,
+    "frozen_heads": 36
+  },
+  "variants": {
+    "baseline": {
+      "params": 86567656,
+      "dtype": "torch.float16",
+      "batch1": {
+        "latency": {
+          "median": 2.5832876563072205,
+          "mean": 2.6394509337842464,
+          "std": 0.19576286588460504,
+          "p5": 2.5180423632264137,
+          "p95": 2.908306196331978,
+          "iters": 200,
+          "images_per_s": 387.103618738878
+        },
+        "energy": {
+          "joules": 31.272113632692022,
+          "avg_watts": 56.63708406143601,
+          "duration_s": 0.5773752778768539,
+          "iters": 200,
+          "joules_per_iter": 0.1563605681634601
+        },
+        "peak_mem_bytes": 198386176
+      },
+      "batch8": {
+        "latency": {
+          "median": 10.280696675181389,
+          "mean": 10.267002638429403,
+          "std": 0.2594505530560661,
+          "p5": 9.86574050039053,
+          "p95": 10.619652830064297,
+          "iters": 200,
+          "images_per_s": 778.1573810374919
+        },
+        "energy": {
+          "joules": 144.85359709494375,
+          "avg_watts": 72.16409933216386,
+          "duration_s": 2.045066937804222,
+          "iters": 200,
+          "joules_per_iter": 0.7242679854747187
+        },
+        "peak_mem_bytes": 226397696
+      }
+    },
+    "hooked": {
+      "params": 86567656,
+      "dtype": "torch.float16",
+      "batch1": {
+        "latency": {
+          "median": 3.4892279654741287,
+          "mean": 3.516203910112381,
+          "std": 0.0896242984114927,
+          "p5": 3.411390446126461,
+          "p95": 3.667817823588848,
+          "iters": 200,
+          "images_per_s": 286.59635022273943
+        },
+        "energy": {
+          "joules": 40.18898946633376,
+          "avg_watts": 61.64444182572246,
+          "duration_s": 0.696806289255619,
+          "iters": 200,
+          "joules_per_iter": 0.2009449473316688
+        },
+        "peak_mem_bytes": 200210944
+      },
+      "batch8": {
+        "latency": {
+          "median": 10.549699887633324,
+          "mean": 10.52355544641614,
+          "std": 0.2788791660384551,
+          "p5": 10.105342976748943,
+          "p95": 10.918736830353737,
+          "iters": 200,
+          "images_per_s": 758.3154104106641
+        },
+        "energy": {
+          "joules": 149.20859596540967,
+          "avg_watts": 72.53194716642307,
+          "duration_s": 2.1044076532125473,
+          "iters": 200,
+          "joules_per_iter": 0.7460429798270484
+        },
+        "peak_mem_bytes": 228377088
+      }
+    },
+    "sliced": {
+      "params": 79482856,
+      "dtype": "torch.float16",
+      "batch1": {
+        "latency": {
+          "median": 1.829070970416069,
+          "mean": 1.8498628214001656,
+          "std": 0.06353917360641242,
+          "p5": 1.8036538735032082,
+          "p95": 1.929224468767643,
+          "iters": 200,
+          "images_per_s": 546.725641691489
+        },
+        "energy": {
+          "joules": 17.958109879439696,
+          "avg_watts": 51.12531704941611,
+          "duration_s": 0.3751746751368046,
+          "iters": 200,
+          "joules_per_iter": 0.08979054939719848
+        },
+        "peak_mem_bytes": 188085760
+      },
+      "batch8": {
+        "latency": {
+          "median": 7.983911782503128,
+          "mean": 8.038864191621542,
+          "std": 0.12782289233864533,
+          "p5": 7.869483157992363,
+          "p95": 8.199643157422543,
+          "iters": 200,
+          "images_per_s": 1002.0150795669023
+        },
+        "energy": {
+          "joules": 112.31889166976512,
+          "avg_watts": 72.27217202941125,
+          "duration_s": 1.5964647382497787,
+          "iters": 200,
+          "joules_per_iter": 0.5615944583488256
+        },
+        "peak_mem_bytes": 213837312
+      }
+    }
+  }
+}

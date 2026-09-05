@@ -20,3 +20,15 @@ Notes:
 - ViT-Base J/fwd is ~0.5 J; the 0.167 row's delta is within NVML sampling noise.
 - All speedups >5 sigma vs run-to-run std. DINOv2-Giant absent: no profiles on volume.
 - Raw JSONs beside this file; provenance in gpu_info.csv / sw_versions.json.
+
+# FP16 addendum (2026-09-05, same L4, f=0.25)
+
+| Model | Speedup (b1) | Energy/fwd | Peak mem | Accuracy (fp16 base -> fp16 T-VELCRO) |
+|---|---|---|---|---|
+| ViT-Base fp16 | 1.41x (1.29x @b8) | 0.16->0.09 J (-44%) | 189->179 MB | dogs 82.7->77.7, cats 81.7->79.0, cars 85.7->83.7 (= fp32 deltas) |
+| SAM ViT-H fp16 | 1.18x enc, 1.08x AMG | 20.3->17.3 J enc (-15%), 66->62 J/img | 2.87->2.45 GB | Hungarian mIoU 0.961 (fp32: 0.9614), 3/614 misses domain-relevant |
+
+- fp16 = half weights; SAM mask generation additionally under fp16 autocast.
+- fp16 amplifies the T-VELCRO speedup vs fp32 (ViT-Base 1.10->1.41, SAM enc 1.13->1.18).
+- hooked variant slower than baseline (3.49 vs 2.58 ms) - hook is the fidelity mode.
+- SAM eval: 100 kvasir imgs, diagnostic_level 0 (default 3 crashes under fp16).
