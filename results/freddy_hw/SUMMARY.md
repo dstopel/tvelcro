@@ -32,3 +32,18 @@ Notes:
 - fp16 amplifies the T-VELCRO speedup vs fp32 (ViT-Base 1.10->1.41, SAM enc 1.13->1.18).
 - hooked variant slower than baseline (3.49 vs 2.58 ms) - hook is the fidelity mode.
 - SAM eval: 100 kvasir imgs, diagnostic_level 0 (default 3 crashes under fp16).
+
+# Pruning ladder, both models (2026-09-16, L4, FP16, batch 1, encoder)
+
+| Model | 12.5% | 25% | 37.5% | 50% |
+|---|---|---|---|---|
+| SAM ViT-H speedup | 1.01x | 1.18x | 1.24x | 1.38x |
+| SAM ViT-H energy | -2.0% | -15.1% | -20.2% | -27.8% |
+| SAM full mask gen | 1.02x | 1.08x | 1.12x | 1.20x |
+| SAM peak mem (MB) | 2672 | 2454 | 2199 | 1963 (base 2866) |
+| DINOv3-7B speedup | 1.07x | 1.11x | 1.17x | 1.20x |
+| DINOv3-7B energy | -6.6% | -11.0% | -12.8% | -16.8% |
+| DINOv3-7B peak mem (GB) | 12.29 | 11.64 | 10.99 | 10.36 (base 12.85) |
+
+SAM profile: kvasir, f=0.5 manifest generated 2026-09-16 from the stored profile.
+SAM 12.5% is within noise of baseline (2 of 16 heads per block).

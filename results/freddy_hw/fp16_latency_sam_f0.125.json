@@ -1,0 +1,114 @@
+{
+  "config": {
+    "checkpoint": "data/sam_vit_h_4b8939.pth",
+    "freeze_manifest": "results/sam_main_sweep/freeze_kvasir_f0.125/freeze_manifest.json",
+    "image_dir": "data/image_dirs/kvasir_eval",
+    "eval_n": 20,
+    "device": "cuda",
+    "points_per_side": 16,
+    "warmup": 10,
+    "iters": 50,
+    "seed": 0,
+    "frozen_heads": 64,
+    "frozen_mlp_neurons": 0,
+    "mlp_fraction": 0.0
+  },
+  "variants": {
+    "baseline": {
+      "encoder_params": 637026048,
+      "dtype": "torch.float16",
+      "encoder": {
+        "median": 281.6405794583261,
+        "mean": 281.7872071452439,
+        "std": 1.3205766457201564,
+        "p5": 279.8252737149596,
+        "p95": 283.82264794781804,
+        "iters": 50
+      },
+      "encoder_energy": {
+        "joules": 1026.2915644089003,
+        "avg_watts": 72.0605950194169,
+        "duration_s": 14.248348203487694,
+        "iters": 50,
+        "joules_per_iter": 20.525831288178004
+      },
+      "encoder_peak_mem_bytes": 3005545984,
+      "maskgen": {
+        "median_s_per_image": 0.9450920545496047,
+        "mean_s_per_image": 0.9477188428398222,
+        "std_s_per_image": 0.03648909831522434,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 1328.728138100023,
+        "avg_watts": 70.14551270060736,
+        "duration_s": 18.954983957111835,
+        "joules_per_image": 66.43640690500115
+      }
+    },
+    "hooked": {
+      "encoder_params": 637026048,
+      "dtype": "torch.float16",
+      "encoder": {
+        "median": 295.1527778059244,
+        "mean": 294.8652829416096,
+        "std": 2.818360883464713,
+        "p5": 289.910931000486,
+        "p95": 298.64483484998345,
+        "iters": 50
+      },
+      "encoder_energy": {
+        "joules": 1069.9747585027908,
+        "avg_watts": 72.0979099896723,
+        "duration_s": 14.860167132690549,
+        "iters": 50,
+        "joules_per_iter": 21.399495170055815
+      },
+      "encoder_peak_mem_bytes": 3020213760,
+      "maskgen": {
+        "median_s_per_image": 0.9507860876619816,
+        "mean_s_per_image": 0.9531742545310408,
+        "std_s_per_image": 0.035880510967475854,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 1339.1482057109736,
+        "avg_watts": 70.26283639214988,
+        "duration_s": 19.064082415774465,
+        "joules_per_image": 66.95741028554868
+      }
+    },
+    "sliced": {
+      "encoder_params": 610796288,
+      "dtype": "torch.float16",
+      "encoder": {
+        "median": 278.5758310928941,
+        "mean": 278.40553384274244,
+        "std": 3.9540096247601744,
+        "p5": 271.4474549982697,
+        "p95": 284.22580752521753,
+        "iters": 50
+      },
+      "encoder_energy": {
+        "joules": 1005.7937582807006,
+        "avg_watts": 72.1576432303309,
+        "duration_s": 13.979785370640457,
+        "iters": 50,
+        "joules_per_iter": 20.11587516561401
+      },
+      "encoder_peak_mem_bytes": 2802052608,
+      "maskgen": {
+        "median_s_per_image": 0.9289655890315771,
+        "mean_s_per_image": 0.9309385634958744,
+        "std_s_per_image": 0.036889523017397764,
+        "num_images": 20
+      },
+      "maskgen_energy": {
+        "joules": 1321.8259147640704,
+        "avg_watts": 71.0170731817316,
+        "duration_s": 18.619323492981493,
+        "joules_per_image": 66.09129573820351
+      }
+    }
+  }
+}
